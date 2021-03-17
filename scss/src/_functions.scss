@@ -1,0 +1,3 @@
+@function gcolor($key) {
+  @return map-get($global-colors, $key);
+}

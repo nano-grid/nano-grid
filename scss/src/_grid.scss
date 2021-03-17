@@ -1,0 +1,81 @@
+@import "grid-mixins";
+
+.nano-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: .5rem;
+  align-items: flex-start;
+
+  // structure blocks
+  > .prefix,
+  > .suffix {
+    flex-basis: 25px;
+  }
+  > .prefix {
+    text-align: left;
+  }
+
+  > .suffix {
+    text-align: right;
+  }
+
+  > .column,
+  > .prefix,
+  > .suffix {
+    @extend %grid;
+  }
+
+    // styles
+
+  &.content {
+    margin-right: -0.5rem;
+    margin-left: -0.5rem;
+
+    > .prefix,
+    > .column,
+    > .suffix {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+  }
+
+  &.component-row {
+    align-items: center;
+
+    > .prefix,
+    > .column,
+    > .suffix {
+      &:not(:last-child) {
+        padding-right: .5rem;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      input,
+      select,
+      button {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &.grid {
+    align-items: stretch;
+    justify-content: center;
+
+    > div {
+      flex: 1 1 30%;
+      padding: 5px;
+
+      &:only-child {
+        flex-grow: 0;
+      }
+    }
+  }
+
+  @import 'grid-group';
+}

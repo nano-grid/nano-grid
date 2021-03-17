@@ -1,0 +1,15 @@
+{
+  "name": "nano-grid",
+  "version": "1.0.0",
+  "description": "Grid System",
+  "main": "index.js",
+  "private": true,
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miguel-rivas"
+  },
+  "author": "Miguel Rivas",
+  "license": "MIT",
+  "homepage": "https://github.com/miguel-rivas"
+}

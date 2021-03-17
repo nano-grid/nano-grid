@@ -1,0 +1,65 @@
+@import "btn-mixins";
+
+.btn {
+  &.flat
+  {
+    $original-color: #888;
+    font-weight: bold;
+    letter-spacing: 1pt;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    display: inline-block;
+    transition: all $transition ease;
+    border-radius: 0;
+    padding: 13px 30px;
+    font-size: 9pt;
+    color: #fff;
+    border: 0;
+    background-color: $original-color;
+    box-shadow: 0px 3px 0 darken( $original-color, 10% );
+  
+    &:focus
+    {
+      outline: none;
+    }
+
+    &:active {
+      background-color: lighten( $original-color, 20% ) !important;
+      box-shadow: 0px 3px 0 lighten($original-color, 10% ) !important;
+      color: darken( $original-color, 20% ) !important;
+    }
+
+    &.active {
+      background-color: lighten( #116ec4, 20% ) !important;
+      box-shadow: 0px 3px 0 lighten( #116ec4, 10% ) !important;
+      color: darken( #116ec4, 20% ) !important;
+    }
+
+    &:hover
+    {
+      cursor: pointer;
+      background-color: darken( $original-color, 10% );
+      box-shadow: 0px 3px 0 darken( $original-color, 20% );
+    }
+
+    input[type=radio],
+    input[type=checkbox] {
+      display: none;
+    }
+  
+    @include button-color( "dodger-blue", $light-blue );
+    @include button-color( "blue", $blue );
+    @include button-color( "red", $red );
+    @include button-color( "cyan", $cyan );
+    @include button-color( "mustard", $mustard );
+    @include button-color( "purple", $purple );
+    @include button-color( "green", $green );
+    @include button-color( "orange", $orange );
+    @include button-color( "razzmatazz", $fucsia );
+    @include button-color( "mint", $mint );
+    @include button-color( "brown", $brown );
+    @include button-color( "grey", $gray );
+ }
+}

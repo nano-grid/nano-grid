@@ -1,0 +1,117 @@
+/*
+  sz50b100      >>  50% or 50/100  :: size 50 in a 100 columns grid
+  sz6b12        >>  6/12           :: size 6 in a 12 columns grid
+  sz1b16        >>  1/16           :: size 1 in a 16 columns grid
+  sz155         >>  155px          :: value in pixels
+  sz45b100m50   >>  45/100 - 50px
+*/
+
+@mixin set-size($numerator, $denominator, $subtraction: 0) {
+  $final-selector: '';
+  $has-base-size: ($numerator == 1 and $denominator == 1) or ($numerator == 1 and $denominator == 2) or ($numerator == 1 and $denominator == 3) or ($numerator == 1 and $denominator == 4) or ($numerator == 3 and $denominator == 4) or ($numerator == 2 and $denominator == 3);
+
+  @if $subtraction > 0 {
+    $computed-subtraction: $subtraction * 5;
+
+    @if $has-base-size {
+      $final-selector: '&.sz#{$numerator}b#{$denominator}m#{$computed-subtraction}';
+    } @else {
+      $counter: 0;
+      @while $numerator * $counter <= 100 and $denominator * $counter <= 100 {
+        $counter: $counter + 1;
+        $final-selector: '#{$final-selector} &.sz#{$numerator * $counter}b#{$denominator * $counter}m#{$computed-subtraction},';
+      }
+    }
+    #{$final-selector} {
+      $final-size: unquote('calc(#{($numerator/$denominator)*100}% - #{$computed-subtraction}px)');
+      // @debug('------------------------------------');
+      // @debug('$final-selector: #{$final-selector}');
+      // @debug('$final-size: #{$final-size}');
+      flex-basis: $final-size;
+      max-width: $final-size;
+    }
+  } @else {
+
+    @if $has-base-size {
+      $final-selector: '&.sz#{$numerator}b#{$denominator}';
+    } @else {
+      $counter: 0;
+      @while $numerator * $counter <= 100 and $denominator * $counter <= 100 {
+        $counter: $counter + 1;
+        $final-selector: '#{$final-selector} &.sz#{$numerator * $counter}b#{$denominator * $counter},';
+      }
+    }
+
+    
+
+    #{$final-selector} {
+      $final-size: unquote(($numerator/$denominator)*100 + '%');
+      // @debug('------------------------------------');
+      // @debug('$final-selector: #{$final-selector}');
+      // @debug('$final-size: #{$final-size}');
+      flex-basis: $final-size;
+      max-width: $final-size;
+    }
+  }
+}
+
+%grid {
+  @for $subtraction from 0 through 120 {
+    @include set-size(1, 1, $subtraction); //100
+    @include set-size(19, 20, $subtraction); //95
+    @include set-size(11, 12, $subtraction);
+    @include set-size(9, 10, $subtraction); //90
+    @include set-size(17, 20, $subtraction); //85
+    @include set-size(5, 6, $subtraction); //83
+    @include set-size(4, 5, $subtraction); //80
+    @include set-size(3, 4, $subtraction); //75
+    @include set-size(7, 10, $subtraction); //70
+    @include set-size(2, 3, $subtraction);
+    @include set-size(13, 20, $subtraction); //65
+    @include set-size(3, 5, $subtraction); //60
+    @include set-size(7, 12, $subtraction);
+    @include set-size(11, 20, $subtraction); //55
+    @include set-size(1, 2, $subtraction); //50
+    @include set-size(9, 20, $subtraction); //45
+    @include set-size(5, 12, $subtraction);
+    @include set-size(2, 5, $subtraction); //40
+    @include set-size(7, 20, $subtraction); //35
+    @include set-size(1, 3, $subtraction);
+    @include set-size(3, 10, $subtraction); //30
+    @include set-size(1, 4, $subtraction); //25
+    @include set-size(1, 5, $subtraction); //20
+    @include set-size(1, 6, $subtraction);
+    @include set-size(3, 20, $subtraction); //15
+    @include set-size(1, 7, $subtraction);
+    @include set-size(1, 8, $subtraction);
+    @include set-size(1, 9, $subtraction);
+    @include set-size(1, 10, $subtraction); //10
+    @include set-size(1, 11, $subtraction);
+    @include set-size(1, 12, $subtraction);
+    @include set-size(1, 13, $subtraction);
+    @include set-size(1, 14, $subtraction);
+    @include set-size(1, 15, $subtraction);
+    @include set-size(1, 16, $subtraction);
+    @include set-size(1, 17, $subtraction);
+    @include set-size(1, 18, $subtraction);
+    @include set-size(1, 19, $subtraction);
+    @include set-size(1, 20, $subtraction); //5
+  }
+
+  // &.allow-growing { flex-grow: 1; }
+  // &.allow-shrink { flex-shrink: 1; }
+  // &.disable-growing { flex-grow: 0; }
+  // &.disable-shrink { flex-shrink: 0; }
+
+  @extend %fix-columns;
+}
+
+%fix-columns {
+  @for $size from 5 through 60 {
+    $final-size: #{$size * 5};
+    &.sz#{$final-size} {
+      flex-basis: #{$final-size}px;
+      max-width: #{$final-size}px;
+    }
+  }
+}
