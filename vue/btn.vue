@@ -26,6 +26,10 @@
         type: String,
         default: '',
       },
+      size: {
+        type: String,
+        default: '',
+      },
       value: {
         type: String,
         default: undefined,
@@ -47,12 +51,11 @@
         return this.value;
       },
       buttonType(){
-        // if(!this.computedValue) {
-        //   return 'btn-icon';
-        // } else {
-        //   return 'btn';
-        // }
-        return 'btn flat';
+        if(!this.computedValue) {
+          return 'btn flat icon';
+        } else {
+          return 'btn flat';
+        }
       },
       itemColor() {
         return this.color;
@@ -75,6 +78,7 @@
         return [
           this.buttonType,
           this.itemColor,
+          this.size,
           {
             active: this.active,
           }

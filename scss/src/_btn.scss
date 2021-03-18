@@ -1,8 +1,5 @@
-@import "btn-mixins";
-
 .btn {
-  &.flat
-  {
+  &.flat {
     $original-color: #888;
     font-weight: bold;
     letter-spacing: 1pt;
@@ -19,9 +16,19 @@
     border: 0;
     background-color: $original-color;
     box-shadow: 0px 3px 0 darken( $original-color, 10% );
+
+    &.icon {
+      padding: 0;
+      width: 44px;
+      height: 44px;
+
+      &.md {
+        width: 32px;
+        height: 32px;
+      }
+    }
   
-    &:focus
-    {
+    &:focus {
       outline: none;
     }
 
@@ -37,29 +44,32 @@
       color: darken( #116ec4, 20% ) !important;
     }
 
-    &:hover
-    {
-      cursor: pointer;
-      background-color: darken( $original-color, 10% );
-      box-shadow: 0px 3px 0 darken( $original-color, 20% );
-    }
-
     input[type=radio],
     input[type=checkbox] {
       display: none;
     }
-  
-    @include button-color( "dodger-blue", $light-blue );
-    @include button-color( "blue", $blue );
-    @include button-color( "red", $red );
-    @include button-color( "cyan", $cyan );
-    @include button-color( "mustard", $mustard );
-    @include button-color( "purple", $purple );
-    @include button-color( "green", $green );
-    @include button-color( "orange", $orange );
-    @include button-color( "razzmatazz", $fucsia );
-    @include button-color( "mint", $mint );
-    @include button-color( "brown", $brown );
-    @include button-color( "grey", $gray );
+    
+    @each $name, $value in $colors {
+      $new-color: darken( $value, 10% );
+      &.#{$name} {
+        background-color: $value;
+        box-shadow: 0px 3px 0 $new-color;
+        &:hover {
+          background-color: $new-color;
+          box-shadow: 0px 3px 0 darken( $value, 20% );
+        }
+        &:active {
+          background-color: lighten( $value, 20% );
+          box-shadow: 0px 3px 0 lighten( $value, 10% );
+          color: darken( $value, 20% );
+        }
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: darken( $original-color, 10% );
+      box-shadow: 0px 3px 0 darken( $original-color, 20% );
+    }
  }
 }
