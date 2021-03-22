@@ -1,6 +1,6 @@
 {
   "name": "nano-grid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Grid System",
   "main": "index.js",
   "scripts": {},
