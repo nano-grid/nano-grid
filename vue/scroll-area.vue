@@ -21,10 +21,6 @@
         type: Boolean,
         default: false
       },
-      dark: {
-        type: Boolean,
-        default: false
-      },
     },
     computed: {
       itemColor() {
@@ -35,7 +31,6 @@
           this.itemColor,
           {
             'horizontal': this.allowHorizontal,
-            'dark': this.dark,
           }
         ];
       }

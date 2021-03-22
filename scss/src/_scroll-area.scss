@@ -46,7 +46,7 @@
   max-height: 100%;
 
   @include scrollbar-base(rgb(225, 225, 225), rgb(249, 249, 249));
-  &.dark {
+  .nano-dark & {
     @include scrollbar-base(gcolor('gravel'), gcolor('cod-grey'));
   }
 
