@@ -24,7 +24,7 @@
   }
 }
 
-@mixin scrollbar($background: 'silver') {
+@mixin scrollbar($background: "silver") {
   &:hover,
   &.keep {
     scrollbar-face-color: gcolor($background);
@@ -44,13 +44,14 @@
   border: 0;
   border-radius: 0;
   max-height: 100%;
+  width: 100%;
 
-  @include scrollbar-base(rgb(225, 225, 225), rgb(249, 249, 249));
+  @include scrollbar-base(gcolor("silver"), rgb(249, 249, 249));
   .nano-dark & {
-    @include scrollbar-base(gcolor('gravel'), gcolor('cod-grey'));
+    @include scrollbar-base(gcolor("gravel"), gcolor("cod-grey"));
   }
 
-  @include scrollbar('silver');
+  @include scrollbar("silver");
   @each $name, $value in $colors {
     &.#{$name} {
       @include scrollbar($name);

@@ -4,36 +4,36 @@
     class="scroll-area"
     :class="classes"
   >
-    <slot/>
+    <slot />
   </div>
 </template>
 
 <script lang="ts">
-  import Vue from "vue";
+import Vue from "vue";
 
-  export default Vue.extend({
-    props: {
-      color: {
-        type: String,
-        default: "silver"
-      },
-      allowHorizontal: {
-        type: Boolean,
-        default: false
-      },
+export default Vue.extend({
+  props: {
+    color: {
+      type: String,
+      default: "silver",
     },
-    computed: {
-      itemColor() {
-        return this.color;
-      },
-      classes() {
-        return [
-          this.itemColor,
-          {
-            'horizontal': this.allowHorizontal,
-          }
-        ];
-      }
+    allowHorizontal: {
+      type: Boolean,
+      default: false,
     },
-  });
+  },
+  computed: {
+    itemColor(): string {
+      return this.color;
+    },
+    classes(): Array<string> {
+      return [
+        this.itemColor,
+        {
+          horizontal: this.allowHorizontal,
+        },
+      ];
+    },
+  },
+});
 </script>

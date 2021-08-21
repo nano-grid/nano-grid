@@ -1,16 +1,16 @@
 <template>
   <component :is="tag" :class="classes" :role="role">
     <template>
-      <slot/>
+      <slot />
     </template>
   </component>
 </template>
 
 <script lang="ts">
-  import Vue from "vue";
-  import {validateSize} from "../ts/columns-manager.ts";
+import Vue from "vue";
+import { validateSize } from "../modules/columns-manager";
 
-  /*
+/*
     type: Bootstrap / *Custom,
     size:
     - fix size: 45                    ->  30 .. 300
@@ -20,52 +20,36 @@
     - subtraction: column 4/12 minus 20px: 4/12-20
   */
 
-  export default Vue.extend({
-    props: {
-      tag: {
-        type: String,
-        default: 'div'
-      },
-      mode: {
-        type: String,
-        default: 'column'
-      },
-      size: {
-        default: ''
-      },
-      tableElement: {
-        type: Boolean,
-        default: false,
-      },
+export default Vue.extend({
+  props: {
+    tag: {
+      type: String,
+      default: "div",
     },
-    computed: {
-      classes() {
-        return [
-          this.mode,
-          this.computedSize,
-        ]
-      },
-      computedSize() {
-        return validateSize(this.size);
-      },
-      role() {
-        if(this.tableElement){
-          return 'cell';
-        } else {
-          return "";
-        }
-      },
+    mode: {
+      type: String,
+      default: "column",
     },
-    methods: {
-      roundUpNumber(value){
-        let rest = value % 5;
-        let hasNoClassEquivalent = rest > 0;
-        if(hasNoClassEquivalent){
-          value = value - rest + 5;
-        }
-        return value.toString();
+    size: undefined,
+    tableElement: {
+      type: Boolean,
+      default: false,
+    },
+  },
+  computed: {
+    classes(): Array<string> {
+      return [this.mode, this.computedSize];
+    },
+    computedSize(): string {
+      return this.size ? validateSize(this.size) : "";
+    },
+    role(): string {
+      if (this.tableElement) {
+        return "cell";
+      } else {
+        return "";
       }
-    }
-  });
-
+    },
+  },
+});
 </script>

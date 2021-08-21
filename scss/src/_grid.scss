@@ -3,7 +3,7 @@
 .nano-row {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   align-items: flex-start;
 
   // structure blocks
@@ -25,19 +25,9 @@
     @extend %grid;
   }
 
-    // styles
+  // styles
 
-  &.content {
-    margin-right: -0.5rem;
-    margin-left: -0.5rem;
-
-    > .prefix,
-    > .column,
-    > .suffix {
-      padding-right: 0.5rem;
-      padding-left: 0.5rem;
-    }
-  }
+  @extend %spacing;
 
   &.component-row {
     align-items: center;
@@ -46,7 +36,7 @@
     > .column,
     > .suffix {
       &:not(:last-child) {
-        padding-right: .5rem;
+        padding-right: 0.5rem;
       }
       h1,
       h2,
@@ -60,6 +50,20 @@
       button {
         margin-bottom: 0;
       }
+    }
+  }
+
+  &.vertical {
+    flex-flow: column;
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 0;
+    align-items: center;
+
+    > .prefix,
+    > .column,
+    > .suffix {
+      max-width: unset;
     }
   }
 
@@ -77,5 +81,5 @@
     }
   }
 
-  @import 'grid-group';
+  @import "grid-group";
 }

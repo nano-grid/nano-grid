@@ -12,15 +12,13 @@
   > .prefix,
   > .column,
   > .suffix {
-
     > .input-label,
-    > label
-    > p {
+    > label > p {
       height: 100% !important;
       align-items: center !important;
       display: flex !important;
       text-align: center;
-      background-color: gcolor('white');
+      background-color: gcolor("white");
     }
 
     > input,
@@ -40,7 +38,8 @@
       border-radius: 0;
       width: 100%;
       display: block;
-      &, &:hover {
+      &,
+      &:hover {
         box-shadow: none;
       }
     }
@@ -88,20 +87,20 @@
         > .prefix,
         > .column,
         > .suffix {
-        &:first-child {
-          > input,
-          > label,
-          > p,
-          > span,
-          > button,
-          > select,
-          > a,
-          > .input-label {
-            border-top-left-radius: 22px;
-            border-bottom-left-radius: 22px;
+          &:first-child {
+            > input,
+            > label,
+            > p,
+            > span,
+            > button,
+            > select,
+            > a,
+            > .input-label {
+              border-top-left-radius: 22px;
+              border-bottom-left-radius: 22px;
+            }
           }
         }
-      }
       }
     }
 
@@ -143,8 +142,8 @@
 
   &.integrate {
     border-radius: 22px;
-    border: 1px solid gcolor('silver');
-  
+    border: 1px solid gcolor("silver");
+
     > .prefix,
     > .column,
     > .suffix {
@@ -158,7 +157,7 @@
       > .input-label {
         border: 0;
       }
-  
+
       > input {
         padding-left: 0;
         padding-right: 0;
