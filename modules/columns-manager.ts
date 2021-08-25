@@ -118,7 +118,7 @@ export const validateSize = (size) => {
     let fraction = width.split('/');
     numerator = parseInt(fraction[0]);
     denominator = parseInt(fraction[1]);
-  } else {
+  } else if (!isPercent) {
     numerator = roundUpNumber(Math.min(Math.max(parseInt(width), 25), maxFixSizeWidth));
   }
 
@@ -168,7 +168,7 @@ export const validateSize = (size) => {
       let fraction = height.split('/');
       numerator = parseInt(fraction[0]);
       denominator = parseInt(fraction[1]);
-    } else {
+    } else if (!isPercent) {
       numerator = roundUpNumber(Math.min(Math.max(parseInt(height), 25), maxFixSizeHeight));
     }
 

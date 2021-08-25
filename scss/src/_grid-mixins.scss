@@ -36,6 +36,25 @@
   }
 }
 
+@mixin responsive-grid($tag, $size) {
+  &.#{$tag}{
+    @media only screen and (max-width: $size) {
+      display: block;
+      margin-right: 0 !important;
+      margin-left: 0 !important;
+      > .column,
+      > .prefix,
+      > .suffix {
+        width: 100%;
+        max-width: unset;
+        min-width: unset;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+    }
+  }
+}
+
 %grid {
   @for $subtraction from 0 through 120 {
     @include set-size(1, 1, $subtraction); //100

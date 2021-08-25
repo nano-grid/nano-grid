@@ -6,6 +6,12 @@
   margin-bottom: 0.5rem;
   align-items: flex-start;
 
+  @include responsive-grid("sm", 576px);
+  @include responsive-grid("md", 768px);
+  @include responsive-grid("lg", 992px);
+  @include responsive-grid("xl", 1200px);
+  @include responsive-grid("xxl", 1400px);
+
   // structure blocks
   > .prefix,
   > .suffix {

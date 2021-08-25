@@ -17,6 +17,10 @@ export default Vue.extend({
       type: String,
       default: "div",
     },
+    breakpoint: {
+      type: String,
+      default: "",
+    },
     group: {
       type: Boolean,
       default: false,
@@ -47,6 +51,7 @@ export default Vue.extend({
           vertical: this.vertical,
         },
         this.computedSpacing,
+        this.breakpoint,
       ];
     },
     computedSpacing(): string {
