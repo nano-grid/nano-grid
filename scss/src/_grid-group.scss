@@ -10,6 +10,17 @@
   }
 
   > .prefix,
+  > .suffix {
+    &:first-child,
+    &:last-child {
+      > button {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+  }
+
+  > .prefix,
   > .column,
   > .suffix {
     > .input-label,
@@ -18,7 +29,7 @@
       align-items: center !important;
       display: flex !important;
       text-align: center;
-      background-color: gcolor("white");
+      justify-content: center;
     }
 
     > input,
@@ -40,7 +51,7 @@
       display: block;
       &,
       &:hover {
-        box-shadow: none;
+        box-shadow: 0 0 0 transparent !important;
       }
     }
 

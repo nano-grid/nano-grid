@@ -1,0 +1,20 @@
+$layers: (
+  //----Bottom
+  '.section-home .out-card:before',
+  '.section-home .card',
+  '.section-home .content',
+  '.cow',
+  '.nano-app .main-panel',
+  '.tooltip:after',
+  '.tooltip:before',
+  '.tooltip',
+  //----Front
+);
+
+$index: 10;
+@each $layer in $layers {
+  $index: $index + 1;
+  #{$layer} {
+    z-index: $index;
+  }
+}

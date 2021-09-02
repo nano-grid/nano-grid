@@ -1,11 +1,20 @@
 <template>
-  <component class="nano-row" :class="classes" :is="tag" :role="role">
+  <component
+    @click.passive="$emit('click', $event)"
+    class="nano-row"
+    :class="classes"
+    :is="tag"
+    :role="role"
+  >
     <slot />
   </component>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
+
+type breakpoints = "" | "sm" | "md" | "lg" | "xl" | "xll";
+type spacingType = 25 | 50 | 75 | 100 | 125 | 150 | 175 | 200 | 225 | 250 | 275 | 300 | 325 | 350 | 375 | 400;
 
 export default Vue.extend({
   /*
@@ -18,7 +27,7 @@ export default Vue.extend({
       default: "div",
     },
     breakpoint: {
-      type: String,
+      type: Object as () => breakpoints,
       default: "",
     },
     group: {
@@ -26,7 +35,7 @@ export default Vue.extend({
       default: false,
     },
     spacing: {
-      type: Number,
+      type: Object as () => spacingType,
       default: 0,
     },
     integrate: {

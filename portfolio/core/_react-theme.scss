@@ -1,0 +1,46 @@
+main.react-theme {
+  --hue-1: 200deg;
+  --hue-2: 220deg;
+
+  --color-2: hsl(var(--hue-1) 50% 50%);
+  --color-3: hsl(var(--hue-1) 50% 25%);
+  --color-4: hsl(var(--hue-1) 50% 10%);
+
+  --color-1: hsl(var(--hue-2) 50% 50%);
+  --color-6: hsl(var(--hue-2) 50% 25%);
+  --color-5: hsl(var(--hue-2) 50% 10%);
+
+  --color-panel-background: hsl(0deg 0% 15%);
+
+  &.nano-light {
+    --color-title: var(--color-3);
+    --color-legend: var(--color-3);
+    --color-label: var(--color-6);
+  }
+
+  &.nano-dark {
+    --title-shadow: 0 0 9px var(--color-2);
+    --color-title: var(--color-2);
+    --color-legend: var(--color-2);
+    --color-label: var(--color-1);
+  }
+
+  &.section-home {
+    .workarea {
+      .cover {
+        background-color: hsl(var(--hue-1) 80% 25% / 70%);
+      }
+    }
+  }
+
+  .btn.active {
+    background-color: var(--color-2) !important;
+    box-shadow: 0px 3px 0 var(--color-3) !important;
+    color: var(--color-4) !important;
+  }
+
+  .pill {
+    background-color: var(--color-1) !important;
+    color: var(--color-5) !important;
+  }
+}

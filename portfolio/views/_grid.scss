@@ -1,0 +1,45 @@
+.section-grid {
+  .builder-container {
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+
+    .nano-row {
+      justify-content: center;
+      margin-bottom: 0;
+
+      .prefix,
+      .column,
+      .suffix {
+        transition: all ease 500ms;
+      }
+
+      button {
+        width: 100%;
+        padding: 13px 8px;
+        margin-bottom: 3px;
+      }
+    }
+  }
+
+  .workarea {
+    .scroll-area {
+      height: 100%;
+      display: flex;
+    }
+
+    h1 {
+      font-size: 70px;
+      margin: 0;
+      text-align: center;
+      color: var(--color-foreground);
+      text-transform: uppercase;
+    }
+
+    .hljs {
+      background-color: #191a1b;
+      border: 1px solid #1b1b23;
+    }
+  }
+}

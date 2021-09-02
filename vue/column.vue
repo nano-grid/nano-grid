@@ -20,6 +20,8 @@ import { validateSize } from "../modules/columns-manager";
     - subtraction: column 4/12 minus 20px: 4/12-20
   */
 
+type modality = "column" | "prefix" | "suffix";
+
 export default Vue.extend({
   props: {
     tag: {
@@ -27,7 +29,7 @@ export default Vue.extend({
       default: "div",
     },
     mode: {
-      type: String,
+      type: Object as () => modality,
       default: "column",
     },
     size: undefined,
