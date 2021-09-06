@@ -12,9 +12,8 @@
 
 <script lang="ts">
 import Vue from "vue";
-
-type breakpoints = "" | "sm" | "md" | "lg" | "xl" | "xll";
-type spacingType = 25 | 50 | 75 | 100 | 125 | 150 | 175 | 200 | 225 | 250 | 275 | 300 | 325 | 350 | 375 | 400;
+import { breakpointsType } from "../types/breakpoints";
+import { spacingType } from "../types/spacing";
 
 export default Vue.extend({
   /*
@@ -27,7 +26,7 @@ export default Vue.extend({
       default: "div",
     },
     breakpoint: {
-      type: Object as () => breakpoints,
+      type: String as () => breakpointsType,
       default: "",
     },
     group: {
@@ -35,7 +34,7 @@ export default Vue.extend({
       default: false,
     },
     spacing: {
-      type: Object as () => spacingType,
+      type: Number as () => spacingType,
       default: 0,
     },
     integrate: {

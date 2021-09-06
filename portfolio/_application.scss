@@ -4,9 +4,9 @@
 @import "~@fontsource/montserrat/600.css";
 
 // ------------------ Modules
-@import "~nano-grid/scss/nano-grid";
-@import "~nano-grid/scss/btn";
-@import "~nano-grid/scss/scroll-area";
+@import "../grid/scss/nano-grid";
+@import "../grid/scss/btn";
+@import "../grid/scss/scroll-area";
 
 * {
   box-sizing: border-box;

@@ -29,7 +29,7 @@ export default Vue.extend({
       default: "div",
     },
     mode: {
-      type: Object as () => modality,
+      type: String as () => modality,
       default: "column",
     },
     size: undefined,

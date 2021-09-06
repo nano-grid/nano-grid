@@ -4,11 +4,13 @@
 
 <script lang="ts">
 import Vue from "vue";
+import { colorsType } from "../types/colors";
+import { directionsType } from "../types/directions";
 
 export default Vue.extend({
   props: {
     color: {
-      type: String,
+      type: String as () => colorsType,
       default: "",
     },
     tag: {
@@ -23,7 +25,7 @@ export default Vue.extend({
       type: String,
     },
     direction: {
-      type: String,
+      type: String as () => directionsType,
     },
   },
   computed: {

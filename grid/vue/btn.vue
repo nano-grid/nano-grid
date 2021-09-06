@@ -16,6 +16,7 @@
 
 <script lang="ts">
 import Vue from "vue";
+import { colorsType } from "../types/colors";
 
 export default Vue.extend({
   props: {
@@ -36,7 +37,7 @@ export default Vue.extend({
       default: undefined,
     },
     color: {
-      type: String,
+      type: String as () => colorsType,
       default: "gravel",
     },
     active: {

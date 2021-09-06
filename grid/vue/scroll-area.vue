@@ -10,11 +10,12 @@
 
 <script lang="ts">
 import Vue from "vue";
+import { colorsType } from "../types/colors";
 
 export default Vue.extend({
   props: {
     color: {
-      type: String,
+      type: String as () => colorsType,
       default: "silver",
     },
     allowHorizontal: {

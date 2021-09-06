@@ -4,10 +4,12 @@
       position: relative;
     }
     .drakkar,
-    .cover {
+    .cover,
+    .three-scene {
       position: absolute;
     }
-    .drakkar {
+    .drakkar,
+    .three-scene {
       z-index: 1;
     }
     .cover {
