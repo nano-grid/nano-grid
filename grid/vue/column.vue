@@ -9,6 +9,7 @@
 <script lang="ts">
 import Vue from "vue";
 import { validateSize } from "../modules/columns-manager";
+import { modalityType } from "../types/modality";
 
 /*
     type: Bootstrap / *Custom,
@@ -20,8 +21,6 @@ import { validateSize } from "../modules/columns-manager";
     - subtraction: column 4/12 minus 20px: 4/12-20
   */
 
-type modality = "column" | "prefix" | "suffix";
-
 export default Vue.extend({
   props: {
     tag: {
@@ -29,7 +28,7 @@ export default Vue.extend({
       default: "div",
     },
     mode: {
-      type: String as () => modality,
+      type: String as () => modalityType,
       default: "column",
     },
     size: undefined,

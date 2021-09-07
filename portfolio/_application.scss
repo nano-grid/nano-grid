@@ -34,6 +34,9 @@ main {
     --color-palette: #f7f7f7;
     --color-label: #104e86;
     --color-legend: #9c330a;
+    --color-background-input: #dadada;
+    --color-table-background: hsl(240deg 20% 90%);
+    --color-table-background-hover: hsl(240deg 20% 80%);
   }
   &.nano-dark {
     --color-title: #e69b28;
@@ -47,6 +50,9 @@ main {
     --color-palette: #272727;
     --color-label: #4ca1ef;
     --color-legend: #b9b90e;
+    --color-background-input: #272731;
+    --color-table-background: hsl(240deg 5% 15%);
+    --color-table-background-hover: hsl(240deg 10% 22%);
   }
   --title-shadow: 0;
   --color-shadow: rgb(0 0 0 / 65%);
@@ -66,8 +72,8 @@ input[type="number"],
   border-radius: 0;
   padding: 0.5rem;
   font-size: 9pt;
-  background: #444444;
-  color: #fff;
+  background: var(--color-background-input);
+  color: var(--color-foreground);
   border: 0 none transparent;
 
   &:focus,
@@ -132,10 +138,10 @@ hr {
   }
   .table-body {
     .nano-row {
-      background-color: rgba(127.5, 127.5, 127.5, 0.2);
+      background-color: var(--color-table-background);
       transition: background-color ease-in-out 200ms;
       &:hover {
-        background-color: rgba(127.5, 127.5, 127.5, 0.35);
+        background-color: var(--color-table-background-hover);
       }
       .column {
         padding: 0.5rem 1rem;
@@ -163,6 +169,16 @@ hr {
   letter-spacing: 1px;
   display: inline-block;
   margin-bottom: 0.5rem;
+}
+
+/*------------------------*/
+
+.nano-box {
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  color: var(--color-foreground);
 }
 
 /*------------------------*/
