@@ -18,9 +18,13 @@ export default Vue.extend({
       type: String as () => colorsType,
       default: "silver",
     },
-    allowHorizontal: {
+    horizontal: {
       type: Boolean,
-      default: false,
+      default: true,
+    },
+    vertical: {
+      type: Boolean,
+      default: true,
     },
   },
   computed: {
@@ -31,7 +35,8 @@ export default Vue.extend({
       return [
         this.itemColor,
         {
-          horizontal: this.allowHorizontal,
+          "no-horizontal": !this.horizontal,
+          "no-vertical": !this.vertical,
         },
       ];
     },

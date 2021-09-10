@@ -7,19 +7,6 @@
     margin: auto;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  li {
-    margin: 0 0 0.5rem;
-    line-height: 1;
-    text-transform: uppercase;
-  }
-
   .scroll-area {
     height: 100%;
     padding: 3rem;
@@ -40,21 +27,6 @@
     img {
       width: 100%;
       border: 1px solid var(--color-border);
-    }
-
-    h1 {
-      font-weight: 600;
-      font-size: 25px;
-      color: var(--color-title);
-    }
-    h2 {
-      font-weight: 400;
-      font-size: 18px;
-    }
-    h3 {
-      font-weight: 600;
-      font-size: 14px;
-      letter-spacing: 2px;
     }
 
     .docs-gallery {

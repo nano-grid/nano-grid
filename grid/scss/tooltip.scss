@@ -1,0 +1,74 @@
+.nano-tooltip {
+  display: inline-block;
+  z-index: 30;
+  position: fixed;
+  font-size: 11px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  color: #eeeeee;
+  pointer-events: none;
+  box-shadow: 3px 1px 5px rgb(0 0 0 / 40%);
+  white-space: nowrap;
+  text-transform: capitalize;
+
+  &,
+  &::before {
+    background-color: #444444;
+  }
+
+  &.right {
+    &::before {
+      top: 7px;
+      left: -3px;
+      right: unset !important;
+    }
+  }
+  
+  &.left {
+    &::before {
+      top: 7px;
+      right: -3px;
+      left: unset !important;
+    }
+  }
+
+  &.top {
+    &::before {
+      bottom: -3px;
+      left: 7px;
+      top: unset !important;
+    }
+  }
+  
+  &.bottom {
+    &::before {
+      top: -3px;
+      left: 7px;
+      bottom: unset !important;
+    }
+  }
+
+  &.top,
+  &.bottom {
+    &.left {
+      &::before {
+        right: 7px !important;
+      }
+    }
+    &.right {
+      &::before {
+        left: 7px !important;
+      }
+    }
+  }
+
+  &::before {
+    display: block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    position: absolute;
+    z-index: -1;
+  }
+}

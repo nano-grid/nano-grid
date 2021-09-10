@@ -1,12 +1,13 @@
 // ------------------ Fonts
-@import "~@fontsource/montserrat/300.css";
-@import "~@fontsource/montserrat/400.css";
-@import "~@fontsource/montserrat/600.css";
+@import "~@fontsource/montserrat/latin-300.css";
+@import "~@fontsource/montserrat/latin-400.css";
+@import "~@fontsource/montserrat/latin-600.css";
 
 // ------------------ Modules
 @import "../grid/scss/nano-grid";
 @import "../grid/scss/btn";
 @import "../grid/scss/scroll-area";
+@import "../grid/scss/tooltip";
 
 * {
   box-sizing: border-box;
@@ -36,6 +37,7 @@ main {
     --color-legend: #9c330a;
     --color-background-input: #dadada;
     --color-table-background: hsl(240deg 20% 90%);
+    --color-table-background-2: hsl(240deg 20% 85%);
     --color-table-background-hover: hsl(240deg 20% 80%);
   }
   &.nano-dark {
@@ -52,6 +54,7 @@ main {
     --color-legend: #b9b90e;
     --color-background-input: #272731;
     --color-table-background: hsl(240deg 5% 15%);
+    --color-table-background-2: hsl(240deg 5% 18%);
     --color-table-background-hover: hsl(240deg 10% 22%);
   }
   --title-shadow: 0;
@@ -108,6 +111,48 @@ hr {
   border-width: 0 0 1px 0;
 }
 
+h1 {
+  font-weight: 600;
+  font-size: 25px;
+  color: var(--color-title);
+}
+h2 {
+  font-weight: 400;
+  font-size: 18px;
+}
+h3 {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  margin: 0 0 0.5rem;
+  line-height: 1;
+}
+
+.nano-box {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  li {
+    margin: 0 0 0.5rem;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+}
+
 /*------------------------*/
 
 .btn.flat {
@@ -117,36 +162,6 @@ hr {
 
   &.fsz {
     width: 100%;
-  }
-}
-
-/*------------------------*/
-
-.table {
-  .suffix {
-    padding-bottom: 2px;
-  }
-  .table-head {
-    .nano-row {
-      .column {
-        text-transform: uppercase;
-        font-weight: 300;
-        padding: 0.25rem 1rem;
-        font-size: 14px;
-      }
-    }
-  }
-  .table-body {
-    .nano-row {
-      background-color: var(--color-table-background);
-      transition: background-color ease-in-out 200ms;
-      &:hover {
-        background-color: var(--color-table-background-hover);
-      }
-      .column {
-        padding: 0.5rem 1rem;
-      }
-    }
   }
 }
 
@@ -192,27 +207,6 @@ main.universe {
       }
     }
   }
-
-  .cow {
-    animation: cow-stalker 1s;
-    animation-fill-mode: forwards;
-  }
-}
-.cow {
-  position: fixed;
-  bottom: -100px;
-  left: -100px;
-}
-
-@keyframes cow-stalker {
-  from {
-    bottom: -100px;
-    left: -100px;
-  }
-  to {
-    bottom: 0;
-    left: 48px;
-  }
 }
 
 @keyframes chaos {
@@ -224,6 +218,27 @@ main.universe {
   }
 }
 
+/*------------------------*/
+
+.nano-app {
+  .btn.flat.btn {
+    &-react {
+      &, &:hover {
+        background-color: hsl(200deg 50% 50%);
+        color: hsl(200deg 50% 10%);
+        box-shadow: 0px 3px 0 hsl(200deg 50% 25%);
+      }
+    }
+    &-vue {
+      &, &:hover {
+        background-color: hsl(155deg 50% 50%);
+        color: hsl(155deg 50% 10%);
+        box-shadow: 0px 3px 0 hsl(155deg 50% 25%);
+      }
+    }
+  }
+}
+
 @import "core/icomoon";
 @import "core/animations";
 @import "core/layers";
@@ -232,9 +247,9 @@ main.universe {
 @import "views/gear";
 @import "views/wheel";
 @import "components/app";
+@import "components/table";
 @import "components/container";
 @import "components/palette";
 @import "components/listings";
 @import "components/radio-select";
-@import "components/tooltip";
 @import "components/gallery";

@@ -46,6 +46,14 @@
   max-height: 100%;
   width: 100%;
 
+  &.no-horizontal {
+    overflow-x: hidden;
+  }
+
+  &.no-vertical {
+    overflow-y: hidden;
+  }
+
   @include scrollbar-base(gcolor("silver"), rgb(249, 249, 249));
   .nano-dark & {
     @include scrollbar-base(gcolor("gravel"), gcolor("cod-grey"));

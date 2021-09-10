@@ -41,5 +41,14 @@
       background-color: #191a1b;
       border: 1px solid #1b1b23;
     }
+
+    .vue-code {
+      position: fixed;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        opacity: 0;
+        z-index: -1;
+    }
   }
 }

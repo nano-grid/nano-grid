@@ -11,6 +11,10 @@
   justify-content: center;
   font-family: inherit;
 
+  > span {
+    pointer-events: none;
+  }
+
   &,
   &.flat {
     @each $name, $value in $colors {
