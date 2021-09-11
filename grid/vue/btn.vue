@@ -5,11 +5,12 @@
     :role="tag === 'button' ? 'button' : undefined"
     :aria-label="computedLabel"
     :to="to"
+    :title="computedLabel"
     @click.passive="$emit('click', $event)"
   >
     <m-icon v-if="glyph !== ''" :glyph="glyph" />
-    <span class="caption" v-if="computedValue">
-      {{ computedValue }}
+    <span class="caption" v-if="text">
+      {{ text }}
     </span>
   </component>
 </template>
@@ -32,7 +33,11 @@ export default Vue.extend({
       type: String,
       default: "",
     },
-    value: {
+    text: {
+      type: String,
+      default: undefined,
+    },
+    title: {
       type: String,
       default: undefined,
     },
@@ -49,15 +54,8 @@ export default Vue.extend({
     },
   },
   computed: {
-    computedValue(): any {
-      return this.value;
-    },
     buttonType(): string {
-      if (!this.computedValue) {
-        return "btn flat icon";
-      } else {
-        return "btn flat";
-      }
+      return "btn flat";
     },
     itemColor(): string {
       return this.color;
@@ -70,10 +68,10 @@ export default Vue.extend({
       }
     },
     computedLabel(): any {
-      if (this.computedValue) {
-        return `${this.computedValue} button`;
-      } else {
+      if (this.text) {
         return undefined;
+      } else {
+        return this.title;
       }
     },
     computedClasses(): any {

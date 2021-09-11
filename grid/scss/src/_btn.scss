@@ -32,32 +32,11 @@
     }
   }
 
-  &.icon {
+  > .icon,
+  > .mdi {
     font-size: 14px;
-    max-width: unset;
-    max-height: unset;
-    display: inline-flex;
-    padding: 0;
-    width: 25px;
-    height: 25px;
-    align-items: center;
-    justify-content: center;
-
-    &.sz30 {
-      width: 30px;
-      height: 30px;
-    }
-    &.sz35 {
-      width: 35px;
-      height: 35px;
-    }
-    &.sz40 {
-      width: 40px;
-      height: 40px;
-    }
-    &.sz45 {
-      width: 45px;
-      height: 45px;
+    &:not(:only-child){
+      margin-right: 0.5rem;
     }
   }
 

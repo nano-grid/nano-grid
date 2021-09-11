@@ -11,6 +11,7 @@
             size="md"
             glyph="minus"
             color="gravel"
+            title="Decrease button"
           />
         </prefix>
         <column size="100%-35*2">
@@ -22,6 +23,7 @@
             size="md"
             glyph="plus"
             color="gravel"
+            title="Increase button"
           />
         </suffix>
       </row>
