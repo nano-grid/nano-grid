@@ -1,12 +1,11 @@
 {
   "name": "nano-grid",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Grid System",
   "main": "index.js",
   "scripts": {},
   "dependencies": {
-    "classnames": "^2.2.6",
-    "@fontsource/montserrat": "^4.2.2"
+    "classnames": "^2.2.6"
   },
   "repository": {
     "type": "git",
