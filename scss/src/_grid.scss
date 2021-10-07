@@ -6,6 +6,8 @@
   margin-bottom: 0.5rem;
   align-items: flex-start;
 
+  @extend %grid;
+
   @include responsive-grid("sm", 576px);
   @include responsive-grid("md", 768px);
   @include responsive-grid("lg", 992px);
@@ -23,12 +25,6 @@
 
   > .suffix {
     text-align: right;
-  }
-
-  > .column,
-  > .prefix,
-  > .suffix {
-    @extend %grid;
   }
 
   // styles

@@ -19,6 +19,9 @@ import { modalityType } from "../types/modality";
     - fractions: 25/100
     - subtraction: column 45% minus 20px: 45%-20
     - subtraction: column 4/12 minus 20px: 4/12-20
+    
+    using height:
+    100, 50% -> width: 100px, height: 50vh
   */
 
 export default Vue.extend({

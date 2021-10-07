@@ -152,7 +152,9 @@ export const validateSize = (size) => {
   //---------------------------------------------- calculating height
 
   if (hasHeight) {
-    isPercent = /[%]/.test(height);
+    let isAbsolute;
+    isPercent = /[%vh]/.test(height);
+    isAbsolute = /[vh]/.test(height);
     isFraction = /[/]/.test(height);
 
     numerator = denominator = undefined;
@@ -193,6 +195,10 @@ export const validateSize = (size) => {
 
     if (denominator) {
       height += 'b' + denominator;
+    }
+
+    if (isAbsolute) {
+      height += 'a';
     }
   }
 

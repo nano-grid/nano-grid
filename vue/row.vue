@@ -57,6 +57,7 @@ export default Vue.extend({
           "nano-group": this.group,
           integrate: this.integrate,
           vertical: this.vertical,
+          horizontal: !this.vertical,
         },
         this.computedSpacing,
         this.breakpoint,
