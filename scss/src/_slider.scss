@@ -1,49 +1,52 @@
-@mixin range-color($name) {
+@mixin range-color($name, $value) {
 	&.#{$name} {
-		@include themify {
-			$thumb: darken(themed($name), 7.5%);
-			$thumb-focus: darken(themed($name), 7.5%);
-			$track-focus: themed($name);
+		$thumb: darken($value, 7.5%);
+		$thumb-focus: darken($value, 7.5%);
+		$track-focus: $value;
 
-			&::-webkit-slider-thumb {
-				background: $thumb;
-			}
-			&::-moz-range-thumb {
-				background: $thumb;
-			}
-			&::-ms-thumb {
-				background: $thumb;
-			}
+		&::-webkit-slider-thumb {
+			background: $thumb;
+		}
+		&::-moz-range-thumb {
+			background: $thumb;
+		}
+		&::-ms-thumb {
+			background: $thumb;
+		}
+		&::-webkit-slider-runnable-track {
+			background: var(--color-background-input2);
+		}
+		&::-moz-range-track {
+			background: var(--color-background-input2);
+		}
+		&::-ms-fill-lower {
+			background: var(--color-background-input2);
+		}
+		&::-ms-fill-upper {
+			background: var(--color-background-input2);
+		}
+
+		&:hover {
 			&::-webkit-slider-runnable-track {
-				background: themed('range-bg');
+				background: $track-focus;
 			}
 			&::-moz-range-track {
-				background: themed('range-bg');
+				background: $track-focus;
 			}
 			&::-ms-fill-lower {
-				background: themed('range-bg');
+				background: $track-focus;
 			}
 			&::-ms-fill-upper {
-				background: themed('range-bg');
-			}
-
-			&:hover {
-				&::-webkit-slider-runnable-track {
-					background: $track-focus;
-				}
-				&::-moz-range-track {
-					background: $track-focus;
-				}
-				&::-ms-fill-lower {
-					background: $track-focus;
-				}
-				&::-ms-fill-upper {
-					background: $track-focus;
-				}
+				background: $track-focus;
 			}
 		}
 	}
 }
+
+$thumb-height: 20px;
+$thumb-width: 20px;
+$thumb-radius: 10px;
+$track-radius: 10px;
 
 input[type="range"] {
 	-webkit-appearance: none;
@@ -52,8 +55,8 @@ input[type="range"] {
 	border: none;
 	background: transparent;
 
-	@each $name, $text-color in $item-colors {
-		@include range-color($name);
+	@each $name, $value in $colors {
+		@include range-color($name, $value);
 	}
 
 	&::-webkit-slider-runnable-track {

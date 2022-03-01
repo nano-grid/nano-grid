@@ -6,7 +6,7 @@
   text-align: center;
   text-decoration: none;
   box-sizing: border-box;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   font-family: inherit;
@@ -32,8 +32,7 @@
     }
   }
 
-  > .icon,
-  > .mdi {
+  > .icon {
     font-size: 14px;
     &:not(:only-child){
       margin-right: 0.5rem;

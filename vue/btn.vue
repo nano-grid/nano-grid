@@ -8,7 +8,7 @@
     :title="computedLabel"
     @click.passive="$emit('click', $event)"
   >
-    <m-icon v-if="glyph !== ''" :glyph="glyph" />
+    <icon v-if="glyph !== ''" :glyph="glyph" :direction="direction" />
     <span class="caption" v-if="text">
       {{ text }}
     </span>
@@ -34,7 +34,7 @@ export default Vue.extend({
       default: "",
     },
     text: {
-      type: String,
+      type: [String, Number],
       default: undefined,
     },
     title: {
@@ -51,6 +51,10 @@ export default Vue.extend({
     },
     to: {
       default: undefined,
+    },
+    direction: {
+      type: String,
+      default: "bottom",
     },
   },
   computed: {
