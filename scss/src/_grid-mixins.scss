@@ -17,7 +17,7 @@
 
   @if $subtraction > 0 {
     $computed-subtraction: $subtraction * 5;
-    $final-selector: "&.#{$c-dimension}#{$numerator}b#{$denominator}m#{$computed-subtraction}";
+    $final-selector: "&.#{$c-dimension}#{$numerator}d#{$denominator}m#{$computed-subtraction}";
 
     #{$final-selector} {
       $final-size: unquote("calc(#{math.div($numerator,$denominator)*100}% - #{$computed-subtraction}px)");
@@ -29,7 +29,7 @@
       }
     }
   } @else {
-    $final-selector: "&.#{$c-dimension}#{$numerator}b#{$denominator}";
+    $final-selector: "&.#{$c-dimension}#{$numerator}d#{$denominator}";
 
     $final-size: unquote(math.div($numerator, $denominator) * 100 + "%");
     #{$final-selector} {
@@ -48,7 +48,7 @@
     }
 
     @if ($dimension == 1 and not $vertical) {
-      #{$final-selector}a {
+      #{$final-selector}vh {
         $final-size: unquote(math.div($numerator, $denominator) * 100 + "vh");
         height: $final-size;
       }
@@ -80,7 +80,7 @@
     > .column,
     > .prefix,
     > .suffix {
-      @for $subtraction from 0 through 120 {
+      @for $subtraction from 0 through 60 {
         @include set-size(1, 1, $subtraction); //100
         @include set-size(19, 20, $subtraction); //95
         @include set-size(11, 12, $subtraction);
@@ -151,7 +151,7 @@
     > .column,
     > .prefix,
     > .suffix {
-      @for $subtraction from 0 through 120 {
+      @for $subtraction from 0 through 60 {
         @include set-size(1, 1, $subtraction, $vertical: true); //100
         @include set-size(19, 20, $subtraction, $vertical: true); //95
         @include set-size(11, 12, $subtraction, $vertical: true);
@@ -231,14 +231,6 @@
       height: #{$final-size}px;
     }
   }
-
-  @for $size from 61 through 120 {
-    $final-size: #{$size * 5};
-
-    &.h#{$final-size} {
-      height: #{$final-size}px;
-    }
-  }
 }
 
 %fix-columns-vertical {
@@ -247,15 +239,6 @@
     &.w#{$final-size} {
       width: #{$final-size}px;
     }
-
-    &.h#{$final-size} {
-      flex-basis: #{$final-size}px;
-      max-height: #{$final-size}px;
-    }
-  }
-
-  @for $size from 61 through 120 {
-    $final-size: #{$size * 5};
 
     &.h#{$final-size} {
       flex-basis: #{$final-size}px;

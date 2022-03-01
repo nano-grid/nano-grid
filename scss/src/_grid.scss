@@ -15,10 +15,6 @@
   @include responsive-grid("xxl", 1400px);
 
   // structure blocks
-  > .prefix,
-  > .suffix {
-    flex-basis: 25px;
-  }
   > .prefix {
     text-align: left;
   }

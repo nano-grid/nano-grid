@@ -1,5 +1,5 @@
 <template>
-  <component :is="tag" :class="classes" :role="role">
+  <component :is="tag" :class="classes" :role="role" v-bind:style="computedStyle">
     <template>
       <slot />
     </template>
@@ -40,12 +40,19 @@ export default Vue.extend({
       default: false,
     },
   },
+  data: () => ({
+    width:0,
+    height:0,
+  }),
   computed: {
     classes(): Array<string> {
       return [this.mode, this.computedSize];
     },
     computedSize(): string {
-      return this.size ? validateSize(this.size) : "";
+      return this.size ? validateSize(this.size).class : "";
+    },
+    computedStyle(): string {
+      return this.size ? validateSize(this.size).style : "";
     },
     role(): string {
       if (this.tableElement) {
