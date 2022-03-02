@@ -76,151 +76,78 @@
 }
 
 %grid {
-  &.horizontal {
-    > .column,
-    > .prefix,
-    > .suffix {
-      @for $subtraction from 0 through 60 {
-        @include set-size(1, 1, $subtraction); //100
-        @include set-size(19, 20, $subtraction); //95
-        @include set-size(11, 12, $subtraction);
-        @include set-size(9, 10, $subtraction); //90
-        @include set-size(17, 20, $subtraction); //85
-        @include set-size(5, 6, $subtraction); //83
-        @include set-size(4, 5, $subtraction); //80
-        @include set-size(3, 4, $subtraction); //75
-        @include set-size(7, 10, $subtraction); //70
-        @include set-size(2, 3, $subtraction);
-        @include set-size(13, 20, $subtraction); //65
-        @include set-size(3, 5, $subtraction); //60
-        @include set-size(7, 12, $subtraction);
-        @include set-size(11, 20, $subtraction); //55
-        @include set-size(1, 2, $subtraction); //50
-        @include set-size(9, 20, $subtraction); //45
-        @include set-size(5, 12, $subtraction);
-        @include set-size(2, 5, $subtraction); //40
-        @include set-size(7, 20, $subtraction); //35
-        @include set-size(1, 3, $subtraction);
-        @include set-size(3, 10, $subtraction); //30
-        @include set-size(1, 4, $subtraction); //25
-        @include set-size(1, 5, $subtraction); //20
-        @include set-size(1, 6, $subtraction);
-        @include set-size(3, 20, $subtraction); //15
-        @include set-size(1, 7, $subtraction);
-        @include set-size(1, 8, $subtraction);
-        @include set-size(1, 9, $subtraction);
-        @include set-size(1, 10, $subtraction); //10
-        @include set-size(1, 11, $subtraction);
-        @include set-size(1, 12, $subtraction);
-        @include set-size(1, 13, $subtraction);
-        @include set-size(1, 14, $subtraction);
-        @include set-size(1, 15, $subtraction);
-        @include set-size(1, 16, $subtraction);
-        @include set-size(1, 17, $subtraction);
-        @include set-size(1, 18, $subtraction);
-        @include set-size(1, 19, $subtraction);
-        @include set-size(1, 20, $subtraction); //5
-      }
-
-      @include set-size(1, 1, 0, 1);
-      @include set-size(19, 20, 0, 1);
-      @include set-size(9, 10, 0, 1);
-      @include set-size(17, 20, 0, 1);
-      @include set-size(4, 5, 0, 1);
-      @include set-size(3, 4, 0, 1);
-      @include set-size(7, 10, 0, 1);
-      @include set-size(13, 20, 0, 1);
-      @include set-size(3, 5, 0, 1);
-      @include set-size(11, 20, 0, 1);
-      @include set-size(1, 2, 0, 1);
-      @include set-size(9, 20, 0, 1);
-      @include set-size(2, 5, 0, 1);
-      @include set-size(7, 20, 0, 1);
-      @include set-size(3, 10, 0, 1);
-      @include set-size(1, 4, 0, 1);
-      @include set-size(1, 5, 0, 1);
-      @include set-size(3, 20, 0, 1);
-      @include set-size(1, 10, 0, 1);
-      @include set-size(1, 20, 0, 1);
-
-      @extend %fix-columns;
+  > .column,
+  > .prefix,
+  > .suffix {
+    @for $subtraction from 0 through 60 {
+      @include set-size(1, 1, $subtraction); //100
+      @include set-size(19, 20, $subtraction); //95
+      @include set-size(11, 12, $subtraction);
+      @include set-size(9, 10, $subtraction); //90
+      @include set-size(17, 20, $subtraction); //85
+      @include set-size(5, 6, $subtraction); //83
+      @include set-size(4, 5, $subtraction); //80
+      @include set-size(3, 4, $subtraction); //75
+      @include set-size(7, 10, $subtraction); //70
+      @include set-size(2, 3, $subtraction);
+      @include set-size(13, 20, $subtraction); //65
+      @include set-size(3, 5, $subtraction); //60
+      @include set-size(7, 12, $subtraction);
+      @include set-size(11, 20, $subtraction); //55
+      @include set-size(1, 2, $subtraction); //50
+      @include set-size(9, 20, $subtraction); //45
+      @include set-size(5, 12, $subtraction);
+      @include set-size(2, 5, $subtraction); //40
+      @include set-size(7, 20, $subtraction); //35
+      @include set-size(1, 3, $subtraction);
+      @include set-size(3, 10, $subtraction); //30
+      @include set-size(1, 4, $subtraction); //25
+      @include set-size(1, 5, $subtraction); //20
+      @include set-size(1, 6, $subtraction);
+      @include set-size(3, 20, $subtraction); //15
+      @include set-size(1, 7, $subtraction);
+      @include set-size(1, 8, $subtraction);
+      @include set-size(1, 9, $subtraction);
+      @include set-size(1, 10, $subtraction); //10
+      @include set-size(1, 11, $subtraction);
+      @include set-size(1, 12, $subtraction);
+      @include set-size(1, 13, $subtraction);
+      @include set-size(1, 14, $subtraction);
+      @include set-size(1, 15, $subtraction);
+      @include set-size(1, 16, $subtraction);
+      @include set-size(1, 17, $subtraction);
+      @include set-size(1, 18, $subtraction);
+      @include set-size(1, 19, $subtraction);
+      @include set-size(1, 20, $subtraction); //5
     }
-  }
 
-  &.vertical {
-    > .column,
-    > .prefix,
-    > .suffix {
-      @for $subtraction from 0 through 60 {
-        @include set-size(1, 1, $subtraction, $vertical: true); //100
-        @include set-size(19, 20, $subtraction, $vertical: true); //95
-        @include set-size(11, 12, $subtraction, $vertical: true);
-        @include set-size(9, 10, $subtraction, $vertical: true); //90
-        @include set-size(17, 20, $subtraction, $vertical: true); //85
-        @include set-size(5, 6, $subtraction, $vertical: true); //83
-        @include set-size(4, 5, $subtraction, $vertical: true); //80
-        @include set-size(3, 4, $subtraction, $vertical: true); //75
-        @include set-size(7, 10, $subtraction, $vertical: true); //70
-        @include set-size(2, 3, $subtraction, $vertical: true);
-        @include set-size(13, 20, $subtraction, $vertical: true); //65
-        @include set-size(3, 5, $subtraction, $vertical: true); //60
-        @include set-size(7, 12, $subtraction, $vertical: true);
-        @include set-size(11, 20, $subtraction, $vertical: true); //55
-        @include set-size(1, 2, $subtraction, $vertical: true); //50
-        @include set-size(9, 20, $subtraction, $vertical: true); //45
-        @include set-size(5, 12, $subtraction, $vertical: true);
-        @include set-size(2, 5, $subtraction, $vertical: true); //40
-        @include set-size(7, 20, $subtraction, $vertical: true); //35
-        @include set-size(1, 3, $subtraction, $vertical: true);
-        @include set-size(3, 10, $subtraction, $vertical: true); //30
-        @include set-size(1, 4, $subtraction, $vertical: true); //25
-        @include set-size(1, 5, $subtraction, $vertical: true); //20
-        @include set-size(1, 6, $subtraction, $vertical: true);
-        @include set-size(3, 20, $subtraction, $vertical: true); //15
-        @include set-size(1, 7, $subtraction, $vertical: true);
-        @include set-size(1, 8, $subtraction, $vertical: true);
-        @include set-size(1, 9, $subtraction, $vertical: true);
-        @include set-size(1, 10, $subtraction, $vertical: true); //10
-        @include set-size(1, 11, $subtraction, $vertical: true);
-        @include set-size(1, 12, $subtraction, $vertical: true);
-        @include set-size(1, 13, $subtraction, $vertical: true);
-        @include set-size(1, 14, $subtraction, $vertical: true);
-        @include set-size(1, 15, $subtraction, $vertical: true);
-        @include set-size(1, 16, $subtraction, $vertical: true);
-        @include set-size(1, 17, $subtraction, $vertical: true);
-        @include set-size(1, 18, $subtraction, $vertical: true);
-        @include set-size(1, 19, $subtraction, $vertical: true);
-        @include set-size(1, 20, $subtraction, $vertical: true); //5
-      }
+    @include set-size(1, 1, 0, 1);
+    @include set-size(19, 20, 0, 1);
+    @include set-size(9, 10, 0, 1);
+    @include set-size(17, 20, 0, 1);
+    @include set-size(4, 5, 0, 1);
+    @include set-size(3, 4, 0, 1);
+    @include set-size(7, 10, 0, 1);
+    @include set-size(13, 20, 0, 1);
+    @include set-size(3, 5, 0, 1);
+    @include set-size(11, 20, 0, 1);
+    @include set-size(1, 2, 0, 1);
+    @include set-size(9, 20, 0, 1);
+    @include set-size(2, 5, 0, 1);
+    @include set-size(7, 20, 0, 1);
+    @include set-size(3, 10, 0, 1);
+    @include set-size(1, 4, 0, 1);
+    @include set-size(1, 5, 0, 1);
+    @include set-size(3, 20, 0, 1);
+    @include set-size(1, 10, 0, 1);
+    @include set-size(1, 20, 0, 1);
 
-      @include set-size(1, 1, 0, 1, $vertical: true);
-      @include set-size(19, 20, 0, 1, $vertical: true);
-      @include set-size(9, 10, 0, 1, $vertical: true);
-      @include set-size(17, 20, 0, 1, $vertical: true);
-      @include set-size(4, 5, 0, 1, $vertical: true);
-      @include set-size(3, 4, 0, 1, $vertical: true);
-      @include set-size(7, 10, 0, 1, $vertical: true);
-      @include set-size(13, 20, 0, 1, $vertical: true);
-      @include set-size(3, 5, 0, 1, $vertical: true);
-      @include set-size(11, 20, 0, 1, $vertical: true);
-      @include set-size(1, 2, 0, 1, $vertical: true);
-      @include set-size(9, 20, 0, 1, $vertical: true);
-      @include set-size(2, 5, 0, 1, $vertical: true);
-      @include set-size(7, 20, 0, 1, $vertical: true);
-      @include set-size(3, 10, 0, 1, $vertical: true);
-      @include set-size(1, 4, 0, 1, $vertical: true);
-      @include set-size(1, 5, 0, 1, $vertical: true);
-      @include set-size(3, 20, 0, 1, $vertical: true);
-      @include set-size(1, 10, 0, 1, $vertical: true);
-      @include set-size(1, 20, 0, 1, $vertical: true);
-
-      @extend %fix-columns-vertical;
-    }
+    @extend %fix-columns;
   }
 }
 
 %fix-columns {
-  @for $size from 5 through 60 {
+  @for $size from 0 through 60 {
     $final-size: #{$size * 5};
     &.w#{$final-size} {
       flex-basis: #{$final-size}px;
@@ -229,20 +156,6 @@
 
     &.h#{$final-size} {
       height: #{$final-size}px;
-    }
-  }
-}
-
-%fix-columns-vertical {
-  @for $size from 5 through 60 {
-    $final-size: #{$size * 5};
-    &.w#{$final-size} {
-      width: #{$final-size}px;
-    }
-
-    &.h#{$final-size} {
-      flex-basis: #{$final-size}px;
-      max-height: #{$final-size}px;
     }
   }
 }

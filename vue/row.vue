@@ -14,6 +14,7 @@
 import Vue from "vue";
 import { breakpointsType } from "../types/breakpoints";
 import { spacingType } from "../types/spacing";
+import {validateSpacing} from "../modules/columns-manager"
 
 export default Vue.extend({
   /*
@@ -37,7 +38,7 @@ export default Vue.extend({
       type: Number as () => spacingType,
       default: 0,
     },
-    integrate: {
+    integrated: {
       type: Boolean,
       default: false,
     },
@@ -55,7 +56,7 @@ export default Vue.extend({
       return [
         {
           "nano-group": this.group,
-          integrate: this.integrate,
+          integrated: this.integrated,
           vertical: this.vertical,
           horizontal: !this.vertical,
         },
@@ -64,10 +65,7 @@ export default Vue.extend({
       ];
     },
     computedSpacing(): string {
-      let space = this.spacing;
-      space = space > 400 ? 400 : space;
-      space = space < 0 ? 0 : space;
-      return space === 0 ? "" : `sp${space}`;
+      return validateSpacing(this.spacing);
     },
     role(): string {
       if (this.tableElement) {

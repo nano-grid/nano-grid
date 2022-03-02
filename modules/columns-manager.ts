@@ -101,7 +101,7 @@ export const validateSize = (size) => {
       subtraction = formula[0] / formula[1];
     }
 
-    subtraction = roundUpNumber(Math.max(parseInt(subtraction), 0));
+    subtraction = roundUpNumber(parseInt(subtraction));
   }
 
   let isPercent = /[%]/.test(width);
@@ -119,7 +119,7 @@ export const validateSize = (size) => {
     numerator = parseInt(fraction[0]);
     denominator = parseInt(fraction[1]);
   } else if (!isPercent) {
-    numerator = roundUpNumber(Math.max(parseInt(width), 0));
+    numerator = roundUpNumber(parseInt(width));
   }
 
   //------------------ calculating width: reducing fraction to the simplest form
@@ -137,7 +137,7 @@ export const validateSize = (size) => {
     }
   }
 
-  if (numerator) {
+  if (typeof numerator !== 'undefined') {
     width = 'w' + numerator;
   }
 
@@ -150,12 +150,13 @@ export const validateSize = (size) => {
   }
 
   if (!isPercent && !isFraction && numerator > 300) {
-    widthStyle = `width: ${numerator}px;`;
+    widthStyle = `flex-basis: ${numerator}px; max-width: ${numerator}px;`;
     width = undefined;
   }
 
   if(subtraction > 300){
-    widthStyle = `width: calc(${numerator/denominator * 100}% - ${subtraction}px);`;
+    let newSize = `calc(${numerator/denominator * 100}% - ${subtraction}px)`;
+    widthStyle = `flex-basis: ${newSize}; max-width: ${newSize};`;
     width = undefined;
   }
 
@@ -181,7 +182,7 @@ export const validateSize = (size) => {
       numerator = parseInt(fraction[0]);
       denominator = parseInt(fraction[1]);
     } else if (!isPercent) {
-      numerator = roundUpNumber(Math.max(parseInt(height), 0));
+      numerator = roundUpNumber(parseInt(height));
     }
 
     //------------------ calculating height: reducing fraction to the simplest form
@@ -199,7 +200,7 @@ export const validateSize = (size) => {
       }
     }
 
-    if (numerator) {
+    if (typeof numerator !== 'undefined') {
       height = 'h' + numerator;
     }
 
@@ -216,21 +217,20 @@ export const validateSize = (size) => {
       height = undefined;
     }
   }
-
   return { class: classNames(width, height), style: classNames(widthStyle, heightStyle) };
 }
 
 export const validateSpacing = (size) => {
-  let value = parseInt(size, 10);
+  let value = +size;
   if (value > 0) {
-    value = Math.min(Math.max(value, 25), 400);
+    value = Math.min(Math.max(value, 0.25), 4);
 
-    let rest = value % 25;
+    let rest = value % 0.25;
     if (rest !== 0) {
       value = value - rest;
     }
 
-    return `sp${value}`;
+    return value > 0 ? `sp${value * 100}`: '';
   }
   return "";
 }
