@@ -155,7 +155,7 @@ export const validateSize = (size) => {
   }
 
   if(subtraction > 300){
-    widthStyle = `width: calc(${numerator/denominator * 100}% - ${subtraction}px );`;
+    widthStyle = `width: calc(${numerator/denominator * 100}% - ${subtraction}px);`;
     width = undefined;
   }
 
