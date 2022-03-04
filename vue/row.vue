@@ -50,6 +50,10 @@ export default Vue.extend({
       type: Boolean,
       default: false,
     },
+    grid: {
+      type: Boolean,
+      default: false,
+    }
   },
   computed: {
     classes(): Array<string> {
@@ -58,7 +62,7 @@ export default Vue.extend({
           "nano-group": this.group,
           integrated: this.integrated,
           vertical: this.vertical,
-          horizontal: !this.vertical,
+          grid: this.grid,
         },
         this.computedSpacing,
         this.breakpoint,

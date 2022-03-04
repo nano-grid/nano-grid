@@ -67,13 +67,26 @@ export const cssSizesHeight = [
 
 const classNames = require('classnames');
 
-const roundUpNumber = (value) => {
+export const roundUpNumber = (value) => {
   let rest = value % 5;
   let hasNoClassEquivalent = rest > 0;
   if (hasNoClassEquivalent) {
     value = value - rest + 5;
   }
   return value;
+}
+
+export const reduceFraction = (n, d) => {
+  let numerator = n;
+  let denominator = d;
+  let minVal = Math.min(n, d);
+  for (let c = minVal; c > 0; c--) {
+    if (numerator % c === 0 && denominator % c === 0) {
+      numerator /= c;
+      denominator /= c;
+    }
+  }
+  return [numerator, denominator];
 }
 
 export const validateSize = (size) => {
@@ -124,17 +137,9 @@ export const validateSize = (size) => {
 
   //------------------ calculating width: reducing fraction to the simplest form
   if (numerator && denominator) {
-    let hasSize = false;
-    cssSizesWidth.forEach(size => {
-      if (numerator / denominator == size[0] / size[1]) {
-        numerator = size[0];
-        denominator = size[1];
-        hasSize = true;
-      }
-    });
-    if (!hasSize) {
-      denominator = numerator = 1;
-    }
+    const newVals = reduceFraction(numerator, denominator);
+    numerator = newVals[0];
+    denominator = newVals[1];
   }
 
   if (typeof numerator !== 'undefined') {
@@ -154,8 +159,8 @@ export const validateSize = (size) => {
     width = undefined;
   }
 
-  if(subtraction > 300){
-    let newSize = `calc(${numerator/denominator * 100}% - ${subtraction}px)`;
+  if (subtraction > 300) {
+    let newSize = `calc(${numerator / denominator * 100}% - ${subtraction}px)`;
     widthStyle = `flex-basis: ${newSize}; max-width: ${newSize};`;
     width = undefined;
   }
@@ -187,17 +192,9 @@ export const validateSize = (size) => {
 
     //------------------ calculating height: reducing fraction to the simplest form
     if (numerator && denominator) {
-      let hasSize = false;
-      cssSizesHeight.forEach(size => {
-        if (numerator / denominator == size[0] / size[1]) {
-          numerator = size[0];
-          denominator = size[1];
-          hasSize = true;
-        }
-      });
-      if (!hasSize) {
-        denominator = numerator = 1;
-      }
+      const newVals = reduceFraction(numerator, denominator);
+      numerator = newVals[0];
+      denominator = newVals[1];
     }
 
     if (typeof numerator !== 'undefined') {
@@ -230,7 +227,7 @@ export const validateSpacing = (size) => {
       value = value - rest;
     }
 
-    return value > 0 ? `sp${value * 100}`: '';
+    return value > 0 ? `sp${value * 100}` : '';
   }
   return "";
 }

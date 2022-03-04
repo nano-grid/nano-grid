@@ -119,6 +119,19 @@
       @include set-size(1, 18, $subtraction);
       @include set-size(1, 19, $subtraction);
       @include set-size(1, 20, $subtraction); //5
+
+      @include set-size(6, 7, $subtraction);
+      @include set-size(7, 8, $subtraction);
+      @include set-size(8, 9, $subtraction);
+      @include set-size(9, 10, $subtraction);
+      @include set-size(10, 11, $subtraction);
+      @include set-size(12, 13, $subtraction);
+      @include set-size(13, 14, $subtraction);
+      @include set-size(14, 15, $subtraction);
+      @include set-size(15, 16, $subtraction);
+      @include set-size(16, 17, $subtraction);
+      @include set-size(17, 18, $subtraction);
+      @include set-size(18, 19, $subtraction);
     }
 
     @include set-size(1, 1, 0, 1);
@@ -141,6 +154,8 @@
     @include set-size(3, 20, 0, 1);
     @include set-size(1, 10, 0, 1);
     @include set-size(1, 20, 0, 1);
+    @include set-size(1, 3, 0, 1);
+    @include set-size(2, 3, 0, 1);
 
     @extend %fix-columns;
   }
