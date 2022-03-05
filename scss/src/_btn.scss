@@ -15,7 +15,7 @@
     pointer-events: none;
   }
 
-  &,
+  &.rounded,
   &.flat {
     @each $name, $value in $colors {
       $new-color: darken($value, 10%);
@@ -34,7 +34,7 @@
 
   > .icon {
     font-size: 14px;
-    &:not(:only-child){
+    &:not(:only-child) {
       margin-right: 0.5rem;
     }
   }
@@ -43,24 +43,59 @@
     outline: none;
   }
 
-  &:active {
-    background-color: lighten($original-color, 20%) !important;
-    color: darken($original-color, 20%) !important;
+  &.rounded {
+    &:active {
+      background-color: lighten($original-color, 20%) !important;
+      color: darken($original-color, 20%) !important;
+    }
+  
+    &.active {
+      background-color: lighten(#116ec4, 20%) !important;
+      color: darken(#116ec4, 20%) !important;
+    }
+  
+    &:hover {
+      cursor: pointer;
+      background-color: darken($original-color, 10%);
+    }
   }
 
-  &.active {
-    background-color: lighten(#116ec4, 20%) !important;
-    color: darken(#116ec4, 20%) !important;
-  }
-
-  &:hover {
-    cursor: pointer;
-    background-color: darken($original-color, 10%);
-  }
 
   input[type="radio"],
   input[type="checkbox"] {
     display: none;
+  }
+
+  &.transparent {
+    font-weight: bold;
+    letter-spacing: 1pt;
+    text-transform: uppercase;
+    transition: all $transition ease;
+    border-radius: 0;
+    min-height: 35px;
+    min-width: 35px;
+    border: 0;
+    border-color: transparent;
+    background-color: transparent;
+    color: rgb(255 255 255 / 40%);
+
+    &:hover {
+      color: rgb(255 255 255);
+      background-color: rgb(255 255 255 / 10%);
+    }
+
+    &:active, &.active {
+      background-color: rgb(255 255 255 / 5%);
+    }
+
+    @each $name, $value in $colors {
+      &.#{$name} {
+        &:active, &.active {
+          color: lighten($value, 20%);
+          box-shadow: -2px 0 0 $value;
+        }
+      }
+    }
   }
 
   &.flat {

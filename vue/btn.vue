@@ -43,7 +43,7 @@ export default Vue.extend({
     },
     color: {
       type: String as () => colorsType,
-      default: "gravel",
+      default: "transparent",
     },
     active: {
       type: Boolean,
@@ -56,10 +56,14 @@ export default Vue.extend({
       type: String,
       default: "bottom",
     },
+    mode: {
+      type: String,
+      default: "flat",
+    }
   },
   computed: {
     buttonType(): string {
-      return "btn flat";
+      return `btn ${this.mode}`;
     },
     itemColor(): string {
       return this.color;
