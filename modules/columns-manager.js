@@ -65,7 +65,6 @@ export const cssSizesHeight = [
   [1, 1], // 100%
 ];
 
-const classNames = require('classnames');
 
 export const roundUpNumber = (value) => {
   let rest = value % 5;
@@ -214,7 +213,7 @@ export const validateSize = (size) => {
       height = undefined;
     }
   }
-  return { class: classNames(width, height), style: classNames(widthStyle, heightStyle) };
+  return { class: [width, height].join(' '), style: [widthStyle, heightStyle].join(' ') };
 }
 
 export const validateSpacing = (size) => {

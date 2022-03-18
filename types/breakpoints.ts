@@ -1,1 +1,0 @@
-export type breakpointsType = "" | "sm" | "md" | "lg" | "xl" | "xll"
