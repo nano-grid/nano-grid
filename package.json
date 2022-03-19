@@ -4,7 +4,8 @@
   "description": "Grid System",
   "main": "index.js",
   "scripts": {},
-  "dependencies": {
+  "devDependencies": {
+    "sass": "^1.38.0"
   },
   "repository": {
     "type": "git",

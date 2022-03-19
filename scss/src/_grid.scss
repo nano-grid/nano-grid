@@ -14,15 +14,6 @@
   @include responsive-grid("xl", 1200px);
   @include responsive-grid("xxl", 1400px);
 
-  // structure blocks
-  > .prefix {
-    text-align: left;
-  }
-
-  > .suffix {
-    text-align: right;
-  }
-
   // styles
 
   @extend %spacing;
@@ -30,9 +21,7 @@
   &.component-row {
     align-items: center;
 
-    > .prefix,
-    > .column,
-    > .suffix {
+    > .column {
       &:not(:last-child) {
         padding-right: 0.5rem;
       }
@@ -58,9 +47,7 @@
     margin-bottom: 0;
     align-items: center;
 
-    > .prefix,
-    > .column,
-    > .suffix {
+    > .column {
       max-width: unset;
     }
   }

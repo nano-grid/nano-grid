@@ -1,16 +1,7 @@
 &.nano-group {
   align-items: stretch;
 
-  > .prefix {
-    > label {
-      > .icon {
-        vertical-align: middle;
-      }
-    }
-  }
-
-  > .prefix,
-  > .suffix {
+  > .column{
     &:first-child,
     &:last-child {
       > button {
@@ -20,9 +11,7 @@
     }
   }
 
-  > .prefix,
-  > .column,
-  > .suffix {
+  > .column {
     > .input-label,
     > label > p {
       height: 100% !important;
@@ -60,9 +49,7 @@
       border-radius: 0;
       margin-bottom: 0;
 
-      > .prefix,
-      > .column,
-      > .suffix {
+      > .column {
         > input,
         > label,
         > p,
@@ -95,9 +82,7 @@
       }
 
       .nano-group {
-        > .prefix,
-        > .column,
-        > .suffix {
+        > .column {
           &:first-child {
             > input,
             > label,
@@ -130,9 +115,7 @@
       }
 
       .nano-group {
-        > .prefix,
-        > .column,
-        > .suffix {
+        > .column {
           &:last-child {
             > input,
             > label,
@@ -155,9 +138,7 @@
     border-radius: 22px;
     border: 1px solid gcolor("silver");
 
-    > .prefix,
-    > .column,
-    > .suffix {
+    > .column {
       > input,
       > label,
       > p,

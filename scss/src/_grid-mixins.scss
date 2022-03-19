@@ -62,9 +62,7 @@
       display: block;
       margin-right: 0 !important;
       margin-left: 0 !important;
-      > .column,
-      > .prefix,
-      > .suffix {
+      > .column {
         width: 100% !important;
         max-width: unset !important;
         min-width: unset !important;
@@ -76,9 +74,7 @@
 }
 
 %grid {
-  > .column,
-  > .prefix,
-  > .suffix {
+  > .column {
     @for $subtraction from 0 through 60 {
       @include set-size(1, 1, $subtraction); //100
       @include set-size(19, 20, $subtraction); //95
@@ -182,9 +178,7 @@
     margin-right: -#{$space}rem;
     margin-left: -#{$space}rem;
 
-    > .prefix,
-    > .column,
-    > .suffix {
+    > .column {
       padding-right: #{$space}rem;
 
       &:first-child {
