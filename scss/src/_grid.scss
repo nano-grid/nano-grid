@@ -14,8 +14,6 @@ nn-row {
   @include responsive-grid("xl", 1200px);
   @include responsive-grid("xxl", 1400px);
 
-  // styles
-
   @extend %spacing;
 
   &.component-row {
@@ -56,7 +54,7 @@ nn-row {
     align-items: stretch;
     justify-content: center;
 
-    > div {
+    > nn-column {
       flex: 1 1 30%;
       padding: 5px;
 

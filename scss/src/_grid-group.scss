@@ -5,8 +5,7 @@
     &:first-child,
     &:last-child {
       > button {
-        padding-right: 0;
-        padding-left: 0;
+        padding-inline: 0;
       }
     }
   }
@@ -151,8 +150,7 @@
       }
 
       > input {
-        padding-left: 0;
-        padding-right: 0;
+        padding-inline: 0;
       }
     }
   }

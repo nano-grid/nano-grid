@@ -52,14 +52,12 @@
   &.#{$tag} {
     @media only screen and (max-width: $size) {
       display: block;
-      margin-right: 0 !important;
-      margin-left: 0 !important;
+      margin-inline: 0 !important;
       > nn-column {
         width: 100% !important;
         max-width: unset !important;
         min-width: unset !important;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
+        padding-inline: 0 !important;
       }
     }
   }
@@ -167,8 +165,7 @@
 
 @mixin set-spacing($space) {
   &.sp#{$space * 100} {
-    margin-right: -#{$space}rem;
-    margin-left: -#{$space}rem;
+    margin-inline: -#{$space}rem;
 
     > nn-column {
       padding-right: #{$space}rem;
