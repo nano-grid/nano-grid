@@ -1,3 +1,5 @@
+const nano = 'nn-';
+
 export const cssSizesWidth = [
   [0, 1],
   [1, 20],
@@ -141,7 +143,7 @@ export const validateSize = (size) => {
   }
 
   if (typeof numerator !== 'undefined') {
-    width = 'w' + numerator;
+    width = nano + 'w' + numerator;
   }
 
   if (denominator) {
@@ -198,7 +200,7 @@ export const validateSize = (size) => {
     }
 
     if (typeof numerator !== 'undefined') {
-      height = 'h' + numerator;
+      height = nano + 'h' + numerator;
     }
 
     if (denominator) {
@@ -233,7 +235,7 @@ export const validateSpacing = (size) => {
       value = value - rest;
     }
 
-    return value > 0 ? `sp${value * 100}` : '';
+    return value > 0 ? `${nano}sp${value * 100}` : '';
   }
   return "";
 }

@@ -1,0 +1,82 @@
+nn-container {
+  display: block;
+  margin: auto;
+  padding: 1rem;
+  width: 100%;
+}
+nn-container.nn-sz400 {
+  max-width: 400px;
+  flex-basis: 400px;
+}
+nn-container.nn-sz900 {
+  max-width: 900px;
+  flex-basis: 900px;
+}
+nn-container.nn-sz1450 {
+  max-width: 1450px;
+  flex-basis: 1450px;
+}
+nn-container.nn-sp25 {
+  padding-right: 0.25rem;
+  padding-left: 0.25rem;
+}
+nn-container.nn-sp50 {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+nn-container.nn-sp75 {
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+}
+nn-container.nn-sp100 {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+nn-container.nn-sp125 {
+  padding-right: 1.25rem;
+  padding-left: 1.25rem;
+}
+nn-container.nn-sp150 {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+}
+nn-container.nn-sp175 {
+  padding-right: 1.75rem;
+  padding-left: 1.75rem;
+}
+nn-container.nn-sp200 {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+nn-container.nn-sp225 {
+  padding-right: 2.25rem;
+  padding-left: 2.25rem;
+}
+nn-container.nn-sp250 {
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+}
+nn-container.nn-sp275 {
+  padding-right: 2.75rem;
+  padding-left: 2.75rem;
+}
+nn-container.nn-sp300 {
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+nn-container.nn-sp325 {
+  padding-right: 3.25rem;
+  padding-left: 3.25rem;
+}
+nn-container.nn-sp350 {
+  padding-right: 3.5rem;
+  padding-left: 3.5rem;
+}
+nn-container.nn-sp375 {
+  padding-right: 3.75rem;
+  padding-left: 3.75rem;
+}
+nn-container.nn-sp400 {
+  padding-right: 4rem;
+  padding-left: 4rem;
+}

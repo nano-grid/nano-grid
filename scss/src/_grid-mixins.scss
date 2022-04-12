@@ -9,7 +9,7 @@
 
   @if $subtraction > 0 {
     $computed-subtraction: $subtraction * 5;
-    $final-selector: "&.#{$c-dimension}#{$numerator}d#{$denominator}m#{$computed-subtraction}";
+    $final-selector: "&.#{$nano}#{$c-dimension}#{$numerator}d#{$denominator}m#{$computed-subtraction}";
 
     #{$final-selector} {
       $final-size: unquote("calc(#{math.div($numerator,$denominator)*100}% - #{$computed-subtraction}px)");
@@ -21,7 +21,7 @@
       }
     }
   } @else {
-    $final-selector: "&.#{$c-dimension}#{$numerator}d#{$denominator}";
+    $final-selector: "&.#{$nano}#{$c-dimension}#{$numerator}d#{$denominator}";
 
     $final-size: unquote(math.div($numerator, $denominator) * 100 + "%");
     #{$final-selector} {
@@ -49,7 +49,7 @@
 }
 
 @mixin responsive-grid($tag, $size) {
-  &.#{$tag} {
+  &.#{$nano}#{$tag} {
     @media only screen and (max-width: $size) {
       display: block;
       margin-inline: 0 !important;
@@ -149,12 +149,12 @@
 %fix-columns {
   @for $size from 0 through 60 {
     $final-size: #{$size * 5};
-    &.w#{$final-size} {
+    &.#{$nano}w#{$final-size} {
       flex-basis: #{$final-size}px;
       max-width: #{$final-size}px;
     }
 
-    &.h#{$final-size} {
+    &.#{$nano}h#{$final-size} {
       height: #{$final-size}px;
     }
   }
@@ -163,7 +163,7 @@
 // ------------------------------- spacing
 
 @mixin set-spacing($space) {
-  &.sp#{$space * 100} {
+  &.#{$nano}sp#{$space * 100} {
     margin-inline: -#{$space}rem;
 
     > nn-column {
