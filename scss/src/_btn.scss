@@ -60,7 +60,6 @@
     }
   }
 
-
   input[type="radio"],
   input[type="checkbox"] {
     display: none;
@@ -72,8 +71,8 @@
     text-transform: uppercase;
     transition: all $transition ease;
     border-radius: 0;
-    height: min(35px);
-    width: min(35px);
+    min-height: 35px;
+    width: max(35px, 100%);
     border-width: 0;
   }
 

@@ -154,14 +154,14 @@ export const validateSize = (size) => {
 
   if (!isPercent && !isFraction && numerator > 300) {
     widthReactStyle = `${numerator}px`;
-    widthStyle = `flex-basis: ${numerator}px; width: max(${numerator}px);`;
+    widthStyle = `flex-basis: ${numerator}px; max-width: ${numerator}px;`;
     width = undefined;
   }
 
   if (subtraction > 300) {
     let newSize = `calc(${numerator / denominator * 100}% - ${subtraction}px)`;
     widthReactStyle = `${newSize}`;
-    widthStyle = `flex-basis: ${newSize}; width: max(${newSize});`;
+    widthStyle = `flex-basis: ${newSize}; max-width: ${newSize};`;
     width = undefined;
   }
 
