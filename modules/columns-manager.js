@@ -89,8 +89,7 @@ export const reduceFraction = (n, d) => {
 }
 
 export const validateSize = (size) => {
-  let width, height;
-  let widthStyle, heightStyle;
+  let width, height, widthStyle, heightStyle, widthReactStyle, heightReactStyle;
   let hasHeight = /[,]/.test(size);
 
   width = size.split(',')[0] || "";
@@ -154,12 +153,14 @@ export const validateSize = (size) => {
   }
 
   if (!isPercent && !isFraction && numerator > 300) {
+    widthReactStyle = `${numerator}px`;
     widthStyle = `flex-basis: ${numerator}px; max-width: ${numerator}px;`;
     width = undefined;
   }
 
   if (subtraction > 300) {
     let newSize = `calc(${numerator / denominator * 100}% - ${subtraction}px)`;
+    widthReactStyle = `${newSize}`;
     widthStyle = `flex-basis: ${newSize}; max-width: ${newSize};`;
     width = undefined;
   }
@@ -209,11 +210,17 @@ export const validateSize = (size) => {
     }
 
     if (!isPercent && !isFraction && numerator > 300) {
+      heightReactStyle = `${numerator}px`;
       heightStyle = `height: ${numerator}px;`;
       height = undefined;
     }
   }
-  return { class: [width, height].join(' '), style: [widthStyle, heightStyle].join(' ') };
+  return {
+    class: [width, height].join(' ').trim(),
+    style: [widthStyle, heightStyle].join(' ').trim(),
+    width: widthReactStyle,
+    height: heightReactStyle,
+  };
 }
 
 export const validateSpacing = (size) => {

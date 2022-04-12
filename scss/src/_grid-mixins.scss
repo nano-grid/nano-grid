@@ -1,13 +1,5 @@
 @use "sass:math";
 
-/*
-  sz50b100      >>  50% or 50/100  :: size 50 in a 100 columns grid
-  sz6b12        >>  6/12           :: size 6 in a 12 columns grid
-  sz1b16        >>  1/16           :: size 1 in a 16 columns grid
-  sz155         >>  155px          :: value in pixels
-  sz45b100m50   >>  45/100 - 50px
-*/
-
 @mixin set-size($numerator, $denominator, $subtraction: 0, $dimension: 0, $vertical: false) {
   $final-selector: "";
   $c-dimension: nth(("w", "h"), $dimension + 1);
@@ -62,7 +54,7 @@
       display: block;
       margin-right: 0 !important;
       margin-left: 0 !important;
-      > .column {
+      > nn-column {
         width: 100% !important;
         max-width: unset !important;
         min-width: unset !important;
@@ -74,7 +66,7 @@
 }
 
 %grid {
-  > .column {
+  > nn-column {
     @for $subtraction from 0 through 60 {
       @include set-size(1, 1, $subtraction); //100
       @include set-size(19, 20, $subtraction); //95
@@ -178,7 +170,7 @@
     margin-right: -#{$space}rem;
     margin-left: -#{$space}rem;
 
-    > .column {
+    > nn-column {
       padding-right: #{$space}rem;
 
       &:first-child {

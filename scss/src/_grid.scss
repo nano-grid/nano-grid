@@ -1,6 +1,6 @@
 @import "grid-mixins";
 
-.nano-row {
+nn-row {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 0.5rem;
@@ -21,7 +21,7 @@
   &.component-row {
     align-items: center;
 
-    > .column {
+    > nn-column {
       &:not(:last-child) {
         padding-right: 0.5rem;
       }
@@ -47,7 +47,7 @@
     margin-bottom: 0;
     align-items: center;
 
-    > .column {
+    > nn-column {
       max-width: unset;
     }
   }
