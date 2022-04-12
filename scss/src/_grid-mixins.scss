@@ -15,9 +15,9 @@
       $final-size: unquote("calc(#{math.div($numerator,$denominator)*100}% - #{$computed-subtraction}px)");
       flex-basis: $final-size;
       @if ($vertical) {
-        max-height: $final-size;
+        height: max($final-size);
       } @else {
-        max-width: $final-size;
+        width: max($final-size);
       }
     }
   } @else {
@@ -28,9 +28,9 @@
       @if ($dimension == 0) {
         flex-basis: $final-size;
         @if ($vertical) {
-          max-height: $final-size;
+          height: max($final-size);
         } @else {
-          max-width: $final-size;
+          width: max($final-size);
         }
       } @else {
         @if (not $vertical) {
@@ -55,8 +55,6 @@
       margin-inline: 0 !important;
       > nn-column {
         width: 100% !important;
-        max-width: unset !important;
-        min-width: unset !important;
         padding-inline: 0 !important;
       }
     }
@@ -152,7 +150,7 @@
     $final-size: #{$size * 5};
     &.w#{$final-size} {
       flex-basis: #{$final-size}px;
-      max-width: #{$final-size}px;
+      width: max(#{$final-size}px);
     }
 
     &.h#{$final-size} {

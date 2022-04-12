@@ -498,8 +498,8 @@
   text-transform: uppercase;
   transition: all 200ms ease;
   border-radius: 0;
-  min-height: 35px;
-  min-width: 35px;
+  height: 35px;
+  width: 35px;
   border: 0;
   border-color: transparent;
   background-color: #888;
