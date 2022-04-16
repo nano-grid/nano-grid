@@ -6,7 +6,7 @@ nn-container {
   margin: auto;
   padding: 1rem;
   width: 100%;
-  @each $size in (400, 900, 1450) {
+  @each $size in (400, 500, 600, 900, 1450) {
     &.#{$nano}sz#{$size} {
       max-width: #{$size}px;
       flex-basis: #{$size}px;

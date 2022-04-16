@@ -1,5 +1,5 @@
 import { prepairClasses, validateProp } from "../modules/helpers";
-import { validateSpacing } from "nano-grid/modules/columns-manager";
+import { validateSpacing } from "../modules/columns-manager";
 import { breakpointsType } from "../modules/types";
 
 const nano = 'nn-';

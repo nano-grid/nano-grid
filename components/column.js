@@ -1,5 +1,5 @@
 import { cleanNano } from "../modules/helpers";
-import { validateSize } from "nano-grid/modules/columns-manager";
+import { validateSize } from "../modules/columns-manager";
 
 export default class Column extends HTMLElement {
   constructor() {
