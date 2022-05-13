@@ -1,5 +1,5 @@
 import { cleanNano } from "../modules/helpers";
-import { validateSize } from "../modules/columns-manager";
+import { getVals } from "../modules/columns-manager";
 
 export default class Column extends HTMLElement {
   constructor() {
@@ -8,11 +8,11 @@ export default class Column extends HTMLElement {
 
   updateSize() {
     const size = this.getAttribute('size');
-    const computedClasses = size ? validateSize(size).class : '';
+    const computedClasses = size ? getVals(size).class : '';
     const classes = cleanNano([
       this.className,
     ], computedClasses);
-    const styles = size ? validateSize(size).style.trim() : '';
+    const styles = size ? getVals(size).style : '';
 
     this.className = classes;
     this.style = this.initialStyles + styles;
