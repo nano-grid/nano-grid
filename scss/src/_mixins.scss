@@ -1,4 +1,5 @@
 @use "sass:math";
+$max-size: math.div(300, 5);
 
 @mixin responsive-grid($tag, $size) {
   &.#{$nano}#{$tag} {
@@ -47,8 +48,6 @@
   @include set-spacing(4);
 }
 
-
-
 @mixin width-abs() {
   &.#{$nano}w-m0,
   &.#{$nano}w-p0 {
@@ -62,8 +61,8 @@
     $debug: debug("#{$class-w} :: #{$size}");
 
     &.#{$class-w} {
-      flex-basis: $size;
-      max-width: $size;
+      flex-basis: unquote($size);
+      max-width: unquote($size);
     }
   }
 }
@@ -74,8 +73,8 @@
     $size: "#{math.div(nth($value, 1),nth($value, 2)) * 100}%";
 
     &.#{$class} {
-      flex-basis: $size;
-      max-width: $size;
+      flex-basis: unquote($size);
+      max-width: unquote($size);
     }
   }
 }
@@ -87,8 +86,8 @@
       $size: "calc(#{math.div(nth($value, 1),nth($value, 2)) * 100}% - #{$subtraction * 5}px)";
 
       &.#{$class} {
-        flex-basis: $size;
-        max-width: $size;
+        flex-basis: unquote($size);
+        max-width: unquote($size);
       }
     }
   }
