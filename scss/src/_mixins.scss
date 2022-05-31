@@ -1,0 +1,95 @@
+@use "sass:math";
+
+@mixin responsive-grid($tag, $size) {
+  &.#{$nano}#{$tag} {
+    @media only screen and (max-width: $size) {
+      display: block;
+      margin-inline: 0 !important;
+      > nn-column {
+        width: 100% !important;
+        max-width: unset !important;
+        padding-inline: 0 !important;
+      }
+    }
+  }
+}
+
+@mixin set-spacing($space) {
+  &.#{$nano}sp#{$space * 100} {
+    margin-inline: -#{$space}rem;
+
+    > nn-column {
+      padding-right: #{$space}rem;
+
+      &:first-child {
+        padding-left: #{$space}rem;
+      }
+    }
+  }
+}
+
+%spacing {
+  @include set-spacing(0.25);
+  @include set-spacing(0.5);
+  @include set-spacing(0.75);
+  @include set-spacing(1);
+  @include set-spacing(1.25);
+  @include set-spacing(1.5);
+  @include set-spacing(1.75);
+  @include set-spacing(2);
+  @include set-spacing(2.25);
+  @include set-spacing(2.5);
+  @include set-spacing(2.75);
+  @include set-spacing(3);
+  @include set-spacing(3.25);
+  @include set-spacing(3.5);
+  @include set-spacing(3.75);
+  @include set-spacing(4);
+}
+
+
+
+@mixin width-abs() {
+  &.#{$nano}w-m0,
+  &.#{$nano}w-p0 {
+    flex-basis: 0;
+    max-width: 0;
+  }
+
+  @for $counter from 1 through $max-size {
+    $class-w: "#{$nano}w-p#{$counter * 5}";
+    $size: "#{$counter * 5}px";
+    $debug: debug("#{$class-w} :: #{$size}");
+
+    &.#{$class-w} {
+      flex-basis: $size;
+      max-width: $size;
+    }
+  }
+}
+
+@mixin width-percents() {
+  @each $value in $css-width {
+    $class: "#{$nano}w-#{fraction-2-class($value)}";
+    $size: "#{math.div(nth($value, 1),nth($value, 2)) * 100}%";
+
+    &.#{$class} {
+      flex-basis: $size;
+      max-width: $size;
+    }
+  }
+}
+
+@mixin width-percents-calc() {
+  @for $subtraction from 1 through $max-size {
+    @each $value in $css-width {
+      $class: "#{$nano}w-#{fraction-2-class($value)}-m#{$subtraction * 5}";
+      $size: "calc(#{math.div(nth($value, 1),nth($value, 2)) * 100}% - #{$subtraction * 5}px)";
+
+      &.#{$class} {
+        flex-basis: $size;
+        max-width: $size;
+      }
+    }
+  }
+}

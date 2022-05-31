@@ -4,7 +4,5 @@
 @import "src/grid";
 
 nn-row > nn-column {
-  @include width-abs;
 	@include width-percents;
-	@include width-percents-calc;
 }

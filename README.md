@@ -24,6 +24,16 @@
 | css -> tooltip.css             | 51                 | 1.0 kB       |
 | modules -> column-manager.js   | 239                | 5.4 kB       |
 
+### v3.0
+
+| Name                           | Number of Lines    | Size         |
+| ---                            | ---                | ---          |
+| css -> nano-grid.css           | 10136              | 290.2 kB     |
+| css -> nano-grid-simple.css    | 532                | 13.8 kB      |
+| modules -> column-manager.js   | 227                | 5.8 kB       |
+| components -> column.js        | 42                 | 993 B        |
+| components -> row.js           | 46                 | 1.4 kB       |
+
 ## Publish new version
 ```bash
 yarn publish

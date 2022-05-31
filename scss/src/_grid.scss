@@ -1,12 +1,8 @@
-@import "grid-mixins";
-
 nn-row {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 0.5rem;
   align-items: flex-start;
-
-  @extend %grid;
 
   @include responsive-grid("sm", 576px);
   @include responsive-grid("md", 768px);
