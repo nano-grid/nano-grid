@@ -7,8 +7,9 @@ $max-size: math.div(300, 5);
       display: block;
       margin-inline: 0 !important;
       > nn-column {
+        display: block;
         width: 100% !important;
-        max-width: unset !important;
+        max-width: 100% !important;
         padding-inline: 0 !important;
       }
     }

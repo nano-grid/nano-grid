@@ -224,4 +224,4 @@ const validateSpacing = (size) => {
   return '';
 }
 
-export { cssWidth as cssWidthClasses, getVals, validateSpacing };
+export { cssWidth as cssWidthClasses, cssWClass, getVals, validateSpacing };
