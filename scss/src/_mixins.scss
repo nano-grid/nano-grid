@@ -6,6 +6,7 @@ $max-size: math.div(300, 5);
     @media only screen and (max-width: $size) {
       display: block;
       margin-inline: 0 !important;
+      > .nn-column,
       > nn-column {
         display: block;
         width: 100% !important;
@@ -20,6 +21,7 @@ $max-size: math.div(300, 5);
   &.#{$nano}sp#{$space * 100} {
     margin-inline: -#{$space}rem;
 
+    > .nn-column,
     > nn-column {
       padding-right: #{$space}rem;
 

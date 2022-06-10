@@ -3,6 +3,10 @@
 @import "src/mixins";
 @import "src/grid";
 
-nn-row > nn-column {
-	@include width-percents;
+.nn-row,
+nn-row {
+	> .nn-column,
+	> nn-column {
+		@include width-percents;
+	}
 }

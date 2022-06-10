@@ -1,7 +1,8 @@
 &.nano-group {
   align-items: stretch;
 
-  > nn-column{
+  > .nn-column,
+  > nn-column {
     &:first-child,
     &:last-child {
       > button {
@@ -10,6 +11,7 @@
     }
   }
 
+  > .nn-column,
   > nn-column {
     > .input-label,
     > label > p {
@@ -48,6 +50,7 @@
       border-radius: 0;
       margin-bottom: 0;
 
+      > .nn-column,
       > nn-column {
         > input,
         > label,
@@ -81,6 +84,7 @@
       }
 
       .nano-group {
+        > .nn-column,
         > nn-column {
           &:first-child {
             > input,
@@ -114,6 +118,7 @@
       }
 
       .nano-group {
+        > .nn-column,
         > nn-column {
           &:last-child {
             > input,
@@ -137,6 +142,7 @@
     border-radius: 22px;
     border: 1px solid gcolor("silver");
 
+    > .nn-column,
     > nn-column {
       > input,
       > label,

@@ -1,3 +1,4 @@
+.nn-row,
 nn-row {
   display: flex;
   flex-wrap: wrap;
@@ -15,6 +16,7 @@ nn-row {
   &.component-row {
     align-items: center;
 
+    > .nn-column,
     > nn-column {
       &:not(:last-child) {
         padding-right: 0.5rem;
@@ -41,6 +43,7 @@ nn-row {
     margin-bottom: 0;
     align-items: center;
 
+    > .nn-column,
     > nn-column {
       width: unset;
     }
@@ -50,6 +53,7 @@ nn-row {
     align-items: stretch;
     justify-content: center;
 
+    > .nn-column,
     > nn-column {
       flex: 1 1 30%;
       padding: 5px;
