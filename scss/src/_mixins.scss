@@ -2,12 +2,11 @@
 $max-size: math.div(300, 5);
 
 @mixin responsive-grid($tag, $size) {
-  &.#{$nano}#{$tag} {
+  &.#{$nano}break-#{$tag} {
     @media only screen and (max-width: $size) {
       display: block;
       margin-inline: 0 !important;
-      > .nn-column,
-      > nn-column {
+      #{wc("column", ">")} {
         display: block;
         width: 100% !important;
         max-width: 100% !important;
@@ -21,8 +20,7 @@ $max-size: math.div(300, 5);
   &.#{$nano}sp#{$space * 100} {
     margin-inline: -#{$space}rem;
 
-    > .nn-column,
-    > nn-column {
+    #{wc("column", ">")} {
       padding-right: #{$space}rem;
 
       &:first-child {

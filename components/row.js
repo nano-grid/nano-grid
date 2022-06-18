@@ -1,18 +1,17 @@
-import { prepairClasses, validateProp } from "../modules/helpers";
+import { prepairClasses, validateProp, nano, checkAttr } from "../modules/helpers";
 import { validateSpacing } from "../modules/columns-manager";
 import { breakpointsType } from "../modules/types";
 
-const nano = 'nn-';
 export default class Row extends HTMLElement {
   constructor() {
     super();
   }
 
   connectedCallback() {
-    const group = this.hasAttribute('group') && this.getAttribute('group') !== 'false' ? 'nano-group' : '';
-    const integrated = this.hasAttribute('integrated') && this.getAttribute('integrated') !== 'false' ? 'integrated' : '';
-    const vertical = this.hasAttribute('vertical') && this.getAttribute('vertical') !== 'false' ? 'vertical' : '';
-    const grid = this.hasAttribute('grid') && this.getAttribute('grid') !== 'false' ? 'grid' : '';
+    const group = checkAttr('group', this);
+    const component = checkAttr('component', this);
+    const vertical = checkAttr('vertical', this);
+    const grid = checkAttr('grid', this);
     let role;
     if (this.getAttribute('table-element')) {
       role = 'row';
@@ -22,8 +21,8 @@ export default class Row extends HTMLElement {
     }
 
     let breakpoint = validateProp('nn-row', 'breakpoint', this.getAttribute('breakpoint'), breakpointsType, '');
-    if(breakpoint !== "") {
-      breakpoint = nano + breakpoint;
+    if (breakpoint === 'nn-') {
+      breakpoint = undefined;
     }
 
     const spacing = this.hasAttribute('spacing') ? validateSpacing(this.getAttribute('spacing')) : '';
@@ -32,8 +31,8 @@ export default class Row extends HTMLElement {
       group,
       breakpoint,
       spacing,
-      integrated,
       vertical,
+      component,
       grid,
       this.className || '',
     ]);

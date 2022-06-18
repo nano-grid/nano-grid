@@ -1,162 +1,49 @@
-&.nano-group {
+&.#{$nano}group {
   align-items: stretch;
 
-  > .nn-column,
-  > nn-column {
-    &:first-child,
-    &:last-child {
-      > button {
-        padding-inline: 0;
-      }
-    }
-  }
-
-  > .nn-column,
-  > nn-column {
-    > .input-label,
-    > label > p {
-      height: 100% !important;
+  #{wc("column", ">")} {
+    > .#{$nano}label {
       align-items: center !important;
       display: flex !important;
       text-align: center;
       justify-content: center;
     }
 
-    > input,
-    > label,
-    > p,
-    > span,
-    > select,
-    > button,
-    > a,
-    > .input-label {
+    > .#{$nano}input {
+      display: block;
+    }
+
+    > .#{$nano}range,
+    > .#{$nano}input,
+    > .#{$nano}label {
       padding: 6px 15px;
       height: 100%;
       min-height: 100%;
-      border-width: 1px 1px 1px 0;
-      border-style: solid;
       margin: 0;
+      border: 0;
       border-radius: 0;
       width: 100%;
-      display: block;
       &,
       &:hover {
         box-shadow: 0 0 0 transparent !important;
       }
     }
 
-    // components row inside a component row
-    .nano-group {
-      border-radius: 0;
-      margin-bottom: 0;
-
-      > .nn-column,
-      > nn-column {
-        > input,
-        > label,
-        > p,
-        > span,
-        > button,
-        > select,
-        > a,
-        > .input-label {
-          border-top-right-radius: 0;
-          border-bottom-right-radius: 0;
-          border-top-left-radius: 0;
-          border-bottom-left-radius: 0;
-        }
-      }
-    }
-
     &:first-child {
-      > input,
-      > label,
-      > p,
-      > span,
-      > button,
-      > select,
-      > a,
-      > .input-label,
-      .nano-group {
-        border-left-width: 1px;
+      > .#{$nano}range,
+      > .#{$nano}input,
+      > .#{$nano}label {
         border-top-left-radius: 22px;
         border-bottom-left-radius: 22px;
-      }
-
-      .nano-group {
-        > .nn-column,
-        > nn-column {
-          &:first-child {
-            > input,
-            > label,
-            > p,
-            > span,
-            > button,
-            > select,
-            > a,
-            > .input-label {
-              border-top-left-radius: 22px;
-              border-bottom-left-radius: 22px;
-            }
-          }
-        }
       }
     }
 
     &:last-child {
-      > input,
-      > label,
-      > p,
-      > span,
-      > button,
-      > select,
-      > a,
-      > .input-label,
-      .nano-group {
+      > .#{$nano}range,
+      > .#{$nano}input,
+      > .#{$nano}label {
         border-top-right-radius: 22px;
         border-bottom-right-radius: 22px;
-      }
-
-      .nano-group {
-        > .nn-column,
-        > nn-column {
-          &:last-child {
-            > input,
-            > label,
-            > p,
-            > span,
-            > button,
-            > select,
-            > a,
-            > .input-label {
-              border-top-right-radius: 22px;
-              border-bottom-right-radius: 22px;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  &.integrated {
-    border-radius: 22px;
-    border: 1px solid gcolor("silver");
-
-    > .nn-column,
-    > nn-column {
-      > input,
-      > label,
-      > p,
-      > span,
-      > button,
-      > select,
-      > a,
-      > .input-label {
-        border: 0;
-      }
-
-      > input {
-        padding-inline: 0;
       }
     }
   }

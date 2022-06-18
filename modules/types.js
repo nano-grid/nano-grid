@@ -1,8 +1,8 @@
 export const breakpointsType = [
-  "",
-  "sm",
-  "md",
-  "lg",
-  "xl",
-  "xll",
+  "nn-",
+  "nn-sm",
+  "nn-md",
+  "nn-lg",
+  "nn-xl",
+  "nn-xll",
 ];
