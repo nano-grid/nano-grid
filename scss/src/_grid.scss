@@ -12,28 +12,6 @@
 
   @extend %spacing;
 
-  &.#{$nano}component {
-    align-items: center;
-
-    #{wc("column", ">")} {
-      &:not(:last-child) {
-        padding-right: 0.5rem;
-      }
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6,
-      p,
-      input,
-      select,
-      button {
-        margin-bottom: 0;
-      }
-    }
-  }
-
   &.#{$nano}vertical {
     flex-flow: column;
     flex-direction: column;

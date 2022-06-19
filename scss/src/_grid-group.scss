@@ -9,6 +9,7 @@
       justify-content: center;
     }
 
+    > .#{$nano}range,
     > .#{$nano}input {
       display: block;
     }
@@ -16,6 +17,13 @@
     > .#{$nano}range,
     > .#{$nano}input,
     > .#{$nano}label {
+      background: var(--nn-input-color-background);
+    }
+
+    > .#{$nano}range,
+    > .#{$nano}input,
+    > .#{$nano}label,
+    > .#{$nano}btn {
       padding: 6px 15px;
       height: 100%;
       min-height: 100%;
@@ -23,13 +31,10 @@
       border: 0;
       border-radius: 0;
       width: 100%;
-      &,
-      &:hover {
-        box-shadow: 0 0 0 transparent !important;
-      }
     }
 
     &:first-child {
+      > .#{$nano}btn,
       > .#{$nano}range,
       > .#{$nano}input,
       > .#{$nano}label {
@@ -39,6 +44,7 @@
     }
 
     &:last-child {
+      > .#{$nano}btn,
       > .#{$nano}range,
       > .#{$nano}input,
       > .#{$nano}label {

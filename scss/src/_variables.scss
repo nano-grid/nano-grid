@@ -1,4 +1,4 @@
-$nano: 'nn-';
+$nano: "nn-";
 $css-width: (
   (1, 20),
   (1, 19),
@@ -57,3 +57,20 @@ $global-colors: (
   "desert": #a0613d,
   "charcoal": #444444,
 );
+
+.nn-light {
+  --nn-color-foreground: hsl(240deg 11% 17%);
+  --nn-input-color-background: hsl(0deg 0% 95%);
+  --nn-input-color-background-hover: hsl(0deg 0% 90%);
+  --nn-input-color-shadow: hsl(0deg 0% 80%);
+  --nn-input-color-shadow-hover: hsl(0deg 0% 70%);
+  --color-scroll-area-track-color: hsl(0deg 0% 84%);
+}
+.nn-dark {
+  --nn-color-foreground: hsl(0deg 0% 95%);
+  --nn-input-color-background: hsl(240deg 11% 17%);
+  --nn-input-color-background-hover: hsl(240deg 11% 25%);
+  --nn-input-color-shadow: hsl(240deg 11% 10%);
+  --nn-input-color-shadow-hover: hsl(240deg 11% 20%);
+  --color-scroll-area-track-color: hsl(0deg 0% 14%);
+}

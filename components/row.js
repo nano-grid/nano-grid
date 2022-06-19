@@ -9,7 +9,6 @@ export default class Row extends HTMLElement {
 
   connectedCallback() {
     const group = checkAttr('group', this);
-    const component = checkAttr('component', this);
     const vertical = checkAttr('vertical', this);
     const grid = checkAttr('grid', this);
     let role;
@@ -32,7 +31,6 @@ export default class Row extends HTMLElement {
       breakpoint,
       spacing,
       vertical,
-      component,
       grid,
       this.className || '',
     ]);
