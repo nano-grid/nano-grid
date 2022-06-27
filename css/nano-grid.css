@@ -1,3 +1,21 @@
+.nn-light {
+  --nn-color-foreground: hsl(240deg 11% 17%);
+  --nn-input-color-background: hsl(0deg 0% 95%);
+  --nn-input-color-background-hover: hsl(0deg 0% 90%);
+  --nn-input-color-shadow: hsl(0deg 0% 80%);
+  --nn-input-color-shadow-hover: hsl(0deg 0% 70%);
+  --color-scroll-area-track-color: hsl(0deg 0% 84%);
+}
+
+.nn-dark {
+  --nn-color-foreground: hsl(0deg 0% 95%);
+  --nn-input-color-background: hsl(240deg 11% 17%);
+  --nn-input-color-background-hover: hsl(240deg 11% 25%);
+  --nn-input-color-shadow: hsl(240deg 11% 10%);
+  --nn-input-color-shadow-hover: hsl(240deg 11% 20%);
+  --color-scroll-area-track-color: hsl(0deg 0% 14%);
+}
+
 nn-row.nn-sp25, .nn-sp25.nn-row {
   margin-inline: -0.25rem;
 }
@@ -209,51 +227,6 @@ nn-row, .nn-row {
     padding-inline: 0 !important;
   }
 }
-nn-row.nn-component, .nn-row.nn-component {
-  align-items: center;
-}
-nn-row.nn-component > nn-column:not(:last-child), nn-row.nn-component > .nn-column:not(:last-child), .nn-row.nn-component > nn-column:not(:last-child), .nn-row.nn-component > .nn-column:not(:last-child) {
-  padding-right: 0.5rem;
-}
-nn-row.nn-component > nn-column h1,
-nn-row.nn-component > nn-column h2,
-nn-row.nn-component > nn-column h3,
-nn-row.nn-component > nn-column h4,
-nn-row.nn-component > nn-column h5,
-nn-row.nn-component > nn-column h6,
-nn-row.nn-component > nn-column p,
-nn-row.nn-component > nn-column input,
-nn-row.nn-component > nn-column select,
-nn-row.nn-component > nn-column button, nn-row.nn-component > .nn-column h1,
-nn-row.nn-component > .nn-column h2,
-nn-row.nn-component > .nn-column h3,
-nn-row.nn-component > .nn-column h4,
-nn-row.nn-component > .nn-column h5,
-nn-row.nn-component > .nn-column h6,
-nn-row.nn-component > .nn-column p,
-nn-row.nn-component > .nn-column input,
-nn-row.nn-component > .nn-column select,
-nn-row.nn-component > .nn-column button, .nn-row.nn-component > nn-column h1,
-.nn-row.nn-component > nn-column h2,
-.nn-row.nn-component > nn-column h3,
-.nn-row.nn-component > nn-column h4,
-.nn-row.nn-component > nn-column h5,
-.nn-row.nn-component > nn-column h6,
-.nn-row.nn-component > nn-column p,
-.nn-row.nn-component > nn-column input,
-.nn-row.nn-component > nn-column select,
-.nn-row.nn-component > nn-column button, .nn-row.nn-component > .nn-column h1,
-.nn-row.nn-component > .nn-column h2,
-.nn-row.nn-component > .nn-column h3,
-.nn-row.nn-component > .nn-column h4,
-.nn-row.nn-component > .nn-column h5,
-.nn-row.nn-component > .nn-column h6,
-.nn-row.nn-component > .nn-column p,
-.nn-row.nn-component > .nn-column input,
-.nn-row.nn-component > .nn-column select,
-.nn-row.nn-component > .nn-column button {
-  margin-bottom: 0;
-}
 nn-row.nn-vertical, .nn-row.nn-vertical {
   flex-flow: column;
   flex-direction: column;
@@ -284,7 +257,11 @@ nn-row.nn-group > nn-column > .nn-label, nn-row.nn-group > .nn-column > .nn-labe
   text-align: center;
   justify-content: center;
 }
-nn-row.nn-group > nn-column > .nn-input, nn-row.nn-group > .nn-column > .nn-input, .nn-row.nn-group > nn-column > .nn-input, .nn-row.nn-group > .nn-column > .nn-input {
+nn-row.nn-group > nn-column > .nn-range,
+nn-row.nn-group > nn-column > .nn-input, nn-row.nn-group > .nn-column > .nn-range,
+nn-row.nn-group > .nn-column > .nn-input, .nn-row.nn-group > nn-column > .nn-range,
+.nn-row.nn-group > nn-column > .nn-input, .nn-row.nn-group > .nn-column > .nn-range,
+.nn-row.nn-group > .nn-column > .nn-input {
   display: block;
 }
 nn-row.nn-group > nn-column > .nn-range,
@@ -296,6 +273,21 @@ nn-row.nn-group > .nn-column > .nn-label, .nn-row.nn-group > nn-column > .nn-ran
 .nn-row.nn-group > nn-column > .nn-label, .nn-row.nn-group > .nn-column > .nn-range,
 .nn-row.nn-group > .nn-column > .nn-input,
 .nn-row.nn-group > .nn-column > .nn-label {
+  background: var(--nn-input-color-background);
+}
+nn-row.nn-group > nn-column > .nn-range,
+nn-row.nn-group > nn-column > .nn-input,
+nn-row.nn-group > nn-column > .nn-label,
+nn-row.nn-group > nn-column > .nn-btn, nn-row.nn-group > .nn-column > .nn-range,
+nn-row.nn-group > .nn-column > .nn-input,
+nn-row.nn-group > .nn-column > .nn-label,
+nn-row.nn-group > .nn-column > .nn-btn, .nn-row.nn-group > nn-column > .nn-range,
+.nn-row.nn-group > nn-column > .nn-input,
+.nn-row.nn-group > nn-column > .nn-label,
+.nn-row.nn-group > nn-column > .nn-btn, .nn-row.nn-group > .nn-column > .nn-range,
+.nn-row.nn-group > .nn-column > .nn-input,
+.nn-row.nn-group > .nn-column > .nn-label,
+.nn-row.nn-group > .nn-column > .nn-btn {
   padding: 6px 15px;
   height: 100%;
   min-height: 100%;
@@ -304,44 +296,33 @@ nn-row.nn-group > .nn-column > .nn-label, .nn-row.nn-group > nn-column > .nn-ran
   border-radius: 0;
   width: 100%;
 }
-nn-row.nn-group > nn-column > .nn-range, nn-row.nn-group > nn-column > .nn-range:hover,
-nn-row.nn-group > nn-column > .nn-input,
-nn-row.nn-group > nn-column > .nn-input:hover,
-nn-row.nn-group > nn-column > .nn-label,
-nn-row.nn-group > nn-column > .nn-label:hover, nn-row.nn-group > .nn-column > .nn-range, nn-row.nn-group > .nn-column > .nn-range:hover,
-nn-row.nn-group > .nn-column > .nn-input,
-nn-row.nn-group > .nn-column > .nn-input:hover,
-nn-row.nn-group > .nn-column > .nn-label,
-nn-row.nn-group > .nn-column > .nn-label:hover, .nn-row.nn-group > nn-column > .nn-range, .nn-row.nn-group > nn-column > .nn-range:hover,
-.nn-row.nn-group > nn-column > .nn-input,
-.nn-row.nn-group > nn-column > .nn-input:hover,
-.nn-row.nn-group > nn-column > .nn-label,
-.nn-row.nn-group > nn-column > .nn-label:hover, .nn-row.nn-group > .nn-column > .nn-range, .nn-row.nn-group > .nn-column > .nn-range:hover,
-.nn-row.nn-group > .nn-column > .nn-input,
-.nn-row.nn-group > .nn-column > .nn-input:hover,
-.nn-row.nn-group > .nn-column > .nn-label,
-.nn-row.nn-group > .nn-column > .nn-label:hover {
-  box-shadow: 0 0 0 transparent !important;
-}
+nn-row.nn-group > nn-column:first-child > .nn-btn,
 nn-row.nn-group > nn-column:first-child > .nn-range,
 nn-row.nn-group > nn-column:first-child > .nn-input,
-nn-row.nn-group > nn-column:first-child > .nn-label, nn-row.nn-group > .nn-column:first-child > .nn-range,
+nn-row.nn-group > nn-column:first-child > .nn-label, nn-row.nn-group > .nn-column:first-child > .nn-btn,
+nn-row.nn-group > .nn-column:first-child > .nn-range,
 nn-row.nn-group > .nn-column:first-child > .nn-input,
-nn-row.nn-group > .nn-column:first-child > .nn-label, .nn-row.nn-group > nn-column:first-child > .nn-range,
+nn-row.nn-group > .nn-column:first-child > .nn-label, .nn-row.nn-group > nn-column:first-child > .nn-btn,
+.nn-row.nn-group > nn-column:first-child > .nn-range,
 .nn-row.nn-group > nn-column:first-child > .nn-input,
-.nn-row.nn-group > nn-column:first-child > .nn-label, .nn-row.nn-group > .nn-column:first-child > .nn-range,
+.nn-row.nn-group > nn-column:first-child > .nn-label, .nn-row.nn-group > .nn-column:first-child > .nn-btn,
+.nn-row.nn-group > .nn-column:first-child > .nn-range,
 .nn-row.nn-group > .nn-column:first-child > .nn-input,
 .nn-row.nn-group > .nn-column:first-child > .nn-label {
   border-top-left-radius: 22px;
   border-bottom-left-radius: 22px;
 }
+nn-row.nn-group > nn-column:last-child > .nn-btn,
 nn-row.nn-group > nn-column:last-child > .nn-range,
 nn-row.nn-group > nn-column:last-child > .nn-input,
-nn-row.nn-group > nn-column:last-child > .nn-label, nn-row.nn-group > .nn-column:last-child > .nn-range,
+nn-row.nn-group > nn-column:last-child > .nn-label, nn-row.nn-group > .nn-column:last-child > .nn-btn,
+nn-row.nn-group > .nn-column:last-child > .nn-range,
 nn-row.nn-group > .nn-column:last-child > .nn-input,
-nn-row.nn-group > .nn-column:last-child > .nn-label, .nn-row.nn-group > nn-column:last-child > .nn-range,
+nn-row.nn-group > .nn-column:last-child > .nn-label, .nn-row.nn-group > nn-column:last-child > .nn-btn,
+.nn-row.nn-group > nn-column:last-child > .nn-range,
 .nn-row.nn-group > nn-column:last-child > .nn-input,
-.nn-row.nn-group > nn-column:last-child > .nn-label, .nn-row.nn-group > .nn-column:last-child > .nn-range,
+.nn-row.nn-group > nn-column:last-child > .nn-label, .nn-row.nn-group > .nn-column:last-child > .nn-btn,
+.nn-row.nn-group > .nn-column:last-child > .nn-range,
 .nn-row.nn-group > .nn-column:last-child > .nn-input,
 .nn-row.nn-group > .nn-column:last-child > .nn-label {
   border-top-right-radius: 22px;
