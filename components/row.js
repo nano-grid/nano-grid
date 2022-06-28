@@ -41,15 +41,11 @@ export default class Row extends HTMLElement {
     }
   }
 
-  updateClasses() {
+  connectedCallback() {
     this.updateRole();
     this.toggleAttr('group', 'vertical', 'grid');
     this.updateSpacing();
     this.updateBreakPoint();
-  }
-
-  connectedCallback() {
-    this.updateClasses();
   }
 
   static get observedAttributes() {

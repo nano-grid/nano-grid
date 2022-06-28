@@ -47,6 +47,7 @@ const cssWClass = new Set([`${nano}w-m0`, `${nano}w-p0`]);
 cssWidth.forEach(fr => {
   cssWClass.add(`${nano}w-n${fr.split('/')[0]}d${fr.split('/')[1]}`);
 });
+
 for (let ab = 5; ab <= maxSize; ab += 5) {
   cssWClass.add(`${nano}w-p${ab}`);
   cssWidth.forEach(fr => {
@@ -59,7 +60,7 @@ const getFx = (fx) => {
   const width = trimFx.split(',')[0] || "";
   const height = trimFx.split(',')[1] || "";
   return { width, height };
-};
+}
 
 const reduceFraction = (val) => {
   const a = val.split('/');
@@ -80,7 +81,7 @@ const percent2Fraction = (val) => /(%)|(v(h|w))/.test(val) ? `${parseInt(val)}/1
 const removeRelValues = (val) => !/[%(\/)(vh)(wv)]/.test(val);
 const reduceVals = (a, b) => {
   return +a + +b
-};
+}
 
 const getSize = (val) => {
   if (val) {
@@ -140,6 +141,19 @@ const getSize = (val) => {
 const cssToStyle = (css) => {
   if (css) {
     const dimension = /h-/g.test(css) ? ['height'] : ['flex-basis', 'max-width'];
+    const calculation = cssToCalc(css);
+    if (calculation) {
+      return dimension.map(item => `${item}: ${calculation}`).join("; ");
+    } else {
+      return undefined
+    }
+  } else {
+    return undefined;
+  }
+}
+
+const cssToCalc = (css) => {
+  if (css) {
     const num = /n\d+/g.test(css) ? css.match(/n\d+/g)[0].substring(1) : undefined;
     const den = /d\d+/g.test(css) ? css.match(/d\d+/g)[0].substring(1) : undefined;
     const ab = /[mp]\d+/g.test(css) ? css.match(/[mp]\d+/g)[0].substring(1) : undefined;
@@ -152,7 +166,6 @@ const cssToStyle = (css) => {
     let hasAbsoluteValue = ab !== undefined;
     let calculation;
     let absValueIsNegative = /[m]\d+/g.test(css);
-    let style;
 
     let hasCalculation = hasFraction && hasAbsoluteValue;
     let isRelativeValue = hasFraction && !hasAbsoluteValue;
@@ -160,20 +173,17 @@ const cssToStyle = (css) => {
 
     if (hasCalculation) {
       calculation = `calc(${num && den ? (num / den) * 100 + unit : ""} ${operation} ${+ab !== 0 ? ab + "px" : ""})`;
-      style = dimension.map(item => `${item}: ${calculation}`).join("; ");
     } else if (isRelativeValue) {
       calculation = `${num && den ? (num / den) * 100 + unit : ""}`;
-      style = dimension.map(item => `${item}: ${calculation}`).join("; ");
     } else if (isAbsoluteValue) {
       calculation = `${ab + "px"}`;
-      style = dimension.map(item => `${item}: ${calculation}`).join("; ");
     }
 
-    return style;
+    return calculation;
   } else {
     return undefined;
   }
-};
+}
 
 const getVals = (formula) => {
   const fx = getFx(formula);
@@ -182,8 +192,11 @@ const getVals = (formula) => {
   const hasCSSWidthClass = cssWClass.has(width);
   const widthSelector = width;
   const heightSelector = height;
-  let widthStyle, heightStyle = cssToStyle(height);
+  const heightStyle = cssToStyle(height);
+  const widthCalc = cssToCalc(width);
+  const heightCalc = cssToCalc(height);
 
+  let widthStyle;
   if (!hasCSSWidthClass) {
     widthStyle = cssToStyle(width);
     width = undefined;
@@ -193,6 +206,8 @@ const getVals = (formula) => {
     width,
     widthStyle,
     heightStyle,
+    widthCalc,
+    heightCalc,
     class: [
       width,
     ].join(" ").trim(),
@@ -207,7 +222,7 @@ const getVals = (formula) => {
     hasCSSWidthClass,
     formula
   };
-};
+}
 
 const validateSpacing = (size) => {
   let value = +size;

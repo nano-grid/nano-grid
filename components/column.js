@@ -1,4 +1,3 @@
-import { cleanNano } from "../modules/helpers";
 import { getVals } from "../modules/columns-manager";
 
 export default class Column extends HTMLElement {
@@ -6,37 +5,70 @@ export default class Column extends HTMLElement {
     super();
   }
 
-  updateSize() {
-    const size = this.getAttribute('size');
-    const computedClasses = size ? getVals(size).class : '';
-    const classes = cleanNano([
-      this.className,
-    ], computedClasses);
-    const styles = size ? getVals(size).style : '';
+  removeSizeClass() {
+    [...this.classList].forEach(klass => {
+      const followsPatttern = /^nn-[w|h]-/g.test(klass);
+      if (followsPatttern) {
+        this.classList.remove(klass);
+      }
+    });
+  }
 
-    this.className = classes;
-    this.style = this.initialStyles + styles;
+  updateRole() {
+    if (this.hasAttribute('table-element') && this.getAttribute('table-element') !== 'false') {
+      this.setAttribute('role', 'cell');
+    } else {
+      this.removeAttribute('role');
+    }
+  }
+
+  updateSize() {
+    this.removeSizeClass();
+
+    const size = this.getAttribute('size');
+    let gVals, wCalc, hCalc, sizeAttr;
+    if (size) {
+      gVals = getVals(size);
+      sizeAttr = gVals.class;
+      wCalc = gVals.widthCalc;
+      hCalc = gVals.heightCalc;
+
+      this.style.maxWidth = "";
+      this.style.flexBasis = "";
+      this.style.height = "";
+
+      if (sizeAttr) {
+        this.classList.add(sizeAttr);
+      }
+
+      if (gVals.widthStyle) {
+        this.style.maxWidth = wCalc;
+        this.style.flexBasis = wCalc;
+      }
+
+      if (gVals.heightStyle) {
+        this.style.height = hCalc;
+      }
+    }
   }
 
   connectedCallback() {
-    this.initialStyles = this.getAttribute('style');
-
-    const role = this.hasAttribute('table-element') && this.getAttribute('table-element') !== 'false' ? 'cell' : undefined;
-
-    if (role) {
-      this.setAttribute('role', role);
-    }
-
+    this.updateRole()
     this.updateSize();
   }
 
   static get observedAttributes() {
-    return ['size'];
+    return ['size', 'table-element'];
   }
 
-  attributeChangedCallback(prop, oldVal, newVal) {
-    if (prop === 'size') {
-      this.updateSize();
+  attributeChangedCallback(prop) {
+    switch (prop) {
+      case 'table-element':
+        this.updateRole();
+        break;
+      case 'size':
+        this.updateSize();
+        break;
     }
   }
 }
