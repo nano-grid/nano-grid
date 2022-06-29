@@ -1,0 +1,316 @@
+.nn-btn.nn-ghost {
+  color: hsla(0deg, 0%, 100%, 0.4);
+}
+.nn-btn.nn-ghost.nn-silver {
+  color: #c0c0c0;
+}
+.nn-btn.nn-ghost.nn-silver:active, .nn-btn.nn-ghost.nn-silver.nn-active {
+  background-color: silver;
+  color: #8d8d8d;
+}
+.nn-btn.nn-ghost.nn-silver:hover {
+  color: #8d8d8d;
+}
+.nn-btn.nn-ghost.nn-royal-purple {
+  color: #64429c;
+}
+.nn-btn.nn-ghost.nn-royal-purple:active, .nn-btn.nn-ghost.nn-royal-purple.nn-active {
+  background-color: #64429c;
+  color: #362454;
+}
+.nn-btn.nn-ghost.nn-royal-purple:hover {
+  color: #362454;
+}
+.nn-btn.nn-ghost.nn-persian-red {
+  color: #d73333;
+}
+.nn-btn.nn-ghost.nn-persian-red:active, .nn-btn.nn-ghost.nn-persian-red.nn-active {
+  background-color: #d73333;
+  color: #891b1b;
+}
+.nn-btn.nn-ghost.nn-persian-red:hover {
+  color: #891b1b;
+}
+.nn-btn.nn-ghost.nn-denim {
+  color: #116ec4;
+}
+.nn-btn.nn-ghost.nn-denim:active, .nn-btn.nn-ghost.nn-denim.nn-active {
+  background-color: #116ec4;
+  color: #093966;
+}
+.nn-btn.nn-ghost.nn-denim:hover {
+  color: #093966;
+}
+.nn-btn.nn-ghost.nn-gold-tips {
+  color: #e6b031;
+}
+.nn-btn.nn-ghost.nn-gold-tips:active, .nn-btn.nn-ghost.nn-gold-tips.nn-active {
+  background-color: #e6b031;
+  color: #9e7413;
+}
+.nn-btn.nn-ghost.nn-gold-tips:hover {
+  color: #9e7413;
+}
+.nn-btn.nn-ghost.nn-shamrock {
+  color: #34ce7e;
+}
+.nn-btn.nn-ghost.nn-shamrock:active, .nn-btn.nn-ghost.nn-shamrock.nn-active {
+  background-color: #34ce7e;
+  color: #1e7e4c;
+}
+.nn-btn.nn-ghost.nn-shamrock:hover {
+  color: #1e7e4c;
+}
+.nn-btn.nn-ghost.nn-cod-grey {
+  color: #1b1b1b;
+}
+.nn-btn.nn-ghost.nn-cod-grey:active, .nn-btn.nn-ghost.nn-cod-grey.nn-active {
+  background-color: #1b1b1b;
+  color: black;
+}
+.nn-btn.nn-ghost.nn-cod-grey:hover {
+  color: black;
+}
+.nn-btn.nn-ghost.nn-gravel {
+  color: #6e6e6e;
+}
+.nn-btn.nn-ghost.nn-gravel:active, .nn-btn.nn-ghost.nn-gravel.nn-active {
+  background-color: #6e6e6e;
+  color: #3b3b3b;
+}
+.nn-btn.nn-ghost.nn-gravel:hover {
+  color: #3b3b3b;
+}
+.nn-btn.nn-ghost.nn-emerald {
+  color: #5acf57;
+}
+.nn-btn.nn-ghost.nn-emerald:active, .nn-btn.nn-ghost.nn-emerald.nn-active {
+  background-color: #5acf57;
+  color: #2d952b;
+}
+.nn-btn.nn-ghost.nn-emerald:hover {
+  color: #2d952b;
+}
+.nn-btn.nn-ghost.nn-burn-orange {
+  color: #f9722e;
+}
+.nn-btn.nn-ghost.nn-burn-orange:active, .nn-btn.nn-ghost.nn-burn-orange.nn-active {
+  background-color: #f9722e;
+  color: #bc4205;
+}
+.nn-btn.nn-ghost.nn-burn-orange:hover {
+  color: #bc4205;
+}
+.nn-btn.nn-ghost.nn-razzmatazz {
+  color: #da0040;
+}
+.nn-btn.nn-ghost.nn-razzmatazz:active, .nn-btn.nn-ghost.nn-razzmatazz.nn-active {
+  background-color: #da0040;
+  color: #740022;
+}
+.nn-btn.nn-ghost.nn-razzmatazz:hover {
+  color: #740022;
+}
+.nn-btn.nn-ghost.nn-desert {
+  color: #a0613d;
+}
+.nn-btn.nn-ghost.nn-desert:active, .nn-btn.nn-ghost.nn-desert.nn-active {
+  background-color: #a0613d;
+  color: #563421;
+}
+.nn-btn.nn-ghost.nn-desert:hover {
+  color: #563421;
+}
+.nn-btn.nn-ghost.nn-charcoal {
+  color: #444444;
+}
+.nn-btn.nn-ghost.nn-charcoal:active, .nn-btn.nn-ghost.nn-charcoal.nn-active {
+  background-color: #444444;
+  color: #111111;
+}
+.nn-btn.nn-ghost.nn-charcoal:hover {
+  color: #111111;
+}
+.nn-btn.nn-ghost.nn-golden-brown {
+  color: #9e6710;
+}
+.nn-btn.nn-ghost.nn-golden-brown:active, .nn-btn.nn-ghost.nn-golden-brown.nn-active {
+  background-color: #9e6710;
+  color: #412b07;
+}
+.nn-btn.nn-ghost.nn-golden-brown:hover {
+  color: #412b07;
+}
+.nn-btn.nn-ghost.nn-sepia {
+  color: #704d16;
+}
+.nn-btn.nn-ghost.nn-sepia:active, .nn-btn.nn-ghost.nn-sepia.nn-active {
+  background-color: #704d16;
+  color: #1b1205;
+}
+.nn-btn.nn-ghost.nn-sepia:hover {
+  color: #1b1205;
+}
+.nn-btn.nn-ghost.nn-alizarin {
+  color: #e72113;
+}
+.nn-btn.nn-ghost.nn-alizarin:active, .nn-btn.nn-ghost.nn-alizarin.nn-active {
+  background-color: #e72113;
+  color: #89140b;
+}
+.nn-btn.nn-ghost.nn-alizarin:hover {
+  color: #89140b;
+}
+.nn-btn.nn-ghost.nn-rust {
+  color: #c84d11;
+}
+.nn-btn.nn-ghost.nn-rust:active, .nn-btn.nn-ghost.nn-rust.nn-active {
+  background-color: #c84d11;
+  color: #6a2909;
+}
+.nn-btn.nn-ghost.nn-rust:hover {
+  color: #6a2909;
+}
+.nn-btn.nn-ghost.nn-blush {
+  color: #bf4a67;
+}
+.nn-btn.nn-ghost.nn-blush:active, .nn-btn.nn-ghost.nn-blush.nn-active {
+  background-color: #bf4a67;
+  color: #782b3e;
+}
+.nn-btn.nn-ghost.nn-blush:hover {
+  color: #782b3e;
+}
+.nn-btn.nn-ghost.nn-fire-brick {
+  color: #a5213a;
+}
+.nn-btn.nn-ghost.nn-fire-brick:active, .nn-btn.nn-ghost.nn-fire-brick.nn-active {
+  background-color: #a5213a;
+  color: #50101c;
+}
+.nn-btn.nn-ghost.nn-fire-brick:hover {
+  color: #50101c;
+}
+.nn-btn.nn-ghost.nn-sunglow {
+  color: #ffcf25;
+}
+.nn-btn.nn-ghost.nn-sunglow:active, .nn-btn.nn-ghost.nn-sunglow.nn-active {
+  background-color: #ffcf25;
+  color: #be9400;
+}
+.nn-btn.nn-ghost.nn-sunglow:hover {
+  color: #be9400;
+}
+.nn-btn.nn-ghost.nn-milk-punch {
+  color: #f4e7c4;
+}
+.nn-btn.nn-ghost.nn-milk-punch:active, .nn-btn.nn-ghost.nn-milk-punch.nn-active {
+  background-color: #f4e7c4;
+  color: #e4c46e;
+}
+.nn-btn.nn-ghost.nn-milk-punch:hover {
+  color: #e4c46e;
+}
+.nn-btn.nn-ghost.nn-yukon-gold {
+  color: #8c741d;
+}
+.nn-btn.nn-ghost.nn-yukon-gold:active, .nn-btn.nn-ghost.nn-yukon-gold.nn-active {
+  background-color: #8c741d;
+  color: #382e0b;
+}
+.nn-btn.nn-ghost.nn-yukon-gold:hover {
+  color: #382e0b;
+}
+.nn-btn.nn-ghost.nn-green-pea {
+  color: #20723b;
+}
+.nn-btn.nn-ghost.nn-green-pea:active, .nn-btn.nn-ghost.nn-green-pea.nn-active {
+  background-color: #20723b;
+  color: #0a2212;
+}
+.nn-btn.nn-ghost.nn-green-pea:hover {
+  color: #0a2212;
+}
+.nn-btn.nn-ghost.nn-laurel {
+  color: #328538;
+}
+.nn-btn.nn-ghost.nn-laurel:active, .nn-btn.nn-ghost.nn-laurel.nn-active {
+  background-color: #328538;
+  color: #163b19;
+}
+.nn-btn.nn-ghost.nn-laurel:hover {
+  color: #163b19;
+}
+.nn-btn.nn-ghost.nn-elf-green {
+  color: #198663;
+}
+.nn-btn.nn-ghost.nn-elf-green:active, .nn-btn.nn-ghost.nn-elf-green.nn-active {
+  background-color: #198663;
+  color: #093023;
+}
+.nn-btn.nn-ghost.nn-elf-green:hover {
+  color: #093023;
+}
+.nn-btn.nn-ghost.nn-lake {
+  color: #257d93;
+}
+.nn-btn.nn-ghost.nn-lake:active, .nn-btn.nn-ghost.nn-lake.nn-active {
+  background-color: #257d93;
+  color: #103842;
+}
+.nn-btn.nn-ghost.nn-lake:hover {
+  color: #103842;
+}
+.nn-btn.nn-ghost.nn-cobalt-blue {
+  color: #0b4eab;
+}
+.nn-btn.nn-ghost.nn-cobalt-blue:active, .nn-btn.nn-ghost.nn-cobalt-blue.nn-active {
+  background-color: #0b4eab;
+  color: #05224b;
+}
+.nn-btn.nn-ghost.nn-cobalt-blue:hover {
+  color: #05224b;
+}
+.nn-btn.nn-ghost.nn-mariner {
+  color: #3876cc;
+}
+.nn-btn.nn-ghost.nn-mariner:active, .nn-btn.nn-ghost.nn-mariner.nn-active {
+  background-color: #3876cc;
+  color: #20477e;
+}
+.nn-btn.nn-ghost.nn-mariner:hover {
+  color: #20477e;
+}
+.nn-btn.nn-ghost.nn-fuchsia {
+  color: #af08aa;
+}
+.nn-btn.nn-ghost.nn-fuchsia:active, .nn-btn.nn-ghost.nn-fuchsia.nn-active {
+  background-color: #af08aa;
+  color: #4d044b;
+}
+.nn-btn.nn-ghost.nn-fuchsia:hover {
+  color: #4d044b;
+}
+.nn-btn.nn-ghost.nn-blue-violet {
+  color: #994aed;
+}
+.nn-btn.nn-ghost.nn-blue-violet:active, .nn-btn.nn-ghost.nn-blue-violet.nn-active {
+  background-color: #994aed;
+  color: #6613be;
+}
+.nn-btn.nn-ghost.nn-blue-violet:hover {
+  color: #6613be;
+}
+.nn-btn.nn-ghost.nn-purple-heart {
+  color: #7d32b0;
+}
+.nn-btn.nn-ghost.nn-purple-heart:active, .nn-btn.nn-ghost.nn-purple-heart.nn-active {
+  background-color: #7d32b0;
+  color: #451b61;
+}
+.nn-btn.nn-ghost.nn-purple-heart:hover {
+  color: #451b61;
+}
+.nn-btn.nn-ghost:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}

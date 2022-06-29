@@ -1,0 +1,10 @@
+@import "src/variables";
+@import "src/functions";
+
+#{wc("crayon")}{
+  @each $name, $value in $colors {
+    &.#{$nano}#{$name} {
+      color: $value;
+    }
+  }
+}

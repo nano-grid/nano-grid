@@ -1,0 +1,31 @@
+@import "src/variables";
+@import "src/functions";
+
+.#{$nano}btn {
+  &.#{$nano}flat {
+    @each $name, $value in $colors {
+      $new-color: darken($value, 10%);
+
+      &.#{$nano}#{$name} {
+        box-shadow: 0px 3px 0 $new-color;
+        background-color: $value;
+
+        $lightness: lightness($value);
+        @if ($lightness > 50) {
+          color: darken($value, $lightness - 15%);
+        } @else {
+          color: #ffffff;
+        }
+        &:hover {
+          box-shadow: 0px 3px 0 darken($value, 20%);
+          background-color: $new-color;
+        }
+        &:active,
+        &.#{$nano}active {
+          background-color: lighten($value, 20%);
+          box-shadow: 0px 3px 0 lighten($value, 10%);
+        }
+      }
+    }
+  }
+}

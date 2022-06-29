@@ -1,0 +1,7 @@
+.nn-shade {
+  border-radius: 5px;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  background-color: var(--nn-shade-background);
+  border-width: 0;
+}

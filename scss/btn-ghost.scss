@@ -1,0 +1,26 @@
+@import "src/variables";
+@import "src/functions";
+
+.#{$nano}btn {
+  &.#{$nano}ghost {
+    color: hsla(0, 0%, 100%, 0.4);
+
+    @each $name, $value in $colors {
+      &.#{$nano}#{$name} {
+        color: $value;
+        &:active,
+        &.#{$nano}active {
+          background-color: lighten($value, 0%);
+          color: darken($value, 20%);
+        }
+        &:hover {
+          color: darken($value, 20%);
+        }
+      }
+    }
+
+    &:hover {
+      background-color: rgb(255 255 255 / 10%);
+    }
+  }
+}

@@ -1,0 +1,304 @@
+.nn-label {
+  font-size: 9pt;
+  color: var(--nn-color-foreground);
+  background-color: var(--nn-input-color-background);
+  box-shadow: 0px 3px 0 var(--nn-input-color-shadow);
+  border: 0 none transparent;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 1pt;
+  text-transform: uppercase;
+  transition: all 200ms ease;
+  border-radius: 0;
+  min-height: 35px;
+  width: max(35px, 100%);
+  padding: 0.5rem;
+}
+.nn-label:hover {
+  background: var(--nn-input-color-background-hover);
+  box-shadow: 0px 3px 0 var(--nn-input-color-shadow-hover);
+}
+.nn-label.nn-silver {
+  box-shadow: 0px 3px 0 #a7a7a7;
+  background-color: #c0c0c0;
+  color: #262626;
+}
+.nn-label.nn-silver:hover {
+  box-shadow: 0px 3px 0 #8d8d8d;
+  background-color: #a7a7a7;
+}
+.nn-label.nn-royal-purple {
+  box-shadow: 0px 3px 0 #4d3378;
+  background-color: #64429c;
+  color: #ffffff;
+}
+.nn-label.nn-royal-purple:hover {
+  box-shadow: 0px 3px 0 #362454;
+  background-color: #4d3378;
+}
+.nn-label.nn-persian-red {
+  box-shadow: 0px 3px 0 #b42323;
+  background-color: #d73333;
+  color: #400d0d;
+}
+.nn-label.nn-persian-red:hover {
+  box-shadow: 0px 3px 0 #891b1b;
+  background-color: #b42323;
+}
+.nn-label.nn-denim {
+  box-shadow: 0px 3px 0 #0d5495;
+  background-color: #116ec4;
+  color: #ffffff;
+}
+.nn-label.nn-denim:hover {
+  box-shadow: 0px 3px 0 #093966;
+  background-color: #0d5495;
+}
+.nn-label.nn-gold-tips {
+  box-shadow: 0px 3px 0 #cb9619;
+  background-color: #e6b031;
+  color: #443208;
+}
+.nn-label.nn-gold-tips:hover {
+  box-shadow: 0px 3px 0 #9e7413;
+  background-color: #cb9619;
+}
+.nn-label.nn-shamrock {
+  box-shadow: 0px 3px 0 #28a765;
+  background-color: #34ce7e;
+  color: #0f3e25;
+}
+.nn-label.nn-shamrock:hover {
+  box-shadow: 0px 3px 0 #1e7e4c;
+  background-color: #28a765;
+}
+.nn-label.nn-cod-grey {
+  box-shadow: 0px 3px 0 #020202;
+  background-color: #1b1b1b;
+  color: #ffffff;
+}
+.nn-label.nn-cod-grey:hover {
+  box-shadow: 0px 3px 0 black;
+  background-color: #020202;
+}
+.nn-label.nn-gravel {
+  box-shadow: 0px 3px 0 #555555;
+  background-color: #6e6e6e;
+  color: #ffffff;
+}
+.nn-label.nn-gravel:hover {
+  box-shadow: 0px 3px 0 #3b3b3b;
+  background-color: #555555;
+}
+.nn-label.nn-emerald {
+  box-shadow: 0px 3px 0 #39bd36;
+  background-color: #5acf57;
+  color: #123c11;
+}
+.nn-label.nn-emerald:hover {
+  box-shadow: 0px 3px 0 #2d952b;
+  background-color: #39bd36;
+}
+.nn-label.nn-burn-orange {
+  box-shadow: 0px 3px 0 #ed5407;
+  background-color: #f9722e;
+  color: #4a1a02;
+}
+.nn-label.nn-burn-orange:hover {
+  box-shadow: 0px 3px 0 #bc4205;
+  background-color: #ed5407;
+}
+.nn-label.nn-razzmatazz {
+  box-shadow: 0px 3px 0 #a70031;
+  background-color: #da0040;
+  color: #ffffff;
+}
+.nn-label.nn-razzmatazz:hover {
+  box-shadow: 0px 3px 0 #740022;
+  background-color: #a70031;
+}
+.nn-label.nn-desert {
+  box-shadow: 0px 3px 0 #7b4b2f;
+  background-color: #a0613d;
+  color: #ffffff;
+}
+.nn-label.nn-desert:hover {
+  box-shadow: 0px 3px 0 #563421;
+  background-color: #7b4b2f;
+}
+.nn-label.nn-charcoal {
+  box-shadow: 0px 3px 0 #2b2b2b;
+  background-color: #444444;
+  color: #ffffff;
+}
+.nn-label.nn-charcoal:hover {
+  box-shadow: 0px 3px 0 #111111;
+  background-color: #2b2b2b;
+}
+.nn-label.nn-golden-brown {
+  box-shadow: 0px 3px 0 #70490b;
+  background-color: #9e6710;
+  color: #ffffff;
+}
+.nn-label.nn-golden-brown:hover {
+  box-shadow: 0px 3px 0 #412b07;
+  background-color: #70490b;
+}
+.nn-label.nn-sepia {
+  box-shadow: 0px 3px 0 #45300e;
+  background-color: #704d16;
+  color: #ffffff;
+}
+.nn-label.nn-sepia:hover {
+  box-shadow: 0px 3px 0 #1b1205;
+  background-color: #45300e;
+}
+.nn-label.nn-alizarin {
+  box-shadow: 0px 3px 0 #b81a0f;
+  background-color: #e72113;
+  color: #ffffff;
+}
+.nn-label.nn-alizarin:hover {
+  box-shadow: 0px 3px 0 #89140b;
+  background-color: #b81a0f;
+}
+.nn-label.nn-rust {
+  box-shadow: 0px 3px 0 #993b0d;
+  background-color: #c84d11;
+  color: #ffffff;
+}
+.nn-label.nn-rust:hover {
+  box-shadow: 0px 3px 0 #6a2909;
+  background-color: #993b0d;
+}
+.nn-label.nn-blush {
+  box-shadow: 0px 3px 0 #9e3851;
+  background-color: #bf4a67;
+  color: #39141d;
+}
+.nn-label.nn-blush:hover {
+  box-shadow: 0px 3px 0 #782b3e;
+  background-color: #9e3851;
+}
+.nn-label.nn-fire-brick {
+  box-shadow: 0px 3px 0 #7b192b;
+  background-color: #a5213a;
+  color: #ffffff;
+}
+.nn-label.nn-fire-brick:hover {
+  box-shadow: 0px 3px 0 #50101c;
+  background-color: #7b192b;
+}
+.nn-label.nn-sunglow {
+  box-shadow: 0px 3px 0 #f1bc00;
+  background-color: #ffcf25;
+  color: #4d3c00;
+}
+.nn-label.nn-sunglow:hover {
+  box-shadow: 0px 3px 0 #be9400;
+  background-color: #f1bc00;
+}
+.nn-label.nn-milk-punch {
+  box-shadow: 0px 3px 0 #ecd699;
+  background-color: #f4e7c4;
+  color: #40320c;
+}
+.nn-label.nn-milk-punch:hover {
+  box-shadow: 0px 3px 0 #e4c46e;
+  background-color: #ecd699;
+}
+.nn-label.nn-yukon-gold {
+  box-shadow: 0px 3px 0 #625114;
+  background-color: #8c741d;
+  color: #ffffff;
+}
+.nn-label.nn-yukon-gold:hover {
+  box-shadow: 0px 3px 0 #382e0b;
+  background-color: #625114;
+}
+.nn-label.nn-green-pea {
+  box-shadow: 0px 3px 0 #154a26;
+  background-color: #20723b;
+  color: #ffffff;
+}
+.nn-label.nn-green-pea:hover {
+  box-shadow: 0px 3px 0 #0a2212;
+  background-color: #154a26;
+}
+.nn-label.nn-laurel {
+  box-shadow: 0px 3px 0 #246028;
+  background-color: #328538;
+  color: #ffffff;
+}
+.nn-label.nn-laurel:hover {
+  box-shadow: 0px 3px 0 #163b19;
+  background-color: #246028;
+}
+.nn-label.nn-elf-green {
+  box-shadow: 0px 3px 0 #115b43;
+  background-color: #198663;
+  color: #ffffff;
+}
+.nn-label.nn-elf-green:hover {
+  box-shadow: 0px 3px 0 #093023;
+  background-color: #115b43;
+}
+.nn-label.nn-lake {
+  box-shadow: 0px 3px 0 #1b5a6a;
+  background-color: #257d93;
+  color: #ffffff;
+}
+.nn-label.nn-lake:hover {
+  box-shadow: 0px 3px 0 #103842;
+  background-color: #1b5a6a;
+}
+.nn-label.nn-cobalt-blue {
+  box-shadow: 0px 3px 0 #08387b;
+  background-color: #0b4eab;
+  color: #ffffff;
+}
+.nn-label.nn-cobalt-blue:hover {
+  box-shadow: 0px 3px 0 #05224b;
+  background-color: #08387b;
+}
+.nn-label.nn-mariner {
+  box-shadow: 0px 3px 0 #2b5ea6;
+  background-color: #3876cc;
+  color: #10233d;
+}
+.nn-label.nn-mariner:hover {
+  box-shadow: 0px 3px 0 #20477e;
+  background-color: #2b5ea6;
+}
+.nn-label.nn-fuchsia {
+  box-shadow: 0px 3px 0 #7e067b;
+  background-color: #af08aa;
+  color: #ffffff;
+}
+.nn-label.nn-fuchsia:hover {
+  box-shadow: 0px 3px 0 #4d044b;
+  background-color: #7e067b;
+}
+.nn-label.nn-blue-violet {
+  box-shadow: 0px 3px 0 #7f1ce8;
+  background-color: #994aed;
+  color: #250746;
+}
+.nn-label.nn-blue-violet:hover {
+  box-shadow: 0px 3px 0 #6613be;
+  background-color: #7f1ce8;
+}
+.nn-label.nn-purple-heart {
+  box-shadow: 0px 3px 0 #612788;
+  background-color: #7d32b0;
+  color: #ffffff;
+}
+.nn-label.nn-purple-heart:hover {
+  box-shadow: 0px 3px 0 #451b61;
+  background-color: #612788;
+}

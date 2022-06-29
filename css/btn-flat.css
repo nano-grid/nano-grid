@@ -1,0 +1,403 @@
+.nn-btn.nn-flat.nn-silver {
+  box-shadow: 0px 3px 0 #a7a7a7;
+  background-color: #c0c0c0;
+  color: #262626;
+}
+.nn-btn.nn-flat.nn-silver:hover {
+  box-shadow: 0px 3px 0 #8d8d8d;
+  background-color: #a7a7a7;
+}
+.nn-btn.nn-flat.nn-silver:active, .nn-btn.nn-flat.nn-silver.nn-active {
+  background-color: #f3f3f3;
+  box-shadow: 0px 3px 0 #dadada;
+}
+.nn-btn.nn-flat.nn-royal-purple {
+  box-shadow: 0px 3px 0 #4d3378;
+  background-color: #64429c;
+  color: #ffffff;
+}
+.nn-btn.nn-flat.nn-royal-purple:hover {
+  box-shadow: 0px 3px 0 #362454;
+  background-color: #4d3378;
+}
+.nn-btn.nn-flat.nn-royal-purple:active, .nn-btn.nn-flat.nn-royal-purple.nn-active {
+  background-color: #997cc8;
+  box-shadow: 0px 3px 0 #7d58b9;
+}
+.nn-btn.nn-flat.nn-persian-red {
+  box-shadow: 0px 3px 0 #b42323;
+  background-color: #d73333;
+  color: #400d0d;
+}
+.nn-btn.nn-flat.nn-persian-red:hover {
+  box-shadow: 0px 3px 0 #891b1b;
+  background-color: #b42323;
+}
+.nn-btn.nn-flat.nn-persian-red:active, .nn-btn.nn-flat.nn-persian-red.nn-active {
+  background-color: #e88888;
+  box-shadow: 0px 3px 0 #df5e5e;
+}
+.nn-btn.nn-flat.nn-denim {
+  box-shadow: 0px 3px 0 #0d5495;
+  background-color: #116ec4;
+  color: #ffffff;
+}
+.nn-btn.nn-flat.nn-denim:hover {
+  box-shadow: 0px 3px 0 #093966;
+  background-color: #0d5495;
+}
+.nn-btn.nn-flat.nn-denim:active, .nn-btn.nn-flat.nn-denim.nn-active {
+  background-color: #4ca1ef;
+  box-shadow: 0px 3px 0 #1d88eb;
+}
+.nn-btn.nn-flat.nn-gold-tips {
+  box-shadow: 0px 3px 0 #cb9619;
+  background-color: #e6b031;
+  color: #443208;
+}
+.nn-btn.nn-flat.nn-gold-tips:hover {
+  box-shadow: 0px 3px 0 #9e7413;
+  background-color: #cb9619;
+}
+.nn-btn.nn-flat.nn-gold-tips:active, .nn-btn.nn-flat.nn-gold-tips.nn-active {
+  background-color: #f1d38c;
+  box-shadow: 0px 3px 0 #ecc15e;
+}
+.nn-btn.nn-flat.nn-shamrock {
+  box-shadow: 0px 3px 0 #28a765;
+  background-color: #34ce7e;
+  color: #0f3e25;
+}
+.nn-btn.nn-flat.nn-shamrock:hover {
+  box-shadow: 0px 3px 0 #1e7e4c;
+  background-color: #28a765;
+}
+.nn-btn.nn-flat.nn-shamrock:active, .nn-btn.nn-flat.nn-shamrock.nn-active {
+  background-color: #86e2b2;
+  box-shadow: 0px 3px 0 #5dd898;
+}
+.nn-btn.nn-flat.nn-cod-grey {
+  box-shadow: 0px 3px 0 #020202;
+  background-color: #1b1b1b;
+  color: #ffffff;
+}
+.nn-btn.nn-flat.nn-cod-grey:hover {
+  box-shadow: 0px 3px 0 black;
+  background-color: #020202;
+}
+.nn-btn.nn-flat.nn-cod-grey:active, .nn-btn.nn-flat.nn-cod-grey.nn-active {
+  background-color: #4e4e4e;
+  box-shadow: 0px 3px 0 #353535;
+}
+.nn-btn.nn-flat.nn-gravel {
+  box-shadow: 0px 3px 0 #555555;
+  background-color: #6e6e6e;
+  color: #ffffff;
+}
+.nn-btn.nn-flat.nn-gravel:hover {
+  box-shadow: 0px 3px 0 #3b3b3b;
+  background-color: #555555;
+}
+.nn-btn.nn-flat.nn-gravel:active, .nn-btn.nn-flat.nn-gravel.nn-active {
+  background-color: #a1a1a1;
+  box-shadow: 0px 3px 0 #888888;
+}
+.nn-btn.nn-flat.nn-emerald {
+  box-shadow: 0px 3px 0 #39bd36;
+  background-color: #5acf57;
+  color: #123c11;
+}
+.nn-btn.nn-flat.nn-emerald:hover {
+  box-shadow: 0px 3px 0 #2d952b;
+  background-color: #39bd36;
+}
+.nn-btn.nn-flat.nn-emerald:active, .nn-btn.nn-flat.nn-emerald.nn-active {
+  background-color: #a8e6a6;
+  box-shadow: 0px 3px 0 #81da7f;
+}
+.nn-btn.nn-flat.nn-burn-orange {
+  box-shadow: 0px 3px 0 #ed5407;
+  background-color: #f9722e;
+  color: #4a1a02;
+}
+.nn-btn.nn-flat.nn-burn-orange:hover {
+  box-shadow: 0px 3px 0 #bc4205;
+  background-color: #ed5407;
+}
+.nn-btn.nn-flat.nn-burn-orange:active, .nn-btn.nn-flat.nn-burn-orange.nn-active {
+  background-color: #fcb591;
+  box-shadow: 0px 3px 0 #fa9360;
+}
+.nn-btn.nn-flat.nn-razzmatazz {
+  box-shadow: 0px 3px 0 #a70031;
+  background-color: #da0040;
+  color: #ffffff;
+}
+.nn-btn.nn-flat.nn-razzmatazz:hover {
+  box-shadow: 0px 3px 0 #740022;
+  background-color: #a70031;
+}
+.nn-btn.nn-flat.nn-razzmatazz:active, .nn-btn.nn-flat.nn-razzmatazz.nn-active {
+  background-color: #ff4179;
+  box-shadow: 0px 3px 0 #ff0e55;
+}
+.nn-btn.nn-flat.nn-desert {
+  box-shadow: 0px 3px 0 #7b4b2f;
+  background-color: #a0613d;
+  color: #ffffff;
+}
+.nn-btn.nn-flat.nn-desert:hover {
+  box-shadow: 0px 3px 0 #563421;
+  background-color: #7b4b2f;
+}
+.nn-btn.nn-flat.nn-desert:active, .nn-btn.nn-flat.nn-desert.nn-active {
+  background-color: #cb9678;
+  box-shadow: 0px 3px 0 #bd7953;
+}
+.nn-btn.nn-flat.nn-charcoal {
+  box-shadow: 0px 3px 0 #2b2b2b;
+  background-color: #444444;
+  color: #ffffff;
+}
+.nn-btn.nn-flat.nn-charcoal:hover {
+  box-shadow: 0px 3px 0 #111111;
+  background-color: #2b2b2b;
+}
+.nn-btn.nn-flat.nn-charcoal:active, .nn-btn.nn-flat.nn-charcoal.nn-active {
+  background-color: #777777;
+  box-shadow: 0px 3px 0 #5e5e5e;
+}
+.nn-btn.nn-flat.nn-golden-brown {
+  box-shadow: 0px 3px 0 #70490b;
+  background-color: #9e6710;
+  color: #ffffff;
+}
+.nn-btn.nn-flat.nn-golden-brown:hover {
+  box-shadow: 0px 3px 0 #412b07;
+  background-color: #70490b;
+}
+.nn-btn.nn-flat.nn-golden-brown:active, .nn-btn.nn-flat.nn-golden-brown.nn-active {
+  background-color: #e9a02b;
+  box-shadow: 0px 3px 0 #cc8515;
+}
+.nn-btn.nn-flat.nn-sepia {
+  box-shadow: 0px 3px 0 #45300e;
+  background-color: #704d16;
+  color: #ffffff;
+}
+.nn-btn.nn-flat.nn-sepia:hover {
+  box-shadow: 0px 3px 0 #1b1205;
+  background-color: #45300e;
+}
+.nn-btn.nn-flat.nn-sepia:active, .nn-btn.nn-flat.nn-sepia.nn-active {
+  background-color: #c58827;
+  box-shadow: 0px 3px 0 #9b6a1e;
+}
+.nn-btn.nn-flat.nn-alizarin {
+  box-shadow: 0px 3px 0 #b81a0f;
+  background-color: #e72113;
+  color: #ffffff;
+}
+.nn-btn.nn-flat.nn-alizarin:hover {
+  box-shadow: 0px 3px 0 #89140b;
+  background-color: #b81a0f;
+}
+.nn-btn.nn-flat.nn-alizarin:active, .nn-btn.nn-flat.nn-alizarin.nn-active {
+  background-color: #f3766d;
+  box-shadow: 0px 3px 0 #ef4a3e;
+}
+.nn-btn.nn-flat.nn-rust {
+  box-shadow: 0px 3px 0 #993b0d;
+  background-color: #c84d11;
+  color: #ffffff;
+}
+.nn-btn.nn-flat.nn-rust:hover {
+  box-shadow: 0px 3px 0 #6a2909;
+  background-color: #993b0d;
+}
+.nn-btn.nn-flat.nn-rust:active, .nn-btn.nn-flat.nn-rust.nn-active {
+  background-color: #f0844f;
+  box-shadow: 0px 3px 0 #ec6320;
+}
+.nn-btn.nn-flat.nn-blush {
+  box-shadow: 0px 3px 0 #9e3851;
+  background-color: #bf4a67;
+  color: #39141d;
+}
+.nn-btn.nn-flat.nn-blush:hover {
+  box-shadow: 0px 3px 0 #782b3e;
+  background-color: #9e3851;
+}
+.nn-btn.nn-flat.nn-blush:active, .nn-btn.nn-flat.nn-blush.nn-active {
+  background-color: #da95a6;
+  box-shadow: 0px 3px 0 #cc7087;
+}
+.nn-btn.nn-flat.nn-fire-brick {
+  box-shadow: 0px 3px 0 #7b192b;
+  background-color: #a5213a;
+  color: #ffffff;
+}
+.nn-btn.nn-flat.nn-fire-brick:hover {
+  box-shadow: 0px 3px 0 #50101c;
+  background-color: #7b192b;
+}
+.nn-btn.nn-flat.nn-fire-brick:active, .nn-btn.nn-flat.nn-fire-brick.nn-active {
+  background-color: #dc506b;
+  box-shadow: 0px 3px 0 #d02a49;
+}
+.nn-btn.nn-flat.nn-sunglow {
+  box-shadow: 0px 3px 0 #f1bc00;
+  background-color: #ffcf25;
+  color: #4d3c00;
+}
+.nn-btn.nn-flat.nn-sunglow:hover {
+  box-shadow: 0px 3px 0 #be9400;
+  background-color: #f1bc00;
+}
+.nn-btn.nn-flat.nn-sunglow:active, .nn-btn.nn-flat.nn-sunglow.nn-active {
+  background-color: #ffe58b;
+  box-shadow: 0px 3px 0 #ffda58;
+}
+.nn-btn.nn-flat.nn-milk-punch {
+  box-shadow: 0px 3px 0 #ecd699;
+  background-color: #f4e7c4;
+  color: #40320c;
+}
+.nn-btn.nn-flat.nn-milk-punch:hover {
+  box-shadow: 0px 3px 0 #e4c46e;
+  background-color: #ecd699;
+}
+.nn-btn.nn-flat.nn-milk-punch:active, .nn-btn.nn-flat.nn-milk-punch.nn-active {
+  background-color: white;
+  box-shadow: 0px 3px 0 #fcf8ef;
+}
+.nn-btn.nn-flat.nn-yukon-gold {
+  box-shadow: 0px 3px 0 #625114;
+  background-color: #8c741d;
+  color: #ffffff;
+}
+.nn-btn.nn-flat.nn-yukon-gold:hover {
+  box-shadow: 0px 3px 0 #382e0b;
+  background-color: #625114;
+}
+.nn-btn.nn-flat.nn-yukon-gold:active, .nn-btn.nn-flat.nn-yukon-gold.nn-active {
+  background-color: #d6b439;
+  box-shadow: 0px 3px 0 #b69726;
+}
+.nn-btn.nn-flat.nn-green-pea {
+  box-shadow: 0px 3px 0 #154a26;
+  background-color: #20723b;
+  color: #ffffff;
+}
+.nn-btn.nn-flat.nn-green-pea:hover {
+  box-shadow: 0px 3px 0 #0a2212;
+  background-color: #154a26;
+}
+.nn-btn.nn-flat.nn-green-pea:active, .nn-btn.nn-flat.nn-green-pea.nn-active {
+  background-color: #36c264;
+  box-shadow: 0px 3px 0 #2b9a50;
+}
+.nn-btn.nn-flat.nn-laurel {
+  box-shadow: 0px 3px 0 #246028;
+  background-color: #328538;
+  color: #ffffff;
+}
+.nn-btn.nn-flat.nn-laurel:hover {
+  box-shadow: 0px 3px 0 #163b19;
+  background-color: #246028;
+}
+.nn-btn.nn-flat.nn-laurel:active, .nn-btn.nn-flat.nn-laurel.nn-active {
+  background-color: #5bc263;
+  box-shadow: 0px 3px 0 #40aa48;
+}
+.nn-btn.nn-flat.nn-elf-green {
+  box-shadow: 0px 3px 0 #115b43;
+  background-color: #198663;
+  color: #ffffff;
+}
+.nn-btn.nn-flat.nn-elf-green:hover {
+  box-shadow: 0px 3px 0 #093023;
+  background-color: #115b43;
+}
+.nn-btn.nn-flat.nn-elf-green:active, .nn-btn.nn-flat.nn-elf-green.nn-active {
+  background-color: #2dd8a1;
+  box-shadow: 0px 3px 0 #21b183;
+}
+.nn-btn.nn-flat.nn-lake {
+  box-shadow: 0px 3px 0 #1b5a6a;
+  background-color: #257d93;
+  color: #ffffff;
+}
+.nn-btn.nn-flat.nn-lake:hover {
+  box-shadow: 0px 3px 0 #103842;
+  background-color: #1b5a6a;
+}
+.nn-btn.nn-flat.nn-lake:active, .nn-btn.nn-flat.nn-lake.nn-active {
+  background-color: #4cb7d2;
+  box-shadow: 0px 3px 0 #2fa0bc;
+}
+.nn-btn.nn-flat.nn-cobalt-blue {
+  box-shadow: 0px 3px 0 #08387b;
+  background-color: #0b4eab;
+  color: #ffffff;
+}
+.nn-btn.nn-flat.nn-cobalt-blue:hover {
+  box-shadow: 0px 3px 0 #05224b;
+  background-color: #08387b;
+}
+.nn-btn.nn-flat.nn-cobalt-blue:active, .nn-btn.nn-flat.nn-cobalt-blue.nn-active {
+  background-color: #2b7ef1;
+  box-shadow: 0px 3px 0 #0e64db;
+}
+.nn-btn.nn-flat.nn-mariner {
+  box-shadow: 0px 3px 0 #2b5ea6;
+  background-color: #3876cc;
+  color: #10233d;
+}
+.nn-btn.nn-flat.nn-mariner:hover {
+  box-shadow: 0px 3px 0 #20477e;
+  background-color: #2b5ea6;
+}
+.nn-btn.nn-flat.nn-mariner:active, .nn-btn.nn-flat.nn-mariner.nn-active {
+  background-color: #89aee1;
+  box-shadow: 0px 3px 0 #6192d6;
+}
+.nn-btn.nn-flat.nn-fuchsia {
+  box-shadow: 0px 3px 0 #7e067b;
+  background-color: #af08aa;
+  color: #ffffff;
+}
+.nn-btn.nn-flat.nn-fuchsia:hover {
+  box-shadow: 0px 3px 0 #4d044b;
+  background-color: #7e067b;
+}
+.nn-btn.nn-flat.nn-fuchsia:active, .nn-btn.nn-flat.nn-fuchsia.nn-active {
+  background-color: #f528ef;
+  box-shadow: 0px 3px 0 #e00ad9;
+}
+.nn-btn.nn-flat.nn-blue-violet {
+  box-shadow: 0px 3px 0 #7f1ce8;
+  background-color: #994aed;
+  color: #250746;
+}
+.nn-btn.nn-flat.nn-blue-violet:hover {
+  box-shadow: 0px 3px 0 #6613be;
+  background-color: #7f1ce8;
+}
+.nn-btn.nn-flat.nn-blue-violet:active, .nn-btn.nn-flat.nn-blue-violet.nn-active {
+  background-color: #cda7f6;
+  box-shadow: 0px 3px 0 #b378f2;
+}
+.nn-btn.nn-flat.nn-purple-heart {
+  box-shadow: 0px 3px 0 #612788;
+  background-color: #7d32b0;
+  color: #ffffff;
+}
+.nn-btn.nn-flat.nn-purple-heart:hover {
+  box-shadow: 0px 3px 0 #451b61;
+  background-color: #612788;
+}
+.nn-btn.nn-flat.nn-purple-heart:active, .nn-btn.nn-flat.nn-purple-heart.nn-active {
+  background-color: #ae71d7;
+  box-shadow: 0px 3px 0 #974acb;
+}

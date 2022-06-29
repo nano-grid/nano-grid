@@ -1,0 +1,9 @@
+@import "src/variables";
+@import "src/functions";
+
+.#{$nano}box {
+  border: 1px solid var(--nn-border-color);
+  border-radius: 5px;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}

@@ -1,0 +1,35 @@
+.nn-input {
+  font-size: 9pt;
+  color: var(--nn-color-foreground);
+  background-color: var(--nn-input-color-background);
+  box-shadow: 0px 3px 0 var(--nn-input-color-shadow);
+  border: 0 none transparent;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+  font-weight: bold;
+  letter-spacing: 1pt;
+  text-transform: uppercase;
+  transition: all 200ms ease;
+  border-radius: 0;
+  min-height: 35px;
+  width: max(35px, 100%);
+  padding: 0.5rem;
+}
+.nn-input:focus, .nn-input:active .nn-input.active {
+  outline-color: #116ec4;
+  outline-width: 1px;
+  outline-style: dashed;
+}
+.nn-input.disabled, .nn-input:disabled {
+  background: #888888;
+  color: #444;
+  pointer-events: none;
+}
+.nn-input:hover {
+  background: var(--nn-input-color-background-hover);
+  box-shadow: 0px 3px 0 var(--nn-input-color-shadow-hover);
+}

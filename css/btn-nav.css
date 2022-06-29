@@ -1,0 +1,131 @@
+.nn-btn.nn-nav {
+  color: hsla(0deg, 0%, 100%, 0.4);
+}
+.nn-btn.nn-nav.nn-silver:active, .nn-btn.nn-nav.nn-silver.nn-active {
+  color: #f3f3f3;
+  box-shadow: -2px 0 0 #c0c0c0;
+}
+.nn-btn.nn-nav.nn-royal-purple:active, .nn-btn.nn-nav.nn-royal-purple.nn-active {
+  color: #997cc8;
+  box-shadow: -2px 0 0 #64429c;
+}
+.nn-btn.nn-nav.nn-persian-red:active, .nn-btn.nn-nav.nn-persian-red.nn-active {
+  color: #e88888;
+  box-shadow: -2px 0 0 #d73333;
+}
+.nn-btn.nn-nav.nn-denim:active, .nn-btn.nn-nav.nn-denim.nn-active {
+  color: #4ca1ef;
+  box-shadow: -2px 0 0 #116ec4;
+}
+.nn-btn.nn-nav.nn-gold-tips:active, .nn-btn.nn-nav.nn-gold-tips.nn-active {
+  color: #f1d38c;
+  box-shadow: -2px 0 0 #e6b031;
+}
+.nn-btn.nn-nav.nn-shamrock:active, .nn-btn.nn-nav.nn-shamrock.nn-active {
+  color: #86e2b2;
+  box-shadow: -2px 0 0 #34ce7e;
+}
+.nn-btn.nn-nav.nn-cod-grey:active, .nn-btn.nn-nav.nn-cod-grey.nn-active {
+  color: #4e4e4e;
+  box-shadow: -2px 0 0 #1b1b1b;
+}
+.nn-btn.nn-nav.nn-gravel:active, .nn-btn.nn-nav.nn-gravel.nn-active {
+  color: #a1a1a1;
+  box-shadow: -2px 0 0 #6e6e6e;
+}
+.nn-btn.nn-nav.nn-emerald:active, .nn-btn.nn-nav.nn-emerald.nn-active {
+  color: #a8e6a6;
+  box-shadow: -2px 0 0 #5acf57;
+}
+.nn-btn.nn-nav.nn-burn-orange:active, .nn-btn.nn-nav.nn-burn-orange.nn-active {
+  color: #fcb591;
+  box-shadow: -2px 0 0 #f9722e;
+}
+.nn-btn.nn-nav.nn-razzmatazz:active, .nn-btn.nn-nav.nn-razzmatazz.nn-active {
+  color: #ff4179;
+  box-shadow: -2px 0 0 #da0040;
+}
+.nn-btn.nn-nav.nn-desert:active, .nn-btn.nn-nav.nn-desert.nn-active {
+  color: #cb9678;
+  box-shadow: -2px 0 0 #a0613d;
+}
+.nn-btn.nn-nav.nn-charcoal:active, .nn-btn.nn-nav.nn-charcoal.nn-active {
+  color: #777777;
+  box-shadow: -2px 0 0 #444444;
+}
+.nn-btn.nn-nav.nn-golden-brown:active, .nn-btn.nn-nav.nn-golden-brown.nn-active {
+  color: #e9a02b;
+  box-shadow: -2px 0 0 #9e6710;
+}
+.nn-btn.nn-nav.nn-sepia:active, .nn-btn.nn-nav.nn-sepia.nn-active {
+  color: #c58827;
+  box-shadow: -2px 0 0 #704d16;
+}
+.nn-btn.nn-nav.nn-alizarin:active, .nn-btn.nn-nav.nn-alizarin.nn-active {
+  color: #f3766d;
+  box-shadow: -2px 0 0 #e72113;
+}
+.nn-btn.nn-nav.nn-rust:active, .nn-btn.nn-nav.nn-rust.nn-active {
+  color: #f0844f;
+  box-shadow: -2px 0 0 #c84d11;
+}
+.nn-btn.nn-nav.nn-blush:active, .nn-btn.nn-nav.nn-blush.nn-active {
+  color: #da95a6;
+  box-shadow: -2px 0 0 #bf4a67;
+}
+.nn-btn.nn-nav.nn-fire-brick:active, .nn-btn.nn-nav.nn-fire-brick.nn-active {
+  color: #dc506b;
+  box-shadow: -2px 0 0 #a5213a;
+}
+.nn-btn.nn-nav.nn-sunglow:active, .nn-btn.nn-nav.nn-sunglow.nn-active {
+  color: #ffe58b;
+  box-shadow: -2px 0 0 #ffcf25;
+}
+.nn-btn.nn-nav.nn-milk-punch:active, .nn-btn.nn-nav.nn-milk-punch.nn-active {
+  color: white;
+  box-shadow: -2px 0 0 #f4e7c4;
+}
+.nn-btn.nn-nav.nn-yukon-gold:active, .nn-btn.nn-nav.nn-yukon-gold.nn-active {
+  color: #d6b439;
+  box-shadow: -2px 0 0 #8c741d;
+}
+.nn-btn.nn-nav.nn-green-pea:active, .nn-btn.nn-nav.nn-green-pea.nn-active {
+  color: #36c264;
+  box-shadow: -2px 0 0 #20723b;
+}
+.nn-btn.nn-nav.nn-laurel:active, .nn-btn.nn-nav.nn-laurel.nn-active {
+  color: #5bc263;
+  box-shadow: -2px 0 0 #328538;
+}
+.nn-btn.nn-nav.nn-elf-green:active, .nn-btn.nn-nav.nn-elf-green.nn-active {
+  color: #2dd8a1;
+  box-shadow: -2px 0 0 #198663;
+}
+.nn-btn.nn-nav.nn-lake:active, .nn-btn.nn-nav.nn-lake.nn-active {
+  color: #4cb7d2;
+  box-shadow: -2px 0 0 #257d93;
+}
+.nn-btn.nn-nav.nn-cobalt-blue:active, .nn-btn.nn-nav.nn-cobalt-blue.nn-active {
+  color: #2b7ef1;
+  box-shadow: -2px 0 0 #0b4eab;
+}
+.nn-btn.nn-nav.nn-mariner:active, .nn-btn.nn-nav.nn-mariner.nn-active {
+  color: #89aee1;
+  box-shadow: -2px 0 0 #3876cc;
+}
+.nn-btn.nn-nav.nn-fuchsia:active, .nn-btn.nn-nav.nn-fuchsia.nn-active {
+  color: #f528ef;
+  box-shadow: -2px 0 0 #af08aa;
+}
+.nn-btn.nn-nav.nn-blue-violet:active, .nn-btn.nn-nav.nn-blue-violet.nn-active {
+  color: #cda7f6;
+  box-shadow: -2px 0 0 #994aed;
+}
+.nn-btn.nn-nav.nn-purple-heart:active, .nn-btn.nn-nav.nn-purple-heart.nn-active {
+  color: #ae71d7;
+  box-shadow: -2px 0 0 #7d32b0;
+}
+.nn-btn.nn-nav:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.1);
+}

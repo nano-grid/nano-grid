@@ -1,4 +1,5 @@
 $nano: "nn-";
+$transition: 200ms;
 $css-width: (
   (1, 20),
   (1, 19),
@@ -58,25 +59,36 @@ $global-colors: (
   "charcoal": #444444,
 );
 
-.nn-light {
-  --nn-color-foreground: hsl(240deg 11% 17%);
-  --nn-input-color-background: hsl(0deg 0% 95%);
-  --nn-input-color-background-hover: hsl(0deg 0% 90%);
-  --nn-input-color-shadow: hsl(0deg 0% 80%);
-  --nn-input-color-shadow-hover: hsl(0deg 0% 70%);
-  --nn-track-color: hsl(0deg 0% 84%);
-  --nn-thumb-color: #c0c0c0;
-  --nn-shade-background: hsl(240deg 10% 83% / 27%);
-  --nn-border-color: #e2e2e2;
-}
-.nn-dark {
-  --nn-color-foreground: hsl(0deg 0% 95%);
-  --nn-input-color-background: hsl(240deg 11% 17%);
-  --nn-input-color-background-hover: hsl(240deg 11% 25%);
-  --nn-input-color-shadow: hsl(240deg 11% 10%);
-  --nn-input-color-shadow-hover: hsl(240deg 11% 20%);
-  --nn-track-color: hsl(0deg 0% 14%);
-  --nn-thumb-color: #6e6e6e;
-  --nn-shade-background: hsl(240deg 12% 10% / 27%);
-  --nn-border-color: #444444;
-}
+$colors: (
+  "silver": #c0c0c0,
+  "royal-purple": #64429c,
+  "persian-red": #d73333,
+  "denim": #116ec4,
+  "gold-tips": #e6b031,
+  "shamrock": #34ce7e,
+  "cod-grey": #1b1b1b,
+  "gravel": #6e6e6e,
+  "emerald": #5acf57,
+  "burn-orange": #f9722e,
+  "razzmatazz": #da0040,
+  "desert": #a0613d,
+  "charcoal": #444444,
+  "golden-brown": #9e6710,
+  "sepia": #704d16,
+  "alizarin": #e72113,
+  "rust": #c84d11,
+  "blush": #bf4a67,
+  "fire-brick": #a5213a,
+  "sunglow": #ffcf25,
+  "milk-punch": #f4e7c4,
+  "yukon-gold": #8c741d,
+  "green-pea": #20723b,
+  "laurel": #328538,
+  "elf-green": #198663,
+  "lake": #257d93,
+  "cobalt-blue": #0b4eab,
+  "mariner": #3876cc,
+  "fuchsia": #af08aa,
+  "blue-violet": #994aed,
+  "purple-heart": #7d32b0,
+);

@@ -1,0 +1,69 @@
+@import "src/variables";
+@import "src/functions";
+
+@mixin scrollbar-base() {
+  scrollbar-width: thin;
+  scrollbar-color: var(--nn-thumb-color) var(--nn-track-color);
+  scrollbar-base-color: var(--nn-track-color);
+  scrollbar-highlight-color: var(--nn-track-color);
+  scrollbar-track-color: var(--nn-track-color);
+  scrollbar-face-color: var(--nn-thumb-color);
+  scrollbar-arrow-color: var(--nn-thumb-color);
+  scrollbar-shadow-color: var(--nn-thumb-color);
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--nn-thumb-color);
+    border-radius: 25px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: var(--nn-track-color);
+    border-radius: 25px;
+  }
+
+  &::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+}
+
+@mixin scrollbar($background: "silver") {
+  &:hover,
+  &.keep {
+    scrollbar-face-color: gcolor($background);
+    scrollbar-arrow-color: gcolor($background);
+    scrollbar-shadow-color: gcolor($background);
+
+    &::-webkit-scrollbar-thumb {
+      background: gcolor($background);
+    }
+  }
+}
+
+#{wc("scroll-area")} {
+  overflow: auto;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  max-height: 100%;
+  width: 100%;
+  display: block;
+
+  &.#{$nano}no-horizontal {
+    overflow-x: hidden;
+  }
+
+  &.#{$nano}no-vertical {
+    overflow-y: hidden;
+  }
+
+  @include scrollbar-base();
+
+  @include scrollbar("silver");
+  @each $name, $value in $colors {
+    &.#{$nano}#{$name} {
+      @include scrollbar($name);
+    }
+  }
+}

@@ -1,7 +1,7 @@
 {
   "name": "nano-grid",
-  "version": "3.0.1",
-  "description": "Grid System",
+  "version": "3.1.0",
+  "description": "Frontend Toolkit",
   "main": "index.js",
   "scripts": {},
   "devDependencies": {
@@ -15,7 +15,7 @@
   },
   "author": "Miguel Rivas",
   "license": "MIT",
-  "homepage": "http://miguel-rivas.github.io",
+  "homepage": "https://nano-grid.github.io",
   "dependencies": {
     "gulp-cli": "^2.3.0"
   }

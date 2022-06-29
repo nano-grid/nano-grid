@@ -1,0 +1,496 @@
+.nn-btn.nn-outline.nn-silver {
+  border: 1px #c0c0c0 solid;
+  color: #c0c0c0;
+}
+.nn-btn.nn-outline.nn-silver:hover {
+  color: #262626;
+}
+.nn-btn.nn-outline.nn-silver:hover {
+  background-color: #a7a7a7;
+  border-color: #a7a7a7;
+}
+.nn-btn.nn-outline.nn-silver:active, .nn-btn.nn-outline.nn-silver.nn-active {
+  border-color: #f3f3f3;
+  background-color: #f3f3f3;
+  color: #8d8d8d;
+}
+.nn-btn.nn-outline.nn-royal-purple {
+  border: 1px #64429c solid;
+  color: #997cc8;
+}
+.nn-btn.nn-outline.nn-royal-purple:hover {
+  color: #ffffff;
+}
+.nn-btn.nn-outline.nn-royal-purple:hover {
+  background-color: #4d3378;
+  border-color: #4d3378;
+}
+.nn-btn.nn-outline.nn-royal-purple:active, .nn-btn.nn-outline.nn-royal-purple.nn-active {
+  border-color: #997cc8;
+  background-color: #997cc8;
+  color: #362454;
+}
+.nn-btn.nn-outline.nn-persian-red {
+  border: 1px #d73333 solid;
+  color: #d73333;
+}
+.nn-btn.nn-outline.nn-persian-red:hover {
+  color: #400d0d;
+}
+.nn-btn.nn-outline.nn-persian-red:hover {
+  background-color: #b42323;
+  border-color: #b42323;
+}
+.nn-btn.nn-outline.nn-persian-red:active, .nn-btn.nn-outline.nn-persian-red.nn-active {
+  border-color: #e88888;
+  background-color: #e88888;
+  color: #891b1b;
+}
+.nn-btn.nn-outline.nn-denim {
+  border: 1px #116ec4 solid;
+  color: #4ca1ef;
+}
+.nn-btn.nn-outline.nn-denim:hover {
+  color: #ffffff;
+}
+.nn-btn.nn-outline.nn-denim:hover {
+  background-color: #0d5495;
+  border-color: #0d5495;
+}
+.nn-btn.nn-outline.nn-denim:active, .nn-btn.nn-outline.nn-denim.nn-active {
+  border-color: #4ca1ef;
+  background-color: #4ca1ef;
+  color: #093966;
+}
+.nn-btn.nn-outline.nn-gold-tips {
+  border: 1px #e6b031 solid;
+  color: #e6b031;
+}
+.nn-btn.nn-outline.nn-gold-tips:hover {
+  color: #443208;
+}
+.nn-btn.nn-outline.nn-gold-tips:hover {
+  background-color: #cb9619;
+  border-color: #cb9619;
+}
+.nn-btn.nn-outline.nn-gold-tips:active, .nn-btn.nn-outline.nn-gold-tips.nn-active {
+  border-color: #f1d38c;
+  background-color: #f1d38c;
+  color: #9e7413;
+}
+.nn-btn.nn-outline.nn-shamrock {
+  border: 1px #34ce7e solid;
+  color: #34ce7e;
+}
+.nn-btn.nn-outline.nn-shamrock:hover {
+  color: #0f3e25;
+}
+.nn-btn.nn-outline.nn-shamrock:hover {
+  background-color: #28a765;
+  border-color: #28a765;
+}
+.nn-btn.nn-outline.nn-shamrock:active, .nn-btn.nn-outline.nn-shamrock.nn-active {
+  border-color: #86e2b2;
+  background-color: #86e2b2;
+  color: #1e7e4c;
+}
+.nn-btn.nn-outline.nn-cod-grey {
+  border: 1px #1b1b1b solid;
+  color: #4e4e4e;
+}
+.nn-btn.nn-outline.nn-cod-grey:hover {
+  color: #ffffff;
+}
+.nn-btn.nn-outline.nn-cod-grey:hover {
+  background-color: #020202;
+  border-color: #020202;
+}
+.nn-btn.nn-outline.nn-cod-grey:active, .nn-btn.nn-outline.nn-cod-grey.nn-active {
+  border-color: #4e4e4e;
+  background-color: #4e4e4e;
+  color: black;
+}
+.nn-btn.nn-outline.nn-gravel {
+  border: 1px #6e6e6e solid;
+  color: #a1a1a1;
+}
+.nn-btn.nn-outline.nn-gravel:hover {
+  color: #ffffff;
+}
+.nn-btn.nn-outline.nn-gravel:hover {
+  background-color: #555555;
+  border-color: #555555;
+}
+.nn-btn.nn-outline.nn-gravel:active, .nn-btn.nn-outline.nn-gravel.nn-active {
+  border-color: #a1a1a1;
+  background-color: #a1a1a1;
+  color: #3b3b3b;
+}
+.nn-btn.nn-outline.nn-emerald {
+  border: 1px #5acf57 solid;
+  color: #5acf57;
+}
+.nn-btn.nn-outline.nn-emerald:hover {
+  color: #123c11;
+}
+.nn-btn.nn-outline.nn-emerald:hover {
+  background-color: #39bd36;
+  border-color: #39bd36;
+}
+.nn-btn.nn-outline.nn-emerald:active, .nn-btn.nn-outline.nn-emerald.nn-active {
+  border-color: #a8e6a6;
+  background-color: #a8e6a6;
+  color: #2d952b;
+}
+.nn-btn.nn-outline.nn-burn-orange {
+  border: 1px #f9722e solid;
+  color: #f9722e;
+}
+.nn-btn.nn-outline.nn-burn-orange:hover {
+  color: #4a1a02;
+}
+.nn-btn.nn-outline.nn-burn-orange:hover {
+  background-color: #ed5407;
+  border-color: #ed5407;
+}
+.nn-btn.nn-outline.nn-burn-orange:active, .nn-btn.nn-outline.nn-burn-orange.nn-active {
+  border-color: #fcb591;
+  background-color: #fcb591;
+  color: #bc4205;
+}
+.nn-btn.nn-outline.nn-razzmatazz {
+  border: 1px #da0040 solid;
+  color: #ff4179;
+}
+.nn-btn.nn-outline.nn-razzmatazz:hover {
+  color: #ffffff;
+}
+.nn-btn.nn-outline.nn-razzmatazz:hover {
+  background-color: #a70031;
+  border-color: #a70031;
+}
+.nn-btn.nn-outline.nn-razzmatazz:active, .nn-btn.nn-outline.nn-razzmatazz.nn-active {
+  border-color: #ff4179;
+  background-color: #ff4179;
+  color: #740022;
+}
+.nn-btn.nn-outline.nn-desert {
+  border: 1px #a0613d solid;
+  color: #cb9678;
+}
+.nn-btn.nn-outline.nn-desert:hover {
+  color: #ffffff;
+}
+.nn-btn.nn-outline.nn-desert:hover {
+  background-color: #7b4b2f;
+  border-color: #7b4b2f;
+}
+.nn-btn.nn-outline.nn-desert:active, .nn-btn.nn-outline.nn-desert.nn-active {
+  border-color: #cb9678;
+  background-color: #cb9678;
+  color: #563421;
+}
+.nn-btn.nn-outline.nn-charcoal {
+  border: 1px #444444 solid;
+  color: #777777;
+}
+.nn-btn.nn-outline.nn-charcoal:hover {
+  color: #ffffff;
+}
+.nn-btn.nn-outline.nn-charcoal:hover {
+  background-color: #2b2b2b;
+  border-color: #2b2b2b;
+}
+.nn-btn.nn-outline.nn-charcoal:active, .nn-btn.nn-outline.nn-charcoal.nn-active {
+  border-color: #777777;
+  background-color: #777777;
+  color: #111111;
+}
+.nn-btn.nn-outline.nn-golden-brown {
+  border: 1px #9e6710 solid;
+  color: #e9a02b;
+}
+.nn-btn.nn-outline.nn-golden-brown:hover {
+  color: #ffffff;
+}
+.nn-btn.nn-outline.nn-golden-brown:hover {
+  background-color: #70490b;
+  border-color: #70490b;
+}
+.nn-btn.nn-outline.nn-golden-brown:active, .nn-btn.nn-outline.nn-golden-brown.nn-active {
+  border-color: #e9a02b;
+  background-color: #e9a02b;
+  color: #412b07;
+}
+.nn-btn.nn-outline.nn-sepia {
+  border: 1px #704d16 solid;
+  color: #c58827;
+}
+.nn-btn.nn-outline.nn-sepia:hover {
+  color: #ffffff;
+}
+.nn-btn.nn-outline.nn-sepia:hover {
+  background-color: #45300e;
+  border-color: #45300e;
+}
+.nn-btn.nn-outline.nn-sepia:active, .nn-btn.nn-outline.nn-sepia.nn-active {
+  border-color: #c58827;
+  background-color: #c58827;
+  color: #1b1205;
+}
+.nn-btn.nn-outline.nn-alizarin {
+  border: 1px #e72113 solid;
+  color: #f3766d;
+}
+.nn-btn.nn-outline.nn-alizarin:hover {
+  color: #ffffff;
+}
+.nn-btn.nn-outline.nn-alizarin:hover {
+  background-color: #b81a0f;
+  border-color: #b81a0f;
+}
+.nn-btn.nn-outline.nn-alizarin:active, .nn-btn.nn-outline.nn-alizarin.nn-active {
+  border-color: #f3766d;
+  background-color: #f3766d;
+  color: #89140b;
+}
+.nn-btn.nn-outline.nn-rust {
+  border: 1px #c84d11 solid;
+  color: #f0844f;
+}
+.nn-btn.nn-outline.nn-rust:hover {
+  color: #ffffff;
+}
+.nn-btn.nn-outline.nn-rust:hover {
+  background-color: #993b0d;
+  border-color: #993b0d;
+}
+.nn-btn.nn-outline.nn-rust:active, .nn-btn.nn-outline.nn-rust.nn-active {
+  border-color: #f0844f;
+  background-color: #f0844f;
+  color: #6a2909;
+}
+.nn-btn.nn-outline.nn-blush {
+  border: 1px #bf4a67 solid;
+  color: #bf4a67;
+}
+.nn-btn.nn-outline.nn-blush:hover {
+  color: #39141d;
+}
+.nn-btn.nn-outline.nn-blush:hover {
+  background-color: #9e3851;
+  border-color: #9e3851;
+}
+.nn-btn.nn-outline.nn-blush:active, .nn-btn.nn-outline.nn-blush.nn-active {
+  border-color: #da95a6;
+  background-color: #da95a6;
+  color: #782b3e;
+}
+.nn-btn.nn-outline.nn-fire-brick {
+  border: 1px #a5213a solid;
+  color: #dc506b;
+}
+.nn-btn.nn-outline.nn-fire-brick:hover {
+  color: #ffffff;
+}
+.nn-btn.nn-outline.nn-fire-brick:hover {
+  background-color: #7b192b;
+  border-color: #7b192b;
+}
+.nn-btn.nn-outline.nn-fire-brick:active, .nn-btn.nn-outline.nn-fire-brick.nn-active {
+  border-color: #dc506b;
+  background-color: #dc506b;
+  color: #50101c;
+}
+.nn-btn.nn-outline.nn-sunglow {
+  border: 1px #ffcf25 solid;
+  color: #ffcf25;
+}
+.nn-btn.nn-outline.nn-sunglow:hover {
+  color: #4d3c00;
+}
+.nn-btn.nn-outline.nn-sunglow:hover {
+  background-color: #f1bc00;
+  border-color: #f1bc00;
+}
+.nn-btn.nn-outline.nn-sunglow:active, .nn-btn.nn-outline.nn-sunglow.nn-active {
+  border-color: #ffe58b;
+  background-color: #ffe58b;
+  color: #be9400;
+}
+.nn-btn.nn-outline.nn-milk-punch {
+  border: 1px #f4e7c4 solid;
+  color: #f4e7c4;
+}
+.nn-btn.nn-outline.nn-milk-punch:hover {
+  color: #40320c;
+}
+.nn-btn.nn-outline.nn-milk-punch:hover {
+  background-color: #ecd699;
+  border-color: #ecd699;
+}
+.nn-btn.nn-outline.nn-milk-punch:active, .nn-btn.nn-outline.nn-milk-punch.nn-active {
+  border-color: white;
+  background-color: white;
+  color: #e4c46e;
+}
+.nn-btn.nn-outline.nn-yukon-gold {
+  border: 1px #8c741d solid;
+  color: #d6b439;
+}
+.nn-btn.nn-outline.nn-yukon-gold:hover {
+  color: #ffffff;
+}
+.nn-btn.nn-outline.nn-yukon-gold:hover {
+  background-color: #625114;
+  border-color: #625114;
+}
+.nn-btn.nn-outline.nn-yukon-gold:active, .nn-btn.nn-outline.nn-yukon-gold.nn-active {
+  border-color: #d6b439;
+  background-color: #d6b439;
+  color: #382e0b;
+}
+.nn-btn.nn-outline.nn-green-pea {
+  border: 1px #20723b solid;
+  color: #36c264;
+}
+.nn-btn.nn-outline.nn-green-pea:hover {
+  color: #ffffff;
+}
+.nn-btn.nn-outline.nn-green-pea:hover {
+  background-color: #154a26;
+  border-color: #154a26;
+}
+.nn-btn.nn-outline.nn-green-pea:active, .nn-btn.nn-outline.nn-green-pea.nn-active {
+  border-color: #36c264;
+  background-color: #36c264;
+  color: #0a2212;
+}
+.nn-btn.nn-outline.nn-laurel {
+  border: 1px #328538 solid;
+  color: #5bc263;
+}
+.nn-btn.nn-outline.nn-laurel:hover {
+  color: #ffffff;
+}
+.nn-btn.nn-outline.nn-laurel:hover {
+  background-color: #246028;
+  border-color: #246028;
+}
+.nn-btn.nn-outline.nn-laurel:active, .nn-btn.nn-outline.nn-laurel.nn-active {
+  border-color: #5bc263;
+  background-color: #5bc263;
+  color: #163b19;
+}
+.nn-btn.nn-outline.nn-elf-green {
+  border: 1px #198663 solid;
+  color: #2dd8a1;
+}
+.nn-btn.nn-outline.nn-elf-green:hover {
+  color: #ffffff;
+}
+.nn-btn.nn-outline.nn-elf-green:hover {
+  background-color: #115b43;
+  border-color: #115b43;
+}
+.nn-btn.nn-outline.nn-elf-green:active, .nn-btn.nn-outline.nn-elf-green.nn-active {
+  border-color: #2dd8a1;
+  background-color: #2dd8a1;
+  color: #093023;
+}
+.nn-btn.nn-outline.nn-lake {
+  border: 1px #257d93 solid;
+  color: #4cb7d2;
+}
+.nn-btn.nn-outline.nn-lake:hover {
+  color: #ffffff;
+}
+.nn-btn.nn-outline.nn-lake:hover {
+  background-color: #1b5a6a;
+  border-color: #1b5a6a;
+}
+.nn-btn.nn-outline.nn-lake:active, .nn-btn.nn-outline.nn-lake.nn-active {
+  border-color: #4cb7d2;
+  background-color: #4cb7d2;
+  color: #103842;
+}
+.nn-btn.nn-outline.nn-cobalt-blue {
+  border: 1px #0b4eab solid;
+  color: #2b7ef1;
+}
+.nn-btn.nn-outline.nn-cobalt-blue:hover {
+  color: #ffffff;
+}
+.nn-btn.nn-outline.nn-cobalt-blue:hover {
+  background-color: #08387b;
+  border-color: #08387b;
+}
+.nn-btn.nn-outline.nn-cobalt-blue:active, .nn-btn.nn-outline.nn-cobalt-blue.nn-active {
+  border-color: #2b7ef1;
+  background-color: #2b7ef1;
+  color: #05224b;
+}
+.nn-btn.nn-outline.nn-mariner {
+  border: 1px #3876cc solid;
+  color: #3876cc;
+}
+.nn-btn.nn-outline.nn-mariner:hover {
+  color: #10233d;
+}
+.nn-btn.nn-outline.nn-mariner:hover {
+  background-color: #2b5ea6;
+  border-color: #2b5ea6;
+}
+.nn-btn.nn-outline.nn-mariner:active, .nn-btn.nn-outline.nn-mariner.nn-active {
+  border-color: #89aee1;
+  background-color: #89aee1;
+  color: #20477e;
+}
+.nn-btn.nn-outline.nn-fuchsia {
+  border: 1px #af08aa solid;
+  color: #f528ef;
+}
+.nn-btn.nn-outline.nn-fuchsia:hover {
+  color: #ffffff;
+}
+.nn-btn.nn-outline.nn-fuchsia:hover {
+  background-color: #7e067b;
+  border-color: #7e067b;
+}
+.nn-btn.nn-outline.nn-fuchsia:active, .nn-btn.nn-outline.nn-fuchsia.nn-active {
+  border-color: #f528ef;
+  background-color: #f528ef;
+  color: #4d044b;
+}
+.nn-btn.nn-outline.nn-blue-violet {
+  border: 1px #994aed solid;
+  color: #994aed;
+}
+.nn-btn.nn-outline.nn-blue-violet:hover {
+  color: #250746;
+}
+.nn-btn.nn-outline.nn-blue-violet:hover {
+  background-color: #7f1ce8;
+  border-color: #7f1ce8;
+}
+.nn-btn.nn-outline.nn-blue-violet:active, .nn-btn.nn-outline.nn-blue-violet.nn-active {
+  border-color: #cda7f6;
+  background-color: #cda7f6;
+  color: #6613be;
+}
+.nn-btn.nn-outline.nn-purple-heart {
+  border: 1px #7d32b0 solid;
+  color: #ae71d7;
+}
+.nn-btn.nn-outline.nn-purple-heart:hover {
+  color: #ffffff;
+}
+.nn-btn.nn-outline.nn-purple-heart:hover {
+  background-color: #612788;
+  border-color: #612788;
+}
+.nn-btn.nn-outline.nn-purple-heart:active, .nn-btn.nn-outline.nn-purple-heart.nn-active {
+  border-color: #ae71d7;
+  background-color: #ae71d7;
+  color: #451b61;
+}
