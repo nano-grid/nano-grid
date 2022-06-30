@@ -21,11 +21,7 @@ $max-size: math.div(300, 5);
     margin-inline: -#{$space}rem;
 
     #{wc("column", ">")} {
-      padding-right: #{$space}rem;
-
-      &:first-child {
-        padding-left: #{$space}rem;
-      }
+      padding-inline: #{$space}rem;
     }
   }
 }
