@@ -302,3 +302,11 @@
   box-shadow: 0px 3px 0 #451b61;
   background-color: #612788;
 }
+.nn-label.nn-input-color {
+  text-transform: none;
+}
+.nn-label.nn-input-color, .nn-label.nn-input-color:hover {
+  color: #272730;
+  background-color: #f2f2f2;
+  box-shadow: 0 3px 0 #ccc;
+}
