@@ -12,18 +12,6 @@
 
   @extend %spacing;
 
-  &.#{$nano}vertical {
-    flex-flow: column;
-    flex-direction: column;
-    height: 100%;
-    margin-bottom: 0;
-    align-items: center;
-
-    #{wc("column", ">")} {
-      width: unset;
-    }
-  }
-
   &.#{$nano}grid {
     align-items: stretch;
     justify-content: center;

@@ -43,7 +43,7 @@ export default class Row extends HTMLElement {
 
   connectedCallback() {
     this.updateRole();
-    this.toggleAttr('group', 'vertical', 'grid');
+    this.toggleAttr('group', 'grid');
     this.updateSpacing();
     this.updateBreakPoint();
   }
@@ -63,9 +63,6 @@ export default class Row extends HTMLElement {
         break;
       case 'spacing':
         this.updateSpacing();
-        break;
-      case 'vertical':
-        this.toggleAttr('vertical');
         break;
       case 'grid':
         this.toggleAttr('grid');
