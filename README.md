@@ -20,7 +20,7 @@
 - Clone the repo:
 
   ```sh
-  git clone https://github.com/nano-grid/nano-grid
+  git clone https://github.com/nano-grid/nano-grid.git
   ```
 
 ## Registering Components
@@ -41,17 +41,17 @@ Test the following structure in your project:
 
 ```html
 <nn-row>
-  <nn-column size="35">
-    <span class="nn-label nn-burn-orange">35px</span>
+  <nn-column size="75">
+    <span class="nn-label nn-burn-orange">75px</span>
   </nn-column>
   <nn-column size="50%">
-    <span class="nn-label nn-silver">50%</span>
+    <span class="nn-label">50%</span>
   </nn-column>
-  <nn-column size="1/2 - 50 * 2">
-    <span class="nn-label nn-burn-orange">calc(50% - 100px)</span>
+  <nn-column size="1/2 - 80 * 2">
+    <span class="nn-label nn-burn-orange">calc(50% - 160px)</span>
   </nn-column>
-  <nn-column size="65">
-    <span class="nn-label">65px</span>
+  <nn-column size="85">
+    <span class="nn-label">85px</span>
   </nn-column>
 </nn-row>
 ```

@@ -30,8 +30,7 @@
     pointer-events: none;
   }
 
-  .#{$nano}icon,
-  #{$nano}icon {
+  #{wc("icon")} {
     font-size: 14px;
     &:not(:only-child) {
       margin-right: 0.5rem;
