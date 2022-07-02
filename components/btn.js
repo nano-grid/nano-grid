@@ -93,13 +93,20 @@ export default class Btn extends HTMLElement {
   updateTitle() {
     const btn = this.querySelector('button');
     if (btn) {
-      const textAttr = this.getAttribute('text');
+      
       const titleAttr = this.getAttribute('title');
-      const label = this.hasAttribute('text') ? textAttr : titleAttr;
+      const textAttr = `${this.getAttribute('text')}'s Button`;
+      const glyphAttr = `${this.getAttribute('glyph')}'s Button`;
 
-      if (this.hasAttribute('title') || this.hasAttribute('text')) {
-        btn.setAttribute("title", label);
-        btn.setAttribute("aria-label", label);
+      if (this.hasAttribute('title')) {
+        btn.setAttribute("title", titleAttr);
+        btn.setAttribute("aria-label", titleAttr);
+      } else if (this.hasAttribute('text')) {
+        btn.setAttribute("title", textAttr);
+        btn.setAttribute("aria-label", textAttr);
+      } else if (this.hasAttribute('glyph')) {
+        btn.setAttribute("title", glyphAttr);
+        btn.setAttribute("aria-label", glyphAttr);
       } else {
         btn.removeAttribute("title", "aria-label");
       }
