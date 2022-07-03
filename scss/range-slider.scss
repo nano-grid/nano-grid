@@ -1,11 +1,11 @@
 @import "src/variables";
 @import "src/functions";
 
-@mixin range-color($name, $value) {
+@mixin range-color($name) {
   &.#{$nano}#{$name} {
-    $thumb: darken($value, 7.5%);
-    $thumb-focus: darken($value, 7.5%);
-    $track-focus: $value;
+    $thumb: #{gvar("#{$name}-m10")};
+    $thumb-focus: #{gvar("#{$name}-m10")};
+    $track-focus: #{gvar("#{$name}")};
 
     &::-webkit-slider-thumb {
       background: $thumb;
@@ -61,8 +61,8 @@ $track-radius: 10px;
   min-height: 35px;
   margin: 0 0 0.5rem;
 
-  @each $name, $value in $colors {
-    @include range-color($name, $value);
+  @each $name in $colors {
+    @include range-color($name);
   }
 
   &::-webkit-slider-runnable-track {

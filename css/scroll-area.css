@@ -35,114 +35,266 @@ nn-scroll-area::-webkit-scrollbar, .nn-scroll-area::-webkit-scrollbar {
   height: 7px;
 }
 nn-scroll-area:hover, nn-scroll-area.keep, .nn-scroll-area:hover, .nn-scroll-area.keep {
-  scrollbar-face-color: #c0c0c0;
-  scrollbar-arrow-color: #c0c0c0;
-  scrollbar-shadow-color: #c0c0c0;
+  scrollbar-face-color: var(--nn-gcolor-silver);
+  scrollbar-arrow-color: var(--nn-gcolor-silver);
+  scrollbar-shadow-color: var(--nn-gcolor-silver);
 }
 nn-scroll-area:hover::-webkit-scrollbar-thumb, nn-scroll-area.keep::-webkit-scrollbar-thumb, .nn-scroll-area:hover::-webkit-scrollbar-thumb, .nn-scroll-area.keep::-webkit-scrollbar-thumb {
-  background: #c0c0c0;
+  background: var(--nn-gcolor-silver);
+}
+nn-scroll-area.nn-white:hover, nn-scroll-area.nn-white.keep, .nn-scroll-area.nn-white:hover, .nn-scroll-area.nn-white.keep {
+  scrollbar-face-color: var(--nn-gcolor-white);
+  scrollbar-arrow-color: var(--nn-gcolor-white);
+  scrollbar-shadow-color: var(--nn-gcolor-white);
+}
+nn-scroll-area.nn-white:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-white.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-white:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-white.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-white);
 }
 nn-scroll-area.nn-silver:hover, nn-scroll-area.nn-silver.keep, .nn-scroll-area.nn-silver:hover, .nn-scroll-area.nn-silver.keep {
-  scrollbar-face-color: #c0c0c0;
-  scrollbar-arrow-color: #c0c0c0;
-  scrollbar-shadow-color: #c0c0c0;
+  scrollbar-face-color: var(--nn-gcolor-silver);
+  scrollbar-arrow-color: var(--nn-gcolor-silver);
+  scrollbar-shadow-color: var(--nn-gcolor-silver);
 }
 nn-scroll-area.nn-silver:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-silver.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-silver:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-silver.keep::-webkit-scrollbar-thumb {
-  background: #c0c0c0;
+  background: var(--nn-gcolor-silver);
 }
 nn-scroll-area.nn-royal-purple:hover, nn-scroll-area.nn-royal-purple.keep, .nn-scroll-area.nn-royal-purple:hover, .nn-scroll-area.nn-royal-purple.keep {
-  scrollbar-face-color: #64429c;
-  scrollbar-arrow-color: #64429c;
-  scrollbar-shadow-color: #64429c;
+  scrollbar-face-color: var(--nn-gcolor-royal-purple);
+  scrollbar-arrow-color: var(--nn-gcolor-royal-purple);
+  scrollbar-shadow-color: var(--nn-gcolor-royal-purple);
 }
 nn-scroll-area.nn-royal-purple:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-royal-purple.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-royal-purple:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-royal-purple.keep::-webkit-scrollbar-thumb {
-  background: #64429c;
+  background: var(--nn-gcolor-royal-purple);
 }
 nn-scroll-area.nn-persian-red:hover, nn-scroll-area.nn-persian-red.keep, .nn-scroll-area.nn-persian-red:hover, .nn-scroll-area.nn-persian-red.keep {
-  scrollbar-face-color: #d73333;
-  scrollbar-arrow-color: #d73333;
-  scrollbar-shadow-color: #d73333;
+  scrollbar-face-color: var(--nn-gcolor-persian-red);
+  scrollbar-arrow-color: var(--nn-gcolor-persian-red);
+  scrollbar-shadow-color: var(--nn-gcolor-persian-red);
 }
 nn-scroll-area.nn-persian-red:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-persian-red.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-persian-red:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-persian-red.keep::-webkit-scrollbar-thumb {
-  background: #d73333;
+  background: var(--nn-gcolor-persian-red);
 }
 nn-scroll-area.nn-denim:hover, nn-scroll-area.nn-denim.keep, .nn-scroll-area.nn-denim:hover, .nn-scroll-area.nn-denim.keep {
-  scrollbar-face-color: #116ec4;
-  scrollbar-arrow-color: #116ec4;
-  scrollbar-shadow-color: #116ec4;
+  scrollbar-face-color: var(--nn-gcolor-denim);
+  scrollbar-arrow-color: var(--nn-gcolor-denim);
+  scrollbar-shadow-color: var(--nn-gcolor-denim);
 }
 nn-scroll-area.nn-denim:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-denim.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-denim:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-denim.keep::-webkit-scrollbar-thumb {
-  background: #116ec4;
+  background: var(--nn-gcolor-denim);
 }
 nn-scroll-area.nn-gold-tips:hover, nn-scroll-area.nn-gold-tips.keep, .nn-scroll-area.nn-gold-tips:hover, .nn-scroll-area.nn-gold-tips.keep {
-  scrollbar-face-color: #e6b031;
-  scrollbar-arrow-color: #e6b031;
-  scrollbar-shadow-color: #e6b031;
+  scrollbar-face-color: var(--nn-gcolor-gold-tips);
+  scrollbar-arrow-color: var(--nn-gcolor-gold-tips);
+  scrollbar-shadow-color: var(--nn-gcolor-gold-tips);
 }
 nn-scroll-area.nn-gold-tips:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-gold-tips.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-gold-tips:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-gold-tips.keep::-webkit-scrollbar-thumb {
-  background: #e6b031;
+  background: var(--nn-gcolor-gold-tips);
 }
 nn-scroll-area.nn-shamrock:hover, nn-scroll-area.nn-shamrock.keep, .nn-scroll-area.nn-shamrock:hover, .nn-scroll-area.nn-shamrock.keep {
-  scrollbar-face-color: #34ce7e;
-  scrollbar-arrow-color: #34ce7e;
-  scrollbar-shadow-color: #34ce7e;
+  scrollbar-face-color: var(--nn-gcolor-shamrock);
+  scrollbar-arrow-color: var(--nn-gcolor-shamrock);
+  scrollbar-shadow-color: var(--nn-gcolor-shamrock);
 }
 nn-scroll-area.nn-shamrock:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-shamrock.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-shamrock:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-shamrock.keep::-webkit-scrollbar-thumb {
-  background: #34ce7e;
+  background: var(--nn-gcolor-shamrock);
 }
 nn-scroll-area.nn-cod-grey:hover, nn-scroll-area.nn-cod-grey.keep, .nn-scroll-area.nn-cod-grey:hover, .nn-scroll-area.nn-cod-grey.keep {
-  scrollbar-face-color: #1b1b1b;
-  scrollbar-arrow-color: #1b1b1b;
-  scrollbar-shadow-color: #1b1b1b;
+  scrollbar-face-color: var(--nn-gcolor-cod-grey);
+  scrollbar-arrow-color: var(--nn-gcolor-cod-grey);
+  scrollbar-shadow-color: var(--nn-gcolor-cod-grey);
 }
 nn-scroll-area.nn-cod-grey:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-cod-grey.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-cod-grey:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-cod-grey.keep::-webkit-scrollbar-thumb {
-  background: #1b1b1b;
+  background: var(--nn-gcolor-cod-grey);
 }
 nn-scroll-area.nn-gravel:hover, nn-scroll-area.nn-gravel.keep, .nn-scroll-area.nn-gravel:hover, .nn-scroll-area.nn-gravel.keep {
-  scrollbar-face-color: #6e6e6e;
-  scrollbar-arrow-color: #6e6e6e;
-  scrollbar-shadow-color: #6e6e6e;
+  scrollbar-face-color: var(--nn-gcolor-gravel);
+  scrollbar-arrow-color: var(--nn-gcolor-gravel);
+  scrollbar-shadow-color: var(--nn-gcolor-gravel);
 }
 nn-scroll-area.nn-gravel:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-gravel.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-gravel:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-gravel.keep::-webkit-scrollbar-thumb {
-  background: #6e6e6e;
+  background: var(--nn-gcolor-gravel);
 }
 nn-scroll-area.nn-emerald:hover, nn-scroll-area.nn-emerald.keep, .nn-scroll-area.nn-emerald:hover, .nn-scroll-area.nn-emerald.keep {
-  scrollbar-face-color: #5acf57;
-  scrollbar-arrow-color: #5acf57;
-  scrollbar-shadow-color: #5acf57;
+  scrollbar-face-color: var(--nn-gcolor-emerald);
+  scrollbar-arrow-color: var(--nn-gcolor-emerald);
+  scrollbar-shadow-color: var(--nn-gcolor-emerald);
 }
 nn-scroll-area.nn-emerald:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-emerald.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-emerald:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-emerald.keep::-webkit-scrollbar-thumb {
-  background: #5acf57;
+  background: var(--nn-gcolor-emerald);
 }
 nn-scroll-area.nn-burn-orange:hover, nn-scroll-area.nn-burn-orange.keep, .nn-scroll-area.nn-burn-orange:hover, .nn-scroll-area.nn-burn-orange.keep {
-  scrollbar-face-color: #f9722e;
-  scrollbar-arrow-color: #f9722e;
-  scrollbar-shadow-color: #f9722e;
+  scrollbar-face-color: var(--nn-gcolor-burn-orange);
+  scrollbar-arrow-color: var(--nn-gcolor-burn-orange);
+  scrollbar-shadow-color: var(--nn-gcolor-burn-orange);
 }
 nn-scroll-area.nn-burn-orange:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-burn-orange.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-burn-orange:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-burn-orange.keep::-webkit-scrollbar-thumb {
-  background: #f9722e;
+  background: var(--nn-gcolor-burn-orange);
 }
 nn-scroll-area.nn-razzmatazz:hover, nn-scroll-area.nn-razzmatazz.keep, .nn-scroll-area.nn-razzmatazz:hover, .nn-scroll-area.nn-razzmatazz.keep {
-  scrollbar-face-color: #da0040;
-  scrollbar-arrow-color: #da0040;
-  scrollbar-shadow-color: #da0040;
+  scrollbar-face-color: var(--nn-gcolor-razzmatazz);
+  scrollbar-arrow-color: var(--nn-gcolor-razzmatazz);
+  scrollbar-shadow-color: var(--nn-gcolor-razzmatazz);
 }
 nn-scroll-area.nn-razzmatazz:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-razzmatazz.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-razzmatazz:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-razzmatazz.keep::-webkit-scrollbar-thumb {
-  background: #da0040;
+  background: var(--nn-gcolor-razzmatazz);
 }
 nn-scroll-area.nn-desert:hover, nn-scroll-area.nn-desert.keep, .nn-scroll-area.nn-desert:hover, .nn-scroll-area.nn-desert.keep {
-  scrollbar-face-color: #a0613d;
-  scrollbar-arrow-color: #a0613d;
-  scrollbar-shadow-color: #a0613d;
+  scrollbar-face-color: var(--nn-gcolor-desert);
+  scrollbar-arrow-color: var(--nn-gcolor-desert);
+  scrollbar-shadow-color: var(--nn-gcolor-desert);
 }
 nn-scroll-area.nn-desert:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-desert.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-desert:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-desert.keep::-webkit-scrollbar-thumb {
-  background: #a0613d;
+  background: var(--nn-gcolor-desert);
 }
 nn-scroll-area.nn-charcoal:hover, nn-scroll-area.nn-charcoal.keep, .nn-scroll-area.nn-charcoal:hover, .nn-scroll-area.nn-charcoal.keep {
-  scrollbar-face-color: #444444;
-  scrollbar-arrow-color: #444444;
-  scrollbar-shadow-color: #444444;
+  scrollbar-face-color: var(--nn-gcolor-charcoal);
+  scrollbar-arrow-color: var(--nn-gcolor-charcoal);
+  scrollbar-shadow-color: var(--nn-gcolor-charcoal);
 }
 nn-scroll-area.nn-charcoal:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-charcoal.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-charcoal:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-charcoal.keep::-webkit-scrollbar-thumb {
-  background: #444444;
+  background: var(--nn-gcolor-charcoal);
+}
+nn-scroll-area.nn-golden-brown:hover, nn-scroll-area.nn-golden-brown.keep, .nn-scroll-area.nn-golden-brown:hover, .nn-scroll-area.nn-golden-brown.keep {
+  scrollbar-face-color: var(--nn-gcolor-golden-brown);
+  scrollbar-arrow-color: var(--nn-gcolor-golden-brown);
+  scrollbar-shadow-color: var(--nn-gcolor-golden-brown);
+}
+nn-scroll-area.nn-golden-brown:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-golden-brown.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-golden-brown:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-golden-brown.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-golden-brown);
+}
+nn-scroll-area.nn-sepia:hover, nn-scroll-area.nn-sepia.keep, .nn-scroll-area.nn-sepia:hover, .nn-scroll-area.nn-sepia.keep {
+  scrollbar-face-color: var(--nn-gcolor-sepia);
+  scrollbar-arrow-color: var(--nn-gcolor-sepia);
+  scrollbar-shadow-color: var(--nn-gcolor-sepia);
+}
+nn-scroll-area.nn-sepia:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-sepia.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-sepia:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-sepia.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-sepia);
+}
+nn-scroll-area.nn-alizarin:hover, nn-scroll-area.nn-alizarin.keep, .nn-scroll-area.nn-alizarin:hover, .nn-scroll-area.nn-alizarin.keep {
+  scrollbar-face-color: var(--nn-gcolor-alizarin);
+  scrollbar-arrow-color: var(--nn-gcolor-alizarin);
+  scrollbar-shadow-color: var(--nn-gcolor-alizarin);
+}
+nn-scroll-area.nn-alizarin:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-alizarin.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-alizarin:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-alizarin.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-alizarin);
+}
+nn-scroll-area.nn-rust:hover, nn-scroll-area.nn-rust.keep, .nn-scroll-area.nn-rust:hover, .nn-scroll-area.nn-rust.keep {
+  scrollbar-face-color: var(--nn-gcolor-rust);
+  scrollbar-arrow-color: var(--nn-gcolor-rust);
+  scrollbar-shadow-color: var(--nn-gcolor-rust);
+}
+nn-scroll-area.nn-rust:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-rust.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-rust:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-rust.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-rust);
+}
+nn-scroll-area.nn-blush:hover, nn-scroll-area.nn-blush.keep, .nn-scroll-area.nn-blush:hover, .nn-scroll-area.nn-blush.keep {
+  scrollbar-face-color: var(--nn-gcolor-blush);
+  scrollbar-arrow-color: var(--nn-gcolor-blush);
+  scrollbar-shadow-color: var(--nn-gcolor-blush);
+}
+nn-scroll-area.nn-blush:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-blush.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-blush:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-blush.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-blush);
+}
+nn-scroll-area.nn-fire-brick:hover, nn-scroll-area.nn-fire-brick.keep, .nn-scroll-area.nn-fire-brick:hover, .nn-scroll-area.nn-fire-brick.keep {
+  scrollbar-face-color: var(--nn-gcolor-fire-brick);
+  scrollbar-arrow-color: var(--nn-gcolor-fire-brick);
+  scrollbar-shadow-color: var(--nn-gcolor-fire-brick);
+}
+nn-scroll-area.nn-fire-brick:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-fire-brick.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-fire-brick:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-fire-brick.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-fire-brick);
+}
+nn-scroll-area.nn-sunglow:hover, nn-scroll-area.nn-sunglow.keep, .nn-scroll-area.nn-sunglow:hover, .nn-scroll-area.nn-sunglow.keep {
+  scrollbar-face-color: var(--nn-gcolor-sunglow);
+  scrollbar-arrow-color: var(--nn-gcolor-sunglow);
+  scrollbar-shadow-color: var(--nn-gcolor-sunglow);
+}
+nn-scroll-area.nn-sunglow:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-sunglow.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-sunglow:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-sunglow.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-sunglow);
+}
+nn-scroll-area.nn-milk-punch:hover, nn-scroll-area.nn-milk-punch.keep, .nn-scroll-area.nn-milk-punch:hover, .nn-scroll-area.nn-milk-punch.keep {
+  scrollbar-face-color: var(--nn-gcolor-milk-punch);
+  scrollbar-arrow-color: var(--nn-gcolor-milk-punch);
+  scrollbar-shadow-color: var(--nn-gcolor-milk-punch);
+}
+nn-scroll-area.nn-milk-punch:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-milk-punch.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-milk-punch:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-milk-punch.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-milk-punch);
+}
+nn-scroll-area.nn-yukon-gold:hover, nn-scroll-area.nn-yukon-gold.keep, .nn-scroll-area.nn-yukon-gold:hover, .nn-scroll-area.nn-yukon-gold.keep {
+  scrollbar-face-color: var(--nn-gcolor-yukon-gold);
+  scrollbar-arrow-color: var(--nn-gcolor-yukon-gold);
+  scrollbar-shadow-color: var(--nn-gcolor-yukon-gold);
+}
+nn-scroll-area.nn-yukon-gold:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-yukon-gold.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-yukon-gold:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-yukon-gold.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-yukon-gold);
+}
+nn-scroll-area.nn-green-pea:hover, nn-scroll-area.nn-green-pea.keep, .nn-scroll-area.nn-green-pea:hover, .nn-scroll-area.nn-green-pea.keep {
+  scrollbar-face-color: var(--nn-gcolor-green-pea);
+  scrollbar-arrow-color: var(--nn-gcolor-green-pea);
+  scrollbar-shadow-color: var(--nn-gcolor-green-pea);
+}
+nn-scroll-area.nn-green-pea:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-green-pea.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-green-pea:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-green-pea.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-green-pea);
+}
+nn-scroll-area.nn-laurel:hover, nn-scroll-area.nn-laurel.keep, .nn-scroll-area.nn-laurel:hover, .nn-scroll-area.nn-laurel.keep {
+  scrollbar-face-color: var(--nn-gcolor-laurel);
+  scrollbar-arrow-color: var(--nn-gcolor-laurel);
+  scrollbar-shadow-color: var(--nn-gcolor-laurel);
+}
+nn-scroll-area.nn-laurel:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-laurel.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-laurel:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-laurel.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-laurel);
+}
+nn-scroll-area.nn-elf-green:hover, nn-scroll-area.nn-elf-green.keep, .nn-scroll-area.nn-elf-green:hover, .nn-scroll-area.nn-elf-green.keep {
+  scrollbar-face-color: var(--nn-gcolor-elf-green);
+  scrollbar-arrow-color: var(--nn-gcolor-elf-green);
+  scrollbar-shadow-color: var(--nn-gcolor-elf-green);
+}
+nn-scroll-area.nn-elf-green:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-elf-green.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-elf-green:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-elf-green.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-elf-green);
+}
+nn-scroll-area.nn-lake:hover, nn-scroll-area.nn-lake.keep, .nn-scroll-area.nn-lake:hover, .nn-scroll-area.nn-lake.keep {
+  scrollbar-face-color: var(--nn-gcolor-lake);
+  scrollbar-arrow-color: var(--nn-gcolor-lake);
+  scrollbar-shadow-color: var(--nn-gcolor-lake);
+}
+nn-scroll-area.nn-lake:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-lake.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-lake:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-lake.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-lake);
+}
+nn-scroll-area.nn-cobalt-blue:hover, nn-scroll-area.nn-cobalt-blue.keep, .nn-scroll-area.nn-cobalt-blue:hover, .nn-scroll-area.nn-cobalt-blue.keep {
+  scrollbar-face-color: var(--nn-gcolor-cobalt-blue);
+  scrollbar-arrow-color: var(--nn-gcolor-cobalt-blue);
+  scrollbar-shadow-color: var(--nn-gcolor-cobalt-blue);
+}
+nn-scroll-area.nn-cobalt-blue:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-cobalt-blue.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-cobalt-blue:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-cobalt-blue.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-cobalt-blue);
+}
+nn-scroll-area.nn-mariner:hover, nn-scroll-area.nn-mariner.keep, .nn-scroll-area.nn-mariner:hover, .nn-scroll-area.nn-mariner.keep {
+  scrollbar-face-color: var(--nn-gcolor-mariner);
+  scrollbar-arrow-color: var(--nn-gcolor-mariner);
+  scrollbar-shadow-color: var(--nn-gcolor-mariner);
+}
+nn-scroll-area.nn-mariner:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-mariner.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-mariner:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-mariner.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-mariner);
+}
+nn-scroll-area.nn-fuchsia:hover, nn-scroll-area.nn-fuchsia.keep, .nn-scroll-area.nn-fuchsia:hover, .nn-scroll-area.nn-fuchsia.keep {
+  scrollbar-face-color: var(--nn-gcolor-fuchsia);
+  scrollbar-arrow-color: var(--nn-gcolor-fuchsia);
+  scrollbar-shadow-color: var(--nn-gcolor-fuchsia);
+}
+nn-scroll-area.nn-fuchsia:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-fuchsia.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-fuchsia:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-fuchsia.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-fuchsia);
+}
+nn-scroll-area.nn-blue-violet:hover, nn-scroll-area.nn-blue-violet.keep, .nn-scroll-area.nn-blue-violet:hover, .nn-scroll-area.nn-blue-violet.keep {
+  scrollbar-face-color: var(--nn-gcolor-blue-violet);
+  scrollbar-arrow-color: var(--nn-gcolor-blue-violet);
+  scrollbar-shadow-color: var(--nn-gcolor-blue-violet);
+}
+nn-scroll-area.nn-blue-violet:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-blue-violet.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-blue-violet:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-blue-violet.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-blue-violet);
+}
+nn-scroll-area.nn-purple-heart:hover, nn-scroll-area.nn-purple-heart.keep, .nn-scroll-area.nn-purple-heart:hover, .nn-scroll-area.nn-purple-heart.keep {
+  scrollbar-face-color: var(--nn-gcolor-purple-heart);
+  scrollbar-arrow-color: var(--nn-gcolor-purple-heart);
+  scrollbar-shadow-color: var(--nn-gcolor-purple-heart);
+}
+nn-scroll-area.nn-purple-heart:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-purple-heart.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-purple-heart:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-purple-heart.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-purple-heart);
 }

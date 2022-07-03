@@ -27,15 +27,15 @@
   }
 }
 
-@mixin scrollbar($background: "silver") {
+@mixin scrollbar($name: "silver") {
   &:hover,
   &.keep {
-    scrollbar-face-color: gcolor($background);
-    scrollbar-arrow-color: gcolor($background);
-    scrollbar-shadow-color: gcolor($background);
+    scrollbar-face-color: #{gvar("#{$name}")};
+    scrollbar-arrow-color: #{gvar("#{$name}")};
+    scrollbar-shadow-color: #{gvar("#{$name}")};
 
     &::-webkit-scrollbar-thumb {
-      background: gcolor($background);
+      background: #{gvar("#{$name}")};
     }
   }
 }
@@ -59,9 +59,9 @@
   }
 
   @include scrollbar-base();
+  @include scrollbar();
 
-  @include scrollbar("silver");
-  @each $name, $value in $colors {
+  @each $name in $colors {
     &.#{$nano}#{$name} {
       @include scrollbar($name);
     }

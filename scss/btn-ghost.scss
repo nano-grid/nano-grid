@@ -5,16 +5,16 @@
   &.#{$nano}ghost {
     color: hsla(0, 0%, 100%, 0.4);
 
-    @each $name, $value in $colors {
+    @each $name in $colors {
       &.#{$nano}#{$name} {
-        color: $value;
+        color: #{gvar("#{$name}")};
         &:active,
         &.#{$nano}active {
-          background-color: lighten($value, 0%);
-          color: darken($value, 20%);
+          color: #{gvar("#{$name}-m20")};
+          background-color: #{gvar("#{$name}")};
         }
         &:hover {
-          color: darken($value, 20%);
+          color: #{gvar("#{$name}-p10")};
         }
       }
     }

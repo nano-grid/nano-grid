@@ -3,27 +3,20 @@
 
 .#{$nano}btn {
   &.#{$nano}flat {
-    @each $name, $value in $colors {
-      $new-color: darken($value, 10%);
-
+    @each $name in $colors {
       &.#{$nano}#{$name} {
-        box-shadow: 0px 3px 0 $new-color;
-        background-color: $value;
-
-        $lightness: lightness($value);
-        @if ($lightness > 50) {
-          color: darken($value, $lightness - 15%);
-        } @else {
-          color: #ffffff;
-        }
+        color: #{gvar("#{$name}-invert")};
+        background-color: #{gvar("#{$name}")};
+        box-shadow: 0px 3px 0 #{gvar("#{$name}-m10")};
+        
         &:hover {
-          box-shadow: 0px 3px 0 darken($value, 20%);
-          background-color: $new-color;
+          background-color: #{gvar("#{$name}-m10")};
+          box-shadow: 0px 3px 0  #{gvar("#{$name}-m20")};
         }
         &:active,
         &.#{$nano}active {
-          background-color: lighten($value, 20%);
-          box-shadow: 0px 3px 0 lighten($value, 10%);
+          background-color: #{gvar("#{$name}-m10")};
+          box-shadow: 0px 3px 0 #{gvar("#{$name}-m20")};
         }
       }
     }

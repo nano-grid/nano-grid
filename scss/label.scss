@@ -27,22 +27,15 @@
     box-shadow: 0px 3px 0 var(--nn-input-color-shadow-hover);
   }
 
-  @each $name, $value in $colors {
-    $new-color: darken($value, 10%);
-
+  @each $name in $colors {
     &.#{$nano}#{$name} {
-      box-shadow: 0px 3px 0 $new-color;
-      background-color: $value;
-      $lightness: lightness($value);
+      color: #{gvar("#{$name}-invert")};
+      background-color: #{gvar("#{$name}")};
+      box-shadow: 0px 3px 0 #{gvar("#{$name}-m10")};
 
-      @if ($lightness > 50) {
-        color: darken($value, $lightness - 15%);
-      } @else {
-        color: #ffffff;
-      }
       &:hover {
-        box-shadow: 0px 3px 0 darken($value, 20%);
-        background-color: $new-color;
+        background-color: #{gvar("#{$name}-m10")};
+        box-shadow: 0px 3px 0 #{gvar("#{$name}-m20")};
       }
     }
   }

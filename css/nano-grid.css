@@ -1,3 +1,198 @@
+html {
+  --nn-gcolor-white-invert: hsl(0deg 0% 23%);
+  --nn-gcolor-silver-invert: hsl(0deg 0% 24%);
+  --nn-gcolor-royal-purple-invert: hsl(263deg, 41%, 100%);
+  --nn-gcolor-persian-red-invert: hsl(0deg 0% 100%);
+  --nn-gcolor-denim-invert: hsl(209deg, 84%, 100%);
+  --nn-gcolor-gold-tips-invert: hsl(42deg 77% 15%);
+  --nn-gcolor-shamrock-invert: hsl(149deg 73% 15%);
+  --nn-gcolor-cod-grey-invert: hsl(0deg, 0%, 100%);
+  --nn-gcolor-gravel-invert: hsl(0deg, 0%, 100%);
+  --nn-gcolor-emerald-invert: hsl(118deg 55% 13%);
+  --nn-gcolor-burn-orange-invert: hsl(20deg 79% 17%);
+  --nn-gcolor-razzmatazz-invert: hsl(342deg, 100%, 100%);
+  --nn-gcolor-desert-invert: hsl(22deg, 45%, 100%);
+  --nn-gcolor-charcoal-invert: hsl(0deg, 0%, 100%);
+  --nn-gcolor-golden-brown-invert: hsl(37deg, 82%, 100%);
+  --nn-gcolor-sepia-invert: hsl(37deg, 67%, 100%);
+  --nn-gcolor-alizarin-invert: hsl(4deg, 85%, 100%);
+  --nn-gcolor-rust-invert: hsl(20deg, 84%, 100%);
+  --nn-gcolor-blush-invert: hsl(0deg 0% 100%);
+  --nn-gcolor-fire-brick-invert: hsl(349deg, 67%, 100%);
+  --nn-gcolor-sunglow-invert: hsl(47deg 87% 16%);
+  --nn-gcolor-milk-punch-invert: hsl(44deg 53% 27%);
+  --nn-gcolor-yukon-gold-invert: hsl(47deg, 66%, 100%);
+  --nn-gcolor-green-pea-invert: hsl(140deg, 56%, 100%);
+  --nn-gcolor-laurel-invert: hsl(124deg 48% 94%);
+  --nn-gcolor-elf-green-invert: hsl(161deg, 69%, 100%);
+  --nn-gcolor-lake-invert: hsl(192deg, 60%, 100%);
+  --nn-gcolor-cobalt-blue-invert: hsl(215deg, 88%, 100%);
+  --nn-gcolor-mariner-invert: hsl(215deg 92% 20%);
+  --nn-gcolor-fuchsia-invert: hsl(302deg, 91%, 100%);
+  --nn-gcolor-blue-violet-invert: hsl(269deg 58% 14%);
+  --nn-gcolor-purple-heart-invert: hsl(276deg 24% 80%);
+  --nn-gcolor-white-p20: hsl(0deg, 0%, 120%);
+  --nn-gcolor-white-p10: hsl(0deg 0% 71%);
+  --nn-gcolor-white: hsl(0deg, 0%, 100%);
+  --nn-gcolor-white-m10: hsl(0deg, 0%, 90%);
+  --nn-gcolor-white-m20: hsl(0deg, 0%, 80%);
+  --nn-gcolor-silver-p20: hsl(0deg, 0%, 95%);
+  --nn-gcolor-silver-p10: hsl(0deg, 0%, 85%);
+  --nn-gcolor-silver: hsl(0deg, 0%, 75%);
+  --nn-gcolor-silver-m10: hsl(0deg 0% 50%);
+  --nn-gcolor-silver-m20: hsl(0deg, 0%, 55%);
+  --nn-gcolor-royal-purple-p20: hsl(263deg, 41%, 64%);
+  --nn-gcolor-royal-purple-p10: hsl(263deg, 41%, 54%);
+  --nn-gcolor-royal-purple: hsl(263deg, 41%, 44%);
+  --nn-gcolor-royal-purple-m10: hsl(263deg, 41%, 34%);
+  --nn-gcolor-royal-purple-m20: hsl(263deg, 41%, 24%);
+  --nn-gcolor-persian-red-p20: hsl(0deg, 67%, 72%);
+  --nn-gcolor-persian-red-p10: hsl(0deg, 67%, 62%);
+  --nn-gcolor-persian-red: hsl(0deg, 67%, 52%);
+  --nn-gcolor-persian-red-m10: hsl(0deg, 67%, 42%);
+  --nn-gcolor-persian-red-m20: hsl(0deg, 67%, 32%);
+  --nn-gcolor-denim-p20: hsl(209deg, 84%, 62%);
+  --nn-gcolor-denim-p10: hsl(209deg, 84%, 52%);
+  --nn-gcolor-denim: hsl(209deg, 84%, 42%);
+  --nn-gcolor-denim-m10: hsl(209deg, 84%, 32%);
+  --nn-gcolor-denim-m20: hsl(209deg, 84%, 22%);
+  --nn-gcolor-gold-tips-p20: hsl(42deg, 78%, 75%);
+  --nn-gcolor-gold-tips-p10: hsl(42deg, 78%, 65%);
+  --nn-gcolor-gold-tips: hsl(42deg, 78%, 55%);
+  --nn-gcolor-gold-tips-m10: hsl(42deg 81% 39%);
+  --nn-gcolor-gold-tips-m20: hsl(42deg, 78%, 35%);
+  --nn-gcolor-shamrock-p20: hsl(149deg, 61%, 71%);
+  --nn-gcolor-shamrock-p10: hsl(149deg, 61%, 61%);
+  --nn-gcolor-shamrock: hsl(149deg, 61%, 51%);
+  --nn-gcolor-shamrock-m10: hsl(149deg, 61%, 41%);
+  --nn-gcolor-shamrock-m20: hsl(149deg, 61%, 31%);
+  --nn-gcolor-cod-grey-p20: hsl(0deg, 0%, 31%);
+  --nn-gcolor-cod-grey-p10: hsl(0deg, 0%, 21%);
+  --nn-gcolor-cod-grey: hsl(0deg, 0%, 11%);
+  --nn-gcolor-cod-grey-m10: hsl(0deg, 0%, 1%);
+  --nn-gcolor-cod-grey-m20: hsl(0deg, 0%, 9%);
+  --nn-gcolor-gravel-p20: hsl(0deg, 0%, 63%);
+  --nn-gcolor-gravel-p10: hsl(0deg, 0%, 53%);
+  --nn-gcolor-gravel: hsl(0deg, 0%, 43%);
+  --nn-gcolor-gravel-m10: hsl(0deg, 0%, 33%);
+  --nn-gcolor-gravel-m20: hsl(0deg, 0%, 23%);
+  --nn-gcolor-emerald-p20: hsl(118deg, 56%, 78%);
+  --nn-gcolor-emerald-p10: hsl(118deg, 56%, 68%);
+  --nn-gcolor-emerald: hsl(118deg, 56%, 58%);
+  --nn-gcolor-emerald-m10: hsl(118deg 47% 41%);
+  --nn-gcolor-emerald-m20: hsl(118deg, 56%, 38%);
+  --nn-gcolor-burn-orange-p20: hsl(20deg, 94%, 78%);
+  --nn-gcolor-burn-orange-p10: hsl(20deg, 94%, 68%);
+  --nn-gcolor-burn-orange: hsl(20deg, 94%, 58%);
+  --nn-gcolor-burn-orange-m10: hsl(20deg, 94%, 48%);
+  --nn-gcolor-burn-orange-m20: hsl(20deg, 94%, 38%);
+  --nn-gcolor-razzmatazz-p20: hsl(342deg, 100%, 63%);
+  --nn-gcolor-razzmatazz-p10: hsl(342deg, 100%, 53%);
+  --nn-gcolor-razzmatazz: hsl(342deg, 100%, 43%);
+  --nn-gcolor-razzmatazz-m10: hsl(342deg, 100%, 33%);
+  --nn-gcolor-razzmatazz-m20: hsl(342deg, 100%, 23%);
+  --nn-gcolor-desert-p20: hsl(22deg, 45%, 63%);
+  --nn-gcolor-desert-p10: hsl(22deg, 45%, 53%);
+  --nn-gcolor-desert: hsl(22deg, 45%, 43%);
+  --nn-gcolor-desert-m10: hsl(22deg, 45%, 33%);
+  --nn-gcolor-desert-m20: hsl(22deg, 45%, 23%);
+  --nn-gcolor-charcoal-p20: hsl(0deg, 0%, 47%);
+  --nn-gcolor-charcoal-p10: hsl(0deg, 0%, 37%);
+  --nn-gcolor-charcoal: hsl(0deg, 0%, 27%);
+  --nn-gcolor-charcoal-m10: hsl(0deg, 0%, 17%);
+  --nn-gcolor-charcoal-m20: hsl(0deg, 0%, 7%);
+  --nn-gcolor-golden-brown-p20: hsl(37deg, 82%, 54%);
+  --nn-gcolor-golden-brown-p10: hsl(37deg, 82%, 44%);
+  --nn-gcolor-golden-brown: hsl(37deg, 82%, 34%);
+  --nn-gcolor-golden-brown-m10: hsl(37deg, 82%, 24%);
+  --nn-gcolor-golden-brown-m20: hsl(37deg, 82%, 14%);
+  --nn-gcolor-sepia-p20: hsl(37deg, 67%, 46%);
+  --nn-gcolor-sepia-p10: hsl(37deg, 67%, 36%);
+  --nn-gcolor-sepia: hsl(37deg, 67%, 26%);
+  --nn-gcolor-sepia-m10: hsl(37deg, 67%, 16%);
+  --nn-gcolor-sepia-m20: hsl(37deg, 67%, 6%);
+  --nn-gcolor-alizarin-p20: hsl(4deg, 85%, 69%);
+  --nn-gcolor-alizarin-p10: hsl(4deg, 85%, 59%);
+  --nn-gcolor-alizarin: hsl(4deg, 85%, 49%);
+  --nn-gcolor-alizarin-m10: hsl(4deg 83% 29%);
+  --nn-gcolor-alizarin-m20: hsl(4deg, 85%, 29%);
+  --nn-gcolor-rust-p20: hsl(20deg, 84%, 63%);
+  --nn-gcolor-rust-p10: hsl(20deg, 84%, 53%);
+  --nn-gcolor-rust: hsl(20deg, 84%, 43%);
+  --nn-gcolor-rust-m10: hsl(20deg, 84%, 33%);
+  --nn-gcolor-rust-m20: hsl(20deg, 84%, 23%);
+  --nn-gcolor-blush-p20: hsl(345deg, 48%, 72%);
+  --nn-gcolor-blush-p10: hsl(345deg, 48%, 62%);
+  --nn-gcolor-blush: hsl(345deg, 48%, 52%);
+  --nn-gcolor-blush-m10: hsl(345deg, 48%, 42%);
+  --nn-gcolor-blush-m20: hsl(345deg, 48%, 32%);
+  --nn-gcolor-fire-brick-p20: hsl(349deg, 67%, 59%);
+  --nn-gcolor-fire-brick-p10: hsl(349deg, 67%, 49%);
+  --nn-gcolor-fire-brick: hsl(349deg, 67%, 39%);
+  --nn-gcolor-fire-brick-m10: hsl(349deg, 67%, 29%);
+  --nn-gcolor-fire-brick-m20: hsl(349deg, 67%, 19%);
+  --nn-gcolor-sunglow-p20: hsl(47deg, 100%, 77%);
+  --nn-gcolor-sunglow-p10: hsl(47deg, 100%, 67%);
+  --nn-gcolor-sunglow: hsl(47deg, 100%, 57%);
+  --nn-gcolor-sunglow-m10: hsl(47deg 90% 36%);
+  --nn-gcolor-sunglow-m20: hsl(47deg, 100%, 37%);
+  --nn-gcolor-milk-punch-p20: hsl(44deg, 69%, 96%);
+  --nn-gcolor-milk-punch-p10: hsl(44deg, 69%, 106%);
+  --nn-gcolor-milk-punch: hsl(44deg, 69%, 86%);
+  --nn-gcolor-milk-punch-m10: hsl(44deg 29% 60%);
+  --nn-gcolor-milk-punch-m20: hsl(44deg 42% 33%);
+  --nn-gcolor-yukon-gold-p20: hsl(47deg, 66%, 53%);
+  --nn-gcolor-yukon-gold-p10: hsl(47deg, 66%, 43%);
+  --nn-gcolor-yukon-gold: hsl(47deg, 66%, 33%);
+  --nn-gcolor-yukon-gold-m10: hsl(47deg, 66%, 23%);
+  --nn-gcolor-yukon-gold-m20: hsl(47deg, 66%, 13%);
+  --nn-gcolor-green-pea-p20: hsl(140deg, 56%, 49%);
+  --nn-gcolor-green-pea-p10: hsl(140deg, 56%, 39%);
+  --nn-gcolor-green-pea: hsl(140deg, 56%, 29%);
+  --nn-gcolor-green-pea-m10: hsl(140deg, 56%, 19%);
+  --nn-gcolor-green-pea-m20: hsl(140deg, 56%, 9%);
+  --nn-gcolor-laurel-p20: hsl(124deg, 45%, 56%);
+  --nn-gcolor-laurel-p10: hsl(124deg, 45%, 46%);
+  --nn-gcolor-laurel: hsl(124deg, 45%, 36%);
+  --nn-gcolor-laurel-m10: hsl(124deg, 45%, 26%);
+  --nn-gcolor-laurel-m20: hsl(124deg, 45%, 16%);
+  --nn-gcolor-elf-green-p20: hsl(161deg, 69%, 51%);
+  --nn-gcolor-elf-green-p10: hsl(161deg, 69%, 41%);
+  --nn-gcolor-elf-green: hsl(161deg, 69%, 31%);
+  --nn-gcolor-elf-green-m10: hsl(161deg, 69%, 21%);
+  --nn-gcolor-elf-green-m20: hsl(161deg, 69%, 11%);
+  --nn-gcolor-lake-p20: hsl(192deg, 60%, 56%);
+  --nn-gcolor-lake-p10: hsl(192deg, 60%, 46%);
+  --nn-gcolor-lake: hsl(192deg, 60%, 36%);
+  --nn-gcolor-lake-m10: hsl(192deg, 60%, 26%);
+  --nn-gcolor-lake-m20: hsl(192deg, 60%, 16%);
+  --nn-gcolor-cobalt-blue-p20: hsl(215deg, 88%, 56%);
+  --nn-gcolor-cobalt-blue-p10: hsl(215deg, 88%, 46%);
+  --nn-gcolor-cobalt-blue: hsl(215deg, 88%, 36%);
+  --nn-gcolor-cobalt-blue-m10: hsl(215deg, 88%, 26%);
+  --nn-gcolor-cobalt-blue-m20: hsl(215deg, 88%, 16%);
+  --nn-gcolor-mariner-p20: hsl(215deg, 59%, 71%);
+  --nn-gcolor-mariner-p10: hsl(215deg, 59%, 61%);
+  --nn-gcolor-mariner: hsl(215deg, 59%, 51%);
+  --nn-gcolor-mariner-m10: hsl(215deg, 59%, 41%);
+  --nn-gcolor-mariner-m20: hsl(215deg, 59%, 31%);
+  --nn-gcolor-fuchsia-p20: hsl(302deg, 91%, 56%);
+  --nn-gcolor-fuchsia-p10: hsl(302deg, 91%, 46%);
+  --nn-gcolor-fuchsia: hsl(302deg, 91%, 36%);
+  --nn-gcolor-fuchsia-m10: hsl(302deg, 91%, 26%);
+  --nn-gcolor-fuchsia-m20: hsl(302deg, 91%, 16%);
+  --nn-gcolor-blue-violet-p20: hsl(269deg, 82%, 81%);
+  --nn-gcolor-blue-violet-p10: hsl(269deg, 82%, 71%);
+  --nn-gcolor-blue-violet: hsl(269deg, 82%, 61%);
+  --nn-gcolor-blue-violet-m10: hsl(269deg, 82%, 51%);
+  --nn-gcolor-blue-violet-m20: hsl(269deg, 82%, 41%);
+  --nn-gcolor-purple-heart-p20: hsl(276deg, 56%, 64%);
+  --nn-gcolor-purple-heart-p10: hsl(276deg, 56%, 54%);
+  --nn-gcolor-purple-heart: hsl(276deg, 56%, 44%);
+  --nn-gcolor-purple-heart-m10: hsl(276deg, 56%, 34%);
+  --nn-gcolor-purple-heart-m20: hsl(276deg, 56%, 24%);
+}
+
 .nn-light {
   --nn-color-foreground: hsl(240deg 11% 17%);
   --nn-input-color-background: hsl(0deg 0% 95%);
@@ -5,9 +200,9 @@
   --nn-input-color-shadow: hsl(0deg 0% 80%);
   --nn-input-color-shadow-hover: hsl(0deg 0% 70%);
   --nn-track-color: hsl(0deg 0% 84%);
-  --nn-thumb-color: #c0c0c0;
+  --nn-thumb-color: hsl(0deg 0% 75%);
   --nn-shade-background: hsl(240deg 10% 83% / 27%);
-  --nn-border-color: #e2e2e2;
+  --nn-border-color: hsl(0deg 0% 89%);
 }
 
 .nn-dark {
@@ -17,9 +212,9 @@
   --nn-input-color-shadow: hsl(240deg 11% 10%);
   --nn-input-color-shadow-hover: hsl(240deg 11% 20%);
   --nn-track-color: hsl(0deg 0% 14%);
-  --nn-thumb-color: #6e6e6e;
+  --nn-thumb-color: hsl(0deg 0% 43%);
   --nn-shade-background: hsl(240deg 12% 10% / 27%);
-  --nn-border-color: #444444;
+  --nn-border-color: hsl(0deg 0% 27%);
 }
 
 .nn-box {
@@ -58,6 +253,8 @@
 }
 .nn-btn nn-icon, .nn-btn .nn-icon {
   font-size: 14px;
+}
+.nn-btn nn-icon[glyph], .nn-btn .nn-icon[glyph] {
   min-width: 25px;
 }
 .nn-btn:focus {
@@ -67,408 +264,421 @@
   cursor: pointer;
 }
 
+.nn-btn.nn-flat.nn-white {
+  color: var(--nn-gcolor-white-invert);
+  background-color: var(--nn-gcolor-white);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-white-m10);
+}
+.nn-btn.nn-flat.nn-white:hover {
+  background-color: var(--nn-gcolor-white-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-white-m20);
+}
+.nn-btn.nn-flat.nn-white:active, .nn-btn.nn-flat.nn-white.nn-active {
+  background-color: var(--nn-gcolor-white-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-white-m20);
+}
 .nn-btn.nn-flat.nn-silver {
-  box-shadow: 0px 3px 0 #a7a7a7;
-  background-color: #c0c0c0;
-  color: #262626;
+  color: var(--nn-gcolor-silver-invert);
+  background-color: var(--nn-gcolor-silver);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-silver-m10);
 }
 .nn-btn.nn-flat.nn-silver:hover {
-  box-shadow: 0px 3px 0 #8d8d8d;
-  background-color: #a7a7a7;
+  background-color: var(--nn-gcolor-silver-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-silver-m20);
 }
 .nn-btn.nn-flat.nn-silver:active, .nn-btn.nn-flat.nn-silver.nn-active {
-  background-color: #f3f3f3;
-  box-shadow: 0px 3px 0 #dadada;
+  background-color: var(--nn-gcolor-silver-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-silver-m20);
 }
 .nn-btn.nn-flat.nn-royal-purple {
-  box-shadow: 0px 3px 0 #4d3378;
-  background-color: #64429c;
-  color: #ffffff;
+  color: var(--nn-gcolor-royal-purple-invert);
+  background-color: var(--nn-gcolor-royal-purple);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-royal-purple-m10);
 }
 .nn-btn.nn-flat.nn-royal-purple:hover {
-  box-shadow: 0px 3px 0 #362454;
-  background-color: #4d3378;
+  background-color: var(--nn-gcolor-royal-purple-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-royal-purple-m20);
 }
 .nn-btn.nn-flat.nn-royal-purple:active, .nn-btn.nn-flat.nn-royal-purple.nn-active {
-  background-color: #997cc8;
-  box-shadow: 0px 3px 0 #7d58b9;
+  background-color: var(--nn-gcolor-royal-purple-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-royal-purple-m20);
 }
 .nn-btn.nn-flat.nn-persian-red {
-  box-shadow: 0px 3px 0 #b42323;
-  background-color: #d73333;
-  color: #400d0d;
+  color: var(--nn-gcolor-persian-red-invert);
+  background-color: var(--nn-gcolor-persian-red);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-persian-red-m10);
 }
 .nn-btn.nn-flat.nn-persian-red:hover {
-  box-shadow: 0px 3px 0 #891b1b;
-  background-color: #b42323;
+  background-color: var(--nn-gcolor-persian-red-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-persian-red-m20);
 }
 .nn-btn.nn-flat.nn-persian-red:active, .nn-btn.nn-flat.nn-persian-red.nn-active {
-  background-color: #e88888;
-  box-shadow: 0px 3px 0 #df5e5e;
+  background-color: var(--nn-gcolor-persian-red-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-persian-red-m20);
 }
 .nn-btn.nn-flat.nn-denim {
-  box-shadow: 0px 3px 0 #0d5495;
-  background-color: #116ec4;
-  color: #ffffff;
+  color: var(--nn-gcolor-denim-invert);
+  background-color: var(--nn-gcolor-denim);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-denim-m10);
 }
 .nn-btn.nn-flat.nn-denim:hover {
-  box-shadow: 0px 3px 0 #093966;
-  background-color: #0d5495;
+  background-color: var(--nn-gcolor-denim-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-denim-m20);
 }
 .nn-btn.nn-flat.nn-denim:active, .nn-btn.nn-flat.nn-denim.nn-active {
-  background-color: #4ca1ef;
-  box-shadow: 0px 3px 0 #1d88eb;
+  background-color: var(--nn-gcolor-denim-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-denim-m20);
 }
 .nn-btn.nn-flat.nn-gold-tips {
-  box-shadow: 0px 3px 0 #cb9619;
-  background-color: #e6b031;
-  color: #443208;
+  color: var(--nn-gcolor-gold-tips-invert);
+  background-color: var(--nn-gcolor-gold-tips);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-gold-tips-m10);
 }
 .nn-btn.nn-flat.nn-gold-tips:hover {
-  box-shadow: 0px 3px 0 #9e7413;
-  background-color: #cb9619;
+  background-color: var(--nn-gcolor-gold-tips-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-gold-tips-m20);
 }
 .nn-btn.nn-flat.nn-gold-tips:active, .nn-btn.nn-flat.nn-gold-tips.nn-active {
-  background-color: #f1d38c;
-  box-shadow: 0px 3px 0 #ecc15e;
+  background-color: var(--nn-gcolor-gold-tips-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-gold-tips-m20);
 }
 .nn-btn.nn-flat.nn-shamrock {
-  box-shadow: 0px 3px 0 #28a765;
-  background-color: #34ce7e;
-  color: #0f3e25;
+  color: var(--nn-gcolor-shamrock-invert);
+  background-color: var(--nn-gcolor-shamrock);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-shamrock-m10);
 }
 .nn-btn.nn-flat.nn-shamrock:hover {
-  box-shadow: 0px 3px 0 #1e7e4c;
-  background-color: #28a765;
+  background-color: var(--nn-gcolor-shamrock-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-shamrock-m20);
 }
 .nn-btn.nn-flat.nn-shamrock:active, .nn-btn.nn-flat.nn-shamrock.nn-active {
-  background-color: #86e2b2;
-  box-shadow: 0px 3px 0 #5dd898;
+  background-color: var(--nn-gcolor-shamrock-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-shamrock-m20);
 }
 .nn-btn.nn-flat.nn-cod-grey {
-  box-shadow: 0px 3px 0 #020202;
-  background-color: #1b1b1b;
-  color: #ffffff;
+  color: var(--nn-gcolor-cod-grey-invert);
+  background-color: var(--nn-gcolor-cod-grey);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-cod-grey-m10);
 }
 .nn-btn.nn-flat.nn-cod-grey:hover {
-  box-shadow: 0px 3px 0 black;
-  background-color: #020202;
+  background-color: var(--nn-gcolor-cod-grey-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-cod-grey-m20);
 }
 .nn-btn.nn-flat.nn-cod-grey:active, .nn-btn.nn-flat.nn-cod-grey.nn-active {
-  background-color: #4e4e4e;
-  box-shadow: 0px 3px 0 #353535;
+  background-color: var(--nn-gcolor-cod-grey-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-cod-grey-m20);
 }
 .nn-btn.nn-flat.nn-gravel {
-  box-shadow: 0px 3px 0 #555555;
-  background-color: #6e6e6e;
-  color: #ffffff;
+  color: var(--nn-gcolor-gravel-invert);
+  background-color: var(--nn-gcolor-gravel);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-gravel-m10);
 }
 .nn-btn.nn-flat.nn-gravel:hover {
-  box-shadow: 0px 3px 0 #3b3b3b;
-  background-color: #555555;
+  background-color: var(--nn-gcolor-gravel-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-gravel-m20);
 }
 .nn-btn.nn-flat.nn-gravel:active, .nn-btn.nn-flat.nn-gravel.nn-active {
-  background-color: #a1a1a1;
-  box-shadow: 0px 3px 0 #888888;
+  background-color: var(--nn-gcolor-gravel-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-gravel-m20);
 }
 .nn-btn.nn-flat.nn-emerald {
-  box-shadow: 0px 3px 0 #39bd36;
-  background-color: #5acf57;
-  color: #123c11;
+  color: var(--nn-gcolor-emerald-invert);
+  background-color: var(--nn-gcolor-emerald);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-emerald-m10);
 }
 .nn-btn.nn-flat.nn-emerald:hover {
-  box-shadow: 0px 3px 0 #2d952b;
-  background-color: #39bd36;
+  background-color: var(--nn-gcolor-emerald-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-emerald-m20);
 }
 .nn-btn.nn-flat.nn-emerald:active, .nn-btn.nn-flat.nn-emerald.nn-active {
-  background-color: #a8e6a6;
-  box-shadow: 0px 3px 0 #81da7f;
+  background-color: var(--nn-gcolor-emerald-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-emerald-m20);
 }
 .nn-btn.nn-flat.nn-burn-orange {
-  box-shadow: 0px 3px 0 #ed5407;
-  background-color: #f9722e;
-  color: #4a1a02;
+  color: var(--nn-gcolor-burn-orange-invert);
+  background-color: var(--nn-gcolor-burn-orange);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-burn-orange-m10);
 }
 .nn-btn.nn-flat.nn-burn-orange:hover {
-  box-shadow: 0px 3px 0 #bc4205;
-  background-color: #ed5407;
+  background-color: var(--nn-gcolor-burn-orange-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-burn-orange-m20);
 }
 .nn-btn.nn-flat.nn-burn-orange:active, .nn-btn.nn-flat.nn-burn-orange.nn-active {
-  background-color: #fcb591;
-  box-shadow: 0px 3px 0 #fa9360;
+  background-color: var(--nn-gcolor-burn-orange-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-burn-orange-m20);
 }
 .nn-btn.nn-flat.nn-razzmatazz {
-  box-shadow: 0px 3px 0 #a70031;
-  background-color: #da0040;
-  color: #ffffff;
+  color: var(--nn-gcolor-razzmatazz-invert);
+  background-color: var(--nn-gcolor-razzmatazz);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-razzmatazz-m10);
 }
 .nn-btn.nn-flat.nn-razzmatazz:hover {
-  box-shadow: 0px 3px 0 #740022;
-  background-color: #a70031;
+  background-color: var(--nn-gcolor-razzmatazz-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-razzmatazz-m20);
 }
 .nn-btn.nn-flat.nn-razzmatazz:active, .nn-btn.nn-flat.nn-razzmatazz.nn-active {
-  background-color: #ff4179;
-  box-shadow: 0px 3px 0 #ff0e55;
+  background-color: var(--nn-gcolor-razzmatazz-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-razzmatazz-m20);
 }
 .nn-btn.nn-flat.nn-desert {
-  box-shadow: 0px 3px 0 #7b4b2f;
-  background-color: #a0613d;
-  color: #ffffff;
+  color: var(--nn-gcolor-desert-invert);
+  background-color: var(--nn-gcolor-desert);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-desert-m10);
 }
 .nn-btn.nn-flat.nn-desert:hover {
-  box-shadow: 0px 3px 0 #563421;
-  background-color: #7b4b2f;
+  background-color: var(--nn-gcolor-desert-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-desert-m20);
 }
 .nn-btn.nn-flat.nn-desert:active, .nn-btn.nn-flat.nn-desert.nn-active {
-  background-color: #cb9678;
-  box-shadow: 0px 3px 0 #bd7953;
+  background-color: var(--nn-gcolor-desert-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-desert-m20);
 }
 .nn-btn.nn-flat.nn-charcoal {
-  box-shadow: 0px 3px 0 #2b2b2b;
-  background-color: #444444;
-  color: #ffffff;
+  color: var(--nn-gcolor-charcoal-invert);
+  background-color: var(--nn-gcolor-charcoal);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-charcoal-m10);
 }
 .nn-btn.nn-flat.nn-charcoal:hover {
-  box-shadow: 0px 3px 0 #111111;
-  background-color: #2b2b2b;
+  background-color: var(--nn-gcolor-charcoal-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-charcoal-m20);
 }
 .nn-btn.nn-flat.nn-charcoal:active, .nn-btn.nn-flat.nn-charcoal.nn-active {
-  background-color: #777777;
-  box-shadow: 0px 3px 0 #5e5e5e;
+  background-color: var(--nn-gcolor-charcoal-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-charcoal-m20);
 }
 .nn-btn.nn-flat.nn-golden-brown {
-  box-shadow: 0px 3px 0 #70490b;
-  background-color: #9e6710;
-  color: #ffffff;
+  color: var(--nn-gcolor-golden-brown-invert);
+  background-color: var(--nn-gcolor-golden-brown);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-golden-brown-m10);
 }
 .nn-btn.nn-flat.nn-golden-brown:hover {
-  box-shadow: 0px 3px 0 #412b07;
-  background-color: #70490b;
+  background-color: var(--nn-gcolor-golden-brown-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-golden-brown-m20);
 }
 .nn-btn.nn-flat.nn-golden-brown:active, .nn-btn.nn-flat.nn-golden-brown.nn-active {
-  background-color: #e9a02b;
-  box-shadow: 0px 3px 0 #cc8515;
+  background-color: var(--nn-gcolor-golden-brown-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-golden-brown-m20);
 }
 .nn-btn.nn-flat.nn-sepia {
-  box-shadow: 0px 3px 0 #45300e;
-  background-color: #704d16;
-  color: #ffffff;
+  color: var(--nn-gcolor-sepia-invert);
+  background-color: var(--nn-gcolor-sepia);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-sepia-m10);
 }
 .nn-btn.nn-flat.nn-sepia:hover {
-  box-shadow: 0px 3px 0 #1b1205;
-  background-color: #45300e;
+  background-color: var(--nn-gcolor-sepia-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-sepia-m20);
 }
 .nn-btn.nn-flat.nn-sepia:active, .nn-btn.nn-flat.nn-sepia.nn-active {
-  background-color: #c58827;
-  box-shadow: 0px 3px 0 #9b6a1e;
+  background-color: var(--nn-gcolor-sepia-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-sepia-m20);
 }
 .nn-btn.nn-flat.nn-alizarin {
-  box-shadow: 0px 3px 0 #b81a0f;
-  background-color: #e72113;
-  color: #ffffff;
+  color: var(--nn-gcolor-alizarin-invert);
+  background-color: var(--nn-gcolor-alizarin);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-alizarin-m10);
 }
 .nn-btn.nn-flat.nn-alizarin:hover {
-  box-shadow: 0px 3px 0 #89140b;
-  background-color: #b81a0f;
+  background-color: var(--nn-gcolor-alizarin-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-alizarin-m20);
 }
 .nn-btn.nn-flat.nn-alizarin:active, .nn-btn.nn-flat.nn-alizarin.nn-active {
-  background-color: #f3766d;
-  box-shadow: 0px 3px 0 #ef4a3e;
+  background-color: var(--nn-gcolor-alizarin-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-alizarin-m20);
 }
 .nn-btn.nn-flat.nn-rust {
-  box-shadow: 0px 3px 0 #993b0d;
-  background-color: #c84d11;
-  color: #ffffff;
+  color: var(--nn-gcolor-rust-invert);
+  background-color: var(--nn-gcolor-rust);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-rust-m10);
 }
 .nn-btn.nn-flat.nn-rust:hover {
-  box-shadow: 0px 3px 0 #6a2909;
-  background-color: #993b0d;
+  background-color: var(--nn-gcolor-rust-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-rust-m20);
 }
 .nn-btn.nn-flat.nn-rust:active, .nn-btn.nn-flat.nn-rust.nn-active {
-  background-color: #f0844f;
-  box-shadow: 0px 3px 0 #ec6320;
+  background-color: var(--nn-gcolor-rust-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-rust-m20);
 }
 .nn-btn.nn-flat.nn-blush {
-  box-shadow: 0px 3px 0 #9e3851;
-  background-color: #bf4a67;
-  color: #39141d;
+  color: var(--nn-gcolor-blush-invert);
+  background-color: var(--nn-gcolor-blush);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-blush-m10);
 }
 .nn-btn.nn-flat.nn-blush:hover {
-  box-shadow: 0px 3px 0 #782b3e;
-  background-color: #9e3851;
+  background-color: var(--nn-gcolor-blush-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-blush-m20);
 }
 .nn-btn.nn-flat.nn-blush:active, .nn-btn.nn-flat.nn-blush.nn-active {
-  background-color: #da95a6;
-  box-shadow: 0px 3px 0 #cc7087;
+  background-color: var(--nn-gcolor-blush-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-blush-m20);
 }
 .nn-btn.nn-flat.nn-fire-brick {
-  box-shadow: 0px 3px 0 #7b192b;
-  background-color: #a5213a;
-  color: #ffffff;
+  color: var(--nn-gcolor-fire-brick-invert);
+  background-color: var(--nn-gcolor-fire-brick);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-fire-brick-m10);
 }
 .nn-btn.nn-flat.nn-fire-brick:hover {
-  box-shadow: 0px 3px 0 #50101c;
-  background-color: #7b192b;
+  background-color: var(--nn-gcolor-fire-brick-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-fire-brick-m20);
 }
 .nn-btn.nn-flat.nn-fire-brick:active, .nn-btn.nn-flat.nn-fire-brick.nn-active {
-  background-color: #dc506b;
-  box-shadow: 0px 3px 0 #d02a49;
+  background-color: var(--nn-gcolor-fire-brick-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-fire-brick-m20);
 }
 .nn-btn.nn-flat.nn-sunglow {
-  box-shadow: 0px 3px 0 #f1bc00;
-  background-color: #ffcf25;
-  color: #4d3c00;
+  color: var(--nn-gcolor-sunglow-invert);
+  background-color: var(--nn-gcolor-sunglow);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-sunglow-m10);
 }
 .nn-btn.nn-flat.nn-sunglow:hover {
-  box-shadow: 0px 3px 0 #be9400;
-  background-color: #f1bc00;
+  background-color: var(--nn-gcolor-sunglow-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-sunglow-m20);
 }
 .nn-btn.nn-flat.nn-sunglow:active, .nn-btn.nn-flat.nn-sunglow.nn-active {
-  background-color: #ffe58b;
-  box-shadow: 0px 3px 0 #ffda58;
+  background-color: var(--nn-gcolor-sunglow-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-sunglow-m20);
 }
 .nn-btn.nn-flat.nn-milk-punch {
-  box-shadow: 0px 3px 0 #ecd699;
-  background-color: #f4e7c4;
-  color: #40320c;
+  color: var(--nn-gcolor-milk-punch-invert);
+  background-color: var(--nn-gcolor-milk-punch);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-milk-punch-m10);
 }
 .nn-btn.nn-flat.nn-milk-punch:hover {
-  box-shadow: 0px 3px 0 #e4c46e;
-  background-color: #ecd699;
+  background-color: var(--nn-gcolor-milk-punch-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-milk-punch-m20);
 }
 .nn-btn.nn-flat.nn-milk-punch:active, .nn-btn.nn-flat.nn-milk-punch.nn-active {
-  background-color: white;
-  box-shadow: 0px 3px 0 #fcf8ef;
+  background-color: var(--nn-gcolor-milk-punch-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-milk-punch-m20);
 }
 .nn-btn.nn-flat.nn-yukon-gold {
-  box-shadow: 0px 3px 0 #625114;
-  background-color: #8c741d;
-  color: #ffffff;
+  color: var(--nn-gcolor-yukon-gold-invert);
+  background-color: var(--nn-gcolor-yukon-gold);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-yukon-gold-m10);
 }
 .nn-btn.nn-flat.nn-yukon-gold:hover {
-  box-shadow: 0px 3px 0 #382e0b;
-  background-color: #625114;
+  background-color: var(--nn-gcolor-yukon-gold-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-yukon-gold-m20);
 }
 .nn-btn.nn-flat.nn-yukon-gold:active, .nn-btn.nn-flat.nn-yukon-gold.nn-active {
-  background-color: #d6b439;
-  box-shadow: 0px 3px 0 #b69726;
+  background-color: var(--nn-gcolor-yukon-gold-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-yukon-gold-m20);
 }
 .nn-btn.nn-flat.nn-green-pea {
-  box-shadow: 0px 3px 0 #154a26;
-  background-color: #20723b;
-  color: #ffffff;
+  color: var(--nn-gcolor-green-pea-invert);
+  background-color: var(--nn-gcolor-green-pea);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-green-pea-m10);
 }
 .nn-btn.nn-flat.nn-green-pea:hover {
-  box-shadow: 0px 3px 0 #0a2212;
-  background-color: #154a26;
+  background-color: var(--nn-gcolor-green-pea-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-green-pea-m20);
 }
 .nn-btn.nn-flat.nn-green-pea:active, .nn-btn.nn-flat.nn-green-pea.nn-active {
-  background-color: #36c264;
-  box-shadow: 0px 3px 0 #2b9a50;
+  background-color: var(--nn-gcolor-green-pea-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-green-pea-m20);
 }
 .nn-btn.nn-flat.nn-laurel {
-  box-shadow: 0px 3px 0 #246028;
-  background-color: #328538;
-  color: #ffffff;
+  color: var(--nn-gcolor-laurel-invert);
+  background-color: var(--nn-gcolor-laurel);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-laurel-m10);
 }
 .nn-btn.nn-flat.nn-laurel:hover {
-  box-shadow: 0px 3px 0 #163b19;
-  background-color: #246028;
+  background-color: var(--nn-gcolor-laurel-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-laurel-m20);
 }
 .nn-btn.nn-flat.nn-laurel:active, .nn-btn.nn-flat.nn-laurel.nn-active {
-  background-color: #5bc263;
-  box-shadow: 0px 3px 0 #40aa48;
+  background-color: var(--nn-gcolor-laurel-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-laurel-m20);
 }
 .nn-btn.nn-flat.nn-elf-green {
-  box-shadow: 0px 3px 0 #115b43;
-  background-color: #198663;
-  color: #ffffff;
+  color: var(--nn-gcolor-elf-green-invert);
+  background-color: var(--nn-gcolor-elf-green);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-elf-green-m10);
 }
 .nn-btn.nn-flat.nn-elf-green:hover {
-  box-shadow: 0px 3px 0 #093023;
-  background-color: #115b43;
+  background-color: var(--nn-gcolor-elf-green-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-elf-green-m20);
 }
 .nn-btn.nn-flat.nn-elf-green:active, .nn-btn.nn-flat.nn-elf-green.nn-active {
-  background-color: #2dd8a1;
-  box-shadow: 0px 3px 0 #21b183;
+  background-color: var(--nn-gcolor-elf-green-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-elf-green-m20);
 }
 .nn-btn.nn-flat.nn-lake {
-  box-shadow: 0px 3px 0 #1b5a6a;
-  background-color: #257d93;
-  color: #ffffff;
+  color: var(--nn-gcolor-lake-invert);
+  background-color: var(--nn-gcolor-lake);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-lake-m10);
 }
 .nn-btn.nn-flat.nn-lake:hover {
-  box-shadow: 0px 3px 0 #103842;
-  background-color: #1b5a6a;
+  background-color: var(--nn-gcolor-lake-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-lake-m20);
 }
 .nn-btn.nn-flat.nn-lake:active, .nn-btn.nn-flat.nn-lake.nn-active {
-  background-color: #4cb7d2;
-  box-shadow: 0px 3px 0 #2fa0bc;
+  background-color: var(--nn-gcolor-lake-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-lake-m20);
 }
 .nn-btn.nn-flat.nn-cobalt-blue {
-  box-shadow: 0px 3px 0 #08387b;
-  background-color: #0b4eab;
-  color: #ffffff;
+  color: var(--nn-gcolor-cobalt-blue-invert);
+  background-color: var(--nn-gcolor-cobalt-blue);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-cobalt-blue-m10);
 }
 .nn-btn.nn-flat.nn-cobalt-blue:hover {
-  box-shadow: 0px 3px 0 #05224b;
-  background-color: #08387b;
+  background-color: var(--nn-gcolor-cobalt-blue-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-cobalt-blue-m20);
 }
 .nn-btn.nn-flat.nn-cobalt-blue:active, .nn-btn.nn-flat.nn-cobalt-blue.nn-active {
-  background-color: #2b7ef1;
-  box-shadow: 0px 3px 0 #0e64db;
+  background-color: var(--nn-gcolor-cobalt-blue-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-cobalt-blue-m20);
 }
 .nn-btn.nn-flat.nn-mariner {
-  box-shadow: 0px 3px 0 #2b5ea6;
-  background-color: #3876cc;
-  color: #10233d;
+  color: var(--nn-gcolor-mariner-invert);
+  background-color: var(--nn-gcolor-mariner);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-mariner-m10);
 }
 .nn-btn.nn-flat.nn-mariner:hover {
-  box-shadow: 0px 3px 0 #20477e;
-  background-color: #2b5ea6;
+  background-color: var(--nn-gcolor-mariner-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-mariner-m20);
 }
 .nn-btn.nn-flat.nn-mariner:active, .nn-btn.nn-flat.nn-mariner.nn-active {
-  background-color: #89aee1;
-  box-shadow: 0px 3px 0 #6192d6;
+  background-color: var(--nn-gcolor-mariner-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-mariner-m20);
 }
 .nn-btn.nn-flat.nn-fuchsia {
-  box-shadow: 0px 3px 0 #7e067b;
-  background-color: #af08aa;
-  color: #ffffff;
+  color: var(--nn-gcolor-fuchsia-invert);
+  background-color: var(--nn-gcolor-fuchsia);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-fuchsia-m10);
 }
 .nn-btn.nn-flat.nn-fuchsia:hover {
-  box-shadow: 0px 3px 0 #4d044b;
-  background-color: #7e067b;
+  background-color: var(--nn-gcolor-fuchsia-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-fuchsia-m20);
 }
 .nn-btn.nn-flat.nn-fuchsia:active, .nn-btn.nn-flat.nn-fuchsia.nn-active {
-  background-color: #f528ef;
-  box-shadow: 0px 3px 0 #e00ad9;
+  background-color: var(--nn-gcolor-fuchsia-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-fuchsia-m20);
 }
 .nn-btn.nn-flat.nn-blue-violet {
-  box-shadow: 0px 3px 0 #7f1ce8;
-  background-color: #994aed;
-  color: #250746;
+  color: var(--nn-gcolor-blue-violet-invert);
+  background-color: var(--nn-gcolor-blue-violet);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-blue-violet-m10);
 }
 .nn-btn.nn-flat.nn-blue-violet:hover {
-  box-shadow: 0px 3px 0 #6613be;
-  background-color: #7f1ce8;
+  background-color: var(--nn-gcolor-blue-violet-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-blue-violet-m20);
 }
 .nn-btn.nn-flat.nn-blue-violet:active, .nn-btn.nn-flat.nn-blue-violet.nn-active {
-  background-color: #cda7f6;
-  box-shadow: 0px 3px 0 #b378f2;
+  background-color: var(--nn-gcolor-blue-violet-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-blue-violet-m20);
 }
 .nn-btn.nn-flat.nn-purple-heart {
-  box-shadow: 0px 3px 0 #612788;
-  background-color: #7d32b0;
-  color: #ffffff;
+  color: var(--nn-gcolor-purple-heart-invert);
+  background-color: var(--nn-gcolor-purple-heart);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-purple-heart-m10);
 }
 .nn-btn.nn-flat.nn-purple-heart:hover {
-  box-shadow: 0px 3px 0 #451b61;
-  background-color: #612788;
+  background-color: var(--nn-gcolor-purple-heart-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-purple-heart-m20);
 }
 .nn-btn.nn-flat.nn-purple-heart:active, .nn-btn.nn-flat.nn-purple-heart.nn-active {
-  background-color: #ae71d7;
-  box-shadow: 0px 3px 0 #974acb;
+  background-color: var(--nn-gcolor-purple-heart-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-purple-heart-m20);
 }
 
 nn-container, .nn-container {
@@ -498,98 +708,101 @@ nn-container.nn-sz1450, .nn-container.nn-sz1450 {
   flex-basis: 1450px;
 }
 
+nn-crayon.nn-white, .nn-crayon.nn-white {
+  color: var(--nn-gcolor-white);
+}
 nn-crayon.nn-silver, .nn-crayon.nn-silver {
-  color: #c0c0c0;
+  color: var(--nn-gcolor-silver);
 }
 nn-crayon.nn-royal-purple, .nn-crayon.nn-royal-purple {
-  color: #64429c;
+  color: var(--nn-gcolor-royal-purple);
 }
 nn-crayon.nn-persian-red, .nn-crayon.nn-persian-red {
-  color: #d73333;
+  color: var(--nn-gcolor-persian-red);
 }
 nn-crayon.nn-denim, .nn-crayon.nn-denim {
-  color: #116ec4;
+  color: var(--nn-gcolor-denim);
 }
 nn-crayon.nn-gold-tips, .nn-crayon.nn-gold-tips {
-  color: #e6b031;
+  color: var(--nn-gcolor-gold-tips);
 }
 nn-crayon.nn-shamrock, .nn-crayon.nn-shamrock {
-  color: #34ce7e;
+  color: var(--nn-gcolor-shamrock);
 }
 nn-crayon.nn-cod-grey, .nn-crayon.nn-cod-grey {
-  color: #1b1b1b;
+  color: var(--nn-gcolor-cod-grey);
 }
 nn-crayon.nn-gravel, .nn-crayon.nn-gravel {
-  color: #6e6e6e;
+  color: var(--nn-gcolor-gravel);
 }
 nn-crayon.nn-emerald, .nn-crayon.nn-emerald {
-  color: #5acf57;
+  color: var(--nn-gcolor-emerald);
 }
 nn-crayon.nn-burn-orange, .nn-crayon.nn-burn-orange {
-  color: #f9722e;
+  color: var(--nn-gcolor-burn-orange);
 }
 nn-crayon.nn-razzmatazz, .nn-crayon.nn-razzmatazz {
-  color: #da0040;
+  color: var(--nn-gcolor-razzmatazz);
 }
 nn-crayon.nn-desert, .nn-crayon.nn-desert {
-  color: #a0613d;
+  color: var(--nn-gcolor-desert);
 }
 nn-crayon.nn-charcoal, .nn-crayon.nn-charcoal {
-  color: #444444;
+  color: var(--nn-gcolor-charcoal);
 }
 nn-crayon.nn-golden-brown, .nn-crayon.nn-golden-brown {
-  color: #9e6710;
+  color: var(--nn-gcolor-golden-brown);
 }
 nn-crayon.nn-sepia, .nn-crayon.nn-sepia {
-  color: #704d16;
+  color: var(--nn-gcolor-sepia);
 }
 nn-crayon.nn-alizarin, .nn-crayon.nn-alizarin {
-  color: #e72113;
+  color: var(--nn-gcolor-alizarin);
 }
 nn-crayon.nn-rust, .nn-crayon.nn-rust {
-  color: #c84d11;
+  color: var(--nn-gcolor-rust);
 }
 nn-crayon.nn-blush, .nn-crayon.nn-blush {
-  color: #bf4a67;
+  color: var(--nn-gcolor-blush);
 }
 nn-crayon.nn-fire-brick, .nn-crayon.nn-fire-brick {
-  color: #a5213a;
+  color: var(--nn-gcolor-fire-brick);
 }
 nn-crayon.nn-sunglow, .nn-crayon.nn-sunglow {
-  color: #ffcf25;
+  color: var(--nn-gcolor-sunglow);
 }
 nn-crayon.nn-milk-punch, .nn-crayon.nn-milk-punch {
-  color: #f4e7c4;
+  color: var(--nn-gcolor-milk-punch);
 }
 nn-crayon.nn-yukon-gold, .nn-crayon.nn-yukon-gold {
-  color: #8c741d;
+  color: var(--nn-gcolor-yukon-gold);
 }
 nn-crayon.nn-green-pea, .nn-crayon.nn-green-pea {
-  color: #20723b;
+  color: var(--nn-gcolor-green-pea);
 }
 nn-crayon.nn-laurel, .nn-crayon.nn-laurel {
-  color: #328538;
+  color: var(--nn-gcolor-laurel);
 }
 nn-crayon.nn-elf-green, .nn-crayon.nn-elf-green {
-  color: #198663;
+  color: var(--nn-gcolor-elf-green);
 }
 nn-crayon.nn-lake, .nn-crayon.nn-lake {
-  color: #257d93;
+  color: var(--nn-gcolor-lake);
 }
 nn-crayon.nn-cobalt-blue, .nn-crayon.nn-cobalt-blue {
-  color: #0b4eab;
+  color: var(--nn-gcolor-cobalt-blue);
 }
 nn-crayon.nn-mariner, .nn-crayon.nn-mariner {
-  color: #3876cc;
+  color: var(--nn-gcolor-mariner);
 }
 nn-crayon.nn-fuchsia, .nn-crayon.nn-fuchsia {
-  color: #af08aa;
+  color: var(--nn-gcolor-fuchsia);
 }
 nn-crayon.nn-blue-violet, .nn-crayon.nn-blue-violet {
-  color: #994aed;
+  color: var(--nn-gcolor-blue-violet);
 }
 nn-crayon.nn-purple-heart, .nn-crayon.nn-purple-heart {
-  color: #7d32b0;
+  color: var(--nn-gcolor-purple-heart);
 }
 
 nn-row.nn-sp25, .nn-sp25.nn-row {
@@ -10693,284 +10906,293 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   background: var(--nn-input-color-background-hover);
   box-shadow: 0px 3px 0 var(--nn-input-color-shadow-hover);
 }
+.nn-label.nn-white {
+  color: var(--nn-gcolor-white-invert);
+  background-color: var(--nn-gcolor-white);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-white-m10);
+}
+.nn-label.nn-white:hover {
+  background-color: var(--nn-gcolor-white-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-white-m20);
+}
 .nn-label.nn-silver {
-  box-shadow: 0px 3px 0 #a7a7a7;
-  background-color: #c0c0c0;
-  color: #262626;
+  color: var(--nn-gcolor-silver-invert);
+  background-color: var(--nn-gcolor-silver);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-silver-m10);
 }
 .nn-label.nn-silver:hover {
-  box-shadow: 0px 3px 0 #8d8d8d;
-  background-color: #a7a7a7;
+  background-color: var(--nn-gcolor-silver-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-silver-m20);
 }
 .nn-label.nn-royal-purple {
-  box-shadow: 0px 3px 0 #4d3378;
-  background-color: #64429c;
-  color: #ffffff;
+  color: var(--nn-gcolor-royal-purple-invert);
+  background-color: var(--nn-gcolor-royal-purple);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-royal-purple-m10);
 }
 .nn-label.nn-royal-purple:hover {
-  box-shadow: 0px 3px 0 #362454;
-  background-color: #4d3378;
+  background-color: var(--nn-gcolor-royal-purple-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-royal-purple-m20);
 }
 .nn-label.nn-persian-red {
-  box-shadow: 0px 3px 0 #b42323;
-  background-color: #d73333;
-  color: #400d0d;
+  color: var(--nn-gcolor-persian-red-invert);
+  background-color: var(--nn-gcolor-persian-red);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-persian-red-m10);
 }
 .nn-label.nn-persian-red:hover {
-  box-shadow: 0px 3px 0 #891b1b;
-  background-color: #b42323;
+  background-color: var(--nn-gcolor-persian-red-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-persian-red-m20);
 }
 .nn-label.nn-denim {
-  box-shadow: 0px 3px 0 #0d5495;
-  background-color: #116ec4;
-  color: #ffffff;
+  color: var(--nn-gcolor-denim-invert);
+  background-color: var(--nn-gcolor-denim);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-denim-m10);
 }
 .nn-label.nn-denim:hover {
-  box-shadow: 0px 3px 0 #093966;
-  background-color: #0d5495;
+  background-color: var(--nn-gcolor-denim-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-denim-m20);
 }
 .nn-label.nn-gold-tips {
-  box-shadow: 0px 3px 0 #cb9619;
-  background-color: #e6b031;
-  color: #443208;
+  color: var(--nn-gcolor-gold-tips-invert);
+  background-color: var(--nn-gcolor-gold-tips);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-gold-tips-m10);
 }
 .nn-label.nn-gold-tips:hover {
-  box-shadow: 0px 3px 0 #9e7413;
-  background-color: #cb9619;
+  background-color: var(--nn-gcolor-gold-tips-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-gold-tips-m20);
 }
 .nn-label.nn-shamrock {
-  box-shadow: 0px 3px 0 #28a765;
-  background-color: #34ce7e;
-  color: #0f3e25;
+  color: var(--nn-gcolor-shamrock-invert);
+  background-color: var(--nn-gcolor-shamrock);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-shamrock-m10);
 }
 .nn-label.nn-shamrock:hover {
-  box-shadow: 0px 3px 0 #1e7e4c;
-  background-color: #28a765;
+  background-color: var(--nn-gcolor-shamrock-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-shamrock-m20);
 }
 .nn-label.nn-cod-grey {
-  box-shadow: 0px 3px 0 #020202;
-  background-color: #1b1b1b;
-  color: #ffffff;
+  color: var(--nn-gcolor-cod-grey-invert);
+  background-color: var(--nn-gcolor-cod-grey);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-cod-grey-m10);
 }
 .nn-label.nn-cod-grey:hover {
-  box-shadow: 0px 3px 0 black;
-  background-color: #020202;
+  background-color: var(--nn-gcolor-cod-grey-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-cod-grey-m20);
 }
 .nn-label.nn-gravel {
-  box-shadow: 0px 3px 0 #555555;
-  background-color: #6e6e6e;
-  color: #ffffff;
+  color: var(--nn-gcolor-gravel-invert);
+  background-color: var(--nn-gcolor-gravel);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-gravel-m10);
 }
 .nn-label.nn-gravel:hover {
-  box-shadow: 0px 3px 0 #3b3b3b;
-  background-color: #555555;
+  background-color: var(--nn-gcolor-gravel-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-gravel-m20);
 }
 .nn-label.nn-emerald {
-  box-shadow: 0px 3px 0 #39bd36;
-  background-color: #5acf57;
-  color: #123c11;
+  color: var(--nn-gcolor-emerald-invert);
+  background-color: var(--nn-gcolor-emerald);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-emerald-m10);
 }
 .nn-label.nn-emerald:hover {
-  box-shadow: 0px 3px 0 #2d952b;
-  background-color: #39bd36;
+  background-color: var(--nn-gcolor-emerald-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-emerald-m20);
 }
 .nn-label.nn-burn-orange {
-  box-shadow: 0px 3px 0 #ed5407;
-  background-color: #f9722e;
-  color: #4a1a02;
+  color: var(--nn-gcolor-burn-orange-invert);
+  background-color: var(--nn-gcolor-burn-orange);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-burn-orange-m10);
 }
 .nn-label.nn-burn-orange:hover {
-  box-shadow: 0px 3px 0 #bc4205;
-  background-color: #ed5407;
+  background-color: var(--nn-gcolor-burn-orange-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-burn-orange-m20);
 }
 .nn-label.nn-razzmatazz {
-  box-shadow: 0px 3px 0 #a70031;
-  background-color: #da0040;
-  color: #ffffff;
+  color: var(--nn-gcolor-razzmatazz-invert);
+  background-color: var(--nn-gcolor-razzmatazz);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-razzmatazz-m10);
 }
 .nn-label.nn-razzmatazz:hover {
-  box-shadow: 0px 3px 0 #740022;
-  background-color: #a70031;
+  background-color: var(--nn-gcolor-razzmatazz-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-razzmatazz-m20);
 }
 .nn-label.nn-desert {
-  box-shadow: 0px 3px 0 #7b4b2f;
-  background-color: #a0613d;
-  color: #ffffff;
+  color: var(--nn-gcolor-desert-invert);
+  background-color: var(--nn-gcolor-desert);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-desert-m10);
 }
 .nn-label.nn-desert:hover {
-  box-shadow: 0px 3px 0 #563421;
-  background-color: #7b4b2f;
+  background-color: var(--nn-gcolor-desert-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-desert-m20);
 }
 .nn-label.nn-charcoal {
-  box-shadow: 0px 3px 0 #2b2b2b;
-  background-color: #444444;
-  color: #ffffff;
+  color: var(--nn-gcolor-charcoal-invert);
+  background-color: var(--nn-gcolor-charcoal);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-charcoal-m10);
 }
 .nn-label.nn-charcoal:hover {
-  box-shadow: 0px 3px 0 #111111;
-  background-color: #2b2b2b;
+  background-color: var(--nn-gcolor-charcoal-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-charcoal-m20);
 }
 .nn-label.nn-golden-brown {
-  box-shadow: 0px 3px 0 #70490b;
-  background-color: #9e6710;
-  color: #ffffff;
+  color: var(--nn-gcolor-golden-brown-invert);
+  background-color: var(--nn-gcolor-golden-brown);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-golden-brown-m10);
 }
 .nn-label.nn-golden-brown:hover {
-  box-shadow: 0px 3px 0 #412b07;
-  background-color: #70490b;
+  background-color: var(--nn-gcolor-golden-brown-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-golden-brown-m20);
 }
 .nn-label.nn-sepia {
-  box-shadow: 0px 3px 0 #45300e;
-  background-color: #704d16;
-  color: #ffffff;
+  color: var(--nn-gcolor-sepia-invert);
+  background-color: var(--nn-gcolor-sepia);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-sepia-m10);
 }
 .nn-label.nn-sepia:hover {
-  box-shadow: 0px 3px 0 #1b1205;
-  background-color: #45300e;
+  background-color: var(--nn-gcolor-sepia-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-sepia-m20);
 }
 .nn-label.nn-alizarin {
-  box-shadow: 0px 3px 0 #b81a0f;
-  background-color: #e72113;
-  color: #ffffff;
+  color: var(--nn-gcolor-alizarin-invert);
+  background-color: var(--nn-gcolor-alizarin);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-alizarin-m10);
 }
 .nn-label.nn-alizarin:hover {
-  box-shadow: 0px 3px 0 #89140b;
-  background-color: #b81a0f;
+  background-color: var(--nn-gcolor-alizarin-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-alizarin-m20);
 }
 .nn-label.nn-rust {
-  box-shadow: 0px 3px 0 #993b0d;
-  background-color: #c84d11;
-  color: #ffffff;
+  color: var(--nn-gcolor-rust-invert);
+  background-color: var(--nn-gcolor-rust);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-rust-m10);
 }
 .nn-label.nn-rust:hover {
-  box-shadow: 0px 3px 0 #6a2909;
-  background-color: #993b0d;
+  background-color: var(--nn-gcolor-rust-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-rust-m20);
 }
 .nn-label.nn-blush {
-  box-shadow: 0px 3px 0 #9e3851;
-  background-color: #bf4a67;
-  color: #39141d;
+  color: var(--nn-gcolor-blush-invert);
+  background-color: var(--nn-gcolor-blush);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-blush-m10);
 }
 .nn-label.nn-blush:hover {
-  box-shadow: 0px 3px 0 #782b3e;
-  background-color: #9e3851;
+  background-color: var(--nn-gcolor-blush-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-blush-m20);
 }
 .nn-label.nn-fire-brick {
-  box-shadow: 0px 3px 0 #7b192b;
-  background-color: #a5213a;
-  color: #ffffff;
+  color: var(--nn-gcolor-fire-brick-invert);
+  background-color: var(--nn-gcolor-fire-brick);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-fire-brick-m10);
 }
 .nn-label.nn-fire-brick:hover {
-  box-shadow: 0px 3px 0 #50101c;
-  background-color: #7b192b;
+  background-color: var(--nn-gcolor-fire-brick-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-fire-brick-m20);
 }
 .nn-label.nn-sunglow {
-  box-shadow: 0px 3px 0 #f1bc00;
-  background-color: #ffcf25;
-  color: #4d3c00;
+  color: var(--nn-gcolor-sunglow-invert);
+  background-color: var(--nn-gcolor-sunglow);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-sunglow-m10);
 }
 .nn-label.nn-sunglow:hover {
-  box-shadow: 0px 3px 0 #be9400;
-  background-color: #f1bc00;
+  background-color: var(--nn-gcolor-sunglow-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-sunglow-m20);
 }
 .nn-label.nn-milk-punch {
-  box-shadow: 0px 3px 0 #ecd699;
-  background-color: #f4e7c4;
-  color: #40320c;
+  color: var(--nn-gcolor-milk-punch-invert);
+  background-color: var(--nn-gcolor-milk-punch);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-milk-punch-m10);
 }
 .nn-label.nn-milk-punch:hover {
-  box-shadow: 0px 3px 0 #e4c46e;
-  background-color: #ecd699;
+  background-color: var(--nn-gcolor-milk-punch-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-milk-punch-m20);
 }
 .nn-label.nn-yukon-gold {
-  box-shadow: 0px 3px 0 #625114;
-  background-color: #8c741d;
-  color: #ffffff;
+  color: var(--nn-gcolor-yukon-gold-invert);
+  background-color: var(--nn-gcolor-yukon-gold);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-yukon-gold-m10);
 }
 .nn-label.nn-yukon-gold:hover {
-  box-shadow: 0px 3px 0 #382e0b;
-  background-color: #625114;
+  background-color: var(--nn-gcolor-yukon-gold-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-yukon-gold-m20);
 }
 .nn-label.nn-green-pea {
-  box-shadow: 0px 3px 0 #154a26;
-  background-color: #20723b;
-  color: #ffffff;
+  color: var(--nn-gcolor-green-pea-invert);
+  background-color: var(--nn-gcolor-green-pea);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-green-pea-m10);
 }
 .nn-label.nn-green-pea:hover {
-  box-shadow: 0px 3px 0 #0a2212;
-  background-color: #154a26;
+  background-color: var(--nn-gcolor-green-pea-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-green-pea-m20);
 }
 .nn-label.nn-laurel {
-  box-shadow: 0px 3px 0 #246028;
-  background-color: #328538;
-  color: #ffffff;
+  color: var(--nn-gcolor-laurel-invert);
+  background-color: var(--nn-gcolor-laurel);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-laurel-m10);
 }
 .nn-label.nn-laurel:hover {
-  box-shadow: 0px 3px 0 #163b19;
-  background-color: #246028;
+  background-color: var(--nn-gcolor-laurel-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-laurel-m20);
 }
 .nn-label.nn-elf-green {
-  box-shadow: 0px 3px 0 #115b43;
-  background-color: #198663;
-  color: #ffffff;
+  color: var(--nn-gcolor-elf-green-invert);
+  background-color: var(--nn-gcolor-elf-green);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-elf-green-m10);
 }
 .nn-label.nn-elf-green:hover {
-  box-shadow: 0px 3px 0 #093023;
-  background-color: #115b43;
+  background-color: var(--nn-gcolor-elf-green-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-elf-green-m20);
 }
 .nn-label.nn-lake {
-  box-shadow: 0px 3px 0 #1b5a6a;
-  background-color: #257d93;
-  color: #ffffff;
+  color: var(--nn-gcolor-lake-invert);
+  background-color: var(--nn-gcolor-lake);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-lake-m10);
 }
 .nn-label.nn-lake:hover {
-  box-shadow: 0px 3px 0 #103842;
-  background-color: #1b5a6a;
+  background-color: var(--nn-gcolor-lake-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-lake-m20);
 }
 .nn-label.nn-cobalt-blue {
-  box-shadow: 0px 3px 0 #08387b;
-  background-color: #0b4eab;
-  color: #ffffff;
+  color: var(--nn-gcolor-cobalt-blue-invert);
+  background-color: var(--nn-gcolor-cobalt-blue);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-cobalt-blue-m10);
 }
 .nn-label.nn-cobalt-blue:hover {
-  box-shadow: 0px 3px 0 #05224b;
-  background-color: #08387b;
+  background-color: var(--nn-gcolor-cobalt-blue-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-cobalt-blue-m20);
 }
 .nn-label.nn-mariner {
-  box-shadow: 0px 3px 0 #2b5ea6;
-  background-color: #3876cc;
-  color: #10233d;
+  color: var(--nn-gcolor-mariner-invert);
+  background-color: var(--nn-gcolor-mariner);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-mariner-m10);
 }
 .nn-label.nn-mariner:hover {
-  box-shadow: 0px 3px 0 #20477e;
-  background-color: #2b5ea6;
+  background-color: var(--nn-gcolor-mariner-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-mariner-m20);
 }
 .nn-label.nn-fuchsia {
-  box-shadow: 0px 3px 0 #7e067b;
-  background-color: #af08aa;
-  color: #ffffff;
+  color: var(--nn-gcolor-fuchsia-invert);
+  background-color: var(--nn-gcolor-fuchsia);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-fuchsia-m10);
 }
 .nn-label.nn-fuchsia:hover {
-  box-shadow: 0px 3px 0 #4d044b;
-  background-color: #7e067b;
+  background-color: var(--nn-gcolor-fuchsia-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-fuchsia-m20);
 }
 .nn-label.nn-blue-violet {
-  box-shadow: 0px 3px 0 #7f1ce8;
-  background-color: #994aed;
-  color: #250746;
+  color: var(--nn-gcolor-blue-violet-invert);
+  background-color: var(--nn-gcolor-blue-violet);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-blue-violet-m10);
 }
 .nn-label.nn-blue-violet:hover {
-  box-shadow: 0px 3px 0 #6613be;
-  background-color: #7f1ce8;
+  background-color: var(--nn-gcolor-blue-violet-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-blue-violet-m20);
 }
 .nn-label.nn-purple-heart {
-  box-shadow: 0px 3px 0 #612788;
-  background-color: #7d32b0;
-  color: #ffffff;
+  color: var(--nn-gcolor-purple-heart-invert);
+  background-color: var(--nn-gcolor-purple-heart);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-purple-heart-m10);
 }
 .nn-label.nn-purple-heart:hover {
-  box-shadow: 0px 3px 0 #451b61;
-  background-color: #612788;
+  background-color: var(--nn-gcolor-purple-heart-m10);
+  box-shadow: 0px 3px 0 var(--nn-gcolor-purple-heart-m20);
 }
 .nn-label.nn-input-color {
   text-transform: none;
@@ -10991,14 +11213,47 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   min-height: 35px;
   margin: 0 0 0.5rem;
 }
+.nn-range.nn-white::-webkit-slider-thumb {
+  background: var(--nn-gcolor-white-m10);
+}
+.nn-range.nn-white::-moz-range-thumb {
+  background: var(--nn-gcolor-white-m10);
+}
+.nn-range.nn-white::-ms-thumb {
+  background: var(--nn-gcolor-white-m10);
+}
+.nn-range.nn-white::-webkit-slider-runnable-track {
+  background: var(--nn-track-color);
+}
+.nn-range.nn-white::-moz-range-track {
+  background: var(--nn-track-color);
+}
+.nn-range.nn-white::-ms-fill-lower {
+  background: var(--nn-track-color);
+}
+.nn-range.nn-white::-ms-fill-upper {
+  background: var(--nn-track-color);
+}
+.nn-range.nn-white:hover::-webkit-slider-runnable-track {
+  background: var(--nn-gcolor-white);
+}
+.nn-range.nn-white:hover::-moz-range-track {
+  background: var(--nn-gcolor-white);
+}
+.nn-range.nn-white:hover::-ms-fill-lower {
+  background: var(--nn-gcolor-white);
+}
+.nn-range.nn-white:hover::-ms-fill-upper {
+  background: var(--nn-gcolor-white);
+}
 .nn-range.nn-silver::-webkit-slider-thumb {
-  background: #adadad;
+  background: var(--nn-gcolor-silver-m10);
 }
 .nn-range.nn-silver::-moz-range-thumb {
-  background: #adadad;
+  background: var(--nn-gcolor-silver-m10);
 }
 .nn-range.nn-silver::-ms-thumb {
-  background: #adadad;
+  background: var(--nn-gcolor-silver-m10);
 }
 .nn-range.nn-silver::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -11013,25 +11268,25 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   background: var(--nn-track-color);
 }
 .nn-range.nn-silver:hover::-webkit-slider-runnable-track {
-  background: #c0c0c0;
+  background: var(--nn-gcolor-silver);
 }
 .nn-range.nn-silver:hover::-moz-range-track {
-  background: #c0c0c0;
+  background: var(--nn-gcolor-silver);
 }
 .nn-range.nn-silver:hover::-ms-fill-lower {
-  background: #c0c0c0;
+  background: var(--nn-gcolor-silver);
 }
 .nn-range.nn-silver:hover::-ms-fill-upper {
-  background: #c0c0c0;
+  background: var(--nn-gcolor-silver);
 }
 .nn-range.nn-royal-purple::-webkit-slider-thumb {
-  background: #533781;
+  background: var(--nn-gcolor-royal-purple-m10);
 }
 .nn-range.nn-royal-purple::-moz-range-thumb {
-  background: #533781;
+  background: var(--nn-gcolor-royal-purple-m10);
 }
 .nn-range.nn-royal-purple::-ms-thumb {
-  background: #533781;
+  background: var(--nn-gcolor-royal-purple-m10);
 }
 .nn-range.nn-royal-purple::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -11046,25 +11301,25 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   background: var(--nn-track-color);
 }
 .nn-range.nn-royal-purple:hover::-webkit-slider-runnable-track {
-  background: #64429c;
+  background: var(--nn-gcolor-royal-purple);
 }
 .nn-range.nn-royal-purple:hover::-moz-range-track {
-  background: #64429c;
+  background: var(--nn-gcolor-royal-purple);
 }
 .nn-range.nn-royal-purple:hover::-ms-fill-lower {
-  background: #64429c;
+  background: var(--nn-gcolor-royal-purple);
 }
 .nn-range.nn-royal-purple:hover::-ms-fill-upper {
-  background: #64429c;
+  background: var(--nn-gcolor-royal-purple);
 }
 .nn-range.nn-persian-red::-webkit-slider-thumb {
-  background: #be2525;
+  background: var(--nn-gcolor-persian-red-m10);
 }
 .nn-range.nn-persian-red::-moz-range-thumb {
-  background: #be2525;
+  background: var(--nn-gcolor-persian-red-m10);
 }
 .nn-range.nn-persian-red::-ms-thumb {
-  background: #be2525;
+  background: var(--nn-gcolor-persian-red-m10);
 }
 .nn-range.nn-persian-red::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -11079,25 +11334,25 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   background: var(--nn-track-color);
 }
 .nn-range.nn-persian-red:hover::-webkit-slider-runnable-track {
-  background: #d73333;
+  background: var(--nn-gcolor-persian-red);
 }
 .nn-range.nn-persian-red:hover::-moz-range-track {
-  background: #d73333;
+  background: var(--nn-gcolor-persian-red);
 }
 .nn-range.nn-persian-red:hover::-ms-fill-lower {
-  background: #d73333;
+  background: var(--nn-gcolor-persian-red);
 }
 .nn-range.nn-persian-red:hover::-ms-fill-upper {
-  background: #d73333;
+  background: var(--nn-gcolor-persian-red);
 }
 .nn-range.nn-denim::-webkit-slider-thumb {
-  background: #0e5aa1;
+  background: var(--nn-gcolor-denim-m10);
 }
 .nn-range.nn-denim::-moz-range-thumb {
-  background: #0e5aa1;
+  background: var(--nn-gcolor-denim-m10);
 }
 .nn-range.nn-denim::-ms-thumb {
-  background: #0e5aa1;
+  background: var(--nn-gcolor-denim-m10);
 }
 .nn-range.nn-denim::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -11112,25 +11367,25 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   background: var(--nn-track-color);
 }
 .nn-range.nn-denim:hover::-webkit-slider-runnable-track {
-  background: #116ec4;
+  background: var(--nn-gcolor-denim);
 }
 .nn-range.nn-denim:hover::-moz-range-track {
-  background: #116ec4;
+  background: var(--nn-gcolor-denim);
 }
 .nn-range.nn-denim:hover::-ms-fill-lower {
-  background: #116ec4;
+  background: var(--nn-gcolor-denim);
 }
 .nn-range.nn-denim:hover::-ms-fill-upper {
-  background: #116ec4;
+  background: var(--nn-gcolor-denim);
 }
 .nn-range.nn-gold-tips::-webkit-slider-thumb {
-  background: #d79e1a;
+  background: var(--nn-gcolor-gold-tips-m10);
 }
 .nn-range.nn-gold-tips::-moz-range-thumb {
-  background: #d79e1a;
+  background: var(--nn-gcolor-gold-tips-m10);
 }
 .nn-range.nn-gold-tips::-ms-thumb {
-  background: #d79e1a;
+  background: var(--nn-gcolor-gold-tips-m10);
 }
 .nn-range.nn-gold-tips::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -11145,25 +11400,25 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   background: var(--nn-track-color);
 }
 .nn-range.nn-gold-tips:hover::-webkit-slider-runnable-track {
-  background: #e6b031;
+  background: var(--nn-gcolor-gold-tips);
 }
 .nn-range.nn-gold-tips:hover::-moz-range-track {
-  background: #e6b031;
+  background: var(--nn-gcolor-gold-tips);
 }
 .nn-range.nn-gold-tips:hover::-ms-fill-lower {
-  background: #e6b031;
+  background: var(--nn-gcolor-gold-tips);
 }
 .nn-range.nn-gold-tips:hover::-ms-fill-upper {
-  background: #e6b031;
+  background: var(--nn-gcolor-gold-tips);
 }
 .nn-range.nn-shamrock::-webkit-slider-thumb {
-  background: #2bb16b;
+  background: var(--nn-gcolor-shamrock-m10);
 }
 .nn-range.nn-shamrock::-moz-range-thumb {
-  background: #2bb16b;
+  background: var(--nn-gcolor-shamrock-m10);
 }
 .nn-range.nn-shamrock::-ms-thumb {
-  background: #2bb16b;
+  background: var(--nn-gcolor-shamrock-m10);
 }
 .nn-range.nn-shamrock::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -11178,25 +11433,25 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   background: var(--nn-track-color);
 }
 .nn-range.nn-shamrock:hover::-webkit-slider-runnable-track {
-  background: #34ce7e;
+  background: var(--nn-gcolor-shamrock);
 }
 .nn-range.nn-shamrock:hover::-moz-range-track {
-  background: #34ce7e;
+  background: var(--nn-gcolor-shamrock);
 }
 .nn-range.nn-shamrock:hover::-ms-fill-lower {
-  background: #34ce7e;
+  background: var(--nn-gcolor-shamrock);
 }
 .nn-range.nn-shamrock:hover::-ms-fill-upper {
-  background: #34ce7e;
+  background: var(--nn-gcolor-shamrock);
 }
 .nn-range.nn-cod-grey::-webkit-slider-thumb {
-  background: #080808;
+  background: var(--nn-gcolor-cod-grey-m10);
 }
 .nn-range.nn-cod-grey::-moz-range-thumb {
-  background: #080808;
+  background: var(--nn-gcolor-cod-grey-m10);
 }
 .nn-range.nn-cod-grey::-ms-thumb {
-  background: #080808;
+  background: var(--nn-gcolor-cod-grey-m10);
 }
 .nn-range.nn-cod-grey::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -11211,25 +11466,25 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   background: var(--nn-track-color);
 }
 .nn-range.nn-cod-grey:hover::-webkit-slider-runnable-track {
-  background: #1b1b1b;
+  background: var(--nn-gcolor-cod-grey);
 }
 .nn-range.nn-cod-grey:hover::-moz-range-track {
-  background: #1b1b1b;
+  background: var(--nn-gcolor-cod-grey);
 }
 .nn-range.nn-cod-grey:hover::-ms-fill-lower {
-  background: #1b1b1b;
+  background: var(--nn-gcolor-cod-grey);
 }
 .nn-range.nn-cod-grey:hover::-ms-fill-upper {
-  background: #1b1b1b;
+  background: var(--nn-gcolor-cod-grey);
 }
 .nn-range.nn-gravel::-webkit-slider-thumb {
-  background: #5b5b5b;
+  background: var(--nn-gcolor-gravel-m10);
 }
 .nn-range.nn-gravel::-moz-range-thumb {
-  background: #5b5b5b;
+  background: var(--nn-gcolor-gravel-m10);
 }
 .nn-range.nn-gravel::-ms-thumb {
-  background: #5b5b5b;
+  background: var(--nn-gcolor-gravel-m10);
 }
 .nn-range.nn-gravel::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -11244,25 +11499,25 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   background: var(--nn-track-color);
 }
 .nn-range.nn-gravel:hover::-webkit-slider-runnable-track {
-  background: #6e6e6e;
+  background: var(--nn-gcolor-gravel);
 }
 .nn-range.nn-gravel:hover::-moz-range-track {
-  background: #6e6e6e;
+  background: var(--nn-gcolor-gravel);
 }
 .nn-range.nn-gravel:hover::-ms-fill-lower {
-  background: #6e6e6e;
+  background: var(--nn-gcolor-gravel);
 }
 .nn-range.nn-gravel:hover::-ms-fill-upper {
-  background: #6e6e6e;
+  background: var(--nn-gcolor-gravel);
 }
 .nn-range.nn-emerald::-webkit-slider-thumb {
-  background: #3dc739;
+  background: var(--nn-gcolor-emerald-m10);
 }
 .nn-range.nn-emerald::-moz-range-thumb {
-  background: #3dc739;
+  background: var(--nn-gcolor-emerald-m10);
 }
 .nn-range.nn-emerald::-ms-thumb {
-  background: #3dc739;
+  background: var(--nn-gcolor-emerald-m10);
 }
 .nn-range.nn-emerald::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -11277,25 +11532,25 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   background: var(--nn-track-color);
 }
 .nn-range.nn-emerald:hover::-webkit-slider-runnable-track {
-  background: #5acf57;
+  background: var(--nn-gcolor-emerald);
 }
 .nn-range.nn-emerald:hover::-moz-range-track {
-  background: #5acf57;
+  background: var(--nn-gcolor-emerald);
 }
 .nn-range.nn-emerald:hover::-ms-fill-lower {
-  background: #5acf57;
+  background: var(--nn-gcolor-emerald);
 }
 .nn-range.nn-emerald:hover::-ms-fill-upper {
-  background: #5acf57;
+  background: var(--nn-gcolor-emerald);
 }
 .nn-range.nn-burn-orange::-webkit-slider-thumb {
-  background: #f85909;
+  background: var(--nn-gcolor-burn-orange-m10);
 }
 .nn-range.nn-burn-orange::-moz-range-thumb {
-  background: #f85909;
+  background: var(--nn-gcolor-burn-orange-m10);
 }
 .nn-range.nn-burn-orange::-ms-thumb {
-  background: #f85909;
+  background: var(--nn-gcolor-burn-orange-m10);
 }
 .nn-range.nn-burn-orange::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -11310,25 +11565,25 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   background: var(--nn-track-color);
 }
 .nn-range.nn-burn-orange:hover::-webkit-slider-runnable-track {
-  background: #f9722e;
+  background: var(--nn-gcolor-burn-orange);
 }
 .nn-range.nn-burn-orange:hover::-moz-range-track {
-  background: #f9722e;
+  background: var(--nn-gcolor-burn-orange);
 }
 .nn-range.nn-burn-orange:hover::-ms-fill-lower {
-  background: #f9722e;
+  background: var(--nn-gcolor-burn-orange);
 }
 .nn-range.nn-burn-orange:hover::-ms-fill-upper {
-  background: #f9722e;
+  background: var(--nn-gcolor-burn-orange);
 }
 .nn-range.nn-razzmatazz::-webkit-slider-thumb {
-  background: #b40035;
+  background: var(--nn-gcolor-razzmatazz-m10);
 }
 .nn-range.nn-razzmatazz::-moz-range-thumb {
-  background: #b40035;
+  background: var(--nn-gcolor-razzmatazz-m10);
 }
 .nn-range.nn-razzmatazz::-ms-thumb {
-  background: #b40035;
+  background: var(--nn-gcolor-razzmatazz-m10);
 }
 .nn-range.nn-razzmatazz::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -11343,25 +11598,25 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   background: var(--nn-track-color);
 }
 .nn-range.nn-razzmatazz:hover::-webkit-slider-runnable-track {
-  background: #da0040;
+  background: var(--nn-gcolor-razzmatazz);
 }
 .nn-range.nn-razzmatazz:hover::-moz-range-track {
-  background: #da0040;
+  background: var(--nn-gcolor-razzmatazz);
 }
 .nn-range.nn-razzmatazz:hover::-ms-fill-lower {
-  background: #da0040;
+  background: var(--nn-gcolor-razzmatazz);
 }
 .nn-range.nn-razzmatazz:hover::-ms-fill-upper {
-  background: #da0040;
+  background: var(--nn-gcolor-razzmatazz);
 }
 .nn-range.nn-desert::-webkit-slider-thumb {
-  background: #845032;
+  background: var(--nn-gcolor-desert-m10);
 }
 .nn-range.nn-desert::-moz-range-thumb {
-  background: #845032;
+  background: var(--nn-gcolor-desert-m10);
 }
 .nn-range.nn-desert::-ms-thumb {
-  background: #845032;
+  background: var(--nn-gcolor-desert-m10);
 }
 .nn-range.nn-desert::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -11376,25 +11631,25 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   background: var(--nn-track-color);
 }
 .nn-range.nn-desert:hover::-webkit-slider-runnable-track {
-  background: #a0613d;
+  background: var(--nn-gcolor-desert);
 }
 .nn-range.nn-desert:hover::-moz-range-track {
-  background: #a0613d;
+  background: var(--nn-gcolor-desert);
 }
 .nn-range.nn-desert:hover::-ms-fill-lower {
-  background: #a0613d;
+  background: var(--nn-gcolor-desert);
 }
 .nn-range.nn-desert:hover::-ms-fill-upper {
-  background: #a0613d;
+  background: var(--nn-gcolor-desert);
 }
 .nn-range.nn-charcoal::-webkit-slider-thumb {
-  background: #313131;
+  background: var(--nn-gcolor-charcoal-m10);
 }
 .nn-range.nn-charcoal::-moz-range-thumb {
-  background: #313131;
+  background: var(--nn-gcolor-charcoal-m10);
 }
 .nn-range.nn-charcoal::-ms-thumb {
-  background: #313131;
+  background: var(--nn-gcolor-charcoal-m10);
 }
 .nn-range.nn-charcoal::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -11409,25 +11664,25 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   background: var(--nn-track-color);
 }
 .nn-range.nn-charcoal:hover::-webkit-slider-runnable-track {
-  background: #444444;
+  background: var(--nn-gcolor-charcoal);
 }
 .nn-range.nn-charcoal:hover::-moz-range-track {
-  background: #444444;
+  background: var(--nn-gcolor-charcoal);
 }
 .nn-range.nn-charcoal:hover::-ms-fill-lower {
-  background: #444444;
+  background: var(--nn-gcolor-charcoal);
 }
 .nn-range.nn-charcoal:hover::-ms-fill-upper {
-  background: #444444;
+  background: var(--nn-gcolor-charcoal);
 }
 .nn-range.nn-golden-brown::-webkit-slider-thumb {
-  background: #7b500c;
+  background: var(--nn-gcolor-golden-brown-m10);
 }
 .nn-range.nn-golden-brown::-moz-range-thumb {
-  background: #7b500c;
+  background: var(--nn-gcolor-golden-brown-m10);
 }
 .nn-range.nn-golden-brown::-ms-thumb {
-  background: #7b500c;
+  background: var(--nn-gcolor-golden-brown-m10);
 }
 .nn-range.nn-golden-brown::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -11442,25 +11697,25 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   background: var(--nn-track-color);
 }
 .nn-range.nn-golden-brown:hover::-webkit-slider-runnable-track {
-  background: #9e6710;
+  background: var(--nn-gcolor-golden-brown);
 }
 .nn-range.nn-golden-brown:hover::-moz-range-track {
-  background: #9e6710;
+  background: var(--nn-gcolor-golden-brown);
 }
 .nn-range.nn-golden-brown:hover::-ms-fill-lower {
-  background: #9e6710;
+  background: var(--nn-gcolor-golden-brown);
 }
 .nn-range.nn-golden-brown:hover::-ms-fill-upper {
-  background: #9e6710;
+  background: var(--nn-gcolor-golden-brown);
 }
 .nn-range.nn-sepia::-webkit-slider-thumb {
-  background: #503710;
+  background: var(--nn-gcolor-sepia-m10);
 }
 .nn-range.nn-sepia::-moz-range-thumb {
-  background: #503710;
+  background: var(--nn-gcolor-sepia-m10);
 }
 .nn-range.nn-sepia::-ms-thumb {
-  background: #503710;
+  background: var(--nn-gcolor-sepia-m10);
 }
 .nn-range.nn-sepia::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -11475,25 +11730,25 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   background: var(--nn-track-color);
 }
 .nn-range.nn-sepia:hover::-webkit-slider-runnable-track {
-  background: #704d16;
+  background: var(--nn-gcolor-sepia);
 }
 .nn-range.nn-sepia:hover::-moz-range-track {
-  background: #704d16;
+  background: var(--nn-gcolor-sepia);
 }
 .nn-range.nn-sepia:hover::-ms-fill-lower {
-  background: #704d16;
+  background: var(--nn-gcolor-sepia);
 }
 .nn-range.nn-sepia:hover::-ms-fill-upper {
-  background: #704d16;
+  background: var(--nn-gcolor-sepia);
 }
 .nn-range.nn-alizarin::-webkit-slider-thumb {
-  background: #c41c10;
+  background: var(--nn-gcolor-alizarin-m10);
 }
 .nn-range.nn-alizarin::-moz-range-thumb {
-  background: #c41c10;
+  background: var(--nn-gcolor-alizarin-m10);
 }
 .nn-range.nn-alizarin::-ms-thumb {
-  background: #c41c10;
+  background: var(--nn-gcolor-alizarin-m10);
 }
 .nn-range.nn-alizarin::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -11508,25 +11763,25 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   background: var(--nn-track-color);
 }
 .nn-range.nn-alizarin:hover::-webkit-slider-runnable-track {
-  background: #e72113;
+  background: var(--nn-gcolor-alizarin);
 }
 .nn-range.nn-alizarin:hover::-moz-range-track {
-  background: #e72113;
+  background: var(--nn-gcolor-alizarin);
 }
 .nn-range.nn-alizarin:hover::-ms-fill-lower {
-  background: #e72113;
+  background: var(--nn-gcolor-alizarin);
 }
 .nn-range.nn-alizarin:hover::-ms-fill-upper {
-  background: #e72113;
+  background: var(--nn-gcolor-alizarin);
 }
 .nn-range.nn-rust::-webkit-slider-thumb {
-  background: #a53f0e;
+  background: var(--nn-gcolor-rust-m10);
 }
 .nn-range.nn-rust::-moz-range-thumb {
-  background: #a53f0e;
+  background: var(--nn-gcolor-rust-m10);
 }
 .nn-range.nn-rust::-ms-thumb {
-  background: #a53f0e;
+  background: var(--nn-gcolor-rust-m10);
 }
 .nn-range.nn-rust::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -11541,25 +11796,25 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   background: var(--nn-track-color);
 }
 .nn-range.nn-rust:hover::-webkit-slider-runnable-track {
-  background: #c84d11;
+  background: var(--nn-gcolor-rust);
 }
 .nn-range.nn-rust:hover::-moz-range-track {
-  background: #c84d11;
+  background: var(--nn-gcolor-rust);
 }
 .nn-range.nn-rust:hover::-ms-fill-lower {
-  background: #c84d11;
+  background: var(--nn-gcolor-rust);
 }
 .nn-range.nn-rust:hover::-ms-fill-upper {
-  background: #c84d11;
+  background: var(--nn-gcolor-rust);
 }
 .nn-range.nn-blush::-webkit-slider-thumb {
-  background: #a83b56;
+  background: var(--nn-gcolor-blush-m10);
 }
 .nn-range.nn-blush::-moz-range-thumb {
-  background: #a83b56;
+  background: var(--nn-gcolor-blush-m10);
 }
 .nn-range.nn-blush::-ms-thumb {
-  background: #a83b56;
+  background: var(--nn-gcolor-blush-m10);
 }
 .nn-range.nn-blush::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -11574,25 +11829,25 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   background: var(--nn-track-color);
 }
 .nn-range.nn-blush:hover::-webkit-slider-runnable-track {
-  background: #bf4a67;
+  background: var(--nn-gcolor-blush);
 }
 .nn-range.nn-blush:hover::-moz-range-track {
-  background: #bf4a67;
+  background: var(--nn-gcolor-blush);
 }
 .nn-range.nn-blush:hover::-ms-fill-lower {
-  background: #bf4a67;
+  background: var(--nn-gcolor-blush);
 }
 .nn-range.nn-blush:hover::-ms-fill-upper {
-  background: #bf4a67;
+  background: var(--nn-gcolor-blush);
 }
 .nn-range.nn-fire-brick::-webkit-slider-thumb {
-  background: #851b2f;
+  background: var(--nn-gcolor-fire-brick-m10);
 }
 .nn-range.nn-fire-brick::-moz-range-thumb {
-  background: #851b2f;
+  background: var(--nn-gcolor-fire-brick-m10);
 }
 .nn-range.nn-fire-brick::-ms-thumb {
-  background: #851b2f;
+  background: var(--nn-gcolor-fire-brick-m10);
 }
 .nn-range.nn-fire-brick::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -11607,25 +11862,25 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   background: var(--nn-track-color);
 }
 .nn-range.nn-fire-brick:hover::-webkit-slider-runnable-track {
-  background: #a5213a;
+  background: var(--nn-gcolor-fire-brick);
 }
 .nn-range.nn-fire-brick:hover::-moz-range-track {
-  background: #a5213a;
+  background: var(--nn-gcolor-fire-brick);
 }
 .nn-range.nn-fire-brick:hover::-ms-fill-lower {
-  background: #a5213a;
+  background: var(--nn-gcolor-fire-brick);
 }
 .nn-range.nn-fire-brick:hover::-ms-fill-upper {
-  background: #a5213a;
+  background: var(--nn-gcolor-fire-brick);
 }
 .nn-range.nn-sunglow::-webkit-slider-thumb {
-  background: #fec600;
+  background: var(--nn-gcolor-sunglow-m10);
 }
 .nn-range.nn-sunglow::-moz-range-thumb {
-  background: #fec600;
+  background: var(--nn-gcolor-sunglow-m10);
 }
 .nn-range.nn-sunglow::-ms-thumb {
-  background: #fec600;
+  background: var(--nn-gcolor-sunglow-m10);
 }
 .nn-range.nn-sunglow::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -11640,25 +11895,25 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   background: var(--nn-track-color);
 }
 .nn-range.nn-sunglow:hover::-webkit-slider-runnable-track {
-  background: #ffcf25;
+  background: var(--nn-gcolor-sunglow);
 }
 .nn-range.nn-sunglow:hover::-moz-range-track {
-  background: #ffcf25;
+  background: var(--nn-gcolor-sunglow);
 }
 .nn-range.nn-sunglow:hover::-ms-fill-lower {
-  background: #ffcf25;
+  background: var(--nn-gcolor-sunglow);
 }
 .nn-range.nn-sunglow:hover::-ms-fill-upper {
-  background: #ffcf25;
+  background: var(--nn-gcolor-sunglow);
 }
 .nn-range.nn-milk-punch::-webkit-slider-thumb {
-  background: #eedaa4;
+  background: var(--nn-gcolor-milk-punch-m10);
 }
 .nn-range.nn-milk-punch::-moz-range-thumb {
-  background: #eedaa4;
+  background: var(--nn-gcolor-milk-punch-m10);
 }
 .nn-range.nn-milk-punch::-ms-thumb {
-  background: #eedaa4;
+  background: var(--nn-gcolor-milk-punch-m10);
 }
 .nn-range.nn-milk-punch::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -11673,25 +11928,25 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   background: var(--nn-track-color);
 }
 .nn-range.nn-milk-punch:hover::-webkit-slider-runnable-track {
-  background: #f4e7c4;
+  background: var(--nn-gcolor-milk-punch);
 }
 .nn-range.nn-milk-punch:hover::-moz-range-track {
-  background: #f4e7c4;
+  background: var(--nn-gcolor-milk-punch);
 }
 .nn-range.nn-milk-punch:hover::-ms-fill-lower {
-  background: #f4e7c4;
+  background: var(--nn-gcolor-milk-punch);
 }
 .nn-range.nn-milk-punch:hover::-ms-fill-upper {
-  background: #f4e7c4;
+  background: var(--nn-gcolor-milk-punch);
 }
 .nn-range.nn-yukon-gold::-webkit-slider-thumb {
-  background: #6c5a16;
+  background: var(--nn-gcolor-yukon-gold-m10);
 }
 .nn-range.nn-yukon-gold::-moz-range-thumb {
-  background: #6c5a16;
+  background: var(--nn-gcolor-yukon-gold-m10);
 }
 .nn-range.nn-yukon-gold::-ms-thumb {
-  background: #6c5a16;
+  background: var(--nn-gcolor-yukon-gold-m10);
 }
 .nn-range.nn-yukon-gold::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -11706,25 +11961,25 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   background: var(--nn-track-color);
 }
 .nn-range.nn-yukon-gold:hover::-webkit-slider-runnable-track {
-  background: #8c741d;
+  background: var(--nn-gcolor-yukon-gold);
 }
 .nn-range.nn-yukon-gold:hover::-moz-range-track {
-  background: #8c741d;
+  background: var(--nn-gcolor-yukon-gold);
 }
 .nn-range.nn-yukon-gold:hover::-ms-fill-lower {
-  background: #8c741d;
+  background: var(--nn-gcolor-yukon-gold);
 }
 .nn-range.nn-yukon-gold:hover::-ms-fill-upper {
-  background: #8c741d;
+  background: var(--nn-gcolor-yukon-gold);
 }
 .nn-range.nn-green-pea::-webkit-slider-thumb {
-  background: #18542c;
+  background: var(--nn-gcolor-green-pea-m10);
 }
 .nn-range.nn-green-pea::-moz-range-thumb {
-  background: #18542c;
+  background: var(--nn-gcolor-green-pea-m10);
 }
 .nn-range.nn-green-pea::-ms-thumb {
-  background: #18542c;
+  background: var(--nn-gcolor-green-pea-m10);
 }
 .nn-range.nn-green-pea::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -11739,25 +11994,25 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   background: var(--nn-track-color);
 }
 .nn-range.nn-green-pea:hover::-webkit-slider-runnable-track {
-  background: #20723b;
+  background: var(--nn-gcolor-green-pea);
 }
 .nn-range.nn-green-pea:hover::-moz-range-track {
-  background: #20723b;
+  background: var(--nn-gcolor-green-pea);
 }
 .nn-range.nn-green-pea:hover::-ms-fill-lower {
-  background: #20723b;
+  background: var(--nn-gcolor-green-pea);
 }
 .nn-range.nn-green-pea:hover::-ms-fill-upper {
-  background: #20723b;
+  background: var(--nn-gcolor-green-pea);
 }
 .nn-range.nn-laurel::-webkit-slider-thumb {
-  background: #28692c;
+  background: var(--nn-gcolor-laurel-m10);
 }
 .nn-range.nn-laurel::-moz-range-thumb {
-  background: #28692c;
+  background: var(--nn-gcolor-laurel-m10);
 }
 .nn-range.nn-laurel::-ms-thumb {
-  background: #28692c;
+  background: var(--nn-gcolor-laurel-m10);
 }
 .nn-range.nn-laurel::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -11772,25 +12027,25 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   background: var(--nn-track-color);
 }
 .nn-range.nn-laurel:hover::-webkit-slider-runnable-track {
-  background: #328538;
+  background: var(--nn-gcolor-laurel);
 }
 .nn-range.nn-laurel:hover::-moz-range-track {
-  background: #328538;
+  background: var(--nn-gcolor-laurel);
 }
 .nn-range.nn-laurel:hover::-ms-fill-lower {
-  background: #328538;
+  background: var(--nn-gcolor-laurel);
 }
 .nn-range.nn-laurel:hover::-ms-fill-upper {
-  background: #328538;
+  background: var(--nn-gcolor-laurel);
 }
 .nn-range.nn-elf-green::-webkit-slider-thumb {
-  background: #13664b;
+  background: var(--nn-gcolor-elf-green-m10);
 }
 .nn-range.nn-elf-green::-moz-range-thumb {
-  background: #13664b;
+  background: var(--nn-gcolor-elf-green-m10);
 }
 .nn-range.nn-elf-green::-ms-thumb {
-  background: #13664b;
+  background: var(--nn-gcolor-elf-green-m10);
 }
 .nn-range.nn-elf-green::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -11805,25 +12060,25 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   background: var(--nn-track-color);
 }
 .nn-range.nn-elf-green:hover::-webkit-slider-runnable-track {
-  background: #198663;
+  background: var(--nn-gcolor-elf-green);
 }
 .nn-range.nn-elf-green:hover::-moz-range-track {
-  background: #198663;
+  background: var(--nn-gcolor-elf-green);
 }
 .nn-range.nn-elf-green:hover::-ms-fill-lower {
-  background: #198663;
+  background: var(--nn-gcolor-elf-green);
 }
 .nn-range.nn-elf-green:hover::-ms-fill-upper {
-  background: #198663;
+  background: var(--nn-gcolor-elf-green);
 }
 .nn-range.nn-lake::-webkit-slider-thumb {
-  background: #1d6374;
+  background: var(--nn-gcolor-lake-m10);
 }
 .nn-range.nn-lake::-moz-range-thumb {
-  background: #1d6374;
+  background: var(--nn-gcolor-lake-m10);
 }
 .nn-range.nn-lake::-ms-thumb {
-  background: #1d6374;
+  background: var(--nn-gcolor-lake-m10);
 }
 .nn-range.nn-lake::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -11838,25 +12093,25 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   background: var(--nn-track-color);
 }
 .nn-range.nn-lake:hover::-webkit-slider-runnable-track {
-  background: #257d93;
+  background: var(--nn-gcolor-lake);
 }
 .nn-range.nn-lake:hover::-moz-range-track {
-  background: #257d93;
+  background: var(--nn-gcolor-lake);
 }
 .nn-range.nn-lake:hover::-ms-fill-lower {
-  background: #257d93;
+  background: var(--nn-gcolor-lake);
 }
 .nn-range.nn-lake:hover::-ms-fill-upper {
-  background: #257d93;
+  background: var(--nn-gcolor-lake);
 }
 .nn-range.nn-cobalt-blue::-webkit-slider-thumb {
-  background: #093e87;
+  background: var(--nn-gcolor-cobalt-blue-m10);
 }
 .nn-range.nn-cobalt-blue::-moz-range-thumb {
-  background: #093e87;
+  background: var(--nn-gcolor-cobalt-blue-m10);
 }
 .nn-range.nn-cobalt-blue::-ms-thumb {
-  background: #093e87;
+  background: var(--nn-gcolor-cobalt-blue-m10);
 }
 .nn-range.nn-cobalt-blue::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -11871,25 +12126,25 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   background: var(--nn-track-color);
 }
 .nn-range.nn-cobalt-blue:hover::-webkit-slider-runnable-track {
-  background: #0b4eab;
+  background: var(--nn-gcolor-cobalt-blue);
 }
 .nn-range.nn-cobalt-blue:hover::-moz-range-track {
-  background: #0b4eab;
+  background: var(--nn-gcolor-cobalt-blue);
 }
 .nn-range.nn-cobalt-blue:hover::-ms-fill-lower {
-  background: #0b4eab;
+  background: var(--nn-gcolor-cobalt-blue);
 }
 .nn-range.nn-cobalt-blue:hover::-ms-fill-upper {
-  background: #0b4eab;
+  background: var(--nn-gcolor-cobalt-blue);
 }
 .nn-range.nn-mariner::-webkit-slider-thumb {
-  background: #2d64b1;
+  background: var(--nn-gcolor-mariner-m10);
 }
 .nn-range.nn-mariner::-moz-range-thumb {
-  background: #2d64b1;
+  background: var(--nn-gcolor-mariner-m10);
 }
 .nn-range.nn-mariner::-ms-thumb {
-  background: #2d64b1;
+  background: var(--nn-gcolor-mariner-m10);
 }
 .nn-range.nn-mariner::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -11904,25 +12159,25 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   background: var(--nn-track-color);
 }
 .nn-range.nn-mariner:hover::-webkit-slider-runnable-track {
-  background: #3876cc;
+  background: var(--nn-gcolor-mariner);
 }
 .nn-range.nn-mariner:hover::-moz-range-track {
-  background: #3876cc;
+  background: var(--nn-gcolor-mariner);
 }
 .nn-range.nn-mariner:hover::-ms-fill-lower {
-  background: #3876cc;
+  background: var(--nn-gcolor-mariner);
 }
 .nn-range.nn-mariner:hover::-ms-fill-upper {
-  background: #3876cc;
+  background: var(--nn-gcolor-mariner);
 }
 .nn-range.nn-fuchsia::-webkit-slider-thumb {
-  background: #8a0686;
+  background: var(--nn-gcolor-fuchsia-m10);
 }
 .nn-range.nn-fuchsia::-moz-range-thumb {
-  background: #8a0686;
+  background: var(--nn-gcolor-fuchsia-m10);
 }
 .nn-range.nn-fuchsia::-ms-thumb {
-  background: #8a0686;
+  background: var(--nn-gcolor-fuchsia-m10);
 }
 .nn-range.nn-fuchsia::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -11937,25 +12192,25 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   background: var(--nn-track-color);
 }
 .nn-range.nn-fuchsia:hover::-webkit-slider-runnable-track {
-  background: #af08aa;
+  background: var(--nn-gcolor-fuchsia);
 }
 .nn-range.nn-fuchsia:hover::-moz-range-track {
-  background: #af08aa;
+  background: var(--nn-gcolor-fuchsia);
 }
 .nn-range.nn-fuchsia:hover::-ms-fill-lower {
-  background: #af08aa;
+  background: var(--nn-gcolor-fuchsia);
 }
 .nn-range.nn-fuchsia:hover::-ms-fill-upper {
-  background: #af08aa;
+  background: var(--nn-gcolor-fuchsia);
 }
 .nn-range.nn-blue-violet::-webkit-slider-thumb {
-  background: #8527ea;
+  background: var(--nn-gcolor-blue-violet-m10);
 }
 .nn-range.nn-blue-violet::-moz-range-thumb {
-  background: #8527ea;
+  background: var(--nn-gcolor-blue-violet-m10);
 }
 .nn-range.nn-blue-violet::-ms-thumb {
-  background: #8527ea;
+  background: var(--nn-gcolor-blue-violet-m10);
 }
 .nn-range.nn-blue-violet::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -11970,25 +12225,25 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   background: var(--nn-track-color);
 }
 .nn-range.nn-blue-violet:hover::-webkit-slider-runnable-track {
-  background: #994aed;
+  background: var(--nn-gcolor-blue-violet);
 }
 .nn-range.nn-blue-violet:hover::-moz-range-track {
-  background: #994aed;
+  background: var(--nn-gcolor-blue-violet);
 }
 .nn-range.nn-blue-violet:hover::-ms-fill-lower {
-  background: #994aed;
+  background: var(--nn-gcolor-blue-violet);
 }
 .nn-range.nn-blue-violet:hover::-ms-fill-upper {
-  background: #994aed;
+  background: var(--nn-gcolor-blue-violet);
 }
 .nn-range.nn-purple-heart::-webkit-slider-thumb {
-  background: #682a92;
+  background: var(--nn-gcolor-purple-heart-m10);
 }
 .nn-range.nn-purple-heart::-moz-range-thumb {
-  background: #682a92;
+  background: var(--nn-gcolor-purple-heart-m10);
 }
 .nn-range.nn-purple-heart::-ms-thumb {
-  background: #682a92;
+  background: var(--nn-gcolor-purple-heart-m10);
 }
 .nn-range.nn-purple-heart::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -12003,16 +12258,16 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   background: var(--nn-track-color);
 }
 .nn-range.nn-purple-heart:hover::-webkit-slider-runnable-track {
-  background: #7d32b0;
+  background: var(--nn-gcolor-purple-heart);
 }
 .nn-range.nn-purple-heart:hover::-moz-range-track {
-  background: #7d32b0;
+  background: var(--nn-gcolor-purple-heart);
 }
 .nn-range.nn-purple-heart:hover::-ms-fill-lower {
-  background: #7d32b0;
+  background: var(--nn-gcolor-purple-heart);
 }
 .nn-range.nn-purple-heart:hover::-ms-fill-upper {
-  background: #7d32b0;
+  background: var(--nn-gcolor-purple-heart);
 }
 .nn-range::-webkit-slider-runnable-track {
   width: 100%;
@@ -12121,117 +12376,270 @@ nn-scroll-area::-webkit-scrollbar, .nn-scroll-area::-webkit-scrollbar {
   height: 7px;
 }
 nn-scroll-area:hover, nn-scroll-area.keep, .nn-scroll-area:hover, .nn-scroll-area.keep {
-  scrollbar-face-color: #c0c0c0;
-  scrollbar-arrow-color: #c0c0c0;
-  scrollbar-shadow-color: #c0c0c0;
+  scrollbar-face-color: var(--nn-gcolor-silver);
+  scrollbar-arrow-color: var(--nn-gcolor-silver);
+  scrollbar-shadow-color: var(--nn-gcolor-silver);
 }
 nn-scroll-area:hover::-webkit-scrollbar-thumb, nn-scroll-area.keep::-webkit-scrollbar-thumb, .nn-scroll-area:hover::-webkit-scrollbar-thumb, .nn-scroll-area.keep::-webkit-scrollbar-thumb {
-  background: #c0c0c0;
+  background: var(--nn-gcolor-silver);
+}
+nn-scroll-area.nn-white:hover, nn-scroll-area.nn-white.keep, .nn-scroll-area.nn-white:hover, .nn-scroll-area.nn-white.keep {
+  scrollbar-face-color: var(--nn-gcolor-white);
+  scrollbar-arrow-color: var(--nn-gcolor-white);
+  scrollbar-shadow-color: var(--nn-gcolor-white);
+}
+nn-scroll-area.nn-white:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-white.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-white:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-white.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-white);
 }
 nn-scroll-area.nn-silver:hover, nn-scroll-area.nn-silver.keep, .nn-scroll-area.nn-silver:hover, .nn-scroll-area.nn-silver.keep {
-  scrollbar-face-color: #c0c0c0;
-  scrollbar-arrow-color: #c0c0c0;
-  scrollbar-shadow-color: #c0c0c0;
+  scrollbar-face-color: var(--nn-gcolor-silver);
+  scrollbar-arrow-color: var(--nn-gcolor-silver);
+  scrollbar-shadow-color: var(--nn-gcolor-silver);
 }
 nn-scroll-area.nn-silver:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-silver.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-silver:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-silver.keep::-webkit-scrollbar-thumb {
-  background: #c0c0c0;
+  background: var(--nn-gcolor-silver);
 }
 nn-scroll-area.nn-royal-purple:hover, nn-scroll-area.nn-royal-purple.keep, .nn-scroll-area.nn-royal-purple:hover, .nn-scroll-area.nn-royal-purple.keep {
-  scrollbar-face-color: #64429c;
-  scrollbar-arrow-color: #64429c;
-  scrollbar-shadow-color: #64429c;
+  scrollbar-face-color: var(--nn-gcolor-royal-purple);
+  scrollbar-arrow-color: var(--nn-gcolor-royal-purple);
+  scrollbar-shadow-color: var(--nn-gcolor-royal-purple);
 }
 nn-scroll-area.nn-royal-purple:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-royal-purple.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-royal-purple:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-royal-purple.keep::-webkit-scrollbar-thumb {
-  background: #64429c;
+  background: var(--nn-gcolor-royal-purple);
 }
 nn-scroll-area.nn-persian-red:hover, nn-scroll-area.nn-persian-red.keep, .nn-scroll-area.nn-persian-red:hover, .nn-scroll-area.nn-persian-red.keep {
-  scrollbar-face-color: #d73333;
-  scrollbar-arrow-color: #d73333;
-  scrollbar-shadow-color: #d73333;
+  scrollbar-face-color: var(--nn-gcolor-persian-red);
+  scrollbar-arrow-color: var(--nn-gcolor-persian-red);
+  scrollbar-shadow-color: var(--nn-gcolor-persian-red);
 }
 nn-scroll-area.nn-persian-red:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-persian-red.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-persian-red:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-persian-red.keep::-webkit-scrollbar-thumb {
-  background: #d73333;
+  background: var(--nn-gcolor-persian-red);
 }
 nn-scroll-area.nn-denim:hover, nn-scroll-area.nn-denim.keep, .nn-scroll-area.nn-denim:hover, .nn-scroll-area.nn-denim.keep {
-  scrollbar-face-color: #116ec4;
-  scrollbar-arrow-color: #116ec4;
-  scrollbar-shadow-color: #116ec4;
+  scrollbar-face-color: var(--nn-gcolor-denim);
+  scrollbar-arrow-color: var(--nn-gcolor-denim);
+  scrollbar-shadow-color: var(--nn-gcolor-denim);
 }
 nn-scroll-area.nn-denim:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-denim.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-denim:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-denim.keep::-webkit-scrollbar-thumb {
-  background: #116ec4;
+  background: var(--nn-gcolor-denim);
 }
 nn-scroll-area.nn-gold-tips:hover, nn-scroll-area.nn-gold-tips.keep, .nn-scroll-area.nn-gold-tips:hover, .nn-scroll-area.nn-gold-tips.keep {
-  scrollbar-face-color: #e6b031;
-  scrollbar-arrow-color: #e6b031;
-  scrollbar-shadow-color: #e6b031;
+  scrollbar-face-color: var(--nn-gcolor-gold-tips);
+  scrollbar-arrow-color: var(--nn-gcolor-gold-tips);
+  scrollbar-shadow-color: var(--nn-gcolor-gold-tips);
 }
 nn-scroll-area.nn-gold-tips:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-gold-tips.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-gold-tips:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-gold-tips.keep::-webkit-scrollbar-thumb {
-  background: #e6b031;
+  background: var(--nn-gcolor-gold-tips);
 }
 nn-scroll-area.nn-shamrock:hover, nn-scroll-area.nn-shamrock.keep, .nn-scroll-area.nn-shamrock:hover, .nn-scroll-area.nn-shamrock.keep {
-  scrollbar-face-color: #34ce7e;
-  scrollbar-arrow-color: #34ce7e;
-  scrollbar-shadow-color: #34ce7e;
+  scrollbar-face-color: var(--nn-gcolor-shamrock);
+  scrollbar-arrow-color: var(--nn-gcolor-shamrock);
+  scrollbar-shadow-color: var(--nn-gcolor-shamrock);
 }
 nn-scroll-area.nn-shamrock:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-shamrock.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-shamrock:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-shamrock.keep::-webkit-scrollbar-thumb {
-  background: #34ce7e;
+  background: var(--nn-gcolor-shamrock);
 }
 nn-scroll-area.nn-cod-grey:hover, nn-scroll-area.nn-cod-grey.keep, .nn-scroll-area.nn-cod-grey:hover, .nn-scroll-area.nn-cod-grey.keep {
-  scrollbar-face-color: #1b1b1b;
-  scrollbar-arrow-color: #1b1b1b;
-  scrollbar-shadow-color: #1b1b1b;
+  scrollbar-face-color: var(--nn-gcolor-cod-grey);
+  scrollbar-arrow-color: var(--nn-gcolor-cod-grey);
+  scrollbar-shadow-color: var(--nn-gcolor-cod-grey);
 }
 nn-scroll-area.nn-cod-grey:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-cod-grey.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-cod-grey:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-cod-grey.keep::-webkit-scrollbar-thumb {
-  background: #1b1b1b;
+  background: var(--nn-gcolor-cod-grey);
 }
 nn-scroll-area.nn-gravel:hover, nn-scroll-area.nn-gravel.keep, .nn-scroll-area.nn-gravel:hover, .nn-scroll-area.nn-gravel.keep {
-  scrollbar-face-color: #6e6e6e;
-  scrollbar-arrow-color: #6e6e6e;
-  scrollbar-shadow-color: #6e6e6e;
+  scrollbar-face-color: var(--nn-gcolor-gravel);
+  scrollbar-arrow-color: var(--nn-gcolor-gravel);
+  scrollbar-shadow-color: var(--nn-gcolor-gravel);
 }
 nn-scroll-area.nn-gravel:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-gravel.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-gravel:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-gravel.keep::-webkit-scrollbar-thumb {
-  background: #6e6e6e;
+  background: var(--nn-gcolor-gravel);
 }
 nn-scroll-area.nn-emerald:hover, nn-scroll-area.nn-emerald.keep, .nn-scroll-area.nn-emerald:hover, .nn-scroll-area.nn-emerald.keep {
-  scrollbar-face-color: #5acf57;
-  scrollbar-arrow-color: #5acf57;
-  scrollbar-shadow-color: #5acf57;
+  scrollbar-face-color: var(--nn-gcolor-emerald);
+  scrollbar-arrow-color: var(--nn-gcolor-emerald);
+  scrollbar-shadow-color: var(--nn-gcolor-emerald);
 }
 nn-scroll-area.nn-emerald:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-emerald.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-emerald:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-emerald.keep::-webkit-scrollbar-thumb {
-  background: #5acf57;
+  background: var(--nn-gcolor-emerald);
 }
 nn-scroll-area.nn-burn-orange:hover, nn-scroll-area.nn-burn-orange.keep, .nn-scroll-area.nn-burn-orange:hover, .nn-scroll-area.nn-burn-orange.keep {
-  scrollbar-face-color: #f9722e;
-  scrollbar-arrow-color: #f9722e;
-  scrollbar-shadow-color: #f9722e;
+  scrollbar-face-color: var(--nn-gcolor-burn-orange);
+  scrollbar-arrow-color: var(--nn-gcolor-burn-orange);
+  scrollbar-shadow-color: var(--nn-gcolor-burn-orange);
 }
 nn-scroll-area.nn-burn-orange:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-burn-orange.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-burn-orange:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-burn-orange.keep::-webkit-scrollbar-thumb {
-  background: #f9722e;
+  background: var(--nn-gcolor-burn-orange);
 }
 nn-scroll-area.nn-razzmatazz:hover, nn-scroll-area.nn-razzmatazz.keep, .nn-scroll-area.nn-razzmatazz:hover, .nn-scroll-area.nn-razzmatazz.keep {
-  scrollbar-face-color: #da0040;
-  scrollbar-arrow-color: #da0040;
-  scrollbar-shadow-color: #da0040;
+  scrollbar-face-color: var(--nn-gcolor-razzmatazz);
+  scrollbar-arrow-color: var(--nn-gcolor-razzmatazz);
+  scrollbar-shadow-color: var(--nn-gcolor-razzmatazz);
 }
 nn-scroll-area.nn-razzmatazz:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-razzmatazz.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-razzmatazz:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-razzmatazz.keep::-webkit-scrollbar-thumb {
-  background: #da0040;
+  background: var(--nn-gcolor-razzmatazz);
 }
 nn-scroll-area.nn-desert:hover, nn-scroll-area.nn-desert.keep, .nn-scroll-area.nn-desert:hover, .nn-scroll-area.nn-desert.keep {
-  scrollbar-face-color: #a0613d;
-  scrollbar-arrow-color: #a0613d;
-  scrollbar-shadow-color: #a0613d;
+  scrollbar-face-color: var(--nn-gcolor-desert);
+  scrollbar-arrow-color: var(--nn-gcolor-desert);
+  scrollbar-shadow-color: var(--nn-gcolor-desert);
 }
 nn-scroll-area.nn-desert:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-desert.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-desert:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-desert.keep::-webkit-scrollbar-thumb {
-  background: #a0613d;
+  background: var(--nn-gcolor-desert);
 }
 nn-scroll-area.nn-charcoal:hover, nn-scroll-area.nn-charcoal.keep, .nn-scroll-area.nn-charcoal:hover, .nn-scroll-area.nn-charcoal.keep {
-  scrollbar-face-color: #444444;
-  scrollbar-arrow-color: #444444;
-  scrollbar-shadow-color: #444444;
+  scrollbar-face-color: var(--nn-gcolor-charcoal);
+  scrollbar-arrow-color: var(--nn-gcolor-charcoal);
+  scrollbar-shadow-color: var(--nn-gcolor-charcoal);
 }
 nn-scroll-area.nn-charcoal:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-charcoal.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-charcoal:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-charcoal.keep::-webkit-scrollbar-thumb {
-  background: #444444;
+  background: var(--nn-gcolor-charcoal);
 }
+nn-scroll-area.nn-golden-brown:hover, nn-scroll-area.nn-golden-brown.keep, .nn-scroll-area.nn-golden-brown:hover, .nn-scroll-area.nn-golden-brown.keep {
+  scrollbar-face-color: var(--nn-gcolor-golden-brown);
+  scrollbar-arrow-color: var(--nn-gcolor-golden-brown);
+  scrollbar-shadow-color: var(--nn-gcolor-golden-brown);
+}
+nn-scroll-area.nn-golden-brown:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-golden-brown.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-golden-brown:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-golden-brown.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-golden-brown);
+}
+nn-scroll-area.nn-sepia:hover, nn-scroll-area.nn-sepia.keep, .nn-scroll-area.nn-sepia:hover, .nn-scroll-area.nn-sepia.keep {
+  scrollbar-face-color: var(--nn-gcolor-sepia);
+  scrollbar-arrow-color: var(--nn-gcolor-sepia);
+  scrollbar-shadow-color: var(--nn-gcolor-sepia);
+}
+nn-scroll-area.nn-sepia:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-sepia.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-sepia:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-sepia.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-sepia);
+}
+nn-scroll-area.nn-alizarin:hover, nn-scroll-area.nn-alizarin.keep, .nn-scroll-area.nn-alizarin:hover, .nn-scroll-area.nn-alizarin.keep {
+  scrollbar-face-color: var(--nn-gcolor-alizarin);
+  scrollbar-arrow-color: var(--nn-gcolor-alizarin);
+  scrollbar-shadow-color: var(--nn-gcolor-alizarin);
+}
+nn-scroll-area.nn-alizarin:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-alizarin.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-alizarin:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-alizarin.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-alizarin);
+}
+nn-scroll-area.nn-rust:hover, nn-scroll-area.nn-rust.keep, .nn-scroll-area.nn-rust:hover, .nn-scroll-area.nn-rust.keep {
+  scrollbar-face-color: var(--nn-gcolor-rust);
+  scrollbar-arrow-color: var(--nn-gcolor-rust);
+  scrollbar-shadow-color: var(--nn-gcolor-rust);
+}
+nn-scroll-area.nn-rust:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-rust.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-rust:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-rust.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-rust);
+}
+nn-scroll-area.nn-blush:hover, nn-scroll-area.nn-blush.keep, .nn-scroll-area.nn-blush:hover, .nn-scroll-area.nn-blush.keep {
+  scrollbar-face-color: var(--nn-gcolor-blush);
+  scrollbar-arrow-color: var(--nn-gcolor-blush);
+  scrollbar-shadow-color: var(--nn-gcolor-blush);
+}
+nn-scroll-area.nn-blush:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-blush.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-blush:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-blush.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-blush);
+}
+nn-scroll-area.nn-fire-brick:hover, nn-scroll-area.nn-fire-brick.keep, .nn-scroll-area.nn-fire-brick:hover, .nn-scroll-area.nn-fire-brick.keep {
+  scrollbar-face-color: var(--nn-gcolor-fire-brick);
+  scrollbar-arrow-color: var(--nn-gcolor-fire-brick);
+  scrollbar-shadow-color: var(--nn-gcolor-fire-brick);
+}
+nn-scroll-area.nn-fire-brick:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-fire-brick.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-fire-brick:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-fire-brick.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-fire-brick);
+}
+nn-scroll-area.nn-sunglow:hover, nn-scroll-area.nn-sunglow.keep, .nn-scroll-area.nn-sunglow:hover, .nn-scroll-area.nn-sunglow.keep {
+  scrollbar-face-color: var(--nn-gcolor-sunglow);
+  scrollbar-arrow-color: var(--nn-gcolor-sunglow);
+  scrollbar-shadow-color: var(--nn-gcolor-sunglow);
+}
+nn-scroll-area.nn-sunglow:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-sunglow.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-sunglow:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-sunglow.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-sunglow);
+}
+nn-scroll-area.nn-milk-punch:hover, nn-scroll-area.nn-milk-punch.keep, .nn-scroll-area.nn-milk-punch:hover, .nn-scroll-area.nn-milk-punch.keep {
+  scrollbar-face-color: var(--nn-gcolor-milk-punch);
+  scrollbar-arrow-color: var(--nn-gcolor-milk-punch);
+  scrollbar-shadow-color: var(--nn-gcolor-milk-punch);
+}
+nn-scroll-area.nn-milk-punch:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-milk-punch.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-milk-punch:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-milk-punch.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-milk-punch);
+}
+nn-scroll-area.nn-yukon-gold:hover, nn-scroll-area.nn-yukon-gold.keep, .nn-scroll-area.nn-yukon-gold:hover, .nn-scroll-area.nn-yukon-gold.keep {
+  scrollbar-face-color: var(--nn-gcolor-yukon-gold);
+  scrollbar-arrow-color: var(--nn-gcolor-yukon-gold);
+  scrollbar-shadow-color: var(--nn-gcolor-yukon-gold);
+}
+nn-scroll-area.nn-yukon-gold:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-yukon-gold.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-yukon-gold:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-yukon-gold.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-yukon-gold);
+}
+nn-scroll-area.nn-green-pea:hover, nn-scroll-area.nn-green-pea.keep, .nn-scroll-area.nn-green-pea:hover, .nn-scroll-area.nn-green-pea.keep {
+  scrollbar-face-color: var(--nn-gcolor-green-pea);
+  scrollbar-arrow-color: var(--nn-gcolor-green-pea);
+  scrollbar-shadow-color: var(--nn-gcolor-green-pea);
+}
+nn-scroll-area.nn-green-pea:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-green-pea.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-green-pea:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-green-pea.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-green-pea);
+}
+nn-scroll-area.nn-laurel:hover, nn-scroll-area.nn-laurel.keep, .nn-scroll-area.nn-laurel:hover, .nn-scroll-area.nn-laurel.keep {
+  scrollbar-face-color: var(--nn-gcolor-laurel);
+  scrollbar-arrow-color: var(--nn-gcolor-laurel);
+  scrollbar-shadow-color: var(--nn-gcolor-laurel);
+}
+nn-scroll-area.nn-laurel:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-laurel.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-laurel:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-laurel.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-laurel);
+}
+nn-scroll-area.nn-elf-green:hover, nn-scroll-area.nn-elf-green.keep, .nn-scroll-area.nn-elf-green:hover, .nn-scroll-area.nn-elf-green.keep {
+  scrollbar-face-color: var(--nn-gcolor-elf-green);
+  scrollbar-arrow-color: var(--nn-gcolor-elf-green);
+  scrollbar-shadow-color: var(--nn-gcolor-elf-green);
+}
+nn-scroll-area.nn-elf-green:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-elf-green.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-elf-green:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-elf-green.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-elf-green);
+}
+nn-scroll-area.nn-lake:hover, nn-scroll-area.nn-lake.keep, .nn-scroll-area.nn-lake:hover, .nn-scroll-area.nn-lake.keep {
+  scrollbar-face-color: var(--nn-gcolor-lake);
+  scrollbar-arrow-color: var(--nn-gcolor-lake);
+  scrollbar-shadow-color: var(--nn-gcolor-lake);
+}
+nn-scroll-area.nn-lake:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-lake.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-lake:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-lake.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-lake);
+}
+nn-scroll-area.nn-cobalt-blue:hover, nn-scroll-area.nn-cobalt-blue.keep, .nn-scroll-area.nn-cobalt-blue:hover, .nn-scroll-area.nn-cobalt-blue.keep {
+  scrollbar-face-color: var(--nn-gcolor-cobalt-blue);
+  scrollbar-arrow-color: var(--nn-gcolor-cobalt-blue);
+  scrollbar-shadow-color: var(--nn-gcolor-cobalt-blue);
+}
+nn-scroll-area.nn-cobalt-blue:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-cobalt-blue.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-cobalt-blue:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-cobalt-blue.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-cobalt-blue);
+}
+nn-scroll-area.nn-mariner:hover, nn-scroll-area.nn-mariner.keep, .nn-scroll-area.nn-mariner:hover, .nn-scroll-area.nn-mariner.keep {
+  scrollbar-face-color: var(--nn-gcolor-mariner);
+  scrollbar-arrow-color: var(--nn-gcolor-mariner);
+  scrollbar-shadow-color: var(--nn-gcolor-mariner);
+}
+nn-scroll-area.nn-mariner:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-mariner.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-mariner:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-mariner.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-mariner);
+}
+nn-scroll-area.nn-fuchsia:hover, nn-scroll-area.nn-fuchsia.keep, .nn-scroll-area.nn-fuchsia:hover, .nn-scroll-area.nn-fuchsia.keep {
+  scrollbar-face-color: var(--nn-gcolor-fuchsia);
+  scrollbar-arrow-color: var(--nn-gcolor-fuchsia);
+  scrollbar-shadow-color: var(--nn-gcolor-fuchsia);
+}
+nn-scroll-area.nn-fuchsia:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-fuchsia.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-fuchsia:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-fuchsia.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-fuchsia);
+}
+nn-scroll-area.nn-blue-violet:hover, nn-scroll-area.nn-blue-violet.keep, .nn-scroll-area.nn-blue-violet:hover, .nn-scroll-area.nn-blue-violet.keep {
+  scrollbar-face-color: var(--nn-gcolor-blue-violet);
+  scrollbar-arrow-color: var(--nn-gcolor-blue-violet);
+  scrollbar-shadow-color: var(--nn-gcolor-blue-violet);
+}
+nn-scroll-area.nn-blue-violet:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-blue-violet.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-blue-violet:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-blue-violet.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-blue-violet);
+}
+nn-scroll-area.nn-purple-heart:hover, nn-scroll-area.nn-purple-heart.keep, .nn-scroll-area.nn-purple-heart:hover, .nn-scroll-area.nn-purple-heart.keep {
+  scrollbar-face-color: var(--nn-gcolor-purple-heart);
+  scrollbar-arrow-color: var(--nn-gcolor-purple-heart);
+  scrollbar-shadow-color: var(--nn-gcolor-purple-heart);
+}
+nn-scroll-area.nn-purple-heart:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-purple-heart.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-purple-heart:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-purple-heart.keep::-webkit-scrollbar-thumb {
+  background: var(--nn-gcolor-purple-heart);
+}
+
 .nn-shade {
   border-radius: 5px;
   padding: 2rem;

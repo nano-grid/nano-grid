@@ -8,14 +8,47 @@
   min-height: 35px;
   margin: 0 0 0.5rem;
 }
+.nn-range.nn-white::-webkit-slider-thumb {
+  background: var(--nn-gcolor-white-m10);
+}
+.nn-range.nn-white::-moz-range-thumb {
+  background: var(--nn-gcolor-white-m10);
+}
+.nn-range.nn-white::-ms-thumb {
+  background: var(--nn-gcolor-white-m10);
+}
+.nn-range.nn-white::-webkit-slider-runnable-track {
+  background: var(--nn-track-color);
+}
+.nn-range.nn-white::-moz-range-track {
+  background: var(--nn-track-color);
+}
+.nn-range.nn-white::-ms-fill-lower {
+  background: var(--nn-track-color);
+}
+.nn-range.nn-white::-ms-fill-upper {
+  background: var(--nn-track-color);
+}
+.nn-range.nn-white:hover::-webkit-slider-runnable-track {
+  background: var(--nn-gcolor-white);
+}
+.nn-range.nn-white:hover::-moz-range-track {
+  background: var(--nn-gcolor-white);
+}
+.nn-range.nn-white:hover::-ms-fill-lower {
+  background: var(--nn-gcolor-white);
+}
+.nn-range.nn-white:hover::-ms-fill-upper {
+  background: var(--nn-gcolor-white);
+}
 .nn-range.nn-silver::-webkit-slider-thumb {
-  background: #adadad;
+  background: var(--nn-gcolor-silver-m10);
 }
 .nn-range.nn-silver::-moz-range-thumb {
-  background: #adadad;
+  background: var(--nn-gcolor-silver-m10);
 }
 .nn-range.nn-silver::-ms-thumb {
-  background: #adadad;
+  background: var(--nn-gcolor-silver-m10);
 }
 .nn-range.nn-silver::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -30,25 +63,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-silver:hover::-webkit-slider-runnable-track {
-  background: #c0c0c0;
+  background: var(--nn-gcolor-silver);
 }
 .nn-range.nn-silver:hover::-moz-range-track {
-  background: #c0c0c0;
+  background: var(--nn-gcolor-silver);
 }
 .nn-range.nn-silver:hover::-ms-fill-lower {
-  background: #c0c0c0;
+  background: var(--nn-gcolor-silver);
 }
 .nn-range.nn-silver:hover::-ms-fill-upper {
-  background: #c0c0c0;
+  background: var(--nn-gcolor-silver);
 }
 .nn-range.nn-royal-purple::-webkit-slider-thumb {
-  background: #533781;
+  background: var(--nn-gcolor-royal-purple-m10);
 }
 .nn-range.nn-royal-purple::-moz-range-thumb {
-  background: #533781;
+  background: var(--nn-gcolor-royal-purple-m10);
 }
 .nn-range.nn-royal-purple::-ms-thumb {
-  background: #533781;
+  background: var(--nn-gcolor-royal-purple-m10);
 }
 .nn-range.nn-royal-purple::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -63,25 +96,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-royal-purple:hover::-webkit-slider-runnable-track {
-  background: #64429c;
+  background: var(--nn-gcolor-royal-purple);
 }
 .nn-range.nn-royal-purple:hover::-moz-range-track {
-  background: #64429c;
+  background: var(--nn-gcolor-royal-purple);
 }
 .nn-range.nn-royal-purple:hover::-ms-fill-lower {
-  background: #64429c;
+  background: var(--nn-gcolor-royal-purple);
 }
 .nn-range.nn-royal-purple:hover::-ms-fill-upper {
-  background: #64429c;
+  background: var(--nn-gcolor-royal-purple);
 }
 .nn-range.nn-persian-red::-webkit-slider-thumb {
-  background: #be2525;
+  background: var(--nn-gcolor-persian-red-m10);
 }
 .nn-range.nn-persian-red::-moz-range-thumb {
-  background: #be2525;
+  background: var(--nn-gcolor-persian-red-m10);
 }
 .nn-range.nn-persian-red::-ms-thumb {
-  background: #be2525;
+  background: var(--nn-gcolor-persian-red-m10);
 }
 .nn-range.nn-persian-red::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -96,25 +129,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-persian-red:hover::-webkit-slider-runnable-track {
-  background: #d73333;
+  background: var(--nn-gcolor-persian-red);
 }
 .nn-range.nn-persian-red:hover::-moz-range-track {
-  background: #d73333;
+  background: var(--nn-gcolor-persian-red);
 }
 .nn-range.nn-persian-red:hover::-ms-fill-lower {
-  background: #d73333;
+  background: var(--nn-gcolor-persian-red);
 }
 .nn-range.nn-persian-red:hover::-ms-fill-upper {
-  background: #d73333;
+  background: var(--nn-gcolor-persian-red);
 }
 .nn-range.nn-denim::-webkit-slider-thumb {
-  background: #0e5aa1;
+  background: var(--nn-gcolor-denim-m10);
 }
 .nn-range.nn-denim::-moz-range-thumb {
-  background: #0e5aa1;
+  background: var(--nn-gcolor-denim-m10);
 }
 .nn-range.nn-denim::-ms-thumb {
-  background: #0e5aa1;
+  background: var(--nn-gcolor-denim-m10);
 }
 .nn-range.nn-denim::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -129,25 +162,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-denim:hover::-webkit-slider-runnable-track {
-  background: #116ec4;
+  background: var(--nn-gcolor-denim);
 }
 .nn-range.nn-denim:hover::-moz-range-track {
-  background: #116ec4;
+  background: var(--nn-gcolor-denim);
 }
 .nn-range.nn-denim:hover::-ms-fill-lower {
-  background: #116ec4;
+  background: var(--nn-gcolor-denim);
 }
 .nn-range.nn-denim:hover::-ms-fill-upper {
-  background: #116ec4;
+  background: var(--nn-gcolor-denim);
 }
 .nn-range.nn-gold-tips::-webkit-slider-thumb {
-  background: #d79e1a;
+  background: var(--nn-gcolor-gold-tips-m10);
 }
 .nn-range.nn-gold-tips::-moz-range-thumb {
-  background: #d79e1a;
+  background: var(--nn-gcolor-gold-tips-m10);
 }
 .nn-range.nn-gold-tips::-ms-thumb {
-  background: #d79e1a;
+  background: var(--nn-gcolor-gold-tips-m10);
 }
 .nn-range.nn-gold-tips::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -162,25 +195,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-gold-tips:hover::-webkit-slider-runnable-track {
-  background: #e6b031;
+  background: var(--nn-gcolor-gold-tips);
 }
 .nn-range.nn-gold-tips:hover::-moz-range-track {
-  background: #e6b031;
+  background: var(--nn-gcolor-gold-tips);
 }
 .nn-range.nn-gold-tips:hover::-ms-fill-lower {
-  background: #e6b031;
+  background: var(--nn-gcolor-gold-tips);
 }
 .nn-range.nn-gold-tips:hover::-ms-fill-upper {
-  background: #e6b031;
+  background: var(--nn-gcolor-gold-tips);
 }
 .nn-range.nn-shamrock::-webkit-slider-thumb {
-  background: #2bb16b;
+  background: var(--nn-gcolor-shamrock-m10);
 }
 .nn-range.nn-shamrock::-moz-range-thumb {
-  background: #2bb16b;
+  background: var(--nn-gcolor-shamrock-m10);
 }
 .nn-range.nn-shamrock::-ms-thumb {
-  background: #2bb16b;
+  background: var(--nn-gcolor-shamrock-m10);
 }
 .nn-range.nn-shamrock::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -195,25 +228,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-shamrock:hover::-webkit-slider-runnable-track {
-  background: #34ce7e;
+  background: var(--nn-gcolor-shamrock);
 }
 .nn-range.nn-shamrock:hover::-moz-range-track {
-  background: #34ce7e;
+  background: var(--nn-gcolor-shamrock);
 }
 .nn-range.nn-shamrock:hover::-ms-fill-lower {
-  background: #34ce7e;
+  background: var(--nn-gcolor-shamrock);
 }
 .nn-range.nn-shamrock:hover::-ms-fill-upper {
-  background: #34ce7e;
+  background: var(--nn-gcolor-shamrock);
 }
 .nn-range.nn-cod-grey::-webkit-slider-thumb {
-  background: #080808;
+  background: var(--nn-gcolor-cod-grey-m10);
 }
 .nn-range.nn-cod-grey::-moz-range-thumb {
-  background: #080808;
+  background: var(--nn-gcolor-cod-grey-m10);
 }
 .nn-range.nn-cod-grey::-ms-thumb {
-  background: #080808;
+  background: var(--nn-gcolor-cod-grey-m10);
 }
 .nn-range.nn-cod-grey::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -228,25 +261,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-cod-grey:hover::-webkit-slider-runnable-track {
-  background: #1b1b1b;
+  background: var(--nn-gcolor-cod-grey);
 }
 .nn-range.nn-cod-grey:hover::-moz-range-track {
-  background: #1b1b1b;
+  background: var(--nn-gcolor-cod-grey);
 }
 .nn-range.nn-cod-grey:hover::-ms-fill-lower {
-  background: #1b1b1b;
+  background: var(--nn-gcolor-cod-grey);
 }
 .nn-range.nn-cod-grey:hover::-ms-fill-upper {
-  background: #1b1b1b;
+  background: var(--nn-gcolor-cod-grey);
 }
 .nn-range.nn-gravel::-webkit-slider-thumb {
-  background: #5b5b5b;
+  background: var(--nn-gcolor-gravel-m10);
 }
 .nn-range.nn-gravel::-moz-range-thumb {
-  background: #5b5b5b;
+  background: var(--nn-gcolor-gravel-m10);
 }
 .nn-range.nn-gravel::-ms-thumb {
-  background: #5b5b5b;
+  background: var(--nn-gcolor-gravel-m10);
 }
 .nn-range.nn-gravel::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -261,25 +294,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-gravel:hover::-webkit-slider-runnable-track {
-  background: #6e6e6e;
+  background: var(--nn-gcolor-gravel);
 }
 .nn-range.nn-gravel:hover::-moz-range-track {
-  background: #6e6e6e;
+  background: var(--nn-gcolor-gravel);
 }
 .nn-range.nn-gravel:hover::-ms-fill-lower {
-  background: #6e6e6e;
+  background: var(--nn-gcolor-gravel);
 }
 .nn-range.nn-gravel:hover::-ms-fill-upper {
-  background: #6e6e6e;
+  background: var(--nn-gcolor-gravel);
 }
 .nn-range.nn-emerald::-webkit-slider-thumb {
-  background: #3dc739;
+  background: var(--nn-gcolor-emerald-m10);
 }
 .nn-range.nn-emerald::-moz-range-thumb {
-  background: #3dc739;
+  background: var(--nn-gcolor-emerald-m10);
 }
 .nn-range.nn-emerald::-ms-thumb {
-  background: #3dc739;
+  background: var(--nn-gcolor-emerald-m10);
 }
 .nn-range.nn-emerald::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -294,25 +327,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-emerald:hover::-webkit-slider-runnable-track {
-  background: #5acf57;
+  background: var(--nn-gcolor-emerald);
 }
 .nn-range.nn-emerald:hover::-moz-range-track {
-  background: #5acf57;
+  background: var(--nn-gcolor-emerald);
 }
 .nn-range.nn-emerald:hover::-ms-fill-lower {
-  background: #5acf57;
+  background: var(--nn-gcolor-emerald);
 }
 .nn-range.nn-emerald:hover::-ms-fill-upper {
-  background: #5acf57;
+  background: var(--nn-gcolor-emerald);
 }
 .nn-range.nn-burn-orange::-webkit-slider-thumb {
-  background: #f85909;
+  background: var(--nn-gcolor-burn-orange-m10);
 }
 .nn-range.nn-burn-orange::-moz-range-thumb {
-  background: #f85909;
+  background: var(--nn-gcolor-burn-orange-m10);
 }
 .nn-range.nn-burn-orange::-ms-thumb {
-  background: #f85909;
+  background: var(--nn-gcolor-burn-orange-m10);
 }
 .nn-range.nn-burn-orange::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -327,25 +360,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-burn-orange:hover::-webkit-slider-runnable-track {
-  background: #f9722e;
+  background: var(--nn-gcolor-burn-orange);
 }
 .nn-range.nn-burn-orange:hover::-moz-range-track {
-  background: #f9722e;
+  background: var(--nn-gcolor-burn-orange);
 }
 .nn-range.nn-burn-orange:hover::-ms-fill-lower {
-  background: #f9722e;
+  background: var(--nn-gcolor-burn-orange);
 }
 .nn-range.nn-burn-orange:hover::-ms-fill-upper {
-  background: #f9722e;
+  background: var(--nn-gcolor-burn-orange);
 }
 .nn-range.nn-razzmatazz::-webkit-slider-thumb {
-  background: #b40035;
+  background: var(--nn-gcolor-razzmatazz-m10);
 }
 .nn-range.nn-razzmatazz::-moz-range-thumb {
-  background: #b40035;
+  background: var(--nn-gcolor-razzmatazz-m10);
 }
 .nn-range.nn-razzmatazz::-ms-thumb {
-  background: #b40035;
+  background: var(--nn-gcolor-razzmatazz-m10);
 }
 .nn-range.nn-razzmatazz::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -360,25 +393,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-razzmatazz:hover::-webkit-slider-runnable-track {
-  background: #da0040;
+  background: var(--nn-gcolor-razzmatazz);
 }
 .nn-range.nn-razzmatazz:hover::-moz-range-track {
-  background: #da0040;
+  background: var(--nn-gcolor-razzmatazz);
 }
 .nn-range.nn-razzmatazz:hover::-ms-fill-lower {
-  background: #da0040;
+  background: var(--nn-gcolor-razzmatazz);
 }
 .nn-range.nn-razzmatazz:hover::-ms-fill-upper {
-  background: #da0040;
+  background: var(--nn-gcolor-razzmatazz);
 }
 .nn-range.nn-desert::-webkit-slider-thumb {
-  background: #845032;
+  background: var(--nn-gcolor-desert-m10);
 }
 .nn-range.nn-desert::-moz-range-thumb {
-  background: #845032;
+  background: var(--nn-gcolor-desert-m10);
 }
 .nn-range.nn-desert::-ms-thumb {
-  background: #845032;
+  background: var(--nn-gcolor-desert-m10);
 }
 .nn-range.nn-desert::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -393,25 +426,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-desert:hover::-webkit-slider-runnable-track {
-  background: #a0613d;
+  background: var(--nn-gcolor-desert);
 }
 .nn-range.nn-desert:hover::-moz-range-track {
-  background: #a0613d;
+  background: var(--nn-gcolor-desert);
 }
 .nn-range.nn-desert:hover::-ms-fill-lower {
-  background: #a0613d;
+  background: var(--nn-gcolor-desert);
 }
 .nn-range.nn-desert:hover::-ms-fill-upper {
-  background: #a0613d;
+  background: var(--nn-gcolor-desert);
 }
 .nn-range.nn-charcoal::-webkit-slider-thumb {
-  background: #313131;
+  background: var(--nn-gcolor-charcoal-m10);
 }
 .nn-range.nn-charcoal::-moz-range-thumb {
-  background: #313131;
+  background: var(--nn-gcolor-charcoal-m10);
 }
 .nn-range.nn-charcoal::-ms-thumb {
-  background: #313131;
+  background: var(--nn-gcolor-charcoal-m10);
 }
 .nn-range.nn-charcoal::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -426,25 +459,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-charcoal:hover::-webkit-slider-runnable-track {
-  background: #444444;
+  background: var(--nn-gcolor-charcoal);
 }
 .nn-range.nn-charcoal:hover::-moz-range-track {
-  background: #444444;
+  background: var(--nn-gcolor-charcoal);
 }
 .nn-range.nn-charcoal:hover::-ms-fill-lower {
-  background: #444444;
+  background: var(--nn-gcolor-charcoal);
 }
 .nn-range.nn-charcoal:hover::-ms-fill-upper {
-  background: #444444;
+  background: var(--nn-gcolor-charcoal);
 }
 .nn-range.nn-golden-brown::-webkit-slider-thumb {
-  background: #7b500c;
+  background: var(--nn-gcolor-golden-brown-m10);
 }
 .nn-range.nn-golden-brown::-moz-range-thumb {
-  background: #7b500c;
+  background: var(--nn-gcolor-golden-brown-m10);
 }
 .nn-range.nn-golden-brown::-ms-thumb {
-  background: #7b500c;
+  background: var(--nn-gcolor-golden-brown-m10);
 }
 .nn-range.nn-golden-brown::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -459,25 +492,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-golden-brown:hover::-webkit-slider-runnable-track {
-  background: #9e6710;
+  background: var(--nn-gcolor-golden-brown);
 }
 .nn-range.nn-golden-brown:hover::-moz-range-track {
-  background: #9e6710;
+  background: var(--nn-gcolor-golden-brown);
 }
 .nn-range.nn-golden-brown:hover::-ms-fill-lower {
-  background: #9e6710;
+  background: var(--nn-gcolor-golden-brown);
 }
 .nn-range.nn-golden-brown:hover::-ms-fill-upper {
-  background: #9e6710;
+  background: var(--nn-gcolor-golden-brown);
 }
 .nn-range.nn-sepia::-webkit-slider-thumb {
-  background: #503710;
+  background: var(--nn-gcolor-sepia-m10);
 }
 .nn-range.nn-sepia::-moz-range-thumb {
-  background: #503710;
+  background: var(--nn-gcolor-sepia-m10);
 }
 .nn-range.nn-sepia::-ms-thumb {
-  background: #503710;
+  background: var(--nn-gcolor-sepia-m10);
 }
 .nn-range.nn-sepia::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -492,25 +525,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-sepia:hover::-webkit-slider-runnable-track {
-  background: #704d16;
+  background: var(--nn-gcolor-sepia);
 }
 .nn-range.nn-sepia:hover::-moz-range-track {
-  background: #704d16;
+  background: var(--nn-gcolor-sepia);
 }
 .nn-range.nn-sepia:hover::-ms-fill-lower {
-  background: #704d16;
+  background: var(--nn-gcolor-sepia);
 }
 .nn-range.nn-sepia:hover::-ms-fill-upper {
-  background: #704d16;
+  background: var(--nn-gcolor-sepia);
 }
 .nn-range.nn-alizarin::-webkit-slider-thumb {
-  background: #c41c10;
+  background: var(--nn-gcolor-alizarin-m10);
 }
 .nn-range.nn-alizarin::-moz-range-thumb {
-  background: #c41c10;
+  background: var(--nn-gcolor-alizarin-m10);
 }
 .nn-range.nn-alizarin::-ms-thumb {
-  background: #c41c10;
+  background: var(--nn-gcolor-alizarin-m10);
 }
 .nn-range.nn-alizarin::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -525,25 +558,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-alizarin:hover::-webkit-slider-runnable-track {
-  background: #e72113;
+  background: var(--nn-gcolor-alizarin);
 }
 .nn-range.nn-alizarin:hover::-moz-range-track {
-  background: #e72113;
+  background: var(--nn-gcolor-alizarin);
 }
 .nn-range.nn-alizarin:hover::-ms-fill-lower {
-  background: #e72113;
+  background: var(--nn-gcolor-alizarin);
 }
 .nn-range.nn-alizarin:hover::-ms-fill-upper {
-  background: #e72113;
+  background: var(--nn-gcolor-alizarin);
 }
 .nn-range.nn-rust::-webkit-slider-thumb {
-  background: #a53f0e;
+  background: var(--nn-gcolor-rust-m10);
 }
 .nn-range.nn-rust::-moz-range-thumb {
-  background: #a53f0e;
+  background: var(--nn-gcolor-rust-m10);
 }
 .nn-range.nn-rust::-ms-thumb {
-  background: #a53f0e;
+  background: var(--nn-gcolor-rust-m10);
 }
 .nn-range.nn-rust::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -558,25 +591,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-rust:hover::-webkit-slider-runnable-track {
-  background: #c84d11;
+  background: var(--nn-gcolor-rust);
 }
 .nn-range.nn-rust:hover::-moz-range-track {
-  background: #c84d11;
+  background: var(--nn-gcolor-rust);
 }
 .nn-range.nn-rust:hover::-ms-fill-lower {
-  background: #c84d11;
+  background: var(--nn-gcolor-rust);
 }
 .nn-range.nn-rust:hover::-ms-fill-upper {
-  background: #c84d11;
+  background: var(--nn-gcolor-rust);
 }
 .nn-range.nn-blush::-webkit-slider-thumb {
-  background: #a83b56;
+  background: var(--nn-gcolor-blush-m10);
 }
 .nn-range.nn-blush::-moz-range-thumb {
-  background: #a83b56;
+  background: var(--nn-gcolor-blush-m10);
 }
 .nn-range.nn-blush::-ms-thumb {
-  background: #a83b56;
+  background: var(--nn-gcolor-blush-m10);
 }
 .nn-range.nn-blush::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -591,25 +624,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-blush:hover::-webkit-slider-runnable-track {
-  background: #bf4a67;
+  background: var(--nn-gcolor-blush);
 }
 .nn-range.nn-blush:hover::-moz-range-track {
-  background: #bf4a67;
+  background: var(--nn-gcolor-blush);
 }
 .nn-range.nn-blush:hover::-ms-fill-lower {
-  background: #bf4a67;
+  background: var(--nn-gcolor-blush);
 }
 .nn-range.nn-blush:hover::-ms-fill-upper {
-  background: #bf4a67;
+  background: var(--nn-gcolor-blush);
 }
 .nn-range.nn-fire-brick::-webkit-slider-thumb {
-  background: #851b2f;
+  background: var(--nn-gcolor-fire-brick-m10);
 }
 .nn-range.nn-fire-brick::-moz-range-thumb {
-  background: #851b2f;
+  background: var(--nn-gcolor-fire-brick-m10);
 }
 .nn-range.nn-fire-brick::-ms-thumb {
-  background: #851b2f;
+  background: var(--nn-gcolor-fire-brick-m10);
 }
 .nn-range.nn-fire-brick::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -624,25 +657,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-fire-brick:hover::-webkit-slider-runnable-track {
-  background: #a5213a;
+  background: var(--nn-gcolor-fire-brick);
 }
 .nn-range.nn-fire-brick:hover::-moz-range-track {
-  background: #a5213a;
+  background: var(--nn-gcolor-fire-brick);
 }
 .nn-range.nn-fire-brick:hover::-ms-fill-lower {
-  background: #a5213a;
+  background: var(--nn-gcolor-fire-brick);
 }
 .nn-range.nn-fire-brick:hover::-ms-fill-upper {
-  background: #a5213a;
+  background: var(--nn-gcolor-fire-brick);
 }
 .nn-range.nn-sunglow::-webkit-slider-thumb {
-  background: #fec600;
+  background: var(--nn-gcolor-sunglow-m10);
 }
 .nn-range.nn-sunglow::-moz-range-thumb {
-  background: #fec600;
+  background: var(--nn-gcolor-sunglow-m10);
 }
 .nn-range.nn-sunglow::-ms-thumb {
-  background: #fec600;
+  background: var(--nn-gcolor-sunglow-m10);
 }
 .nn-range.nn-sunglow::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -657,25 +690,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-sunglow:hover::-webkit-slider-runnable-track {
-  background: #ffcf25;
+  background: var(--nn-gcolor-sunglow);
 }
 .nn-range.nn-sunglow:hover::-moz-range-track {
-  background: #ffcf25;
+  background: var(--nn-gcolor-sunglow);
 }
 .nn-range.nn-sunglow:hover::-ms-fill-lower {
-  background: #ffcf25;
+  background: var(--nn-gcolor-sunglow);
 }
 .nn-range.nn-sunglow:hover::-ms-fill-upper {
-  background: #ffcf25;
+  background: var(--nn-gcolor-sunglow);
 }
 .nn-range.nn-milk-punch::-webkit-slider-thumb {
-  background: #eedaa4;
+  background: var(--nn-gcolor-milk-punch-m10);
 }
 .nn-range.nn-milk-punch::-moz-range-thumb {
-  background: #eedaa4;
+  background: var(--nn-gcolor-milk-punch-m10);
 }
 .nn-range.nn-milk-punch::-ms-thumb {
-  background: #eedaa4;
+  background: var(--nn-gcolor-milk-punch-m10);
 }
 .nn-range.nn-milk-punch::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -690,25 +723,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-milk-punch:hover::-webkit-slider-runnable-track {
-  background: #f4e7c4;
+  background: var(--nn-gcolor-milk-punch);
 }
 .nn-range.nn-milk-punch:hover::-moz-range-track {
-  background: #f4e7c4;
+  background: var(--nn-gcolor-milk-punch);
 }
 .nn-range.nn-milk-punch:hover::-ms-fill-lower {
-  background: #f4e7c4;
+  background: var(--nn-gcolor-milk-punch);
 }
 .nn-range.nn-milk-punch:hover::-ms-fill-upper {
-  background: #f4e7c4;
+  background: var(--nn-gcolor-milk-punch);
 }
 .nn-range.nn-yukon-gold::-webkit-slider-thumb {
-  background: #6c5a16;
+  background: var(--nn-gcolor-yukon-gold-m10);
 }
 .nn-range.nn-yukon-gold::-moz-range-thumb {
-  background: #6c5a16;
+  background: var(--nn-gcolor-yukon-gold-m10);
 }
 .nn-range.nn-yukon-gold::-ms-thumb {
-  background: #6c5a16;
+  background: var(--nn-gcolor-yukon-gold-m10);
 }
 .nn-range.nn-yukon-gold::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -723,25 +756,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-yukon-gold:hover::-webkit-slider-runnable-track {
-  background: #8c741d;
+  background: var(--nn-gcolor-yukon-gold);
 }
 .nn-range.nn-yukon-gold:hover::-moz-range-track {
-  background: #8c741d;
+  background: var(--nn-gcolor-yukon-gold);
 }
 .nn-range.nn-yukon-gold:hover::-ms-fill-lower {
-  background: #8c741d;
+  background: var(--nn-gcolor-yukon-gold);
 }
 .nn-range.nn-yukon-gold:hover::-ms-fill-upper {
-  background: #8c741d;
+  background: var(--nn-gcolor-yukon-gold);
 }
 .nn-range.nn-green-pea::-webkit-slider-thumb {
-  background: #18542c;
+  background: var(--nn-gcolor-green-pea-m10);
 }
 .nn-range.nn-green-pea::-moz-range-thumb {
-  background: #18542c;
+  background: var(--nn-gcolor-green-pea-m10);
 }
 .nn-range.nn-green-pea::-ms-thumb {
-  background: #18542c;
+  background: var(--nn-gcolor-green-pea-m10);
 }
 .nn-range.nn-green-pea::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -756,25 +789,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-green-pea:hover::-webkit-slider-runnable-track {
-  background: #20723b;
+  background: var(--nn-gcolor-green-pea);
 }
 .nn-range.nn-green-pea:hover::-moz-range-track {
-  background: #20723b;
+  background: var(--nn-gcolor-green-pea);
 }
 .nn-range.nn-green-pea:hover::-ms-fill-lower {
-  background: #20723b;
+  background: var(--nn-gcolor-green-pea);
 }
 .nn-range.nn-green-pea:hover::-ms-fill-upper {
-  background: #20723b;
+  background: var(--nn-gcolor-green-pea);
 }
 .nn-range.nn-laurel::-webkit-slider-thumb {
-  background: #28692c;
+  background: var(--nn-gcolor-laurel-m10);
 }
 .nn-range.nn-laurel::-moz-range-thumb {
-  background: #28692c;
+  background: var(--nn-gcolor-laurel-m10);
 }
 .nn-range.nn-laurel::-ms-thumb {
-  background: #28692c;
+  background: var(--nn-gcolor-laurel-m10);
 }
 .nn-range.nn-laurel::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -789,25 +822,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-laurel:hover::-webkit-slider-runnable-track {
-  background: #328538;
+  background: var(--nn-gcolor-laurel);
 }
 .nn-range.nn-laurel:hover::-moz-range-track {
-  background: #328538;
+  background: var(--nn-gcolor-laurel);
 }
 .nn-range.nn-laurel:hover::-ms-fill-lower {
-  background: #328538;
+  background: var(--nn-gcolor-laurel);
 }
 .nn-range.nn-laurel:hover::-ms-fill-upper {
-  background: #328538;
+  background: var(--nn-gcolor-laurel);
 }
 .nn-range.nn-elf-green::-webkit-slider-thumb {
-  background: #13664b;
+  background: var(--nn-gcolor-elf-green-m10);
 }
 .nn-range.nn-elf-green::-moz-range-thumb {
-  background: #13664b;
+  background: var(--nn-gcolor-elf-green-m10);
 }
 .nn-range.nn-elf-green::-ms-thumb {
-  background: #13664b;
+  background: var(--nn-gcolor-elf-green-m10);
 }
 .nn-range.nn-elf-green::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -822,25 +855,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-elf-green:hover::-webkit-slider-runnable-track {
-  background: #198663;
+  background: var(--nn-gcolor-elf-green);
 }
 .nn-range.nn-elf-green:hover::-moz-range-track {
-  background: #198663;
+  background: var(--nn-gcolor-elf-green);
 }
 .nn-range.nn-elf-green:hover::-ms-fill-lower {
-  background: #198663;
+  background: var(--nn-gcolor-elf-green);
 }
 .nn-range.nn-elf-green:hover::-ms-fill-upper {
-  background: #198663;
+  background: var(--nn-gcolor-elf-green);
 }
 .nn-range.nn-lake::-webkit-slider-thumb {
-  background: #1d6374;
+  background: var(--nn-gcolor-lake-m10);
 }
 .nn-range.nn-lake::-moz-range-thumb {
-  background: #1d6374;
+  background: var(--nn-gcolor-lake-m10);
 }
 .nn-range.nn-lake::-ms-thumb {
-  background: #1d6374;
+  background: var(--nn-gcolor-lake-m10);
 }
 .nn-range.nn-lake::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -855,25 +888,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-lake:hover::-webkit-slider-runnable-track {
-  background: #257d93;
+  background: var(--nn-gcolor-lake);
 }
 .nn-range.nn-lake:hover::-moz-range-track {
-  background: #257d93;
+  background: var(--nn-gcolor-lake);
 }
 .nn-range.nn-lake:hover::-ms-fill-lower {
-  background: #257d93;
+  background: var(--nn-gcolor-lake);
 }
 .nn-range.nn-lake:hover::-ms-fill-upper {
-  background: #257d93;
+  background: var(--nn-gcolor-lake);
 }
 .nn-range.nn-cobalt-blue::-webkit-slider-thumb {
-  background: #093e87;
+  background: var(--nn-gcolor-cobalt-blue-m10);
 }
 .nn-range.nn-cobalt-blue::-moz-range-thumb {
-  background: #093e87;
+  background: var(--nn-gcolor-cobalt-blue-m10);
 }
 .nn-range.nn-cobalt-blue::-ms-thumb {
-  background: #093e87;
+  background: var(--nn-gcolor-cobalt-blue-m10);
 }
 .nn-range.nn-cobalt-blue::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -888,25 +921,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-cobalt-blue:hover::-webkit-slider-runnable-track {
-  background: #0b4eab;
+  background: var(--nn-gcolor-cobalt-blue);
 }
 .nn-range.nn-cobalt-blue:hover::-moz-range-track {
-  background: #0b4eab;
+  background: var(--nn-gcolor-cobalt-blue);
 }
 .nn-range.nn-cobalt-blue:hover::-ms-fill-lower {
-  background: #0b4eab;
+  background: var(--nn-gcolor-cobalt-blue);
 }
 .nn-range.nn-cobalt-blue:hover::-ms-fill-upper {
-  background: #0b4eab;
+  background: var(--nn-gcolor-cobalt-blue);
 }
 .nn-range.nn-mariner::-webkit-slider-thumb {
-  background: #2d64b1;
+  background: var(--nn-gcolor-mariner-m10);
 }
 .nn-range.nn-mariner::-moz-range-thumb {
-  background: #2d64b1;
+  background: var(--nn-gcolor-mariner-m10);
 }
 .nn-range.nn-mariner::-ms-thumb {
-  background: #2d64b1;
+  background: var(--nn-gcolor-mariner-m10);
 }
 .nn-range.nn-mariner::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -921,25 +954,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-mariner:hover::-webkit-slider-runnable-track {
-  background: #3876cc;
+  background: var(--nn-gcolor-mariner);
 }
 .nn-range.nn-mariner:hover::-moz-range-track {
-  background: #3876cc;
+  background: var(--nn-gcolor-mariner);
 }
 .nn-range.nn-mariner:hover::-ms-fill-lower {
-  background: #3876cc;
+  background: var(--nn-gcolor-mariner);
 }
 .nn-range.nn-mariner:hover::-ms-fill-upper {
-  background: #3876cc;
+  background: var(--nn-gcolor-mariner);
 }
 .nn-range.nn-fuchsia::-webkit-slider-thumb {
-  background: #8a0686;
+  background: var(--nn-gcolor-fuchsia-m10);
 }
 .nn-range.nn-fuchsia::-moz-range-thumb {
-  background: #8a0686;
+  background: var(--nn-gcolor-fuchsia-m10);
 }
 .nn-range.nn-fuchsia::-ms-thumb {
-  background: #8a0686;
+  background: var(--nn-gcolor-fuchsia-m10);
 }
 .nn-range.nn-fuchsia::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -954,25 +987,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-fuchsia:hover::-webkit-slider-runnable-track {
-  background: #af08aa;
+  background: var(--nn-gcolor-fuchsia);
 }
 .nn-range.nn-fuchsia:hover::-moz-range-track {
-  background: #af08aa;
+  background: var(--nn-gcolor-fuchsia);
 }
 .nn-range.nn-fuchsia:hover::-ms-fill-lower {
-  background: #af08aa;
+  background: var(--nn-gcolor-fuchsia);
 }
 .nn-range.nn-fuchsia:hover::-ms-fill-upper {
-  background: #af08aa;
+  background: var(--nn-gcolor-fuchsia);
 }
 .nn-range.nn-blue-violet::-webkit-slider-thumb {
-  background: #8527ea;
+  background: var(--nn-gcolor-blue-violet-m10);
 }
 .nn-range.nn-blue-violet::-moz-range-thumb {
-  background: #8527ea;
+  background: var(--nn-gcolor-blue-violet-m10);
 }
 .nn-range.nn-blue-violet::-ms-thumb {
-  background: #8527ea;
+  background: var(--nn-gcolor-blue-violet-m10);
 }
 .nn-range.nn-blue-violet::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -987,25 +1020,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-blue-violet:hover::-webkit-slider-runnable-track {
-  background: #994aed;
+  background: var(--nn-gcolor-blue-violet);
 }
 .nn-range.nn-blue-violet:hover::-moz-range-track {
-  background: #994aed;
+  background: var(--nn-gcolor-blue-violet);
 }
 .nn-range.nn-blue-violet:hover::-ms-fill-lower {
-  background: #994aed;
+  background: var(--nn-gcolor-blue-violet);
 }
 .nn-range.nn-blue-violet:hover::-ms-fill-upper {
-  background: #994aed;
+  background: var(--nn-gcolor-blue-violet);
 }
 .nn-range.nn-purple-heart::-webkit-slider-thumb {
-  background: #682a92;
+  background: var(--nn-gcolor-purple-heart-m10);
 }
 .nn-range.nn-purple-heart::-moz-range-thumb {
-  background: #682a92;
+  background: var(--nn-gcolor-purple-heart-m10);
 }
 .nn-range.nn-purple-heart::-ms-thumb {
-  background: #682a92;
+  background: var(--nn-gcolor-purple-heart-m10);
 }
 .nn-range.nn-purple-heart::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -1020,16 +1053,16 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-purple-heart:hover::-webkit-slider-runnable-track {
-  background: #7d32b0;
+  background: var(--nn-gcolor-purple-heart);
 }
 .nn-range.nn-purple-heart:hover::-moz-range-track {
-  background: #7d32b0;
+  background: var(--nn-gcolor-purple-heart);
 }
 .nn-range.nn-purple-heart:hover::-ms-fill-lower {
-  background: #7d32b0;
+  background: var(--nn-gcolor-purple-heart);
 }
 .nn-range.nn-purple-heart:hover::-ms-fill-upper {
-  background: #7d32b0;
+  background: var(--nn-gcolor-purple-heart);
 }
 .nn-range::-webkit-slider-runnable-track {
   width: 100%;
