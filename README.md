@@ -40,7 +40,7 @@ In your Sass:
 Test the following structure in your project:
 
 ```html
-<nn-row>
+<nn-row breakpoint="lg">
   <nn-column size="75">
     <span class="nn-label nn-burn-orange">75px</span>
   </nn-column>
