@@ -32,9 +32,7 @@
 
   #{wc("icon")} {
     font-size: 14px;
-    &:not(:only-child) {
-      margin-right: 0.5rem;
-    }
+    min-width: 25px;
   }
 
   &:focus {
