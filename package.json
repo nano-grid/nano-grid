@@ -1,6 +1,15 @@
 {
   "name": "nano-grid",
-  "version": "3.2.1",
+  "version": "3.2.2",
+  "keywords": [
+    "css",
+    "sass",
+    "front-end",
+    "framework",
+    "web",
+    "toolkit",
+    "web-components"
+  ],
   "description": "Frontend Toolkit",
   "main": "index.js",
   "scripts": {},
@@ -8,7 +17,11 @@
     "type": "git",
     "url": "git+https://github.com/nano-grid"
   },
-  "author": "Miguel Rivas",
+  "funding": {
+    "type" : "patreon",
+    "url" : "https://www.patreon.com/nanogrid"
+  },
+  "author": "Miguel Rivas (https://miguel-rivas.github.io)",
   "license": "MIT",
   "homepage": "https://nano-grid.github.io"
 }
