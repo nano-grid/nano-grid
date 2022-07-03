@@ -1,10 +1,20 @@
 {
   "name": "nano-grid",
-  "version": "3.2.1",
+  "version": "3.2.2",
+  "keywords": [
+    "css",
+    "sass",
+    "front-end",
+    "framework",
+    "web",
+    "toolkit",
+    "web-components"
+  ],
   "description": "Frontend Toolkit",
   "main": "index.js",
   "scripts": {},
   "devDependencies": {
+    "gulp-cli": "^2.3.0",
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
     "sass": "^1.50.0"
@@ -13,10 +23,11 @@
     "type": "git",
     "url": "git+https://github.com/miguel-rivas"
   },
-  "author": "Miguel Rivas",
+  "funding": {
+    "type" : "patreon",
+    "url" : "https://www.patreon.com/nanogrid"
+  },
+  "author": "Miguel Rivas (https://miguel-rivas.github.io)",
   "license": "MIT",
-  "homepage": "https://nano-grid.github.io",
-  "dependencies": {
-    "gulp-cli": "^2.3.0"
-  }
+  "homepage": "https://nano-grid.github.io"
 }
