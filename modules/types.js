@@ -73,3 +73,10 @@ export const containerSizesType = [
   "nn-sz900",
   "nn-sz1450",
 ];
+
+export const modeType = [
+  "nn-flat",
+  "nn-ghost",
+  "nn-outline",
+  "nn-nav",
+];
