@@ -25,13 +25,9 @@
 .nn-btn > span {
   pointer-events: none;
 }
-.nn-btn .nn-icon,
-.nn-btn nn-icon {
+.nn-btn nn-icon, .nn-btn .nn-icon {
   font-size: 14px;
-}
-.nn-btn .nn-icon:not(:only-child),
-.nn-btn nn-icon:not(:only-child) {
-  margin-right: 0.5rem;
+  min-width: 25px;
 }
 .nn-btn:focus {
   outline: none;
