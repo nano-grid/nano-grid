@@ -32,7 +32,9 @@
 
   #{wc("icon")} {
     font-size: 14px;
-    min-width: 25px;
+    &[glyph]{
+      min-width: 25px;
+    }
   }
 
   &:focus {

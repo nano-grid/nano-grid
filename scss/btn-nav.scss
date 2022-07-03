@@ -5,12 +5,12 @@
   &.#{$nano}nav {
     color: hsla(0, 0%, 100%, 0.4);
 
-    @each $name, $value in $colors {
+    @each $name in $colors {
       &.#{$nano}#{$name} {
         &:active,
         &.#{$nano}active {
-          color: lighten($value, 20%);
-          box-shadow: -2px 0 0 $value;
+          color: #{gvar("#{$name}-p20")};
+          box-shadow: -2px 0 0 #{gvar("#{$name}")};
         }
       }
     }

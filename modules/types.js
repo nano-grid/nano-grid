@@ -57,6 +57,7 @@ export const colorsType = [
   "nn-fuchsia",
   "nn-blue-violet",
   "nn-purple-heart",
+  "nn-white",
 ];
 
 export const directionsType = [

@@ -2,9 +2,9 @@
 @import "src/functions";
 
 #{wc("crayon")}{
-  @each $name, $value in $colors {
+  @each $name in $colors {
     &.#{$nano}#{$name} {
-      color: $value;
+      color: #{gvar("#{$name}")};
     }
   }
 }

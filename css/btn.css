@@ -27,6 +27,8 @@
 }
 .nn-btn nn-icon, .nn-btn .nn-icon {
   font-size: 14px;
+}
+.nn-btn nn-icon[glyph], .nn-btn .nn-icon[glyph] {
   min-width: 25px;
 }
 .nn-btn:focus {

@@ -1,93 +1,96 @@
+nn-crayon.nn-white, .nn-crayon.nn-white {
+  color: var(--nn-gcolor-white);
+}
 nn-crayon.nn-silver, .nn-crayon.nn-silver {
-  color: #c0c0c0;
+  color: var(--nn-gcolor-silver);
 }
 nn-crayon.nn-royal-purple, .nn-crayon.nn-royal-purple {
-  color: #64429c;
+  color: var(--nn-gcolor-royal-purple);
 }
 nn-crayon.nn-persian-red, .nn-crayon.nn-persian-red {
-  color: #d73333;
+  color: var(--nn-gcolor-persian-red);
 }
 nn-crayon.nn-denim, .nn-crayon.nn-denim {
-  color: #116ec4;
+  color: var(--nn-gcolor-denim);
 }
 nn-crayon.nn-gold-tips, .nn-crayon.nn-gold-tips {
-  color: #e6b031;
+  color: var(--nn-gcolor-gold-tips);
 }
 nn-crayon.nn-shamrock, .nn-crayon.nn-shamrock {
-  color: #34ce7e;
+  color: var(--nn-gcolor-shamrock);
 }
 nn-crayon.nn-cod-grey, .nn-crayon.nn-cod-grey {
-  color: #1b1b1b;
+  color: var(--nn-gcolor-cod-grey);
 }
 nn-crayon.nn-gravel, .nn-crayon.nn-gravel {
-  color: #6e6e6e;
+  color: var(--nn-gcolor-gravel);
 }
 nn-crayon.nn-emerald, .nn-crayon.nn-emerald {
-  color: #5acf57;
+  color: var(--nn-gcolor-emerald);
 }
 nn-crayon.nn-burn-orange, .nn-crayon.nn-burn-orange {
-  color: #f9722e;
+  color: var(--nn-gcolor-burn-orange);
 }
 nn-crayon.nn-razzmatazz, .nn-crayon.nn-razzmatazz {
-  color: #da0040;
+  color: var(--nn-gcolor-razzmatazz);
 }
 nn-crayon.nn-desert, .nn-crayon.nn-desert {
-  color: #a0613d;
+  color: var(--nn-gcolor-desert);
 }
 nn-crayon.nn-charcoal, .nn-crayon.nn-charcoal {
-  color: #444444;
+  color: var(--nn-gcolor-charcoal);
 }
 nn-crayon.nn-golden-brown, .nn-crayon.nn-golden-brown {
-  color: #9e6710;
+  color: var(--nn-gcolor-golden-brown);
 }
 nn-crayon.nn-sepia, .nn-crayon.nn-sepia {
-  color: #704d16;
+  color: var(--nn-gcolor-sepia);
 }
 nn-crayon.nn-alizarin, .nn-crayon.nn-alizarin {
-  color: #e72113;
+  color: var(--nn-gcolor-alizarin);
 }
 nn-crayon.nn-rust, .nn-crayon.nn-rust {
-  color: #c84d11;
+  color: var(--nn-gcolor-rust);
 }
 nn-crayon.nn-blush, .nn-crayon.nn-blush {
-  color: #bf4a67;
+  color: var(--nn-gcolor-blush);
 }
 nn-crayon.nn-fire-brick, .nn-crayon.nn-fire-brick {
-  color: #a5213a;
+  color: var(--nn-gcolor-fire-brick);
 }
 nn-crayon.nn-sunglow, .nn-crayon.nn-sunglow {
-  color: #ffcf25;
+  color: var(--nn-gcolor-sunglow);
 }
 nn-crayon.nn-milk-punch, .nn-crayon.nn-milk-punch {
-  color: #f4e7c4;
+  color: var(--nn-gcolor-milk-punch);
 }
 nn-crayon.nn-yukon-gold, .nn-crayon.nn-yukon-gold {
-  color: #8c741d;
+  color: var(--nn-gcolor-yukon-gold);
 }
 nn-crayon.nn-green-pea, .nn-crayon.nn-green-pea {
-  color: #20723b;
+  color: var(--nn-gcolor-green-pea);
 }
 nn-crayon.nn-laurel, .nn-crayon.nn-laurel {
-  color: #328538;
+  color: var(--nn-gcolor-laurel);
 }
 nn-crayon.nn-elf-green, .nn-crayon.nn-elf-green {
-  color: #198663;
+  color: var(--nn-gcolor-elf-green);
 }
 nn-crayon.nn-lake, .nn-crayon.nn-lake {
-  color: #257d93;
+  color: var(--nn-gcolor-lake);
 }
 nn-crayon.nn-cobalt-blue, .nn-crayon.nn-cobalt-blue {
-  color: #0b4eab;
+  color: var(--nn-gcolor-cobalt-blue);
 }
 nn-crayon.nn-mariner, .nn-crayon.nn-mariner {
-  color: #3876cc;
+  color: var(--nn-gcolor-mariner);
 }
 nn-crayon.nn-fuchsia, .nn-crayon.nn-fuchsia {
-  color: #af08aa;
+  color: var(--nn-gcolor-fuchsia);
 }
 nn-crayon.nn-blue-violet, .nn-crayon.nn-blue-violet {
-  color: #994aed;
+  color: var(--nn-gcolor-blue-violet);
 }
 nn-crayon.nn-purple-heart, .nn-crayon.nn-purple-heart {
-  color: #7d32b0;
+  color: var(--nn-gcolor-purple-heart);
 }
