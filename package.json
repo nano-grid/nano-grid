@@ -15,7 +15,7 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nano-grid"
+    "url": "https://github.com/nano-grid/nano-grid"
   },
   "funding": {
     "type" : "patreon",
