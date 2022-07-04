@@ -35,266 +35,266 @@ nn-scroll-area::-webkit-scrollbar, .nn-scroll-area::-webkit-scrollbar {
   height: 7px;
 }
 nn-scroll-area:hover, nn-scroll-area.keep, .nn-scroll-area:hover, .nn-scroll-area.keep {
-  scrollbar-face-color: var(--nn-gcolor-silver);
-  scrollbar-arrow-color: var(--nn-gcolor-silver);
-  scrollbar-shadow-color: var(--nn-gcolor-silver);
+  scrollbar-face-color: hsl(0deg, 0%, 75%);
+  scrollbar-arrow-color: hsl(0deg, 0%, 75%);
+  scrollbar-shadow-color: hsl(0deg, 0%, 75%);
 }
 nn-scroll-area:hover::-webkit-scrollbar-thumb, nn-scroll-area.keep::-webkit-scrollbar-thumb, .nn-scroll-area:hover::-webkit-scrollbar-thumb, .nn-scroll-area.keep::-webkit-scrollbar-thumb {
-  background: var(--nn-gcolor-silver);
+  background: hsl(0deg, 0%, 75%);
 }
 nn-scroll-area.nn-white:hover, nn-scroll-area.nn-white.keep, .nn-scroll-area.nn-white:hover, .nn-scroll-area.nn-white.keep {
-  scrollbar-face-color: var(--nn-gcolor-white);
-  scrollbar-arrow-color: var(--nn-gcolor-white);
-  scrollbar-shadow-color: var(--nn-gcolor-white);
+  scrollbar-face-color: hsl(0deg, 0%, 100%);
+  scrollbar-arrow-color: hsl(0deg, 0%, 100%);
+  scrollbar-shadow-color: hsl(0deg, 0%, 100%);
 }
 nn-scroll-area.nn-white:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-white.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-white:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-white.keep::-webkit-scrollbar-thumb {
-  background: var(--nn-gcolor-white);
+  background: hsl(0deg, 0%, 100%);
 }
 nn-scroll-area.nn-silver:hover, nn-scroll-area.nn-silver.keep, .nn-scroll-area.nn-silver:hover, .nn-scroll-area.nn-silver.keep {
-  scrollbar-face-color: var(--nn-gcolor-silver);
-  scrollbar-arrow-color: var(--nn-gcolor-silver);
-  scrollbar-shadow-color: var(--nn-gcolor-silver);
+  scrollbar-face-color: hsl(0deg, 0%, 75%);
+  scrollbar-arrow-color: hsl(0deg, 0%, 75%);
+  scrollbar-shadow-color: hsl(0deg, 0%, 75%);
 }
 nn-scroll-area.nn-silver:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-silver.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-silver:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-silver.keep::-webkit-scrollbar-thumb {
-  background: var(--nn-gcolor-silver);
+  background: hsl(0deg, 0%, 75%);
 }
 nn-scroll-area.nn-royal-purple:hover, nn-scroll-area.nn-royal-purple.keep, .nn-scroll-area.nn-royal-purple:hover, .nn-scroll-area.nn-royal-purple.keep {
-  scrollbar-face-color: var(--nn-gcolor-royal-purple);
-  scrollbar-arrow-color: var(--nn-gcolor-royal-purple);
-  scrollbar-shadow-color: var(--nn-gcolor-royal-purple);
+  scrollbar-face-color: hsl(263deg, 41%, 44%);
+  scrollbar-arrow-color: hsl(263deg, 41%, 44%);
+  scrollbar-shadow-color: hsl(263deg, 41%, 44%);
 }
 nn-scroll-area.nn-royal-purple:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-royal-purple.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-royal-purple:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-royal-purple.keep::-webkit-scrollbar-thumb {
-  background: var(--nn-gcolor-royal-purple);
+  background: hsl(263deg, 41%, 44%);
 }
 nn-scroll-area.nn-persian-red:hover, nn-scroll-area.nn-persian-red.keep, .nn-scroll-area.nn-persian-red:hover, .nn-scroll-area.nn-persian-red.keep {
-  scrollbar-face-color: var(--nn-gcolor-persian-red);
-  scrollbar-arrow-color: var(--nn-gcolor-persian-red);
-  scrollbar-shadow-color: var(--nn-gcolor-persian-red);
+  scrollbar-face-color: hsl(0deg, 67%, 52%);
+  scrollbar-arrow-color: hsl(0deg, 67%, 52%);
+  scrollbar-shadow-color: hsl(0deg, 67%, 52%);
 }
 nn-scroll-area.nn-persian-red:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-persian-red.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-persian-red:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-persian-red.keep::-webkit-scrollbar-thumb {
-  background: var(--nn-gcolor-persian-red);
+  background: hsl(0deg, 67%, 52%);
 }
 nn-scroll-area.nn-denim:hover, nn-scroll-area.nn-denim.keep, .nn-scroll-area.nn-denim:hover, .nn-scroll-area.nn-denim.keep {
-  scrollbar-face-color: var(--nn-gcolor-denim);
-  scrollbar-arrow-color: var(--nn-gcolor-denim);
-  scrollbar-shadow-color: var(--nn-gcolor-denim);
+  scrollbar-face-color: hsl(209deg, 84%, 42%);
+  scrollbar-arrow-color: hsl(209deg, 84%, 42%);
+  scrollbar-shadow-color: hsl(209deg, 84%, 42%);
 }
 nn-scroll-area.nn-denim:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-denim.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-denim:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-denim.keep::-webkit-scrollbar-thumb {
-  background: var(--nn-gcolor-denim);
+  background: hsl(209deg, 84%, 42%);
 }
 nn-scroll-area.nn-gold-tips:hover, nn-scroll-area.nn-gold-tips.keep, .nn-scroll-area.nn-gold-tips:hover, .nn-scroll-area.nn-gold-tips.keep {
-  scrollbar-face-color: var(--nn-gcolor-gold-tips);
-  scrollbar-arrow-color: var(--nn-gcolor-gold-tips);
-  scrollbar-shadow-color: var(--nn-gcolor-gold-tips);
+  scrollbar-face-color: hsl(42deg, 78%, 55%);
+  scrollbar-arrow-color: hsl(42deg, 78%, 55%);
+  scrollbar-shadow-color: hsl(42deg, 78%, 55%);
 }
 nn-scroll-area.nn-gold-tips:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-gold-tips.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-gold-tips:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-gold-tips.keep::-webkit-scrollbar-thumb {
-  background: var(--nn-gcolor-gold-tips);
+  background: hsl(42deg, 78%, 55%);
 }
 nn-scroll-area.nn-shamrock:hover, nn-scroll-area.nn-shamrock.keep, .nn-scroll-area.nn-shamrock:hover, .nn-scroll-area.nn-shamrock.keep {
-  scrollbar-face-color: var(--nn-gcolor-shamrock);
-  scrollbar-arrow-color: var(--nn-gcolor-shamrock);
-  scrollbar-shadow-color: var(--nn-gcolor-shamrock);
+  scrollbar-face-color: hsl(149deg, 61%, 51%);
+  scrollbar-arrow-color: hsl(149deg, 61%, 51%);
+  scrollbar-shadow-color: hsl(149deg, 61%, 51%);
 }
 nn-scroll-area.nn-shamrock:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-shamrock.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-shamrock:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-shamrock.keep::-webkit-scrollbar-thumb {
-  background: var(--nn-gcolor-shamrock);
+  background: hsl(149deg, 61%, 51%);
 }
 nn-scroll-area.nn-cod-grey:hover, nn-scroll-area.nn-cod-grey.keep, .nn-scroll-area.nn-cod-grey:hover, .nn-scroll-area.nn-cod-grey.keep {
-  scrollbar-face-color: var(--nn-gcolor-cod-grey);
-  scrollbar-arrow-color: var(--nn-gcolor-cod-grey);
-  scrollbar-shadow-color: var(--nn-gcolor-cod-grey);
+  scrollbar-face-color: hsl(0deg, 0%, 11%);
+  scrollbar-arrow-color: hsl(0deg, 0%, 11%);
+  scrollbar-shadow-color: hsl(0deg, 0%, 11%);
 }
 nn-scroll-area.nn-cod-grey:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-cod-grey.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-cod-grey:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-cod-grey.keep::-webkit-scrollbar-thumb {
-  background: var(--nn-gcolor-cod-grey);
+  background: hsl(0deg, 0%, 11%);
 }
 nn-scroll-area.nn-gravel:hover, nn-scroll-area.nn-gravel.keep, .nn-scroll-area.nn-gravel:hover, .nn-scroll-area.nn-gravel.keep {
-  scrollbar-face-color: var(--nn-gcolor-gravel);
-  scrollbar-arrow-color: var(--nn-gcolor-gravel);
-  scrollbar-shadow-color: var(--nn-gcolor-gravel);
+  scrollbar-face-color: hsl(0deg, 0%, 43%);
+  scrollbar-arrow-color: hsl(0deg, 0%, 43%);
+  scrollbar-shadow-color: hsl(0deg, 0%, 43%);
 }
 nn-scroll-area.nn-gravel:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-gravel.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-gravel:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-gravel.keep::-webkit-scrollbar-thumb {
-  background: var(--nn-gcolor-gravel);
+  background: hsl(0deg, 0%, 43%);
 }
 nn-scroll-area.nn-emerald:hover, nn-scroll-area.nn-emerald.keep, .nn-scroll-area.nn-emerald:hover, .nn-scroll-area.nn-emerald.keep {
-  scrollbar-face-color: var(--nn-gcolor-emerald);
-  scrollbar-arrow-color: var(--nn-gcolor-emerald);
-  scrollbar-shadow-color: var(--nn-gcolor-emerald);
+  scrollbar-face-color: hsl(118deg, 56%, 58%);
+  scrollbar-arrow-color: hsl(118deg, 56%, 58%);
+  scrollbar-shadow-color: hsl(118deg, 56%, 58%);
 }
 nn-scroll-area.nn-emerald:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-emerald.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-emerald:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-emerald.keep::-webkit-scrollbar-thumb {
-  background: var(--nn-gcolor-emerald);
+  background: hsl(118deg, 56%, 58%);
 }
 nn-scroll-area.nn-burn-orange:hover, nn-scroll-area.nn-burn-orange.keep, .nn-scroll-area.nn-burn-orange:hover, .nn-scroll-area.nn-burn-orange.keep {
-  scrollbar-face-color: var(--nn-gcolor-burn-orange);
-  scrollbar-arrow-color: var(--nn-gcolor-burn-orange);
-  scrollbar-shadow-color: var(--nn-gcolor-burn-orange);
+  scrollbar-face-color: hsl(20deg, 94%, 58%);
+  scrollbar-arrow-color: hsl(20deg, 94%, 58%);
+  scrollbar-shadow-color: hsl(20deg, 94%, 58%);
 }
 nn-scroll-area.nn-burn-orange:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-burn-orange.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-burn-orange:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-burn-orange.keep::-webkit-scrollbar-thumb {
-  background: var(--nn-gcolor-burn-orange);
+  background: hsl(20deg, 94%, 58%);
 }
 nn-scroll-area.nn-razzmatazz:hover, nn-scroll-area.nn-razzmatazz.keep, .nn-scroll-area.nn-razzmatazz:hover, .nn-scroll-area.nn-razzmatazz.keep {
-  scrollbar-face-color: var(--nn-gcolor-razzmatazz);
-  scrollbar-arrow-color: var(--nn-gcolor-razzmatazz);
-  scrollbar-shadow-color: var(--nn-gcolor-razzmatazz);
+  scrollbar-face-color: hsl(342deg, 100%, 43%);
+  scrollbar-arrow-color: hsl(342deg, 100%, 43%);
+  scrollbar-shadow-color: hsl(342deg, 100%, 43%);
 }
 nn-scroll-area.nn-razzmatazz:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-razzmatazz.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-razzmatazz:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-razzmatazz.keep::-webkit-scrollbar-thumb {
-  background: var(--nn-gcolor-razzmatazz);
+  background: hsl(342deg, 100%, 43%);
 }
 nn-scroll-area.nn-desert:hover, nn-scroll-area.nn-desert.keep, .nn-scroll-area.nn-desert:hover, .nn-scroll-area.nn-desert.keep {
-  scrollbar-face-color: var(--nn-gcolor-desert);
-  scrollbar-arrow-color: var(--nn-gcolor-desert);
-  scrollbar-shadow-color: var(--nn-gcolor-desert);
+  scrollbar-face-color: hsl(22deg, 45%, 43%);
+  scrollbar-arrow-color: hsl(22deg, 45%, 43%);
+  scrollbar-shadow-color: hsl(22deg, 45%, 43%);
 }
 nn-scroll-area.nn-desert:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-desert.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-desert:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-desert.keep::-webkit-scrollbar-thumb {
-  background: var(--nn-gcolor-desert);
+  background: hsl(22deg, 45%, 43%);
 }
 nn-scroll-area.nn-charcoal:hover, nn-scroll-area.nn-charcoal.keep, .nn-scroll-area.nn-charcoal:hover, .nn-scroll-area.nn-charcoal.keep {
-  scrollbar-face-color: var(--nn-gcolor-charcoal);
-  scrollbar-arrow-color: var(--nn-gcolor-charcoal);
-  scrollbar-shadow-color: var(--nn-gcolor-charcoal);
+  scrollbar-face-color: hsl(0deg, 0%, 27%);
+  scrollbar-arrow-color: hsl(0deg, 0%, 27%);
+  scrollbar-shadow-color: hsl(0deg, 0%, 27%);
 }
 nn-scroll-area.nn-charcoal:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-charcoal.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-charcoal:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-charcoal.keep::-webkit-scrollbar-thumb {
-  background: var(--nn-gcolor-charcoal);
+  background: hsl(0deg, 0%, 27%);
 }
 nn-scroll-area.nn-golden-brown:hover, nn-scroll-area.nn-golden-brown.keep, .nn-scroll-area.nn-golden-brown:hover, .nn-scroll-area.nn-golden-brown.keep {
-  scrollbar-face-color: var(--nn-gcolor-golden-brown);
-  scrollbar-arrow-color: var(--nn-gcolor-golden-brown);
-  scrollbar-shadow-color: var(--nn-gcolor-golden-brown);
+  scrollbar-face-color: hsl(37deg, 82%, 34%);
+  scrollbar-arrow-color: hsl(37deg, 82%, 34%);
+  scrollbar-shadow-color: hsl(37deg, 82%, 34%);
 }
 nn-scroll-area.nn-golden-brown:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-golden-brown.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-golden-brown:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-golden-brown.keep::-webkit-scrollbar-thumb {
-  background: var(--nn-gcolor-golden-brown);
+  background: hsl(37deg, 82%, 34%);
 }
 nn-scroll-area.nn-sepia:hover, nn-scroll-area.nn-sepia.keep, .nn-scroll-area.nn-sepia:hover, .nn-scroll-area.nn-sepia.keep {
-  scrollbar-face-color: var(--nn-gcolor-sepia);
-  scrollbar-arrow-color: var(--nn-gcolor-sepia);
-  scrollbar-shadow-color: var(--nn-gcolor-sepia);
+  scrollbar-face-color: hsl(37deg, 67%, 26%);
+  scrollbar-arrow-color: hsl(37deg, 67%, 26%);
+  scrollbar-shadow-color: hsl(37deg, 67%, 26%);
 }
 nn-scroll-area.nn-sepia:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-sepia.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-sepia:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-sepia.keep::-webkit-scrollbar-thumb {
-  background: var(--nn-gcolor-sepia);
+  background: hsl(37deg, 67%, 26%);
 }
 nn-scroll-area.nn-alizarin:hover, nn-scroll-area.nn-alizarin.keep, .nn-scroll-area.nn-alizarin:hover, .nn-scroll-area.nn-alizarin.keep {
-  scrollbar-face-color: var(--nn-gcolor-alizarin);
-  scrollbar-arrow-color: var(--nn-gcolor-alizarin);
-  scrollbar-shadow-color: var(--nn-gcolor-alizarin);
+  scrollbar-face-color: hsl(4deg, 85%, 49%);
+  scrollbar-arrow-color: hsl(4deg, 85%, 49%);
+  scrollbar-shadow-color: hsl(4deg, 85%, 49%);
 }
 nn-scroll-area.nn-alizarin:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-alizarin.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-alizarin:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-alizarin.keep::-webkit-scrollbar-thumb {
-  background: var(--nn-gcolor-alizarin);
+  background: hsl(4deg, 85%, 49%);
 }
 nn-scroll-area.nn-rust:hover, nn-scroll-area.nn-rust.keep, .nn-scroll-area.nn-rust:hover, .nn-scroll-area.nn-rust.keep {
-  scrollbar-face-color: var(--nn-gcolor-rust);
-  scrollbar-arrow-color: var(--nn-gcolor-rust);
-  scrollbar-shadow-color: var(--nn-gcolor-rust);
+  scrollbar-face-color: hsl(20deg, 84%, 43%);
+  scrollbar-arrow-color: hsl(20deg, 84%, 43%);
+  scrollbar-shadow-color: hsl(20deg, 84%, 43%);
 }
 nn-scroll-area.nn-rust:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-rust.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-rust:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-rust.keep::-webkit-scrollbar-thumb {
-  background: var(--nn-gcolor-rust);
+  background: hsl(20deg, 84%, 43%);
 }
 nn-scroll-area.nn-blush:hover, nn-scroll-area.nn-blush.keep, .nn-scroll-area.nn-blush:hover, .nn-scroll-area.nn-blush.keep {
-  scrollbar-face-color: var(--nn-gcolor-blush);
-  scrollbar-arrow-color: var(--nn-gcolor-blush);
-  scrollbar-shadow-color: var(--nn-gcolor-blush);
+  scrollbar-face-color: hsl(345deg, 48%, 52%);
+  scrollbar-arrow-color: hsl(345deg, 48%, 52%);
+  scrollbar-shadow-color: hsl(345deg, 48%, 52%);
 }
 nn-scroll-area.nn-blush:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-blush.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-blush:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-blush.keep::-webkit-scrollbar-thumb {
-  background: var(--nn-gcolor-blush);
+  background: hsl(345deg, 48%, 52%);
 }
 nn-scroll-area.nn-fire-brick:hover, nn-scroll-area.nn-fire-brick.keep, .nn-scroll-area.nn-fire-brick:hover, .nn-scroll-area.nn-fire-brick.keep {
-  scrollbar-face-color: var(--nn-gcolor-fire-brick);
-  scrollbar-arrow-color: var(--nn-gcolor-fire-brick);
-  scrollbar-shadow-color: var(--nn-gcolor-fire-brick);
+  scrollbar-face-color: hsl(349deg, 67%, 39%);
+  scrollbar-arrow-color: hsl(349deg, 67%, 39%);
+  scrollbar-shadow-color: hsl(349deg, 67%, 39%);
 }
 nn-scroll-area.nn-fire-brick:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-fire-brick.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-fire-brick:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-fire-brick.keep::-webkit-scrollbar-thumb {
-  background: var(--nn-gcolor-fire-brick);
+  background: hsl(349deg, 67%, 39%);
 }
 nn-scroll-area.nn-sunglow:hover, nn-scroll-area.nn-sunglow.keep, .nn-scroll-area.nn-sunglow:hover, .nn-scroll-area.nn-sunglow.keep {
-  scrollbar-face-color: var(--nn-gcolor-sunglow);
-  scrollbar-arrow-color: var(--nn-gcolor-sunglow);
-  scrollbar-shadow-color: var(--nn-gcolor-sunglow);
+  scrollbar-face-color: hsl(47deg, 100%, 57%);
+  scrollbar-arrow-color: hsl(47deg, 100%, 57%);
+  scrollbar-shadow-color: hsl(47deg, 100%, 57%);
 }
 nn-scroll-area.nn-sunglow:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-sunglow.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-sunglow:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-sunglow.keep::-webkit-scrollbar-thumb {
-  background: var(--nn-gcolor-sunglow);
+  background: hsl(47deg, 100%, 57%);
 }
 nn-scroll-area.nn-milk-punch:hover, nn-scroll-area.nn-milk-punch.keep, .nn-scroll-area.nn-milk-punch:hover, .nn-scroll-area.nn-milk-punch.keep {
-  scrollbar-face-color: var(--nn-gcolor-milk-punch);
-  scrollbar-arrow-color: var(--nn-gcolor-milk-punch);
-  scrollbar-shadow-color: var(--nn-gcolor-milk-punch);
+  scrollbar-face-color: hsl(44deg, 69%, 86%);
+  scrollbar-arrow-color: hsl(44deg, 69%, 86%);
+  scrollbar-shadow-color: hsl(44deg, 69%, 86%);
 }
 nn-scroll-area.nn-milk-punch:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-milk-punch.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-milk-punch:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-milk-punch.keep::-webkit-scrollbar-thumb {
-  background: var(--nn-gcolor-milk-punch);
+  background: hsl(44deg, 69%, 86%);
 }
 nn-scroll-area.nn-yukon-gold:hover, nn-scroll-area.nn-yukon-gold.keep, .nn-scroll-area.nn-yukon-gold:hover, .nn-scroll-area.nn-yukon-gold.keep {
-  scrollbar-face-color: var(--nn-gcolor-yukon-gold);
-  scrollbar-arrow-color: var(--nn-gcolor-yukon-gold);
-  scrollbar-shadow-color: var(--nn-gcolor-yukon-gold);
+  scrollbar-face-color: hsl(47deg, 66%, 33%);
+  scrollbar-arrow-color: hsl(47deg, 66%, 33%);
+  scrollbar-shadow-color: hsl(47deg, 66%, 33%);
 }
 nn-scroll-area.nn-yukon-gold:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-yukon-gold.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-yukon-gold:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-yukon-gold.keep::-webkit-scrollbar-thumb {
-  background: var(--nn-gcolor-yukon-gold);
+  background: hsl(47deg, 66%, 33%);
 }
 nn-scroll-area.nn-green-pea:hover, nn-scroll-area.nn-green-pea.keep, .nn-scroll-area.nn-green-pea:hover, .nn-scroll-area.nn-green-pea.keep {
-  scrollbar-face-color: var(--nn-gcolor-green-pea);
-  scrollbar-arrow-color: var(--nn-gcolor-green-pea);
-  scrollbar-shadow-color: var(--nn-gcolor-green-pea);
+  scrollbar-face-color: hsl(140deg, 56%, 29%);
+  scrollbar-arrow-color: hsl(140deg, 56%, 29%);
+  scrollbar-shadow-color: hsl(140deg, 56%, 29%);
 }
 nn-scroll-area.nn-green-pea:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-green-pea.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-green-pea:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-green-pea.keep::-webkit-scrollbar-thumb {
-  background: var(--nn-gcolor-green-pea);
+  background: hsl(140deg, 56%, 29%);
 }
 nn-scroll-area.nn-laurel:hover, nn-scroll-area.nn-laurel.keep, .nn-scroll-area.nn-laurel:hover, .nn-scroll-area.nn-laurel.keep {
-  scrollbar-face-color: var(--nn-gcolor-laurel);
-  scrollbar-arrow-color: var(--nn-gcolor-laurel);
-  scrollbar-shadow-color: var(--nn-gcolor-laurel);
+  scrollbar-face-color: hsl(124deg, 45%, 36%);
+  scrollbar-arrow-color: hsl(124deg, 45%, 36%);
+  scrollbar-shadow-color: hsl(124deg, 45%, 36%);
 }
 nn-scroll-area.nn-laurel:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-laurel.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-laurel:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-laurel.keep::-webkit-scrollbar-thumb {
-  background: var(--nn-gcolor-laurel);
+  background: hsl(124deg, 45%, 36%);
 }
 nn-scroll-area.nn-elf-green:hover, nn-scroll-area.nn-elf-green.keep, .nn-scroll-area.nn-elf-green:hover, .nn-scroll-area.nn-elf-green.keep {
-  scrollbar-face-color: var(--nn-gcolor-elf-green);
-  scrollbar-arrow-color: var(--nn-gcolor-elf-green);
-  scrollbar-shadow-color: var(--nn-gcolor-elf-green);
+  scrollbar-face-color: hsl(161deg, 69%, 31%);
+  scrollbar-arrow-color: hsl(161deg, 69%, 31%);
+  scrollbar-shadow-color: hsl(161deg, 69%, 31%);
 }
 nn-scroll-area.nn-elf-green:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-elf-green.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-elf-green:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-elf-green.keep::-webkit-scrollbar-thumb {
-  background: var(--nn-gcolor-elf-green);
+  background: hsl(161deg, 69%, 31%);
 }
 nn-scroll-area.nn-lake:hover, nn-scroll-area.nn-lake.keep, .nn-scroll-area.nn-lake:hover, .nn-scroll-area.nn-lake.keep {
-  scrollbar-face-color: var(--nn-gcolor-lake);
-  scrollbar-arrow-color: var(--nn-gcolor-lake);
-  scrollbar-shadow-color: var(--nn-gcolor-lake);
+  scrollbar-face-color: hsl(192deg, 60%, 36%);
+  scrollbar-arrow-color: hsl(192deg, 60%, 36%);
+  scrollbar-shadow-color: hsl(192deg, 60%, 36%);
 }
 nn-scroll-area.nn-lake:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-lake.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-lake:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-lake.keep::-webkit-scrollbar-thumb {
-  background: var(--nn-gcolor-lake);
+  background: hsl(192deg, 60%, 36%);
 }
 nn-scroll-area.nn-cobalt-blue:hover, nn-scroll-area.nn-cobalt-blue.keep, .nn-scroll-area.nn-cobalt-blue:hover, .nn-scroll-area.nn-cobalt-blue.keep {
-  scrollbar-face-color: var(--nn-gcolor-cobalt-blue);
-  scrollbar-arrow-color: var(--nn-gcolor-cobalt-blue);
-  scrollbar-shadow-color: var(--nn-gcolor-cobalt-blue);
+  scrollbar-face-color: hsl(215deg, 88%, 36%);
+  scrollbar-arrow-color: hsl(215deg, 88%, 36%);
+  scrollbar-shadow-color: hsl(215deg, 88%, 36%);
 }
 nn-scroll-area.nn-cobalt-blue:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-cobalt-blue.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-cobalt-blue:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-cobalt-blue.keep::-webkit-scrollbar-thumb {
-  background: var(--nn-gcolor-cobalt-blue);
+  background: hsl(215deg, 88%, 36%);
 }
 nn-scroll-area.nn-mariner:hover, nn-scroll-area.nn-mariner.keep, .nn-scroll-area.nn-mariner:hover, .nn-scroll-area.nn-mariner.keep {
-  scrollbar-face-color: var(--nn-gcolor-mariner);
-  scrollbar-arrow-color: var(--nn-gcolor-mariner);
-  scrollbar-shadow-color: var(--nn-gcolor-mariner);
+  scrollbar-face-color: hsl(215deg, 59%, 51%);
+  scrollbar-arrow-color: hsl(215deg, 59%, 51%);
+  scrollbar-shadow-color: hsl(215deg, 59%, 51%);
 }
 nn-scroll-area.nn-mariner:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-mariner.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-mariner:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-mariner.keep::-webkit-scrollbar-thumb {
-  background: var(--nn-gcolor-mariner);
+  background: hsl(215deg, 59%, 51%);
 }
 nn-scroll-area.nn-fuchsia:hover, nn-scroll-area.nn-fuchsia.keep, .nn-scroll-area.nn-fuchsia:hover, .nn-scroll-area.nn-fuchsia.keep {
-  scrollbar-face-color: var(--nn-gcolor-fuchsia);
-  scrollbar-arrow-color: var(--nn-gcolor-fuchsia);
-  scrollbar-shadow-color: var(--nn-gcolor-fuchsia);
+  scrollbar-face-color: hsl(302deg, 91%, 36%);
+  scrollbar-arrow-color: hsl(302deg, 91%, 36%);
+  scrollbar-shadow-color: hsl(302deg, 91%, 36%);
 }
 nn-scroll-area.nn-fuchsia:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-fuchsia.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-fuchsia:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-fuchsia.keep::-webkit-scrollbar-thumb {
-  background: var(--nn-gcolor-fuchsia);
+  background: hsl(302deg, 91%, 36%);
 }
 nn-scroll-area.nn-blue-violet:hover, nn-scroll-area.nn-blue-violet.keep, .nn-scroll-area.nn-blue-violet:hover, .nn-scroll-area.nn-blue-violet.keep {
-  scrollbar-face-color: var(--nn-gcolor-blue-violet);
-  scrollbar-arrow-color: var(--nn-gcolor-blue-violet);
-  scrollbar-shadow-color: var(--nn-gcolor-blue-violet);
+  scrollbar-face-color: hsl(269deg, 82%, 61%);
+  scrollbar-arrow-color: hsl(269deg, 82%, 61%);
+  scrollbar-shadow-color: hsl(269deg, 82%, 61%);
 }
 nn-scroll-area.nn-blue-violet:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-blue-violet.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-blue-violet:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-blue-violet.keep::-webkit-scrollbar-thumb {
-  background: var(--nn-gcolor-blue-violet);
+  background: hsl(269deg, 82%, 61%);
 }
 nn-scroll-area.nn-purple-heart:hover, nn-scroll-area.nn-purple-heart.keep, .nn-scroll-area.nn-purple-heart:hover, .nn-scroll-area.nn-purple-heart.keep {
-  scrollbar-face-color: var(--nn-gcolor-purple-heart);
-  scrollbar-arrow-color: var(--nn-gcolor-purple-heart);
-  scrollbar-shadow-color: var(--nn-gcolor-purple-heart);
+  scrollbar-face-color: hsl(276deg, 56%, 44%);
+  scrollbar-arrow-color: hsl(276deg, 56%, 44%);
+  scrollbar-shadow-color: hsl(276deg, 56%, 44%);
 }
 nn-scroll-area.nn-purple-heart:hover::-webkit-scrollbar-thumb, nn-scroll-area.nn-purple-heart.keep::-webkit-scrollbar-thumb, .nn-scroll-area.nn-purple-heart:hover::-webkit-scrollbar-thumb, .nn-scroll-area.nn-purple-heart.keep::-webkit-scrollbar-thumb {
-  background: var(--nn-gcolor-purple-heart);
+  background: hsl(276deg, 56%, 44%);
 }

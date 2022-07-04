@@ -11,5 +11,5 @@
 }
 
 @function gvar($name) {
-  @return var(--nn-gcolor-#{unquote($name)});
+  @return map-get($gcolors, $name);
 }
