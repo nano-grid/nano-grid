@@ -1,96 +1,96 @@
 nn-crayon.nn-white, .nn-crayon.nn-white {
-  color: var(--nn-gcolor-white);
+  color: hsl(0deg, 0%, 100%);
 }
 nn-crayon.nn-silver, .nn-crayon.nn-silver {
-  color: var(--nn-gcolor-silver);
+  color: hsl(0deg, 0%, 75%);
 }
 nn-crayon.nn-royal-purple, .nn-crayon.nn-royal-purple {
-  color: var(--nn-gcolor-royal-purple);
+  color: hsl(263deg, 41%, 44%);
 }
 nn-crayon.nn-persian-red, .nn-crayon.nn-persian-red {
-  color: var(--nn-gcolor-persian-red);
+  color: hsl(0deg, 67%, 52%);
 }
 nn-crayon.nn-denim, .nn-crayon.nn-denim {
-  color: var(--nn-gcolor-denim);
+  color: hsl(209deg, 84%, 42%);
 }
 nn-crayon.nn-gold-tips, .nn-crayon.nn-gold-tips {
-  color: var(--nn-gcolor-gold-tips);
+  color: hsl(42deg, 78%, 55%);
 }
 nn-crayon.nn-shamrock, .nn-crayon.nn-shamrock {
-  color: var(--nn-gcolor-shamrock);
+  color: hsl(149deg, 61%, 51%);
 }
 nn-crayon.nn-cod-grey, .nn-crayon.nn-cod-grey {
-  color: var(--nn-gcolor-cod-grey);
+  color: hsl(0deg, 0%, 11%);
 }
 nn-crayon.nn-gravel, .nn-crayon.nn-gravel {
-  color: var(--nn-gcolor-gravel);
+  color: hsl(0deg, 0%, 43%);
 }
 nn-crayon.nn-emerald, .nn-crayon.nn-emerald {
-  color: var(--nn-gcolor-emerald);
+  color: hsl(118deg, 56%, 58%);
 }
 nn-crayon.nn-burn-orange, .nn-crayon.nn-burn-orange {
-  color: var(--nn-gcolor-burn-orange);
+  color: hsl(20deg, 94%, 58%);
 }
 nn-crayon.nn-razzmatazz, .nn-crayon.nn-razzmatazz {
-  color: var(--nn-gcolor-razzmatazz);
+  color: hsl(342deg, 100%, 43%);
 }
 nn-crayon.nn-desert, .nn-crayon.nn-desert {
-  color: var(--nn-gcolor-desert);
+  color: hsl(22deg, 45%, 43%);
 }
 nn-crayon.nn-charcoal, .nn-crayon.nn-charcoal {
-  color: var(--nn-gcolor-charcoal);
+  color: hsl(0deg, 0%, 27%);
 }
 nn-crayon.nn-golden-brown, .nn-crayon.nn-golden-brown {
-  color: var(--nn-gcolor-golden-brown);
+  color: hsl(37deg, 82%, 34%);
 }
 nn-crayon.nn-sepia, .nn-crayon.nn-sepia {
-  color: var(--nn-gcolor-sepia);
+  color: hsl(37deg, 67%, 26%);
 }
 nn-crayon.nn-alizarin, .nn-crayon.nn-alizarin {
-  color: var(--nn-gcolor-alizarin);
+  color: hsl(4deg, 85%, 49%);
 }
 nn-crayon.nn-rust, .nn-crayon.nn-rust {
-  color: var(--nn-gcolor-rust);
+  color: hsl(20deg, 84%, 43%);
 }
 nn-crayon.nn-blush, .nn-crayon.nn-blush {
-  color: var(--nn-gcolor-blush);
+  color: hsl(345deg, 48%, 52%);
 }
 nn-crayon.nn-fire-brick, .nn-crayon.nn-fire-brick {
-  color: var(--nn-gcolor-fire-brick);
+  color: hsl(349deg, 67%, 39%);
 }
 nn-crayon.nn-sunglow, .nn-crayon.nn-sunglow {
-  color: var(--nn-gcolor-sunglow);
+  color: hsl(47deg, 100%, 57%);
 }
 nn-crayon.nn-milk-punch, .nn-crayon.nn-milk-punch {
-  color: var(--nn-gcolor-milk-punch);
+  color: hsl(44deg, 69%, 86%);
 }
 nn-crayon.nn-yukon-gold, .nn-crayon.nn-yukon-gold {
-  color: var(--nn-gcolor-yukon-gold);
+  color: hsl(47deg, 66%, 33%);
 }
 nn-crayon.nn-green-pea, .nn-crayon.nn-green-pea {
-  color: var(--nn-gcolor-green-pea);
+  color: hsl(140deg, 56%, 29%);
 }
 nn-crayon.nn-laurel, .nn-crayon.nn-laurel {
-  color: var(--nn-gcolor-laurel);
+  color: hsl(124deg, 45%, 36%);
 }
 nn-crayon.nn-elf-green, .nn-crayon.nn-elf-green {
-  color: var(--nn-gcolor-elf-green);
+  color: hsl(161deg, 69%, 31%);
 }
 nn-crayon.nn-lake, .nn-crayon.nn-lake {
-  color: var(--nn-gcolor-lake);
+  color: hsl(192deg, 60%, 36%);
 }
 nn-crayon.nn-cobalt-blue, .nn-crayon.nn-cobalt-blue {
-  color: var(--nn-gcolor-cobalt-blue);
+  color: hsl(215deg, 88%, 36%);
 }
 nn-crayon.nn-mariner, .nn-crayon.nn-mariner {
-  color: var(--nn-gcolor-mariner);
+  color: hsl(215deg, 59%, 51%);
 }
 nn-crayon.nn-fuchsia, .nn-crayon.nn-fuchsia {
-  color: var(--nn-gcolor-fuchsia);
+  color: hsl(302deg, 91%, 36%);
 }
 nn-crayon.nn-blue-violet, .nn-crayon.nn-blue-violet {
-  color: var(--nn-gcolor-blue-violet);
+  color: hsl(269deg, 82%, 61%);
 }
 nn-crayon.nn-purple-heart, .nn-crayon.nn-purple-heart {
-  color: var(--nn-gcolor-purple-heart);
+  color: hsl(276deg, 56%, 44%);
 }

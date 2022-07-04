@@ -1,288 +1,288 @@
 .nn-btn.nn-outline.nn-white {
-  color: var(--nn-gcolor-white-p10);
-  border: 1px var(--nn-gcolor-white) solid;
+  color: hsl(0deg 0% 71%);
+  border: 1px hsl(0deg, 0%, 100%) solid;
 }
 .nn-btn.nn-outline.nn-white:hover, .nn-btn.nn-outline.nn-white:active, .nn-btn.nn-outline.nn-white.nn-active {
-  color: var(--nn-gcolor-white-m20);
-  background-color: var(--nn-gcolor-white-p20);
-  border-color: var(--nn-gcolor-white-p20);
+  color: hsl(0deg, 0%, 80%);
+  background-color: hsl(0deg, 0%, 120%);
+  border-color: hsl(0deg, 0%, 120%);
 }
 .nn-btn.nn-outline.nn-silver {
-  color: var(--nn-gcolor-silver-p10);
-  border: 1px var(--nn-gcolor-silver) solid;
+  color: hsl(0deg, 0%, 85%);
+  border: 1px hsl(0deg, 0%, 75%) solid;
 }
 .nn-btn.nn-outline.nn-silver:hover, .nn-btn.nn-outline.nn-silver:active, .nn-btn.nn-outline.nn-silver.nn-active {
-  color: var(--nn-gcolor-silver-m20);
-  background-color: var(--nn-gcolor-silver-p20);
-  border-color: var(--nn-gcolor-silver-p20);
+  color: hsl(0deg, 0%, 55%);
+  background-color: hsl(0deg, 0%, 95%);
+  border-color: hsl(0deg, 0%, 95%);
 }
 .nn-btn.nn-outline.nn-royal-purple {
-  color: var(--nn-gcolor-royal-purple-p10);
-  border: 1px var(--nn-gcolor-royal-purple) solid;
+  color: hsl(263deg, 41%, 54%);
+  border: 1px hsl(263deg, 41%, 44%) solid;
 }
 .nn-btn.nn-outline.nn-royal-purple:hover, .nn-btn.nn-outline.nn-royal-purple:active, .nn-btn.nn-outline.nn-royal-purple.nn-active {
-  color: var(--nn-gcolor-royal-purple-m20);
-  background-color: var(--nn-gcolor-royal-purple-p20);
-  border-color: var(--nn-gcolor-royal-purple-p20);
+  color: hsl(263deg, 41%, 24%);
+  background-color: hsl(263deg, 41%, 64%);
+  border-color: hsl(263deg, 41%, 64%);
 }
 .nn-btn.nn-outline.nn-persian-red {
-  color: var(--nn-gcolor-persian-red-p10);
-  border: 1px var(--nn-gcolor-persian-red) solid;
+  color: hsl(0deg, 67%, 62%);
+  border: 1px hsl(0deg, 67%, 52%) solid;
 }
 .nn-btn.nn-outline.nn-persian-red:hover, .nn-btn.nn-outline.nn-persian-red:active, .nn-btn.nn-outline.nn-persian-red.nn-active {
-  color: var(--nn-gcolor-persian-red-m20);
-  background-color: var(--nn-gcolor-persian-red-p20);
-  border-color: var(--nn-gcolor-persian-red-p20);
+  color: hsl(0deg, 67%, 32%);
+  background-color: hsl(0deg, 67%, 72%);
+  border-color: hsl(0deg, 67%, 72%);
 }
 .nn-btn.nn-outline.nn-denim {
-  color: var(--nn-gcolor-denim-p10);
-  border: 1px var(--nn-gcolor-denim) solid;
+  color: hsl(209deg, 84%, 52%);
+  border: 1px hsl(209deg, 84%, 42%) solid;
 }
 .nn-btn.nn-outline.nn-denim:hover, .nn-btn.nn-outline.nn-denim:active, .nn-btn.nn-outline.nn-denim.nn-active {
-  color: var(--nn-gcolor-denim-m20);
-  background-color: var(--nn-gcolor-denim-p20);
-  border-color: var(--nn-gcolor-denim-p20);
+  color: hsl(209deg, 84%, 22%);
+  background-color: hsl(209deg, 84%, 62%);
+  border-color: hsl(209deg, 84%, 62%);
 }
 .nn-btn.nn-outline.nn-gold-tips {
-  color: var(--nn-gcolor-gold-tips-p10);
-  border: 1px var(--nn-gcolor-gold-tips) solid;
+  color: hsl(42deg, 78%, 65%);
+  border: 1px hsl(42deg, 78%, 55%) solid;
 }
 .nn-btn.nn-outline.nn-gold-tips:hover, .nn-btn.nn-outline.nn-gold-tips:active, .nn-btn.nn-outline.nn-gold-tips.nn-active {
-  color: var(--nn-gcolor-gold-tips-m20);
-  background-color: var(--nn-gcolor-gold-tips-p20);
-  border-color: var(--nn-gcolor-gold-tips-p20);
+  color: hsl(42deg, 78%, 35%);
+  background-color: hsl(42deg, 78%, 75%);
+  border-color: hsl(42deg, 78%, 75%);
 }
 .nn-btn.nn-outline.nn-shamrock {
-  color: var(--nn-gcolor-shamrock-p10);
-  border: 1px var(--nn-gcolor-shamrock) solid;
+  color: hsl(149deg, 61%, 61%);
+  border: 1px hsl(149deg, 61%, 51%) solid;
 }
 .nn-btn.nn-outline.nn-shamrock:hover, .nn-btn.nn-outline.nn-shamrock:active, .nn-btn.nn-outline.nn-shamrock.nn-active {
-  color: var(--nn-gcolor-shamrock-m20);
-  background-color: var(--nn-gcolor-shamrock-p20);
-  border-color: var(--nn-gcolor-shamrock-p20);
+  color: hsl(149deg, 61%, 31%);
+  background-color: hsl(149deg, 61%, 71%);
+  border-color: hsl(149deg, 61%, 71%);
 }
 .nn-btn.nn-outline.nn-cod-grey {
-  color: var(--nn-gcolor-cod-grey-p10);
-  border: 1px var(--nn-gcolor-cod-grey) solid;
+  color: hsl(0deg, 0%, 21%);
+  border: 1px hsl(0deg, 0%, 11%) solid;
 }
 .nn-btn.nn-outline.nn-cod-grey:hover, .nn-btn.nn-outline.nn-cod-grey:active, .nn-btn.nn-outline.nn-cod-grey.nn-active {
-  color: var(--nn-gcolor-cod-grey-m20);
-  background-color: var(--nn-gcolor-cod-grey-p20);
-  border-color: var(--nn-gcolor-cod-grey-p20);
+  color: hsl(0deg, 0%, 9%);
+  background-color: hsl(0deg, 0%, 31%);
+  border-color: hsl(0deg, 0%, 31%);
 }
 .nn-btn.nn-outline.nn-gravel {
-  color: var(--nn-gcolor-gravel-p10);
-  border: 1px var(--nn-gcolor-gravel) solid;
+  color: hsl(0deg, 0%, 53%);
+  border: 1px hsl(0deg, 0%, 43%) solid;
 }
 .nn-btn.nn-outline.nn-gravel:hover, .nn-btn.nn-outline.nn-gravel:active, .nn-btn.nn-outline.nn-gravel.nn-active {
-  color: var(--nn-gcolor-gravel-m20);
-  background-color: var(--nn-gcolor-gravel-p20);
-  border-color: var(--nn-gcolor-gravel-p20);
+  color: hsl(0deg, 0%, 23%);
+  background-color: hsl(0deg, 0%, 63%);
+  border-color: hsl(0deg, 0%, 63%);
 }
 .nn-btn.nn-outline.nn-emerald {
-  color: var(--nn-gcolor-emerald-p10);
-  border: 1px var(--nn-gcolor-emerald) solid;
+  color: hsl(118deg, 56%, 68%);
+  border: 1px hsl(118deg, 56%, 58%) solid;
 }
 .nn-btn.nn-outline.nn-emerald:hover, .nn-btn.nn-outline.nn-emerald:active, .nn-btn.nn-outline.nn-emerald.nn-active {
-  color: var(--nn-gcolor-emerald-m20);
-  background-color: var(--nn-gcolor-emerald-p20);
-  border-color: var(--nn-gcolor-emerald-p20);
+  color: hsl(118deg, 56%, 38%);
+  background-color: hsl(118deg, 56%, 78%);
+  border-color: hsl(118deg, 56%, 78%);
 }
 .nn-btn.nn-outline.nn-burn-orange {
-  color: var(--nn-gcolor-burn-orange-p10);
-  border: 1px var(--nn-gcolor-burn-orange) solid;
+  color: hsl(20deg, 94%, 68%);
+  border: 1px hsl(20deg, 94%, 58%) solid;
 }
 .nn-btn.nn-outline.nn-burn-orange:hover, .nn-btn.nn-outline.nn-burn-orange:active, .nn-btn.nn-outline.nn-burn-orange.nn-active {
-  color: var(--nn-gcolor-burn-orange-m20);
-  background-color: var(--nn-gcolor-burn-orange-p20);
-  border-color: var(--nn-gcolor-burn-orange-p20);
+  color: hsl(20deg, 94%, 38%);
+  background-color: hsl(20deg, 94%, 78%);
+  border-color: hsl(20deg, 94%, 78%);
 }
 .nn-btn.nn-outline.nn-razzmatazz {
-  color: var(--nn-gcolor-razzmatazz-p10);
-  border: 1px var(--nn-gcolor-razzmatazz) solid;
+  color: hsl(342deg, 100%, 53%);
+  border: 1px hsl(342deg, 100%, 43%) solid;
 }
 .nn-btn.nn-outline.nn-razzmatazz:hover, .nn-btn.nn-outline.nn-razzmatazz:active, .nn-btn.nn-outline.nn-razzmatazz.nn-active {
-  color: var(--nn-gcolor-razzmatazz-m20);
-  background-color: var(--nn-gcolor-razzmatazz-p20);
-  border-color: var(--nn-gcolor-razzmatazz-p20);
+  color: hsl(342deg, 100%, 23%);
+  background-color: hsl(342deg, 100%, 63%);
+  border-color: hsl(342deg, 100%, 63%);
 }
 .nn-btn.nn-outline.nn-desert {
-  color: var(--nn-gcolor-desert-p10);
-  border: 1px var(--nn-gcolor-desert) solid;
+  color: hsl(22deg, 45%, 53%);
+  border: 1px hsl(22deg, 45%, 43%) solid;
 }
 .nn-btn.nn-outline.nn-desert:hover, .nn-btn.nn-outline.nn-desert:active, .nn-btn.nn-outline.nn-desert.nn-active {
-  color: var(--nn-gcolor-desert-m20);
-  background-color: var(--nn-gcolor-desert-p20);
-  border-color: var(--nn-gcolor-desert-p20);
+  color: hsl(22deg, 45%, 23%);
+  background-color: hsl(22deg, 45%, 63%);
+  border-color: hsl(22deg, 45%, 63%);
 }
 .nn-btn.nn-outline.nn-charcoal {
-  color: var(--nn-gcolor-charcoal-p10);
-  border: 1px var(--nn-gcolor-charcoal) solid;
+  color: hsl(0deg, 0%, 37%);
+  border: 1px hsl(0deg, 0%, 27%) solid;
 }
 .nn-btn.nn-outline.nn-charcoal:hover, .nn-btn.nn-outline.nn-charcoal:active, .nn-btn.nn-outline.nn-charcoal.nn-active {
-  color: var(--nn-gcolor-charcoal-m20);
-  background-color: var(--nn-gcolor-charcoal-p20);
-  border-color: var(--nn-gcolor-charcoal-p20);
+  color: hsl(0deg, 0%, 7%);
+  background-color: hsl(0deg, 0%, 47%);
+  border-color: hsl(0deg, 0%, 47%);
 }
 .nn-btn.nn-outline.nn-golden-brown {
-  color: var(--nn-gcolor-golden-brown-p10);
-  border: 1px var(--nn-gcolor-golden-brown) solid;
+  color: hsl(37deg, 82%, 44%);
+  border: 1px hsl(37deg, 82%, 34%) solid;
 }
 .nn-btn.nn-outline.nn-golden-brown:hover, .nn-btn.nn-outline.nn-golden-brown:active, .nn-btn.nn-outline.nn-golden-brown.nn-active {
-  color: var(--nn-gcolor-golden-brown-m20);
-  background-color: var(--nn-gcolor-golden-brown-p20);
-  border-color: var(--nn-gcolor-golden-brown-p20);
+  color: hsl(37deg, 82%, 14%);
+  background-color: hsl(37deg, 82%, 54%);
+  border-color: hsl(37deg, 82%, 54%);
 }
 .nn-btn.nn-outline.nn-sepia {
-  color: var(--nn-gcolor-sepia-p10);
-  border: 1px var(--nn-gcolor-sepia) solid;
+  color: hsl(37deg, 67%, 36%);
+  border: 1px hsl(37deg, 67%, 26%) solid;
 }
 .nn-btn.nn-outline.nn-sepia:hover, .nn-btn.nn-outline.nn-sepia:active, .nn-btn.nn-outline.nn-sepia.nn-active {
-  color: var(--nn-gcolor-sepia-m20);
-  background-color: var(--nn-gcolor-sepia-p20);
-  border-color: var(--nn-gcolor-sepia-p20);
+  color: hsl(37deg, 67%, 6%);
+  background-color: hsl(37deg, 67%, 46%);
+  border-color: hsl(37deg, 67%, 46%);
 }
 .nn-btn.nn-outline.nn-alizarin {
-  color: var(--nn-gcolor-alizarin-p10);
-  border: 1px var(--nn-gcolor-alizarin) solid;
+  color: hsl(4deg, 85%, 59%);
+  border: 1px hsl(4deg, 85%, 49%) solid;
 }
 .nn-btn.nn-outline.nn-alizarin:hover, .nn-btn.nn-outline.nn-alizarin:active, .nn-btn.nn-outline.nn-alizarin.nn-active {
-  color: var(--nn-gcolor-alizarin-m20);
-  background-color: var(--nn-gcolor-alizarin-p20);
-  border-color: var(--nn-gcolor-alizarin-p20);
+  color: hsl(4deg, 85%, 29%);
+  background-color: hsl(4deg, 85%, 69%);
+  border-color: hsl(4deg, 85%, 69%);
 }
 .nn-btn.nn-outline.nn-rust {
-  color: var(--nn-gcolor-rust-p10);
-  border: 1px var(--nn-gcolor-rust) solid;
+  color: hsl(20deg, 84%, 53%);
+  border: 1px hsl(20deg, 84%, 43%) solid;
 }
 .nn-btn.nn-outline.nn-rust:hover, .nn-btn.nn-outline.nn-rust:active, .nn-btn.nn-outline.nn-rust.nn-active {
-  color: var(--nn-gcolor-rust-m20);
-  background-color: var(--nn-gcolor-rust-p20);
-  border-color: var(--nn-gcolor-rust-p20);
+  color: hsl(20deg, 84%, 23%);
+  background-color: hsl(20deg, 84%, 63%);
+  border-color: hsl(20deg, 84%, 63%);
 }
 .nn-btn.nn-outline.nn-blush {
-  color: var(--nn-gcolor-blush-p10);
-  border: 1px var(--nn-gcolor-blush) solid;
+  color: hsl(345deg, 48%, 62%);
+  border: 1px hsl(345deg, 48%, 52%) solid;
 }
 .nn-btn.nn-outline.nn-blush:hover, .nn-btn.nn-outline.nn-blush:active, .nn-btn.nn-outline.nn-blush.nn-active {
-  color: var(--nn-gcolor-blush-m20);
-  background-color: var(--nn-gcolor-blush-p20);
-  border-color: var(--nn-gcolor-blush-p20);
+  color: hsl(345deg, 48%, 32%);
+  background-color: hsl(345deg, 48%, 72%);
+  border-color: hsl(345deg, 48%, 72%);
 }
 .nn-btn.nn-outline.nn-fire-brick {
-  color: var(--nn-gcolor-fire-brick-p10);
-  border: 1px var(--nn-gcolor-fire-brick) solid;
+  color: hsl(349deg, 67%, 49%);
+  border: 1px hsl(349deg, 67%, 39%) solid;
 }
 .nn-btn.nn-outline.nn-fire-brick:hover, .nn-btn.nn-outline.nn-fire-brick:active, .nn-btn.nn-outline.nn-fire-brick.nn-active {
-  color: var(--nn-gcolor-fire-brick-m20);
-  background-color: var(--nn-gcolor-fire-brick-p20);
-  border-color: var(--nn-gcolor-fire-brick-p20);
+  color: hsl(349deg, 67%, 19%);
+  background-color: hsl(349deg, 67%, 59%);
+  border-color: hsl(349deg, 67%, 59%);
 }
 .nn-btn.nn-outline.nn-sunglow {
-  color: var(--nn-gcolor-sunglow-p10);
-  border: 1px var(--nn-gcolor-sunglow) solid;
+  color: hsl(47deg, 100%, 67%);
+  border: 1px hsl(47deg, 100%, 57%) solid;
 }
 .nn-btn.nn-outline.nn-sunglow:hover, .nn-btn.nn-outline.nn-sunglow:active, .nn-btn.nn-outline.nn-sunglow.nn-active {
-  color: var(--nn-gcolor-sunglow-m20);
-  background-color: var(--nn-gcolor-sunglow-p20);
-  border-color: var(--nn-gcolor-sunglow-p20);
+  color: hsl(47deg, 100%, 37%);
+  background-color: hsl(47deg, 100%, 77%);
+  border-color: hsl(47deg, 100%, 77%);
 }
 .nn-btn.nn-outline.nn-milk-punch {
-  color: var(--nn-gcolor-milk-punch-p10);
-  border: 1px var(--nn-gcolor-milk-punch) solid;
+  color: hsl(44deg, 69%, 106%);
+  border: 1px hsl(44deg, 69%, 86%) solid;
 }
 .nn-btn.nn-outline.nn-milk-punch:hover, .nn-btn.nn-outline.nn-milk-punch:active, .nn-btn.nn-outline.nn-milk-punch.nn-active {
-  color: var(--nn-gcolor-milk-punch-m20);
-  background-color: var(--nn-gcolor-milk-punch-p20);
-  border-color: var(--nn-gcolor-milk-punch-p20);
+  color: hsl(44deg 42% 33%);
+  background-color: hsl(44deg, 69%, 96%);
+  border-color: hsl(44deg, 69%, 96%);
 }
 .nn-btn.nn-outline.nn-yukon-gold {
-  color: var(--nn-gcolor-yukon-gold-p10);
-  border: 1px var(--nn-gcolor-yukon-gold) solid;
+  color: hsl(47deg, 66%, 43%);
+  border: 1px hsl(47deg, 66%, 33%) solid;
 }
 .nn-btn.nn-outline.nn-yukon-gold:hover, .nn-btn.nn-outline.nn-yukon-gold:active, .nn-btn.nn-outline.nn-yukon-gold.nn-active {
-  color: var(--nn-gcolor-yukon-gold-m20);
-  background-color: var(--nn-gcolor-yukon-gold-p20);
-  border-color: var(--nn-gcolor-yukon-gold-p20);
+  color: hsl(47deg, 66%, 13%);
+  background-color: hsl(47deg, 66%, 53%);
+  border-color: hsl(47deg, 66%, 53%);
 }
 .nn-btn.nn-outline.nn-green-pea {
-  color: var(--nn-gcolor-green-pea-p10);
-  border: 1px var(--nn-gcolor-green-pea) solid;
+  color: hsl(140deg, 56%, 39%);
+  border: 1px hsl(140deg, 56%, 29%) solid;
 }
 .nn-btn.nn-outline.nn-green-pea:hover, .nn-btn.nn-outline.nn-green-pea:active, .nn-btn.nn-outline.nn-green-pea.nn-active {
-  color: var(--nn-gcolor-green-pea-m20);
-  background-color: var(--nn-gcolor-green-pea-p20);
-  border-color: var(--nn-gcolor-green-pea-p20);
+  color: hsl(140deg, 56%, 9%);
+  background-color: hsl(140deg, 56%, 49%);
+  border-color: hsl(140deg, 56%, 49%);
 }
 .nn-btn.nn-outline.nn-laurel {
-  color: var(--nn-gcolor-laurel-p10);
-  border: 1px var(--nn-gcolor-laurel) solid;
+  color: hsl(124deg, 45%, 46%);
+  border: 1px hsl(124deg, 45%, 36%) solid;
 }
 .nn-btn.nn-outline.nn-laurel:hover, .nn-btn.nn-outline.nn-laurel:active, .nn-btn.nn-outline.nn-laurel.nn-active {
-  color: var(--nn-gcolor-laurel-m20);
-  background-color: var(--nn-gcolor-laurel-p20);
-  border-color: var(--nn-gcolor-laurel-p20);
+  color: hsl(124deg, 45%, 16%);
+  background-color: hsl(124deg, 45%, 56%);
+  border-color: hsl(124deg, 45%, 56%);
 }
 .nn-btn.nn-outline.nn-elf-green {
-  color: var(--nn-gcolor-elf-green-p10);
-  border: 1px var(--nn-gcolor-elf-green) solid;
+  color: hsl(161deg, 69%, 41%);
+  border: 1px hsl(161deg, 69%, 31%) solid;
 }
 .nn-btn.nn-outline.nn-elf-green:hover, .nn-btn.nn-outline.nn-elf-green:active, .nn-btn.nn-outline.nn-elf-green.nn-active {
-  color: var(--nn-gcolor-elf-green-m20);
-  background-color: var(--nn-gcolor-elf-green-p20);
-  border-color: var(--nn-gcolor-elf-green-p20);
+  color: hsl(161deg, 69%, 11%);
+  background-color: hsl(161deg, 69%, 51%);
+  border-color: hsl(161deg, 69%, 51%);
 }
 .nn-btn.nn-outline.nn-lake {
-  color: var(--nn-gcolor-lake-p10);
-  border: 1px var(--nn-gcolor-lake) solid;
+  color: hsl(192deg, 60%, 46%);
+  border: 1px hsl(192deg, 60%, 36%) solid;
 }
 .nn-btn.nn-outline.nn-lake:hover, .nn-btn.nn-outline.nn-lake:active, .nn-btn.nn-outline.nn-lake.nn-active {
-  color: var(--nn-gcolor-lake-m20);
-  background-color: var(--nn-gcolor-lake-p20);
-  border-color: var(--nn-gcolor-lake-p20);
+  color: hsl(192deg, 60%, 16%);
+  background-color: hsl(192deg, 60%, 56%);
+  border-color: hsl(192deg, 60%, 56%);
 }
 .nn-btn.nn-outline.nn-cobalt-blue {
-  color: var(--nn-gcolor-cobalt-blue-p10);
-  border: 1px var(--nn-gcolor-cobalt-blue) solid;
+  color: hsl(215deg, 88%, 46%);
+  border: 1px hsl(215deg, 88%, 36%) solid;
 }
 .nn-btn.nn-outline.nn-cobalt-blue:hover, .nn-btn.nn-outline.nn-cobalt-blue:active, .nn-btn.nn-outline.nn-cobalt-blue.nn-active {
-  color: var(--nn-gcolor-cobalt-blue-m20);
-  background-color: var(--nn-gcolor-cobalt-blue-p20);
-  border-color: var(--nn-gcolor-cobalt-blue-p20);
+  color: hsl(215deg, 88%, 16%);
+  background-color: hsl(215deg, 88%, 56%);
+  border-color: hsl(215deg, 88%, 56%);
 }
 .nn-btn.nn-outline.nn-mariner {
-  color: var(--nn-gcolor-mariner-p10);
-  border: 1px var(--nn-gcolor-mariner) solid;
+  color: hsl(215deg, 59%, 61%);
+  border: 1px hsl(215deg, 59%, 51%) solid;
 }
 .nn-btn.nn-outline.nn-mariner:hover, .nn-btn.nn-outline.nn-mariner:active, .nn-btn.nn-outline.nn-mariner.nn-active {
-  color: var(--nn-gcolor-mariner-m20);
-  background-color: var(--nn-gcolor-mariner-p20);
-  border-color: var(--nn-gcolor-mariner-p20);
+  color: hsl(215deg, 59%, 31%);
+  background-color: hsl(215deg, 59%, 71%);
+  border-color: hsl(215deg, 59%, 71%);
 }
 .nn-btn.nn-outline.nn-fuchsia {
-  color: var(--nn-gcolor-fuchsia-p10);
-  border: 1px var(--nn-gcolor-fuchsia) solid;
+  color: hsl(302deg, 91%, 46%);
+  border: 1px hsl(302deg, 91%, 36%) solid;
 }
 .nn-btn.nn-outline.nn-fuchsia:hover, .nn-btn.nn-outline.nn-fuchsia:active, .nn-btn.nn-outline.nn-fuchsia.nn-active {
-  color: var(--nn-gcolor-fuchsia-m20);
-  background-color: var(--nn-gcolor-fuchsia-p20);
-  border-color: var(--nn-gcolor-fuchsia-p20);
+  color: hsl(302deg, 91%, 16%);
+  background-color: hsl(302deg, 91%, 56%);
+  border-color: hsl(302deg, 91%, 56%);
 }
 .nn-btn.nn-outline.nn-blue-violet {
-  color: var(--nn-gcolor-blue-violet-p10);
-  border: 1px var(--nn-gcolor-blue-violet) solid;
+  color: hsl(269deg, 82%, 71%);
+  border: 1px hsl(269deg, 82%, 61%) solid;
 }
 .nn-btn.nn-outline.nn-blue-violet:hover, .nn-btn.nn-outline.nn-blue-violet:active, .nn-btn.nn-outline.nn-blue-violet.nn-active {
-  color: var(--nn-gcolor-blue-violet-m20);
-  background-color: var(--nn-gcolor-blue-violet-p20);
-  border-color: var(--nn-gcolor-blue-violet-p20);
+  color: hsl(269deg, 82%, 41%);
+  background-color: hsl(269deg, 82%, 81%);
+  border-color: hsl(269deg, 82%, 81%);
 }
 .nn-btn.nn-outline.nn-purple-heart {
-  color: var(--nn-gcolor-purple-heart-p10);
-  border: 1px var(--nn-gcolor-purple-heart) solid;
+  color: hsl(276deg, 56%, 54%);
+  border: 1px hsl(276deg, 56%, 44%) solid;
 }
 .nn-btn.nn-outline.nn-purple-heart:hover, .nn-btn.nn-outline.nn-purple-heart:active, .nn-btn.nn-outline.nn-purple-heart.nn-active {
-  color: var(--nn-gcolor-purple-heart-m20);
-  background-color: var(--nn-gcolor-purple-heart-p20);
-  border-color: var(--nn-gcolor-purple-heart-p20);
+  color: hsl(276deg, 56%, 24%);
+  background-color: hsl(276deg, 56%, 64%);
+  border-color: hsl(276deg, 56%, 64%);
 }

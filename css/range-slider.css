@@ -9,13 +9,13 @@
   margin: 0 0 0.5rem;
 }
 .nn-range.nn-white::-webkit-slider-thumb {
-  background: var(--nn-gcolor-white-m10);
+  background: hsl(0deg, 0%, 90%);
 }
 .nn-range.nn-white::-moz-range-thumb {
-  background: var(--nn-gcolor-white-m10);
+  background: hsl(0deg, 0%, 90%);
 }
 .nn-range.nn-white::-ms-thumb {
-  background: var(--nn-gcolor-white-m10);
+  background: hsl(0deg, 0%, 90%);
 }
 .nn-range.nn-white::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -30,25 +30,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-white:hover::-webkit-slider-runnable-track {
-  background: var(--nn-gcolor-white);
+  background: hsl(0deg, 0%, 100%);
 }
 .nn-range.nn-white:hover::-moz-range-track {
-  background: var(--nn-gcolor-white);
+  background: hsl(0deg, 0%, 100%);
 }
 .nn-range.nn-white:hover::-ms-fill-lower {
-  background: var(--nn-gcolor-white);
+  background: hsl(0deg, 0%, 100%);
 }
 .nn-range.nn-white:hover::-ms-fill-upper {
-  background: var(--nn-gcolor-white);
+  background: hsl(0deg, 0%, 100%);
 }
 .nn-range.nn-silver::-webkit-slider-thumb {
-  background: var(--nn-gcolor-silver-m10);
+  background: hsl(0deg 0% 50%);
 }
 .nn-range.nn-silver::-moz-range-thumb {
-  background: var(--nn-gcolor-silver-m10);
+  background: hsl(0deg 0% 50%);
 }
 .nn-range.nn-silver::-ms-thumb {
-  background: var(--nn-gcolor-silver-m10);
+  background: hsl(0deg 0% 50%);
 }
 .nn-range.nn-silver::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -63,25 +63,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-silver:hover::-webkit-slider-runnable-track {
-  background: var(--nn-gcolor-silver);
+  background: hsl(0deg, 0%, 75%);
 }
 .nn-range.nn-silver:hover::-moz-range-track {
-  background: var(--nn-gcolor-silver);
+  background: hsl(0deg, 0%, 75%);
 }
 .nn-range.nn-silver:hover::-ms-fill-lower {
-  background: var(--nn-gcolor-silver);
+  background: hsl(0deg, 0%, 75%);
 }
 .nn-range.nn-silver:hover::-ms-fill-upper {
-  background: var(--nn-gcolor-silver);
+  background: hsl(0deg, 0%, 75%);
 }
 .nn-range.nn-royal-purple::-webkit-slider-thumb {
-  background: var(--nn-gcolor-royal-purple-m10);
+  background: hsl(263deg, 41%, 34%);
 }
 .nn-range.nn-royal-purple::-moz-range-thumb {
-  background: var(--nn-gcolor-royal-purple-m10);
+  background: hsl(263deg, 41%, 34%);
 }
 .nn-range.nn-royal-purple::-ms-thumb {
-  background: var(--nn-gcolor-royal-purple-m10);
+  background: hsl(263deg, 41%, 34%);
 }
 .nn-range.nn-royal-purple::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -96,25 +96,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-royal-purple:hover::-webkit-slider-runnable-track {
-  background: var(--nn-gcolor-royal-purple);
+  background: hsl(263deg, 41%, 44%);
 }
 .nn-range.nn-royal-purple:hover::-moz-range-track {
-  background: var(--nn-gcolor-royal-purple);
+  background: hsl(263deg, 41%, 44%);
 }
 .nn-range.nn-royal-purple:hover::-ms-fill-lower {
-  background: var(--nn-gcolor-royal-purple);
+  background: hsl(263deg, 41%, 44%);
 }
 .nn-range.nn-royal-purple:hover::-ms-fill-upper {
-  background: var(--nn-gcolor-royal-purple);
+  background: hsl(263deg, 41%, 44%);
 }
 .nn-range.nn-persian-red::-webkit-slider-thumb {
-  background: var(--nn-gcolor-persian-red-m10);
+  background: hsl(0deg, 67%, 42%);
 }
 .nn-range.nn-persian-red::-moz-range-thumb {
-  background: var(--nn-gcolor-persian-red-m10);
+  background: hsl(0deg, 67%, 42%);
 }
 .nn-range.nn-persian-red::-ms-thumb {
-  background: var(--nn-gcolor-persian-red-m10);
+  background: hsl(0deg, 67%, 42%);
 }
 .nn-range.nn-persian-red::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -129,25 +129,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-persian-red:hover::-webkit-slider-runnable-track {
-  background: var(--nn-gcolor-persian-red);
+  background: hsl(0deg, 67%, 52%);
 }
 .nn-range.nn-persian-red:hover::-moz-range-track {
-  background: var(--nn-gcolor-persian-red);
+  background: hsl(0deg, 67%, 52%);
 }
 .nn-range.nn-persian-red:hover::-ms-fill-lower {
-  background: var(--nn-gcolor-persian-red);
+  background: hsl(0deg, 67%, 52%);
 }
 .nn-range.nn-persian-red:hover::-ms-fill-upper {
-  background: var(--nn-gcolor-persian-red);
+  background: hsl(0deg, 67%, 52%);
 }
 .nn-range.nn-denim::-webkit-slider-thumb {
-  background: var(--nn-gcolor-denim-m10);
+  background: hsl(209deg, 84%, 32%);
 }
 .nn-range.nn-denim::-moz-range-thumb {
-  background: var(--nn-gcolor-denim-m10);
+  background: hsl(209deg, 84%, 32%);
 }
 .nn-range.nn-denim::-ms-thumb {
-  background: var(--nn-gcolor-denim-m10);
+  background: hsl(209deg, 84%, 32%);
 }
 .nn-range.nn-denim::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -162,25 +162,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-denim:hover::-webkit-slider-runnable-track {
-  background: var(--nn-gcolor-denim);
+  background: hsl(209deg, 84%, 42%);
 }
 .nn-range.nn-denim:hover::-moz-range-track {
-  background: var(--nn-gcolor-denim);
+  background: hsl(209deg, 84%, 42%);
 }
 .nn-range.nn-denim:hover::-ms-fill-lower {
-  background: var(--nn-gcolor-denim);
+  background: hsl(209deg, 84%, 42%);
 }
 .nn-range.nn-denim:hover::-ms-fill-upper {
-  background: var(--nn-gcolor-denim);
+  background: hsl(209deg, 84%, 42%);
 }
 .nn-range.nn-gold-tips::-webkit-slider-thumb {
-  background: var(--nn-gcolor-gold-tips-m10);
+  background: hsl(42deg 81% 39%);
 }
 .nn-range.nn-gold-tips::-moz-range-thumb {
-  background: var(--nn-gcolor-gold-tips-m10);
+  background: hsl(42deg 81% 39%);
 }
 .nn-range.nn-gold-tips::-ms-thumb {
-  background: var(--nn-gcolor-gold-tips-m10);
+  background: hsl(42deg 81% 39%);
 }
 .nn-range.nn-gold-tips::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -195,25 +195,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-gold-tips:hover::-webkit-slider-runnable-track {
-  background: var(--nn-gcolor-gold-tips);
+  background: hsl(42deg, 78%, 55%);
 }
 .nn-range.nn-gold-tips:hover::-moz-range-track {
-  background: var(--nn-gcolor-gold-tips);
+  background: hsl(42deg, 78%, 55%);
 }
 .nn-range.nn-gold-tips:hover::-ms-fill-lower {
-  background: var(--nn-gcolor-gold-tips);
+  background: hsl(42deg, 78%, 55%);
 }
 .nn-range.nn-gold-tips:hover::-ms-fill-upper {
-  background: var(--nn-gcolor-gold-tips);
+  background: hsl(42deg, 78%, 55%);
 }
 .nn-range.nn-shamrock::-webkit-slider-thumb {
-  background: var(--nn-gcolor-shamrock-m10);
+  background: hsl(149deg, 61%, 41%);
 }
 .nn-range.nn-shamrock::-moz-range-thumb {
-  background: var(--nn-gcolor-shamrock-m10);
+  background: hsl(149deg, 61%, 41%);
 }
 .nn-range.nn-shamrock::-ms-thumb {
-  background: var(--nn-gcolor-shamrock-m10);
+  background: hsl(149deg, 61%, 41%);
 }
 .nn-range.nn-shamrock::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -228,25 +228,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-shamrock:hover::-webkit-slider-runnable-track {
-  background: var(--nn-gcolor-shamrock);
+  background: hsl(149deg, 61%, 51%);
 }
 .nn-range.nn-shamrock:hover::-moz-range-track {
-  background: var(--nn-gcolor-shamrock);
+  background: hsl(149deg, 61%, 51%);
 }
 .nn-range.nn-shamrock:hover::-ms-fill-lower {
-  background: var(--nn-gcolor-shamrock);
+  background: hsl(149deg, 61%, 51%);
 }
 .nn-range.nn-shamrock:hover::-ms-fill-upper {
-  background: var(--nn-gcolor-shamrock);
+  background: hsl(149deg, 61%, 51%);
 }
 .nn-range.nn-cod-grey::-webkit-slider-thumb {
-  background: var(--nn-gcolor-cod-grey-m10);
+  background: hsl(0deg, 0%, 1%);
 }
 .nn-range.nn-cod-grey::-moz-range-thumb {
-  background: var(--nn-gcolor-cod-grey-m10);
+  background: hsl(0deg, 0%, 1%);
 }
 .nn-range.nn-cod-grey::-ms-thumb {
-  background: var(--nn-gcolor-cod-grey-m10);
+  background: hsl(0deg, 0%, 1%);
 }
 .nn-range.nn-cod-grey::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -261,25 +261,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-cod-grey:hover::-webkit-slider-runnable-track {
-  background: var(--nn-gcolor-cod-grey);
+  background: hsl(0deg, 0%, 11%);
 }
 .nn-range.nn-cod-grey:hover::-moz-range-track {
-  background: var(--nn-gcolor-cod-grey);
+  background: hsl(0deg, 0%, 11%);
 }
 .nn-range.nn-cod-grey:hover::-ms-fill-lower {
-  background: var(--nn-gcolor-cod-grey);
+  background: hsl(0deg, 0%, 11%);
 }
 .nn-range.nn-cod-grey:hover::-ms-fill-upper {
-  background: var(--nn-gcolor-cod-grey);
+  background: hsl(0deg, 0%, 11%);
 }
 .nn-range.nn-gravel::-webkit-slider-thumb {
-  background: var(--nn-gcolor-gravel-m10);
+  background: hsl(0deg, 0%, 33%);
 }
 .nn-range.nn-gravel::-moz-range-thumb {
-  background: var(--nn-gcolor-gravel-m10);
+  background: hsl(0deg, 0%, 33%);
 }
 .nn-range.nn-gravel::-ms-thumb {
-  background: var(--nn-gcolor-gravel-m10);
+  background: hsl(0deg, 0%, 33%);
 }
 .nn-range.nn-gravel::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -294,25 +294,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-gravel:hover::-webkit-slider-runnable-track {
-  background: var(--nn-gcolor-gravel);
+  background: hsl(0deg, 0%, 43%);
 }
 .nn-range.nn-gravel:hover::-moz-range-track {
-  background: var(--nn-gcolor-gravel);
+  background: hsl(0deg, 0%, 43%);
 }
 .nn-range.nn-gravel:hover::-ms-fill-lower {
-  background: var(--nn-gcolor-gravel);
+  background: hsl(0deg, 0%, 43%);
 }
 .nn-range.nn-gravel:hover::-ms-fill-upper {
-  background: var(--nn-gcolor-gravel);
+  background: hsl(0deg, 0%, 43%);
 }
 .nn-range.nn-emerald::-webkit-slider-thumb {
-  background: var(--nn-gcolor-emerald-m10);
+  background: hsl(118deg 47% 41%);
 }
 .nn-range.nn-emerald::-moz-range-thumb {
-  background: var(--nn-gcolor-emerald-m10);
+  background: hsl(118deg 47% 41%);
 }
 .nn-range.nn-emerald::-ms-thumb {
-  background: var(--nn-gcolor-emerald-m10);
+  background: hsl(118deg 47% 41%);
 }
 .nn-range.nn-emerald::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -327,25 +327,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-emerald:hover::-webkit-slider-runnable-track {
-  background: var(--nn-gcolor-emerald);
+  background: hsl(118deg, 56%, 58%);
 }
 .nn-range.nn-emerald:hover::-moz-range-track {
-  background: var(--nn-gcolor-emerald);
+  background: hsl(118deg, 56%, 58%);
 }
 .nn-range.nn-emerald:hover::-ms-fill-lower {
-  background: var(--nn-gcolor-emerald);
+  background: hsl(118deg, 56%, 58%);
 }
 .nn-range.nn-emerald:hover::-ms-fill-upper {
-  background: var(--nn-gcolor-emerald);
+  background: hsl(118deg, 56%, 58%);
 }
 .nn-range.nn-burn-orange::-webkit-slider-thumb {
-  background: var(--nn-gcolor-burn-orange-m10);
+  background: hsl(20deg, 94%, 48%);
 }
 .nn-range.nn-burn-orange::-moz-range-thumb {
-  background: var(--nn-gcolor-burn-orange-m10);
+  background: hsl(20deg, 94%, 48%);
 }
 .nn-range.nn-burn-orange::-ms-thumb {
-  background: var(--nn-gcolor-burn-orange-m10);
+  background: hsl(20deg, 94%, 48%);
 }
 .nn-range.nn-burn-orange::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -360,25 +360,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-burn-orange:hover::-webkit-slider-runnable-track {
-  background: var(--nn-gcolor-burn-orange);
+  background: hsl(20deg, 94%, 58%);
 }
 .nn-range.nn-burn-orange:hover::-moz-range-track {
-  background: var(--nn-gcolor-burn-orange);
+  background: hsl(20deg, 94%, 58%);
 }
 .nn-range.nn-burn-orange:hover::-ms-fill-lower {
-  background: var(--nn-gcolor-burn-orange);
+  background: hsl(20deg, 94%, 58%);
 }
 .nn-range.nn-burn-orange:hover::-ms-fill-upper {
-  background: var(--nn-gcolor-burn-orange);
+  background: hsl(20deg, 94%, 58%);
 }
 .nn-range.nn-razzmatazz::-webkit-slider-thumb {
-  background: var(--nn-gcolor-razzmatazz-m10);
+  background: hsl(342deg, 100%, 33%);
 }
 .nn-range.nn-razzmatazz::-moz-range-thumb {
-  background: var(--nn-gcolor-razzmatazz-m10);
+  background: hsl(342deg, 100%, 33%);
 }
 .nn-range.nn-razzmatazz::-ms-thumb {
-  background: var(--nn-gcolor-razzmatazz-m10);
+  background: hsl(342deg, 100%, 33%);
 }
 .nn-range.nn-razzmatazz::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -393,25 +393,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-razzmatazz:hover::-webkit-slider-runnable-track {
-  background: var(--nn-gcolor-razzmatazz);
+  background: hsl(342deg, 100%, 43%);
 }
 .nn-range.nn-razzmatazz:hover::-moz-range-track {
-  background: var(--nn-gcolor-razzmatazz);
+  background: hsl(342deg, 100%, 43%);
 }
 .nn-range.nn-razzmatazz:hover::-ms-fill-lower {
-  background: var(--nn-gcolor-razzmatazz);
+  background: hsl(342deg, 100%, 43%);
 }
 .nn-range.nn-razzmatazz:hover::-ms-fill-upper {
-  background: var(--nn-gcolor-razzmatazz);
+  background: hsl(342deg, 100%, 43%);
 }
 .nn-range.nn-desert::-webkit-slider-thumb {
-  background: var(--nn-gcolor-desert-m10);
+  background: hsl(22deg, 45%, 33%);
 }
 .nn-range.nn-desert::-moz-range-thumb {
-  background: var(--nn-gcolor-desert-m10);
+  background: hsl(22deg, 45%, 33%);
 }
 .nn-range.nn-desert::-ms-thumb {
-  background: var(--nn-gcolor-desert-m10);
+  background: hsl(22deg, 45%, 33%);
 }
 .nn-range.nn-desert::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -426,25 +426,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-desert:hover::-webkit-slider-runnable-track {
-  background: var(--nn-gcolor-desert);
+  background: hsl(22deg, 45%, 43%);
 }
 .nn-range.nn-desert:hover::-moz-range-track {
-  background: var(--nn-gcolor-desert);
+  background: hsl(22deg, 45%, 43%);
 }
 .nn-range.nn-desert:hover::-ms-fill-lower {
-  background: var(--nn-gcolor-desert);
+  background: hsl(22deg, 45%, 43%);
 }
 .nn-range.nn-desert:hover::-ms-fill-upper {
-  background: var(--nn-gcolor-desert);
+  background: hsl(22deg, 45%, 43%);
 }
 .nn-range.nn-charcoal::-webkit-slider-thumb {
-  background: var(--nn-gcolor-charcoal-m10);
+  background: hsl(0deg, 0%, 17%);
 }
 .nn-range.nn-charcoal::-moz-range-thumb {
-  background: var(--nn-gcolor-charcoal-m10);
+  background: hsl(0deg, 0%, 17%);
 }
 .nn-range.nn-charcoal::-ms-thumb {
-  background: var(--nn-gcolor-charcoal-m10);
+  background: hsl(0deg, 0%, 17%);
 }
 .nn-range.nn-charcoal::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -459,25 +459,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-charcoal:hover::-webkit-slider-runnable-track {
-  background: var(--nn-gcolor-charcoal);
+  background: hsl(0deg, 0%, 27%);
 }
 .nn-range.nn-charcoal:hover::-moz-range-track {
-  background: var(--nn-gcolor-charcoal);
+  background: hsl(0deg, 0%, 27%);
 }
 .nn-range.nn-charcoal:hover::-ms-fill-lower {
-  background: var(--nn-gcolor-charcoal);
+  background: hsl(0deg, 0%, 27%);
 }
 .nn-range.nn-charcoal:hover::-ms-fill-upper {
-  background: var(--nn-gcolor-charcoal);
+  background: hsl(0deg, 0%, 27%);
 }
 .nn-range.nn-golden-brown::-webkit-slider-thumb {
-  background: var(--nn-gcolor-golden-brown-m10);
+  background: hsl(37deg, 82%, 24%);
 }
 .nn-range.nn-golden-brown::-moz-range-thumb {
-  background: var(--nn-gcolor-golden-brown-m10);
+  background: hsl(37deg, 82%, 24%);
 }
 .nn-range.nn-golden-brown::-ms-thumb {
-  background: var(--nn-gcolor-golden-brown-m10);
+  background: hsl(37deg, 82%, 24%);
 }
 .nn-range.nn-golden-brown::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -492,25 +492,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-golden-brown:hover::-webkit-slider-runnable-track {
-  background: var(--nn-gcolor-golden-brown);
+  background: hsl(37deg, 82%, 34%);
 }
 .nn-range.nn-golden-brown:hover::-moz-range-track {
-  background: var(--nn-gcolor-golden-brown);
+  background: hsl(37deg, 82%, 34%);
 }
 .nn-range.nn-golden-brown:hover::-ms-fill-lower {
-  background: var(--nn-gcolor-golden-brown);
+  background: hsl(37deg, 82%, 34%);
 }
 .nn-range.nn-golden-brown:hover::-ms-fill-upper {
-  background: var(--nn-gcolor-golden-brown);
+  background: hsl(37deg, 82%, 34%);
 }
 .nn-range.nn-sepia::-webkit-slider-thumb {
-  background: var(--nn-gcolor-sepia-m10);
+  background: hsl(37deg, 67%, 16%);
 }
 .nn-range.nn-sepia::-moz-range-thumb {
-  background: var(--nn-gcolor-sepia-m10);
+  background: hsl(37deg, 67%, 16%);
 }
 .nn-range.nn-sepia::-ms-thumb {
-  background: var(--nn-gcolor-sepia-m10);
+  background: hsl(37deg, 67%, 16%);
 }
 .nn-range.nn-sepia::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -525,25 +525,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-sepia:hover::-webkit-slider-runnable-track {
-  background: var(--nn-gcolor-sepia);
+  background: hsl(37deg, 67%, 26%);
 }
 .nn-range.nn-sepia:hover::-moz-range-track {
-  background: var(--nn-gcolor-sepia);
+  background: hsl(37deg, 67%, 26%);
 }
 .nn-range.nn-sepia:hover::-ms-fill-lower {
-  background: var(--nn-gcolor-sepia);
+  background: hsl(37deg, 67%, 26%);
 }
 .nn-range.nn-sepia:hover::-ms-fill-upper {
-  background: var(--nn-gcolor-sepia);
+  background: hsl(37deg, 67%, 26%);
 }
 .nn-range.nn-alizarin::-webkit-slider-thumb {
-  background: var(--nn-gcolor-alizarin-m10);
+  background: hsl(4deg 83% 29%);
 }
 .nn-range.nn-alizarin::-moz-range-thumb {
-  background: var(--nn-gcolor-alizarin-m10);
+  background: hsl(4deg 83% 29%);
 }
 .nn-range.nn-alizarin::-ms-thumb {
-  background: var(--nn-gcolor-alizarin-m10);
+  background: hsl(4deg 83% 29%);
 }
 .nn-range.nn-alizarin::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -558,25 +558,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-alizarin:hover::-webkit-slider-runnable-track {
-  background: var(--nn-gcolor-alizarin);
+  background: hsl(4deg, 85%, 49%);
 }
 .nn-range.nn-alizarin:hover::-moz-range-track {
-  background: var(--nn-gcolor-alizarin);
+  background: hsl(4deg, 85%, 49%);
 }
 .nn-range.nn-alizarin:hover::-ms-fill-lower {
-  background: var(--nn-gcolor-alizarin);
+  background: hsl(4deg, 85%, 49%);
 }
 .nn-range.nn-alizarin:hover::-ms-fill-upper {
-  background: var(--nn-gcolor-alizarin);
+  background: hsl(4deg, 85%, 49%);
 }
 .nn-range.nn-rust::-webkit-slider-thumb {
-  background: var(--nn-gcolor-rust-m10);
+  background: hsl(20deg, 84%, 33%);
 }
 .nn-range.nn-rust::-moz-range-thumb {
-  background: var(--nn-gcolor-rust-m10);
+  background: hsl(20deg, 84%, 33%);
 }
 .nn-range.nn-rust::-ms-thumb {
-  background: var(--nn-gcolor-rust-m10);
+  background: hsl(20deg, 84%, 33%);
 }
 .nn-range.nn-rust::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -591,25 +591,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-rust:hover::-webkit-slider-runnable-track {
-  background: var(--nn-gcolor-rust);
+  background: hsl(20deg, 84%, 43%);
 }
 .nn-range.nn-rust:hover::-moz-range-track {
-  background: var(--nn-gcolor-rust);
+  background: hsl(20deg, 84%, 43%);
 }
 .nn-range.nn-rust:hover::-ms-fill-lower {
-  background: var(--nn-gcolor-rust);
+  background: hsl(20deg, 84%, 43%);
 }
 .nn-range.nn-rust:hover::-ms-fill-upper {
-  background: var(--nn-gcolor-rust);
+  background: hsl(20deg, 84%, 43%);
 }
 .nn-range.nn-blush::-webkit-slider-thumb {
-  background: var(--nn-gcolor-blush-m10);
+  background: hsl(345deg, 48%, 42%);
 }
 .nn-range.nn-blush::-moz-range-thumb {
-  background: var(--nn-gcolor-blush-m10);
+  background: hsl(345deg, 48%, 42%);
 }
 .nn-range.nn-blush::-ms-thumb {
-  background: var(--nn-gcolor-blush-m10);
+  background: hsl(345deg, 48%, 42%);
 }
 .nn-range.nn-blush::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -624,25 +624,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-blush:hover::-webkit-slider-runnable-track {
-  background: var(--nn-gcolor-blush);
+  background: hsl(345deg, 48%, 52%);
 }
 .nn-range.nn-blush:hover::-moz-range-track {
-  background: var(--nn-gcolor-blush);
+  background: hsl(345deg, 48%, 52%);
 }
 .nn-range.nn-blush:hover::-ms-fill-lower {
-  background: var(--nn-gcolor-blush);
+  background: hsl(345deg, 48%, 52%);
 }
 .nn-range.nn-blush:hover::-ms-fill-upper {
-  background: var(--nn-gcolor-blush);
+  background: hsl(345deg, 48%, 52%);
 }
 .nn-range.nn-fire-brick::-webkit-slider-thumb {
-  background: var(--nn-gcolor-fire-brick-m10);
+  background: hsl(349deg, 67%, 29%);
 }
 .nn-range.nn-fire-brick::-moz-range-thumb {
-  background: var(--nn-gcolor-fire-brick-m10);
+  background: hsl(349deg, 67%, 29%);
 }
 .nn-range.nn-fire-brick::-ms-thumb {
-  background: var(--nn-gcolor-fire-brick-m10);
+  background: hsl(349deg, 67%, 29%);
 }
 .nn-range.nn-fire-brick::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -657,25 +657,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-fire-brick:hover::-webkit-slider-runnable-track {
-  background: var(--nn-gcolor-fire-brick);
+  background: hsl(349deg, 67%, 39%);
 }
 .nn-range.nn-fire-brick:hover::-moz-range-track {
-  background: var(--nn-gcolor-fire-brick);
+  background: hsl(349deg, 67%, 39%);
 }
 .nn-range.nn-fire-brick:hover::-ms-fill-lower {
-  background: var(--nn-gcolor-fire-brick);
+  background: hsl(349deg, 67%, 39%);
 }
 .nn-range.nn-fire-brick:hover::-ms-fill-upper {
-  background: var(--nn-gcolor-fire-brick);
+  background: hsl(349deg, 67%, 39%);
 }
 .nn-range.nn-sunglow::-webkit-slider-thumb {
-  background: var(--nn-gcolor-sunglow-m10);
+  background: hsl(47deg 90% 36%);
 }
 .nn-range.nn-sunglow::-moz-range-thumb {
-  background: var(--nn-gcolor-sunglow-m10);
+  background: hsl(47deg 90% 36%);
 }
 .nn-range.nn-sunglow::-ms-thumb {
-  background: var(--nn-gcolor-sunglow-m10);
+  background: hsl(47deg 90% 36%);
 }
 .nn-range.nn-sunglow::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -690,25 +690,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-sunglow:hover::-webkit-slider-runnable-track {
-  background: var(--nn-gcolor-sunglow);
+  background: hsl(47deg, 100%, 57%);
 }
 .nn-range.nn-sunglow:hover::-moz-range-track {
-  background: var(--nn-gcolor-sunglow);
+  background: hsl(47deg, 100%, 57%);
 }
 .nn-range.nn-sunglow:hover::-ms-fill-lower {
-  background: var(--nn-gcolor-sunglow);
+  background: hsl(47deg, 100%, 57%);
 }
 .nn-range.nn-sunglow:hover::-ms-fill-upper {
-  background: var(--nn-gcolor-sunglow);
+  background: hsl(47deg, 100%, 57%);
 }
 .nn-range.nn-milk-punch::-webkit-slider-thumb {
-  background: var(--nn-gcolor-milk-punch-m10);
+  background: hsl(44deg 29% 60%);
 }
 .nn-range.nn-milk-punch::-moz-range-thumb {
-  background: var(--nn-gcolor-milk-punch-m10);
+  background: hsl(44deg 29% 60%);
 }
 .nn-range.nn-milk-punch::-ms-thumb {
-  background: var(--nn-gcolor-milk-punch-m10);
+  background: hsl(44deg 29% 60%);
 }
 .nn-range.nn-milk-punch::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -723,25 +723,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-milk-punch:hover::-webkit-slider-runnable-track {
-  background: var(--nn-gcolor-milk-punch);
+  background: hsl(44deg, 69%, 86%);
 }
 .nn-range.nn-milk-punch:hover::-moz-range-track {
-  background: var(--nn-gcolor-milk-punch);
+  background: hsl(44deg, 69%, 86%);
 }
 .nn-range.nn-milk-punch:hover::-ms-fill-lower {
-  background: var(--nn-gcolor-milk-punch);
+  background: hsl(44deg, 69%, 86%);
 }
 .nn-range.nn-milk-punch:hover::-ms-fill-upper {
-  background: var(--nn-gcolor-milk-punch);
+  background: hsl(44deg, 69%, 86%);
 }
 .nn-range.nn-yukon-gold::-webkit-slider-thumb {
-  background: var(--nn-gcolor-yukon-gold-m10);
+  background: hsl(47deg, 66%, 23%);
 }
 .nn-range.nn-yukon-gold::-moz-range-thumb {
-  background: var(--nn-gcolor-yukon-gold-m10);
+  background: hsl(47deg, 66%, 23%);
 }
 .nn-range.nn-yukon-gold::-ms-thumb {
-  background: var(--nn-gcolor-yukon-gold-m10);
+  background: hsl(47deg, 66%, 23%);
 }
 .nn-range.nn-yukon-gold::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -756,25 +756,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-yukon-gold:hover::-webkit-slider-runnable-track {
-  background: var(--nn-gcolor-yukon-gold);
+  background: hsl(47deg, 66%, 33%);
 }
 .nn-range.nn-yukon-gold:hover::-moz-range-track {
-  background: var(--nn-gcolor-yukon-gold);
+  background: hsl(47deg, 66%, 33%);
 }
 .nn-range.nn-yukon-gold:hover::-ms-fill-lower {
-  background: var(--nn-gcolor-yukon-gold);
+  background: hsl(47deg, 66%, 33%);
 }
 .nn-range.nn-yukon-gold:hover::-ms-fill-upper {
-  background: var(--nn-gcolor-yukon-gold);
+  background: hsl(47deg, 66%, 33%);
 }
 .nn-range.nn-green-pea::-webkit-slider-thumb {
-  background: var(--nn-gcolor-green-pea-m10);
+  background: hsl(140deg, 56%, 19%);
 }
 .nn-range.nn-green-pea::-moz-range-thumb {
-  background: var(--nn-gcolor-green-pea-m10);
+  background: hsl(140deg, 56%, 19%);
 }
 .nn-range.nn-green-pea::-ms-thumb {
-  background: var(--nn-gcolor-green-pea-m10);
+  background: hsl(140deg, 56%, 19%);
 }
 .nn-range.nn-green-pea::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -789,25 +789,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-green-pea:hover::-webkit-slider-runnable-track {
-  background: var(--nn-gcolor-green-pea);
+  background: hsl(140deg, 56%, 29%);
 }
 .nn-range.nn-green-pea:hover::-moz-range-track {
-  background: var(--nn-gcolor-green-pea);
+  background: hsl(140deg, 56%, 29%);
 }
 .nn-range.nn-green-pea:hover::-ms-fill-lower {
-  background: var(--nn-gcolor-green-pea);
+  background: hsl(140deg, 56%, 29%);
 }
 .nn-range.nn-green-pea:hover::-ms-fill-upper {
-  background: var(--nn-gcolor-green-pea);
+  background: hsl(140deg, 56%, 29%);
 }
 .nn-range.nn-laurel::-webkit-slider-thumb {
-  background: var(--nn-gcolor-laurel-m10);
+  background: hsl(124deg, 45%, 26%);
 }
 .nn-range.nn-laurel::-moz-range-thumb {
-  background: var(--nn-gcolor-laurel-m10);
+  background: hsl(124deg, 45%, 26%);
 }
 .nn-range.nn-laurel::-ms-thumb {
-  background: var(--nn-gcolor-laurel-m10);
+  background: hsl(124deg, 45%, 26%);
 }
 .nn-range.nn-laurel::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -822,25 +822,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-laurel:hover::-webkit-slider-runnable-track {
-  background: var(--nn-gcolor-laurel);
+  background: hsl(124deg, 45%, 36%);
 }
 .nn-range.nn-laurel:hover::-moz-range-track {
-  background: var(--nn-gcolor-laurel);
+  background: hsl(124deg, 45%, 36%);
 }
 .nn-range.nn-laurel:hover::-ms-fill-lower {
-  background: var(--nn-gcolor-laurel);
+  background: hsl(124deg, 45%, 36%);
 }
 .nn-range.nn-laurel:hover::-ms-fill-upper {
-  background: var(--nn-gcolor-laurel);
+  background: hsl(124deg, 45%, 36%);
 }
 .nn-range.nn-elf-green::-webkit-slider-thumb {
-  background: var(--nn-gcolor-elf-green-m10);
+  background: hsl(161deg, 69%, 21%);
 }
 .nn-range.nn-elf-green::-moz-range-thumb {
-  background: var(--nn-gcolor-elf-green-m10);
+  background: hsl(161deg, 69%, 21%);
 }
 .nn-range.nn-elf-green::-ms-thumb {
-  background: var(--nn-gcolor-elf-green-m10);
+  background: hsl(161deg, 69%, 21%);
 }
 .nn-range.nn-elf-green::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -855,25 +855,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-elf-green:hover::-webkit-slider-runnable-track {
-  background: var(--nn-gcolor-elf-green);
+  background: hsl(161deg, 69%, 31%);
 }
 .nn-range.nn-elf-green:hover::-moz-range-track {
-  background: var(--nn-gcolor-elf-green);
+  background: hsl(161deg, 69%, 31%);
 }
 .nn-range.nn-elf-green:hover::-ms-fill-lower {
-  background: var(--nn-gcolor-elf-green);
+  background: hsl(161deg, 69%, 31%);
 }
 .nn-range.nn-elf-green:hover::-ms-fill-upper {
-  background: var(--nn-gcolor-elf-green);
+  background: hsl(161deg, 69%, 31%);
 }
 .nn-range.nn-lake::-webkit-slider-thumb {
-  background: var(--nn-gcolor-lake-m10);
+  background: hsl(192deg, 60%, 26%);
 }
 .nn-range.nn-lake::-moz-range-thumb {
-  background: var(--nn-gcolor-lake-m10);
+  background: hsl(192deg, 60%, 26%);
 }
 .nn-range.nn-lake::-ms-thumb {
-  background: var(--nn-gcolor-lake-m10);
+  background: hsl(192deg, 60%, 26%);
 }
 .nn-range.nn-lake::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -888,25 +888,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-lake:hover::-webkit-slider-runnable-track {
-  background: var(--nn-gcolor-lake);
+  background: hsl(192deg, 60%, 36%);
 }
 .nn-range.nn-lake:hover::-moz-range-track {
-  background: var(--nn-gcolor-lake);
+  background: hsl(192deg, 60%, 36%);
 }
 .nn-range.nn-lake:hover::-ms-fill-lower {
-  background: var(--nn-gcolor-lake);
+  background: hsl(192deg, 60%, 36%);
 }
 .nn-range.nn-lake:hover::-ms-fill-upper {
-  background: var(--nn-gcolor-lake);
+  background: hsl(192deg, 60%, 36%);
 }
 .nn-range.nn-cobalt-blue::-webkit-slider-thumb {
-  background: var(--nn-gcolor-cobalt-blue-m10);
+  background: hsl(215deg, 88%, 26%);
 }
 .nn-range.nn-cobalt-blue::-moz-range-thumb {
-  background: var(--nn-gcolor-cobalt-blue-m10);
+  background: hsl(215deg, 88%, 26%);
 }
 .nn-range.nn-cobalt-blue::-ms-thumb {
-  background: var(--nn-gcolor-cobalt-blue-m10);
+  background: hsl(215deg, 88%, 26%);
 }
 .nn-range.nn-cobalt-blue::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -921,25 +921,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-cobalt-blue:hover::-webkit-slider-runnable-track {
-  background: var(--nn-gcolor-cobalt-blue);
+  background: hsl(215deg, 88%, 36%);
 }
 .nn-range.nn-cobalt-blue:hover::-moz-range-track {
-  background: var(--nn-gcolor-cobalt-blue);
+  background: hsl(215deg, 88%, 36%);
 }
 .nn-range.nn-cobalt-blue:hover::-ms-fill-lower {
-  background: var(--nn-gcolor-cobalt-blue);
+  background: hsl(215deg, 88%, 36%);
 }
 .nn-range.nn-cobalt-blue:hover::-ms-fill-upper {
-  background: var(--nn-gcolor-cobalt-blue);
+  background: hsl(215deg, 88%, 36%);
 }
 .nn-range.nn-mariner::-webkit-slider-thumb {
-  background: var(--nn-gcolor-mariner-m10);
+  background: hsl(215deg, 59%, 41%);
 }
 .nn-range.nn-mariner::-moz-range-thumb {
-  background: var(--nn-gcolor-mariner-m10);
+  background: hsl(215deg, 59%, 41%);
 }
 .nn-range.nn-mariner::-ms-thumb {
-  background: var(--nn-gcolor-mariner-m10);
+  background: hsl(215deg, 59%, 41%);
 }
 .nn-range.nn-mariner::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -954,25 +954,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-mariner:hover::-webkit-slider-runnable-track {
-  background: var(--nn-gcolor-mariner);
+  background: hsl(215deg, 59%, 51%);
 }
 .nn-range.nn-mariner:hover::-moz-range-track {
-  background: var(--nn-gcolor-mariner);
+  background: hsl(215deg, 59%, 51%);
 }
 .nn-range.nn-mariner:hover::-ms-fill-lower {
-  background: var(--nn-gcolor-mariner);
+  background: hsl(215deg, 59%, 51%);
 }
 .nn-range.nn-mariner:hover::-ms-fill-upper {
-  background: var(--nn-gcolor-mariner);
+  background: hsl(215deg, 59%, 51%);
 }
 .nn-range.nn-fuchsia::-webkit-slider-thumb {
-  background: var(--nn-gcolor-fuchsia-m10);
+  background: hsl(302deg, 91%, 26%);
 }
 .nn-range.nn-fuchsia::-moz-range-thumb {
-  background: var(--nn-gcolor-fuchsia-m10);
+  background: hsl(302deg, 91%, 26%);
 }
 .nn-range.nn-fuchsia::-ms-thumb {
-  background: var(--nn-gcolor-fuchsia-m10);
+  background: hsl(302deg, 91%, 26%);
 }
 .nn-range.nn-fuchsia::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -987,25 +987,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-fuchsia:hover::-webkit-slider-runnable-track {
-  background: var(--nn-gcolor-fuchsia);
+  background: hsl(302deg, 91%, 36%);
 }
 .nn-range.nn-fuchsia:hover::-moz-range-track {
-  background: var(--nn-gcolor-fuchsia);
+  background: hsl(302deg, 91%, 36%);
 }
 .nn-range.nn-fuchsia:hover::-ms-fill-lower {
-  background: var(--nn-gcolor-fuchsia);
+  background: hsl(302deg, 91%, 36%);
 }
 .nn-range.nn-fuchsia:hover::-ms-fill-upper {
-  background: var(--nn-gcolor-fuchsia);
+  background: hsl(302deg, 91%, 36%);
 }
 .nn-range.nn-blue-violet::-webkit-slider-thumb {
-  background: var(--nn-gcolor-blue-violet-m10);
+  background: hsl(269deg, 82%, 51%);
 }
 .nn-range.nn-blue-violet::-moz-range-thumb {
-  background: var(--nn-gcolor-blue-violet-m10);
+  background: hsl(269deg, 82%, 51%);
 }
 .nn-range.nn-blue-violet::-ms-thumb {
-  background: var(--nn-gcolor-blue-violet-m10);
+  background: hsl(269deg, 82%, 51%);
 }
 .nn-range.nn-blue-violet::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -1020,25 +1020,25 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-blue-violet:hover::-webkit-slider-runnable-track {
-  background: var(--nn-gcolor-blue-violet);
+  background: hsl(269deg, 82%, 61%);
 }
 .nn-range.nn-blue-violet:hover::-moz-range-track {
-  background: var(--nn-gcolor-blue-violet);
+  background: hsl(269deg, 82%, 61%);
 }
 .nn-range.nn-blue-violet:hover::-ms-fill-lower {
-  background: var(--nn-gcolor-blue-violet);
+  background: hsl(269deg, 82%, 61%);
 }
 .nn-range.nn-blue-violet:hover::-ms-fill-upper {
-  background: var(--nn-gcolor-blue-violet);
+  background: hsl(269deg, 82%, 61%);
 }
 .nn-range.nn-purple-heart::-webkit-slider-thumb {
-  background: var(--nn-gcolor-purple-heart-m10);
+  background: hsl(276deg, 56%, 34%);
 }
 .nn-range.nn-purple-heart::-moz-range-thumb {
-  background: var(--nn-gcolor-purple-heart-m10);
+  background: hsl(276deg, 56%, 34%);
 }
 .nn-range.nn-purple-heart::-ms-thumb {
-  background: var(--nn-gcolor-purple-heart-m10);
+  background: hsl(276deg, 56%, 34%);
 }
 .nn-range.nn-purple-heart::-webkit-slider-runnable-track {
   background: var(--nn-track-color);
@@ -1053,16 +1053,16 @@
   background: var(--nn-track-color);
 }
 .nn-range.nn-purple-heart:hover::-webkit-slider-runnable-track {
-  background: var(--nn-gcolor-purple-heart);
+  background: hsl(276deg, 56%, 44%);
 }
 .nn-range.nn-purple-heart:hover::-moz-range-track {
-  background: var(--nn-gcolor-purple-heart);
+  background: hsl(276deg, 56%, 44%);
 }
 .nn-range.nn-purple-heart:hover::-ms-fill-lower {
-  background: var(--nn-gcolor-purple-heart);
+  background: hsl(276deg, 56%, 44%);
 }
 .nn-range.nn-purple-heart:hover::-ms-fill-upper {
-  background: var(--nn-gcolor-purple-heart);
+  background: hsl(276deg, 56%, 44%);
 }
 .nn-range::-webkit-slider-runnable-track {
   width: 100%;
