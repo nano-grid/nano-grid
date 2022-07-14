@@ -1,3 +1,8 @@
+.nn-light,
+.nn-dark {
+  --nn-border-outline: hsl(209deg 100% 63%);
+}
+
 .nn-light {
   --nn-color-foreground: hsl(240deg 11% 17%);
   --nn-input-color-background: hsl(0deg 0% 95%);

@@ -1,5 +1,6 @@
 @import "src/variables";
 @import "src/functions";
+@import "src/mixins";
 
 .#{$nano}input {
   font-size: 9pt;
@@ -23,11 +24,11 @@
   padding: 0.5rem;
 
   &:focus,
-  &:active
+  &:active,
   &.active {
-    outline-color: #116ec4;
-    outline-width: 1px;
-    outline-style: dashed;
+    @include outline();
+    background: var(--nn-input-color-background-hover);
+    box-shadow: 0px 3px 0 var(--nn-input-color-shadow-hover);
   }
 
   &.disabled,
@@ -35,10 +36,5 @@
     background: #888888;
     color: #444;
     pointer-events: none;
-  }
-
-  &:hover {
-    background: var(--nn-input-color-background-hover);
-    box-shadow: 0px 3px 0 var(--nn-input-color-shadow-hover);
   }
 }

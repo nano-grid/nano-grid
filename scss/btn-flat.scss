@@ -8,10 +8,10 @@
         color: #{gvar("#{$name}-invert")};
         background-color: #{gvar("#{$name}")};
         box-shadow: 0px 3px 0 #{gvar("#{$name}-m10")};
-        
+
         &:hover {
           background-color: #{gvar("#{$name}-m10")};
-          box-shadow: 0px 3px 0  #{gvar("#{$name}-m20")};
+          box-shadow: 0px 3px 0 #{gvar("#{$name}-m20")};
         }
         &:active,
         &.#{$nano}active {
