@@ -89,3 +89,10 @@ $max-size: math.div(300, 5);
     }
   }
 }
+
+@mixin outline() {
+  outline-color: var(--nn-border-outline);
+  outline-width: 1px;
+  outline-style: solid;
+  outline-offset: -1px;
+}

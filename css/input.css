@@ -19,17 +19,16 @@
   width: max(35px, 100%);
   padding: 0.5rem;
 }
-.nn-input:focus, .nn-input:active .nn-input.active {
-  outline-color: #116ec4;
+.nn-input:focus, .nn-input:active, .nn-input.active {
+  outline-color: var(--nn-border-outline);
   outline-width: 1px;
-  outline-style: dashed;
+  outline-style: solid;
+  outline-offset: -1px;
+  background: var(--nn-input-color-background-hover);
+  box-shadow: 0px 3px 0 var(--nn-input-color-shadow-hover);
 }
 .nn-input.disabled, .nn-input:disabled {
   background: #888888;
   color: #444;
   pointer-events: none;
-}
-.nn-input:hover {
-  background: var(--nn-input-color-background-hover);
-  box-shadow: 0px 3px 0 var(--nn-input-color-shadow-hover);
 }

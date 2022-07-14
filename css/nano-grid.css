@@ -1,3 +1,8 @@
+.nn-light,
+.nn-dark {
+  --nn-border-outline: hsl(209deg 100% 63%);
+}
+
 .nn-light {
   --nn-color-foreground: hsl(240deg 11% 17%);
   --nn-input-color-background: hsl(0deg 0% 95%);
@@ -29,6 +34,103 @@
   margin-bottom: 1rem;
 }
 
+nn-row.nn-sp25, .nn-sp25.nn-row {
+  margin-inline: -0.25rem;
+}
+nn-row.nn-sp25 > nn-column, .nn-sp25.nn-row > nn-column, nn-row.nn-sp25 > .nn-column, .nn-sp25.nn-row > .nn-column {
+  padding-inline: 0.25rem;
+}
+nn-row.nn-sp50, .nn-sp50.nn-row {
+  margin-inline: -0.5rem;
+}
+nn-row.nn-sp50 > nn-column, .nn-sp50.nn-row > nn-column, nn-row.nn-sp50 > .nn-column, .nn-sp50.nn-row > .nn-column {
+  padding-inline: 0.5rem;
+}
+nn-row.nn-sp75, .nn-sp75.nn-row {
+  margin-inline: -0.75rem;
+}
+nn-row.nn-sp75 > nn-column, .nn-sp75.nn-row > nn-column, nn-row.nn-sp75 > .nn-column, .nn-sp75.nn-row > .nn-column {
+  padding-inline: 0.75rem;
+}
+nn-row.nn-sp100, .nn-sp100.nn-row {
+  margin-inline: -1rem;
+}
+nn-row.nn-sp100 > nn-column, .nn-sp100.nn-row > nn-column, nn-row.nn-sp100 > .nn-column, .nn-sp100.nn-row > .nn-column {
+  padding-inline: 1rem;
+}
+nn-row.nn-sp125, .nn-sp125.nn-row {
+  margin-inline: -1.25rem;
+}
+nn-row.nn-sp125 > nn-column, .nn-sp125.nn-row > nn-column, nn-row.nn-sp125 > .nn-column, .nn-sp125.nn-row > .nn-column {
+  padding-inline: 1.25rem;
+}
+nn-row.nn-sp150, .nn-sp150.nn-row {
+  margin-inline: -1.5rem;
+}
+nn-row.nn-sp150 > nn-column, .nn-sp150.nn-row > nn-column, nn-row.nn-sp150 > .nn-column, .nn-sp150.nn-row > .nn-column {
+  padding-inline: 1.5rem;
+}
+nn-row.nn-sp175, .nn-sp175.nn-row {
+  margin-inline: -1.75rem;
+}
+nn-row.nn-sp175 > nn-column, .nn-sp175.nn-row > nn-column, nn-row.nn-sp175 > .nn-column, .nn-sp175.nn-row > .nn-column {
+  padding-inline: 1.75rem;
+}
+nn-row.nn-sp200, .nn-sp200.nn-row {
+  margin-inline: -2rem;
+}
+nn-row.nn-sp200 > nn-column, .nn-sp200.nn-row > nn-column, nn-row.nn-sp200 > .nn-column, .nn-sp200.nn-row > .nn-column {
+  padding-inline: 2rem;
+}
+nn-row.nn-sp225, .nn-sp225.nn-row {
+  margin-inline: -2.25rem;
+}
+nn-row.nn-sp225 > nn-column, .nn-sp225.nn-row > nn-column, nn-row.nn-sp225 > .nn-column, .nn-sp225.nn-row > .nn-column {
+  padding-inline: 2.25rem;
+}
+nn-row.nn-sp250, .nn-sp250.nn-row {
+  margin-inline: -2.5rem;
+}
+nn-row.nn-sp250 > nn-column, .nn-sp250.nn-row > nn-column, nn-row.nn-sp250 > .nn-column, .nn-sp250.nn-row > .nn-column {
+  padding-inline: 2.5rem;
+}
+nn-row.nn-sp275, .nn-sp275.nn-row {
+  margin-inline: -2.75rem;
+}
+nn-row.nn-sp275 > nn-column, .nn-sp275.nn-row > nn-column, nn-row.nn-sp275 > .nn-column, .nn-sp275.nn-row > .nn-column {
+  padding-inline: 2.75rem;
+}
+nn-row.nn-sp300, .nn-sp300.nn-row {
+  margin-inline: -3rem;
+}
+nn-row.nn-sp300 > nn-column, .nn-sp300.nn-row > nn-column, nn-row.nn-sp300 > .nn-column, .nn-sp300.nn-row > .nn-column {
+  padding-inline: 3rem;
+}
+nn-row.nn-sp325, .nn-sp325.nn-row {
+  margin-inline: -3.25rem;
+}
+nn-row.nn-sp325 > nn-column, .nn-sp325.nn-row > nn-column, nn-row.nn-sp325 > .nn-column, .nn-sp325.nn-row > .nn-column {
+  padding-inline: 3.25rem;
+}
+nn-row.nn-sp350, .nn-sp350.nn-row {
+  margin-inline: -3.5rem;
+}
+nn-row.nn-sp350 > nn-column, .nn-sp350.nn-row > nn-column, nn-row.nn-sp350 > .nn-column, .nn-sp350.nn-row > .nn-column {
+  padding-inline: 3.5rem;
+}
+nn-row.nn-sp375, .nn-sp375.nn-row {
+  margin-inline: -3.75rem;
+}
+nn-row.nn-sp375 > nn-column, .nn-sp375.nn-row > nn-column, nn-row.nn-sp375 > .nn-column, .nn-sp375.nn-row > .nn-column {
+  padding-inline: 3.75rem;
+}
+nn-row.nn-sp400, .nn-sp400.nn-row {
+  margin-inline: -4rem;
+}
+nn-row.nn-sp400 > nn-column, .nn-sp400.nn-row > nn-column, nn-row.nn-sp400 > .nn-column, .nn-sp400.nn-row > .nn-column {
+  padding-inline: 4rem;
+}
+
 .nn-btn {
   font-size: 9pt;
   color: #fff;
@@ -42,7 +144,9 @@
   font-weight: bold;
   letter-spacing: 1pt;
   text-transform: uppercase;
-  transition: all 200ms ease;
+  transition-property: background-color, box-shadow, border, color;
+  transition-duration: 200ms;
+  transition-timing-function: ease;
   border-radius: 0;
   min-height: 35px;
   min-width: 35px;
@@ -62,11 +166,14 @@
 .nn-btn nn-icon[glyph], .nn-btn .nn-icon[glyph] {
   min-width: 25px;
 }
-.nn-btn:focus {
-  outline: none;
-}
 .nn-btn:hover {
   cursor: pointer;
+}
+.nn-btn:focus, .nn-btn:active {
+  outline-color: var(--nn-border-outline);
+  outline-width: 1px;
+  outline-style: solid;
+  outline-offset: -1px;
 }
 
 .nn-btn.nn-flat.nn-white {
@@ -10650,6 +10757,103 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   transform: rotate(270deg);
 }
 
+nn-row.nn-sp25, .nn-sp25.nn-row {
+  margin-inline: -0.25rem;
+}
+nn-row.nn-sp25 > nn-column, .nn-sp25.nn-row > nn-column, nn-row.nn-sp25 > .nn-column, .nn-sp25.nn-row > .nn-column {
+  padding-inline: 0.25rem;
+}
+nn-row.nn-sp50, .nn-sp50.nn-row {
+  margin-inline: -0.5rem;
+}
+nn-row.nn-sp50 > nn-column, .nn-sp50.nn-row > nn-column, nn-row.nn-sp50 > .nn-column, .nn-sp50.nn-row > .nn-column {
+  padding-inline: 0.5rem;
+}
+nn-row.nn-sp75, .nn-sp75.nn-row {
+  margin-inline: -0.75rem;
+}
+nn-row.nn-sp75 > nn-column, .nn-sp75.nn-row > nn-column, nn-row.nn-sp75 > .nn-column, .nn-sp75.nn-row > .nn-column {
+  padding-inline: 0.75rem;
+}
+nn-row.nn-sp100, .nn-sp100.nn-row {
+  margin-inline: -1rem;
+}
+nn-row.nn-sp100 > nn-column, .nn-sp100.nn-row > nn-column, nn-row.nn-sp100 > .nn-column, .nn-sp100.nn-row > .nn-column {
+  padding-inline: 1rem;
+}
+nn-row.nn-sp125, .nn-sp125.nn-row {
+  margin-inline: -1.25rem;
+}
+nn-row.nn-sp125 > nn-column, .nn-sp125.nn-row > nn-column, nn-row.nn-sp125 > .nn-column, .nn-sp125.nn-row > .nn-column {
+  padding-inline: 1.25rem;
+}
+nn-row.nn-sp150, .nn-sp150.nn-row {
+  margin-inline: -1.5rem;
+}
+nn-row.nn-sp150 > nn-column, .nn-sp150.nn-row > nn-column, nn-row.nn-sp150 > .nn-column, .nn-sp150.nn-row > .nn-column {
+  padding-inline: 1.5rem;
+}
+nn-row.nn-sp175, .nn-sp175.nn-row {
+  margin-inline: -1.75rem;
+}
+nn-row.nn-sp175 > nn-column, .nn-sp175.nn-row > nn-column, nn-row.nn-sp175 > .nn-column, .nn-sp175.nn-row > .nn-column {
+  padding-inline: 1.75rem;
+}
+nn-row.nn-sp200, .nn-sp200.nn-row {
+  margin-inline: -2rem;
+}
+nn-row.nn-sp200 > nn-column, .nn-sp200.nn-row > nn-column, nn-row.nn-sp200 > .nn-column, .nn-sp200.nn-row > .nn-column {
+  padding-inline: 2rem;
+}
+nn-row.nn-sp225, .nn-sp225.nn-row {
+  margin-inline: -2.25rem;
+}
+nn-row.nn-sp225 > nn-column, .nn-sp225.nn-row > nn-column, nn-row.nn-sp225 > .nn-column, .nn-sp225.nn-row > .nn-column {
+  padding-inline: 2.25rem;
+}
+nn-row.nn-sp250, .nn-sp250.nn-row {
+  margin-inline: -2.5rem;
+}
+nn-row.nn-sp250 > nn-column, .nn-sp250.nn-row > nn-column, nn-row.nn-sp250 > .nn-column, .nn-sp250.nn-row > .nn-column {
+  padding-inline: 2.5rem;
+}
+nn-row.nn-sp275, .nn-sp275.nn-row {
+  margin-inline: -2.75rem;
+}
+nn-row.nn-sp275 > nn-column, .nn-sp275.nn-row > nn-column, nn-row.nn-sp275 > .nn-column, .nn-sp275.nn-row > .nn-column {
+  padding-inline: 2.75rem;
+}
+nn-row.nn-sp300, .nn-sp300.nn-row {
+  margin-inline: -3rem;
+}
+nn-row.nn-sp300 > nn-column, .nn-sp300.nn-row > nn-column, nn-row.nn-sp300 > .nn-column, .nn-sp300.nn-row > .nn-column {
+  padding-inline: 3rem;
+}
+nn-row.nn-sp325, .nn-sp325.nn-row {
+  margin-inline: -3.25rem;
+}
+nn-row.nn-sp325 > nn-column, .nn-sp325.nn-row > nn-column, nn-row.nn-sp325 > .nn-column, .nn-sp325.nn-row > .nn-column {
+  padding-inline: 3.25rem;
+}
+nn-row.nn-sp350, .nn-sp350.nn-row {
+  margin-inline: -3.5rem;
+}
+nn-row.nn-sp350 > nn-column, .nn-sp350.nn-row > nn-column, nn-row.nn-sp350 > .nn-column, .nn-sp350.nn-row > .nn-column {
+  padding-inline: 3.5rem;
+}
+nn-row.nn-sp375, .nn-sp375.nn-row {
+  margin-inline: -3.75rem;
+}
+nn-row.nn-sp375 > nn-column, .nn-sp375.nn-row > nn-column, nn-row.nn-sp375 > .nn-column, .nn-sp375.nn-row > .nn-column {
+  padding-inline: 3.75rem;
+}
+nn-row.nn-sp400, .nn-sp400.nn-row {
+  margin-inline: -4rem;
+}
+nn-row.nn-sp400 > nn-column, .nn-sp400.nn-row > nn-column, nn-row.nn-sp400 > .nn-column, .nn-sp400.nn-row > .nn-column {
+  padding-inline: 4rem;
+}
+
 .nn-input {
   font-size: 9pt;
   color: var(--nn-color-foreground);
@@ -10671,19 +10875,115 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   width: max(35px, 100%);
   padding: 0.5rem;
 }
-.nn-input:focus, .nn-input:active .nn-input.active {
-  outline-color: #116ec4;
+.nn-input:focus, .nn-input:active, .nn-input.active {
+  outline-color: var(--nn-border-outline);
   outline-width: 1px;
-  outline-style: dashed;
+  outline-style: solid;
+  outline-offset: -1px;
+  background: var(--nn-input-color-background-hover);
+  box-shadow: 0px 3px 0 var(--nn-input-color-shadow-hover);
 }
 .nn-input.disabled, .nn-input:disabled {
   background: #888888;
   color: #444;
   pointer-events: none;
 }
-.nn-input:hover {
-  background: var(--nn-input-color-background-hover);
-  box-shadow: 0px 3px 0 var(--nn-input-color-shadow-hover);
+
+nn-row.nn-sp25, .nn-sp25.nn-row {
+  margin-inline: -0.25rem;
+}
+nn-row.nn-sp25 > nn-column, .nn-sp25.nn-row > nn-column, nn-row.nn-sp25 > .nn-column, .nn-sp25.nn-row > .nn-column {
+  padding-inline: 0.25rem;
+}
+nn-row.nn-sp50, .nn-sp50.nn-row {
+  margin-inline: -0.5rem;
+}
+nn-row.nn-sp50 > nn-column, .nn-sp50.nn-row > nn-column, nn-row.nn-sp50 > .nn-column, .nn-sp50.nn-row > .nn-column {
+  padding-inline: 0.5rem;
+}
+nn-row.nn-sp75, .nn-sp75.nn-row {
+  margin-inline: -0.75rem;
+}
+nn-row.nn-sp75 > nn-column, .nn-sp75.nn-row > nn-column, nn-row.nn-sp75 > .nn-column, .nn-sp75.nn-row > .nn-column {
+  padding-inline: 0.75rem;
+}
+nn-row.nn-sp100, .nn-sp100.nn-row {
+  margin-inline: -1rem;
+}
+nn-row.nn-sp100 > nn-column, .nn-sp100.nn-row > nn-column, nn-row.nn-sp100 > .nn-column, .nn-sp100.nn-row > .nn-column {
+  padding-inline: 1rem;
+}
+nn-row.nn-sp125, .nn-sp125.nn-row {
+  margin-inline: -1.25rem;
+}
+nn-row.nn-sp125 > nn-column, .nn-sp125.nn-row > nn-column, nn-row.nn-sp125 > .nn-column, .nn-sp125.nn-row > .nn-column {
+  padding-inline: 1.25rem;
+}
+nn-row.nn-sp150, .nn-sp150.nn-row {
+  margin-inline: -1.5rem;
+}
+nn-row.nn-sp150 > nn-column, .nn-sp150.nn-row > nn-column, nn-row.nn-sp150 > .nn-column, .nn-sp150.nn-row > .nn-column {
+  padding-inline: 1.5rem;
+}
+nn-row.nn-sp175, .nn-sp175.nn-row {
+  margin-inline: -1.75rem;
+}
+nn-row.nn-sp175 > nn-column, .nn-sp175.nn-row > nn-column, nn-row.nn-sp175 > .nn-column, .nn-sp175.nn-row > .nn-column {
+  padding-inline: 1.75rem;
+}
+nn-row.nn-sp200, .nn-sp200.nn-row {
+  margin-inline: -2rem;
+}
+nn-row.nn-sp200 > nn-column, .nn-sp200.nn-row > nn-column, nn-row.nn-sp200 > .nn-column, .nn-sp200.nn-row > .nn-column {
+  padding-inline: 2rem;
+}
+nn-row.nn-sp225, .nn-sp225.nn-row {
+  margin-inline: -2.25rem;
+}
+nn-row.nn-sp225 > nn-column, .nn-sp225.nn-row > nn-column, nn-row.nn-sp225 > .nn-column, .nn-sp225.nn-row > .nn-column {
+  padding-inline: 2.25rem;
+}
+nn-row.nn-sp250, .nn-sp250.nn-row {
+  margin-inline: -2.5rem;
+}
+nn-row.nn-sp250 > nn-column, .nn-sp250.nn-row > nn-column, nn-row.nn-sp250 > .nn-column, .nn-sp250.nn-row > .nn-column {
+  padding-inline: 2.5rem;
+}
+nn-row.nn-sp275, .nn-sp275.nn-row {
+  margin-inline: -2.75rem;
+}
+nn-row.nn-sp275 > nn-column, .nn-sp275.nn-row > nn-column, nn-row.nn-sp275 > .nn-column, .nn-sp275.nn-row > .nn-column {
+  padding-inline: 2.75rem;
+}
+nn-row.nn-sp300, .nn-sp300.nn-row {
+  margin-inline: -3rem;
+}
+nn-row.nn-sp300 > nn-column, .nn-sp300.nn-row > nn-column, nn-row.nn-sp300 > .nn-column, .nn-sp300.nn-row > .nn-column {
+  padding-inline: 3rem;
+}
+nn-row.nn-sp325, .nn-sp325.nn-row {
+  margin-inline: -3.25rem;
+}
+nn-row.nn-sp325 > nn-column, .nn-sp325.nn-row > nn-column, nn-row.nn-sp325 > .nn-column, .nn-sp325.nn-row > .nn-column {
+  padding-inline: 3.25rem;
+}
+nn-row.nn-sp350, .nn-sp350.nn-row {
+  margin-inline: -3.5rem;
+}
+nn-row.nn-sp350 > nn-column, .nn-sp350.nn-row > nn-column, nn-row.nn-sp350 > .nn-column, .nn-sp350.nn-row > .nn-column {
+  padding-inline: 3.5rem;
+}
+nn-row.nn-sp375, .nn-sp375.nn-row {
+  margin-inline: -3.75rem;
+}
+nn-row.nn-sp375 > nn-column, .nn-sp375.nn-row > nn-column, nn-row.nn-sp375 > .nn-column, .nn-sp375.nn-row > .nn-column {
+  padding-inline: 3.75rem;
+}
+nn-row.nn-sp400, .nn-sp400.nn-row {
+  margin-inline: -4rem;
+}
+nn-row.nn-sp400 > nn-column, .nn-sp400.nn-row > nn-column, nn-row.nn-sp400 > .nn-column, .nn-sp400.nn-row > .nn-column {
+  padding-inline: 4rem;
 }
 
 .nn-label {
@@ -10707,305 +11007,274 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   width: max(35px, 100%);
   padding: 0.5rem;
 }
-.nn-label:hover {
-  background: var(--nn-input-color-background-hover);
-  box-shadow: 0px 3px 0 var(--nn-input-color-shadow-hover);
-}
 .nn-label.nn-white {
   color: hsl(0deg 0% 23%);
   background-color: hsl(0deg, 0%, 100%);
   box-shadow: 0px 3px 0 hsl(0deg, 0%, 90%);
-}
-.nn-label.nn-white:hover {
-  background-color: hsl(0deg, 0%, 90%);
-  box-shadow: 0px 3px 0 hsl(0deg, 0%, 80%);
 }
 .nn-label.nn-silver {
   color: hsl(0deg 0% 24%);
   background-color: hsl(0deg, 0%, 75%);
   box-shadow: 0px 3px 0 hsl(0deg 0% 50%);
 }
-.nn-label.nn-silver:hover {
-  background-color: hsl(0deg 0% 50%);
-  box-shadow: 0px 3px 0 hsl(0deg, 0%, 55%);
-}
 .nn-label.nn-royal-purple {
   color: hsl(263deg, 41%, 100%);
   background-color: hsl(263deg, 41%, 44%);
   box-shadow: 0px 3px 0 hsl(263deg, 41%, 34%);
-}
-.nn-label.nn-royal-purple:hover {
-  background-color: hsl(263deg, 41%, 34%);
-  box-shadow: 0px 3px 0 hsl(263deg, 41%, 24%);
 }
 .nn-label.nn-persian-red {
   color: hsl(0deg 0% 100%);
   background-color: hsl(0deg, 67%, 52%);
   box-shadow: 0px 3px 0 hsl(0deg, 67%, 42%);
 }
-.nn-label.nn-persian-red:hover {
-  background-color: hsl(0deg, 67%, 42%);
-  box-shadow: 0px 3px 0 hsl(0deg, 67%, 32%);
-}
 .nn-label.nn-denim {
   color: hsl(209deg, 84%, 100%);
   background-color: hsl(209deg, 84%, 42%);
   box-shadow: 0px 3px 0 hsl(209deg, 84%, 32%);
-}
-.nn-label.nn-denim:hover {
-  background-color: hsl(209deg, 84%, 32%);
-  box-shadow: 0px 3px 0 hsl(209deg, 84%, 22%);
 }
 .nn-label.nn-gold-tips {
   color: hsl(42deg 77% 15%);
   background-color: hsl(42deg, 78%, 55%);
   box-shadow: 0px 3px 0 hsl(42deg 81% 39%);
 }
-.nn-label.nn-gold-tips:hover {
-  background-color: hsl(42deg 81% 39%);
-  box-shadow: 0px 3px 0 hsl(42deg, 78%, 35%);
-}
 .nn-label.nn-shamrock {
   color: hsl(149deg 73% 15%);
   background-color: hsl(149deg, 61%, 51%);
   box-shadow: 0px 3px 0 hsl(149deg, 61%, 41%);
-}
-.nn-label.nn-shamrock:hover {
-  background-color: hsl(149deg, 61%, 41%);
-  box-shadow: 0px 3px 0 hsl(149deg, 61%, 31%);
 }
 .nn-label.nn-cod-grey {
   color: hsl(0deg, 0%, 100%);
   background-color: hsl(0deg, 0%, 11%);
   box-shadow: 0px 3px 0 hsl(0deg, 0%, 1%);
 }
-.nn-label.nn-cod-grey:hover {
-  background-color: hsl(0deg, 0%, 1%);
-  box-shadow: 0px 3px 0 hsl(0deg, 0%, 9%);
-}
 .nn-label.nn-gravel {
   color: hsl(0deg, 0%, 100%);
   background-color: hsl(0deg, 0%, 43%);
   box-shadow: 0px 3px 0 hsl(0deg, 0%, 33%);
-}
-.nn-label.nn-gravel:hover {
-  background-color: hsl(0deg, 0%, 33%);
-  box-shadow: 0px 3px 0 hsl(0deg, 0%, 23%);
 }
 .nn-label.nn-emerald {
   color: hsl(118deg 55% 13%);
   background-color: hsl(118deg, 56%, 58%);
   box-shadow: 0px 3px 0 hsl(118deg 47% 41%);
 }
-.nn-label.nn-emerald:hover {
-  background-color: hsl(118deg 47% 41%);
-  box-shadow: 0px 3px 0 hsl(118deg, 56%, 38%);
-}
 .nn-label.nn-burn-orange {
   color: hsl(20deg 79% 17%);
   background-color: hsl(20deg, 94%, 58%);
   box-shadow: 0px 3px 0 hsl(20deg, 94%, 48%);
-}
-.nn-label.nn-burn-orange:hover {
-  background-color: hsl(20deg, 94%, 48%);
-  box-shadow: 0px 3px 0 hsl(20deg, 94%, 38%);
 }
 .nn-label.nn-razzmatazz {
   color: hsl(342deg, 100%, 100%);
   background-color: hsl(342deg, 100%, 43%);
   box-shadow: 0px 3px 0 hsl(342deg, 100%, 33%);
 }
-.nn-label.nn-razzmatazz:hover {
-  background-color: hsl(342deg, 100%, 33%);
-  box-shadow: 0px 3px 0 hsl(342deg, 100%, 23%);
-}
 .nn-label.nn-desert {
   color: hsl(22deg, 45%, 100%);
   background-color: hsl(22deg, 45%, 43%);
   box-shadow: 0px 3px 0 hsl(22deg, 45%, 33%);
-}
-.nn-label.nn-desert:hover {
-  background-color: hsl(22deg, 45%, 33%);
-  box-shadow: 0px 3px 0 hsl(22deg, 45%, 23%);
 }
 .nn-label.nn-charcoal {
   color: hsl(0deg, 0%, 100%);
   background-color: hsl(0deg, 0%, 27%);
   box-shadow: 0px 3px 0 hsl(0deg, 0%, 17%);
 }
-.nn-label.nn-charcoal:hover {
-  background-color: hsl(0deg, 0%, 17%);
-  box-shadow: 0px 3px 0 hsl(0deg, 0%, 7%);
-}
 .nn-label.nn-golden-brown {
   color: hsl(37deg, 82%, 100%);
   background-color: hsl(37deg, 82%, 34%);
   box-shadow: 0px 3px 0 hsl(37deg, 82%, 24%);
-}
-.nn-label.nn-golden-brown:hover {
-  background-color: hsl(37deg, 82%, 24%);
-  box-shadow: 0px 3px 0 hsl(37deg, 82%, 14%);
 }
 .nn-label.nn-sepia {
   color: hsl(37deg, 67%, 100%);
   background-color: hsl(37deg, 67%, 26%);
   box-shadow: 0px 3px 0 hsl(37deg, 67%, 16%);
 }
-.nn-label.nn-sepia:hover {
-  background-color: hsl(37deg, 67%, 16%);
-  box-shadow: 0px 3px 0 hsl(37deg, 67%, 6%);
-}
 .nn-label.nn-alizarin {
   color: hsl(4deg, 85%, 100%);
   background-color: hsl(4deg, 85%, 49%);
   box-shadow: 0px 3px 0 hsl(4deg 83% 29%);
-}
-.nn-label.nn-alizarin:hover {
-  background-color: hsl(4deg 83% 29%);
-  box-shadow: 0px 3px 0 hsl(4deg, 85%, 29%);
 }
 .nn-label.nn-rust {
   color: hsl(20deg, 84%, 100%);
   background-color: hsl(20deg, 84%, 43%);
   box-shadow: 0px 3px 0 hsl(20deg, 84%, 33%);
 }
-.nn-label.nn-rust:hover {
-  background-color: hsl(20deg, 84%, 33%);
-  box-shadow: 0px 3px 0 hsl(20deg, 84%, 23%);
-}
 .nn-label.nn-blush {
   color: hsl(0deg 0% 100%);
   background-color: hsl(345deg, 48%, 52%);
   box-shadow: 0px 3px 0 hsl(345deg, 48%, 42%);
-}
-.nn-label.nn-blush:hover {
-  background-color: hsl(345deg, 48%, 42%);
-  box-shadow: 0px 3px 0 hsl(345deg, 48%, 32%);
 }
 .nn-label.nn-fire-brick {
   color: hsl(349deg, 67%, 100%);
   background-color: hsl(349deg, 67%, 39%);
   box-shadow: 0px 3px 0 hsl(349deg, 67%, 29%);
 }
-.nn-label.nn-fire-brick:hover {
-  background-color: hsl(349deg, 67%, 29%);
-  box-shadow: 0px 3px 0 hsl(349deg, 67%, 19%);
-}
 .nn-label.nn-sunglow {
   color: hsl(47deg 87% 16%);
   background-color: hsl(47deg, 100%, 57%);
   box-shadow: 0px 3px 0 hsl(47deg 90% 36%);
-}
-.nn-label.nn-sunglow:hover {
-  background-color: hsl(47deg 90% 36%);
-  box-shadow: 0px 3px 0 hsl(47deg, 100%, 37%);
 }
 .nn-label.nn-milk-punch {
   color: hsl(44deg 53% 27%);
   background-color: hsl(44deg, 69%, 86%);
   box-shadow: 0px 3px 0 hsl(44deg 29% 60%);
 }
-.nn-label.nn-milk-punch:hover {
-  background-color: hsl(44deg 29% 60%);
-  box-shadow: 0px 3px 0 hsl(44deg 42% 33%);
-}
 .nn-label.nn-yukon-gold {
   color: hsl(47deg, 66%, 100%);
   background-color: hsl(47deg, 66%, 33%);
   box-shadow: 0px 3px 0 hsl(47deg, 66%, 23%);
-}
-.nn-label.nn-yukon-gold:hover {
-  background-color: hsl(47deg, 66%, 23%);
-  box-shadow: 0px 3px 0 hsl(47deg, 66%, 13%);
 }
 .nn-label.nn-green-pea {
   color: hsl(140deg, 56%, 100%);
   background-color: hsl(140deg, 56%, 29%);
   box-shadow: 0px 3px 0 hsl(140deg, 56%, 19%);
 }
-.nn-label.nn-green-pea:hover {
-  background-color: hsl(140deg, 56%, 19%);
-  box-shadow: 0px 3px 0 hsl(140deg, 56%, 9%);
-}
 .nn-label.nn-laurel {
   color: hsl(124deg 48% 94%);
   background-color: hsl(124deg, 45%, 36%);
   box-shadow: 0px 3px 0 hsl(124deg, 45%, 26%);
-}
-.nn-label.nn-laurel:hover {
-  background-color: hsl(124deg, 45%, 26%);
-  box-shadow: 0px 3px 0 hsl(124deg, 45%, 16%);
 }
 .nn-label.nn-elf-green {
   color: hsl(161deg, 69%, 100%);
   background-color: hsl(161deg, 69%, 31%);
   box-shadow: 0px 3px 0 hsl(161deg, 69%, 21%);
 }
-.nn-label.nn-elf-green:hover {
-  background-color: hsl(161deg, 69%, 21%);
-  box-shadow: 0px 3px 0 hsl(161deg, 69%, 11%);
-}
 .nn-label.nn-lake {
   color: hsl(192deg, 60%, 100%);
   background-color: hsl(192deg, 60%, 36%);
   box-shadow: 0px 3px 0 hsl(192deg, 60%, 26%);
-}
-.nn-label.nn-lake:hover {
-  background-color: hsl(192deg, 60%, 26%);
-  box-shadow: 0px 3px 0 hsl(192deg, 60%, 16%);
 }
 .nn-label.nn-cobalt-blue {
   color: hsl(215deg, 88%, 100%);
   background-color: hsl(215deg, 88%, 36%);
   box-shadow: 0px 3px 0 hsl(215deg, 88%, 26%);
 }
-.nn-label.nn-cobalt-blue:hover {
-  background-color: hsl(215deg, 88%, 26%);
-  box-shadow: 0px 3px 0 hsl(215deg, 88%, 16%);
-}
 .nn-label.nn-mariner {
   color: hsl(215deg 92% 20%);
   background-color: hsl(215deg, 59%, 51%);
   box-shadow: 0px 3px 0 hsl(215deg, 59%, 41%);
-}
-.nn-label.nn-mariner:hover {
-  background-color: hsl(215deg, 59%, 41%);
-  box-shadow: 0px 3px 0 hsl(215deg, 59%, 31%);
 }
 .nn-label.nn-fuchsia {
   color: hsl(302deg, 91%, 100%);
   background-color: hsl(302deg, 91%, 36%);
   box-shadow: 0px 3px 0 hsl(302deg, 91%, 26%);
 }
-.nn-label.nn-fuchsia:hover {
-  background-color: hsl(302deg, 91%, 26%);
-  box-shadow: 0px 3px 0 hsl(302deg, 91%, 16%);
-}
 .nn-label.nn-blue-violet {
   color: hsl(269deg 58% 14%);
   background-color: hsl(269deg, 82%, 61%);
   box-shadow: 0px 3px 0 hsl(269deg, 82%, 51%);
-}
-.nn-label.nn-blue-violet:hover {
-  background-color: hsl(269deg, 82%, 51%);
-  box-shadow: 0px 3px 0 hsl(269deg, 82%, 41%);
 }
 .nn-label.nn-purple-heart {
   color: hsl(276deg 24% 80%);
   background-color: hsl(276deg, 56%, 44%);
   box-shadow: 0px 3px 0 hsl(276deg, 56%, 34%);
 }
-.nn-label.nn-purple-heart:hover {
-  background-color: hsl(276deg, 56%, 34%);
-  box-shadow: 0px 3px 0 hsl(276deg, 56%, 24%);
-}
 .nn-label.nn-input-color {
   text-transform: none;
-}
-.nn-label.nn-input-color, .nn-label.nn-input-color:hover {
   color: #272730;
   background-color: #f2f2f2;
   box-shadow: 0 3px 0 #ccc;
+}
+.nn-label:focus, .nn-label:active, .nn-label.active {
+  outline-color: var(--nn-border-outline);
+  outline-width: 1px;
+  outline-style: solid;
+  outline-offset: -1px;
+}
+
+nn-row.nn-sp25, .nn-sp25.nn-row {
+  margin-inline: -0.25rem;
+}
+nn-row.nn-sp25 > nn-column, .nn-sp25.nn-row > nn-column, nn-row.nn-sp25 > .nn-column, .nn-sp25.nn-row > .nn-column {
+  padding-inline: 0.25rem;
+}
+nn-row.nn-sp50, .nn-sp50.nn-row {
+  margin-inline: -0.5rem;
+}
+nn-row.nn-sp50 > nn-column, .nn-sp50.nn-row > nn-column, nn-row.nn-sp50 > .nn-column, .nn-sp50.nn-row > .nn-column {
+  padding-inline: 0.5rem;
+}
+nn-row.nn-sp75, .nn-sp75.nn-row {
+  margin-inline: -0.75rem;
+}
+nn-row.nn-sp75 > nn-column, .nn-sp75.nn-row > nn-column, nn-row.nn-sp75 > .nn-column, .nn-sp75.nn-row > .nn-column {
+  padding-inline: 0.75rem;
+}
+nn-row.nn-sp100, .nn-sp100.nn-row {
+  margin-inline: -1rem;
+}
+nn-row.nn-sp100 > nn-column, .nn-sp100.nn-row > nn-column, nn-row.nn-sp100 > .nn-column, .nn-sp100.nn-row > .nn-column {
+  padding-inline: 1rem;
+}
+nn-row.nn-sp125, .nn-sp125.nn-row {
+  margin-inline: -1.25rem;
+}
+nn-row.nn-sp125 > nn-column, .nn-sp125.nn-row > nn-column, nn-row.nn-sp125 > .nn-column, .nn-sp125.nn-row > .nn-column {
+  padding-inline: 1.25rem;
+}
+nn-row.nn-sp150, .nn-sp150.nn-row {
+  margin-inline: -1.5rem;
+}
+nn-row.nn-sp150 > nn-column, .nn-sp150.nn-row > nn-column, nn-row.nn-sp150 > .nn-column, .nn-sp150.nn-row > .nn-column {
+  padding-inline: 1.5rem;
+}
+nn-row.nn-sp175, .nn-sp175.nn-row {
+  margin-inline: -1.75rem;
+}
+nn-row.nn-sp175 > nn-column, .nn-sp175.nn-row > nn-column, nn-row.nn-sp175 > .nn-column, .nn-sp175.nn-row > .nn-column {
+  padding-inline: 1.75rem;
+}
+nn-row.nn-sp200, .nn-sp200.nn-row {
+  margin-inline: -2rem;
+}
+nn-row.nn-sp200 > nn-column, .nn-sp200.nn-row > nn-column, nn-row.nn-sp200 > .nn-column, .nn-sp200.nn-row > .nn-column {
+  padding-inline: 2rem;
+}
+nn-row.nn-sp225, .nn-sp225.nn-row {
+  margin-inline: -2.25rem;
+}
+nn-row.nn-sp225 > nn-column, .nn-sp225.nn-row > nn-column, nn-row.nn-sp225 > .nn-column, .nn-sp225.nn-row > .nn-column {
+  padding-inline: 2.25rem;
+}
+nn-row.nn-sp250, .nn-sp250.nn-row {
+  margin-inline: -2.5rem;
+}
+nn-row.nn-sp250 > nn-column, .nn-sp250.nn-row > nn-column, nn-row.nn-sp250 > .nn-column, .nn-sp250.nn-row > .nn-column {
+  padding-inline: 2.5rem;
+}
+nn-row.nn-sp275, .nn-sp275.nn-row {
+  margin-inline: -2.75rem;
+}
+nn-row.nn-sp275 > nn-column, .nn-sp275.nn-row > nn-column, nn-row.nn-sp275 > .nn-column, .nn-sp275.nn-row > .nn-column {
+  padding-inline: 2.75rem;
+}
+nn-row.nn-sp300, .nn-sp300.nn-row {
+  margin-inline: -3rem;
+}
+nn-row.nn-sp300 > nn-column, .nn-sp300.nn-row > nn-column, nn-row.nn-sp300 > .nn-column, .nn-sp300.nn-row > .nn-column {
+  padding-inline: 3rem;
+}
+nn-row.nn-sp325, .nn-sp325.nn-row {
+  margin-inline: -3.25rem;
+}
+nn-row.nn-sp325 > nn-column, .nn-sp325.nn-row > nn-column, nn-row.nn-sp325 > .nn-column, .nn-sp325.nn-row > .nn-column {
+  padding-inline: 3.25rem;
+}
+nn-row.nn-sp350, .nn-sp350.nn-row {
+  margin-inline: -3.5rem;
+}
+nn-row.nn-sp350 > nn-column, .nn-sp350.nn-row > nn-column, nn-row.nn-sp350 > .nn-column, .nn-sp350.nn-row > .nn-column {
+  padding-inline: 3.5rem;
+}
+nn-row.nn-sp375, .nn-sp375.nn-row {
+  margin-inline: -3.75rem;
+}
+nn-row.nn-sp375 > nn-column, .nn-sp375.nn-row > nn-column, nn-row.nn-sp375 > .nn-column, .nn-sp375.nn-row > .nn-column {
+  padding-inline: 3.75rem;
+}
+nn-row.nn-sp400, .nn-sp400.nn-row {
+  margin-inline: -4rem;
+}
+nn-row.nn-sp400 > nn-column, .nn-sp400.nn-row > nn-column, nn-row.nn-sp400 > .nn-column, .nn-sp400.nn-row > .nn-column {
+  padding-inline: 4rem;
 }
 
 .nn-range {
@@ -12137,8 +12406,11 @@ nn-icon.nn-right:before, .nn-icon.nn-right:before {
   border-radius: 10px;
   cursor: pointer;
 }
-.nn-range:focus {
-  outline: none;
+.nn-range:focus, .nn-range:active {
+  outline-color: var(--nn-border-outline);
+  outline-width: 1px;
+  outline-style: solid;
+  outline-offset: -1px;
 }
 .nn-range:hover {
   box-shadow: 0px 3px 0 var(--nn-input-color-shadow-hover);

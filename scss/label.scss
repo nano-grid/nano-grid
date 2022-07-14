@@ -1,5 +1,6 @@
 @import "src/variables";
 @import "src/functions";
+@import "src/mixins";
 
 .#{$nano}label {
   font-size: 9pt;
@@ -35,5 +36,11 @@
     color: #272730;
     background-color: #f2f2f2;
     box-shadow: 0 3px 0 #ccc;
+  }
+
+  &:focus,
+  &:active,
+  &.active {
+    @include outline();
   }
 }
