@@ -19,7 +19,7 @@
   width: max(35px, 100%);
   padding: 0.5rem;
 }
-.nn-input:focus, .nn-input:active, .nn-input.active {
+.nn-input:focus, .nn-input:active, .nn-input.nn-active {
   outline-color: var(--nn-border-outline);
   outline-width: 1px;
   outline-style: solid;

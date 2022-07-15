@@ -40,7 +40,7 @@
 
   &:focus,
   &:active,
-  &.active {
+  &.#{$nano}active {
     @include outline();
   }
 }
