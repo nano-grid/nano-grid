@@ -10875,7 +10875,7 @@ nn-row.nn-sp400 > nn-column, .nn-sp400.nn-row > nn-column, nn-row.nn-sp400 > .nn
   width: max(35px, 100%);
   padding: 0.5rem;
 }
-.nn-input:focus, .nn-input:active, .nn-input.active {
+.nn-input:focus, .nn-input:active, .nn-input.nn-active {
   outline-color: var(--nn-border-outline);
   outline-width: 1px;
   outline-style: solid;
@@ -11173,7 +11173,7 @@ nn-row.nn-sp400 > nn-column, .nn-sp400.nn-row > nn-column, nn-row.nn-sp400 > .nn
   background-color: #f2f2f2;
   box-shadow: 0 3px 0 #ccc;
 }
-.nn-label:focus, .nn-label:active, .nn-label.active {
+.nn-label:focus, .nn-label:active, .nn-label.nn-active {
   outline-color: var(--nn-border-outline);
   outline-width: 1px;
   outline-style: solid;
