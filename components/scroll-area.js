@@ -8,7 +8,7 @@ export default class ScrollArea extends HTMLElement {
 
   toggleAttr() {
     [...arguments].forEach(attr => {
-      if (this.hasAttribute(attr) && this.getAttribute(attr) !== 'false') {
+      if (this.hasAttribute(attr) && this.getAttribute(attr) === 'false') {
         this.classList.add(`${nano}no-${attr}`);
       } else {
         this.classList.remove(`${nano}no-${attr}`);
