@@ -1,7 +1,7 @@
 @import "src/variables";
 @import "src/functions";
 
-#{wc("container")} {
+#{nn-wc("container")} {
   display: block;
   margin: auto;
   padding: 1rem;

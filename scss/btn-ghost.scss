@@ -7,14 +7,14 @@
 
     @each $name in $colors {
       &.#{$nano}#{$name} {
-        color: #{gvar("#{$name}")};
+        color: #{nn-gvar("#{$name}")};
         &:active,
         &.#{$nano}active {
-          color: #{gvar("#{$name}-m20")};
-          background-color: #{gvar("#{$name}")};
+          color: #{nn-gvar("#{$name}-m20")};
+          background-color: #{nn-gvar("#{$name}")};
         }
         &:hover {
-          color: #{gvar("#{$name}-p10")};
+          color: #{nn-gvar("#{$name}-p10")};
         }
       }
     }

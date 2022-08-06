@@ -25,9 +25,9 @@
 
   @each $name in $colors {
     &.#{$nano}#{$name} {
-      color: #{gvar("#{$name}-invert")};
-      background-color: #{gvar("#{$name}")};
-      box-shadow: 0px 3px 0 #{gvar("#{$name}-m10")};
+      color: #{nn-gvar("#{$name}-invert")};
+      background-color: #{nn-gvar("#{$name}")};
+      box-shadow: 0px 3px 0 #{nn-gvar("#{$name}-m10")};
     }
   }
 
@@ -41,6 +41,6 @@
   &:focus,
   &:active,
   &.#{$nano}active {
-    @include outline();
+    @include nn-outline();
   }
 }

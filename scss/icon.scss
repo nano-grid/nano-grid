@@ -1,7 +1,8 @@
 @import "src/variables";
 @import "src/functions";
+@import "src/grid";
 
-#{wc("icon")} {
+#{nn-wc("icon")} {
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -25,5 +26,22 @@
 
   &.#{$nano}right:before {
     transform: rotate(270deg);
+  }
+
+  &.#{$nano}flip {
+    &:before {
+      transform: scaleX(-1);
+    }
+    &.#{$nano}left:before {
+      transform: scaleX(-1) rotate(90deg);
+    }
+
+    &.#{$nano}up:before {
+      transform: scaleX(-1) rotate(180deg);
+    }
+
+    &.#{$nano}right:before {
+      transform: scaleX(-1) rotate(270deg);
+    }
   }
 }

@@ -33,7 +33,7 @@
     pointer-events: none;
   }
 
-  #{wc("icon")} {
+  #{nn-wc("icon")} {
     font-size: 14px;
     &[glyph] {
       min-width: 25px;
@@ -46,6 +46,6 @@
 
   &:focus,
   &:active {
-    @include outline();
+    @include nn-outline();
   }
 }

@@ -30,17 +30,17 @@
 @mixin scrollbar($name: "silver") {
   &:hover,
   &.keep {
-    scrollbar-face-color: #{gvar("#{$name}")};
-    scrollbar-arrow-color: #{gvar("#{$name}")};
-    scrollbar-shadow-color: #{gvar("#{$name}")};
+    scrollbar-face-color: #{nn-gvar("#{$name}")};
+    scrollbar-arrow-color: #{nn-gvar("#{$name}")};
+    scrollbar-shadow-color: #{nn-gvar("#{$name}")};
 
     &::-webkit-scrollbar-thumb {
-      background: #{gvar("#{$name}")};
+      background: #{nn-gvar("#{$name}")};
     }
   }
 }
 
-#{wc("scroll-area")} {
+#{nn-wc("scroll-area")} {
   overflow: auto;
   padding: 0;
   background: transparent;

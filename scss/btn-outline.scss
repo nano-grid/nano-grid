@@ -5,15 +5,15 @@
   &.#{$nano}outline {
     @each $name in $colors {
       &.#{$nano}#{$name} {
-        color: #{gvar("#{$name}-p10")};
-        border: 1px #{gvar("#{$name}")} solid;
+        color: #{nn-gvar("#{$name}-p10")};
+        border: 1px #{nn-gvar("#{$name}")} solid;
 
         &:hover,
         &:active,
         &.#{$nano}active {
-          color: #{gvar("#{$name}-m20")};
-          background-color: #{gvar("#{$name}-p20")};
-          border-color: #{gvar("#{$name}-p20")};
+          color: #{nn-gvar("#{$name}-m20")};
+          background-color: #{nn-gvar("#{$name}-p20")};
+          border-color: #{nn-gvar("#{$name}-p20")};
         }
       }
     }

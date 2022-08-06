@@ -3,10 +3,10 @@
 @import "src/mixins";
 @import "src/grid";
 
-#{wc("row")} {
-	#{wc("column", ">")} {
-		@include width-abs;
-		@include width-percents;
-		@include width-percents-calc;
+#{nn-wc("row")} {
+	#{nn-wc("column", ">")} {
+		@include nn-width-abs;
+		@include nn-width-percents;
+		@include nn-width-percents-calc;
 	}
 }

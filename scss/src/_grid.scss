@@ -1,22 +1,22 @@
-#{wc("row")} {
+#{nn-wc("row")} {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 0.5rem;
   align-items: flex-start;
 
-  @include responsive-grid("sm", 576px);
-  @include responsive-grid("md", 768px);
-  @include responsive-grid("lg", 992px);
-  @include responsive-grid("xl", 1200px);
-  @include responsive-grid("xxl", 1400px);
+  @include nn-responsive-grid("sm", 576px);
+  @include nn-responsive-grid("md", 768px);
+  @include nn-responsive-grid("lg", 992px);
+  @include nn-responsive-grid("xl", 1200px);
+  @include nn-responsive-grid("xxl", 1400px);
 
-  @extend %spacing;
+  @extend %nn-spacing;
 
   &.#{$nano}grid {
     align-items: stretch;
     justify-content: center;
 
-    #{wc("column", ">")} {
+    #{nn-wc("column", ">")} {
       flex: 1 1 30%;
       padding: 5px;
 

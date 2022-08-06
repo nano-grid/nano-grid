@@ -1,7 +1,7 @@
 &.#{$nano}group {
   align-items: stretch;
 
-  #{wc("column", ">")} {
+  #{nn-wc("column", ">")} {
     > .#{$nano}label {
       align-items: center !important;
       display: flex !important;

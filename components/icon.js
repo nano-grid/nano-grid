@@ -15,9 +15,19 @@ export default class Icon extends HTMLElement {
     });
   }
 
+  toggleAttr() {
+    [...arguments].forEach(attr => {
+      if (this.hasAttribute(attr) && this.getAttribute(attr) !== 'false') {
+        this.classList.add(`${nano}${attr}`);
+      } else {
+        this.classList.remove(`${nano}${attr}`);
+      }
+    })
+  }
+
   updateGlyph() {
     this.removeNanoClass();
-    const glyphAttr = `${nano}${this.getAttribute('glyph')}`;
+    const glyphAttr = `${nano}icon-${this.getAttribute('glyph')}`;
     if (this.hasAttribute('glyph')) {
       this.classList.add(glyphAttr);
     }
@@ -36,10 +46,11 @@ export default class Icon extends HTMLElement {
 
   connectedCallback() {
     this.updateGlyph();
+    this.toggleAttr('flip');
   }
 
   static get observedAttributes() {
-    return ['glyph', 'direction'];
+    return ['glyph', 'direction', 'flip'];
   }
 
   attributeChangedCallback(prop) {
@@ -49,6 +60,9 @@ export default class Icon extends HTMLElement {
         break;
       case 'direction':
         this.updateDirection();
+        break;
+      case 'flip':
+        this.toggleAttr('flip');
         break;
     }
   }

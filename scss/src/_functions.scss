@@ -1,15 +1,15 @@
 @use "sass:math";
 
-@function fraction-2-class($fraction) {
+@function nn-fraction-2-class($fraction) {
   $numerator: nth($fraction, 1);
   $denominator: nth($fraction, 2);
   @return "n#{$numerator}d#{$denominator}";
 }
 
-@function wc($name, $prefix: "", $suffix: "") {
+@function nn-wc($name, $prefix: "", $suffix: "") {
   @return unquote("#{$prefix} #{$nano}#{$name}#{$suffix}, #{$prefix} .#{$nano}#{$name}#{$suffix}");
 }
 
-@function gvar($name) {
+@function nn-nn-gvar($name) {
   @return map-get($gcolors, $name);
 }

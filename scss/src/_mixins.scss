@@ -1,12 +1,12 @@
 @use "sass:math";
 $max-size: math.div(300, 5);
 
-@mixin responsive-grid($tag, $size) {
+@mixin nn-responsive-grid($tag, $size) {
   &.#{$nano}break-#{$tag} {
     @media only screen and (max-width: $size) {
       display: block;
       margin-inline: 0 !important;
-      #{wc("column", ">")} {
+      #{nn-wc("column", ">")} {
         display: block;
         width: 100% !important;
         max-width: 100% !important;
@@ -16,36 +16,36 @@ $max-size: math.div(300, 5);
   }
 }
 
-@mixin set-spacing($space) {
+@mixin nn-set-spacing($space) {
   &.#{$nano}sp#{$space * 100} {
     margin-inline: -#{$space}rem;
 
-    #{wc("column", ">")} {
+    #{nn-wc("column", ">")} {
       padding-inline: #{$space}rem;
     }
   }
 }
 
-%spacing {
-  @include set-spacing(0.25);
-  @include set-spacing(0.5);
-  @include set-spacing(0.75);
-  @include set-spacing(1);
-  @include set-spacing(1.25);
-  @include set-spacing(1.5);
-  @include set-spacing(1.75);
-  @include set-spacing(2);
-  @include set-spacing(2.25);
-  @include set-spacing(2.5);
-  @include set-spacing(2.75);
-  @include set-spacing(3);
-  @include set-spacing(3.25);
-  @include set-spacing(3.5);
-  @include set-spacing(3.75);
-  @include set-spacing(4);
+%nn-spacing {
+  @include nn-set-spacing(0.25);
+  @include nn-set-spacing(0.5);
+  @include nn-set-spacing(0.75);
+  @include nn-set-spacing(1);
+  @include nn-set-spacing(1.25);
+  @include nn-set-spacing(1.5);
+  @include nn-set-spacing(1.75);
+  @include nn-set-spacing(2);
+  @include nn-set-spacing(2.25);
+  @include nn-set-spacing(2.5);
+  @include nn-set-spacing(2.75);
+  @include nn-set-spacing(3);
+  @include nn-set-spacing(3.25);
+  @include nn-set-spacing(3.5);
+  @include nn-set-spacing(3.75);
+  @include nn-set-spacing(4);
 }
 
-@mixin width-abs() {
+@mixin nn-width-abs() {
   &.#{$nano}w-m0,
   &.#{$nano}w-p0 {
     flex-basis: 0;
@@ -64,9 +64,9 @@ $max-size: math.div(300, 5);
   }
 }
 
-@mixin width-percents() {
+@mixin nn-width-percents() {
   @each $value in $css-width {
-    $class: "#{$nano}w-#{fraction-2-class($value)}";
+    $class: "#{$nano}w-#{nn-fraction-2-class($value)}";
     $size: "#{math.div(nth($value, 1),nth($value, 2)) * 100}%";
 
     &.#{$class} {
@@ -76,10 +76,10 @@ $max-size: math.div(300, 5);
   }
 }
 
-@mixin width-percents-calc() {
+@mixin nn-width-percents-calc() {
   @for $subtraction from 1 through $max-size {
     @each $value in $css-width {
-      $class: "#{$nano}w-#{fraction-2-class($value)}-m#{$subtraction * 5}";
+      $class: "#{$nano}w-#{nn-fraction-2-class($value)}-m#{$subtraction * 5}";
       $size: "calc(#{math.div(nth($value, 1),nth($value, 2)) * 100}% - #{$subtraction * 5}px)";
 
       &.#{$class} {
@@ -90,9 +90,27 @@ $max-size: math.div(300, 5);
   }
 }
 
-@mixin outline() {
+@mixin nn-outline() {
   outline-color: var(--nn-border-outline);
   outline-width: 1px;
   outline-style: solid;
   outline-offset: -1px;
+}
+
+@mixin nn-org-layers($layers) {
+  $index: 10;
+  @each $layer in $layers {
+      $index: $index + 1;
+      #{$layer} {
+          z-index: $index;
+      }
+  }
+}
+
+@mixin nn-create-icons($list) {
+  @each $name, $value in $list {
+      &.#{$nano}icon-#{$name}:before {
+          content: $value;
+      }
+  }
 }

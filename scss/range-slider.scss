@@ -4,9 +4,9 @@
 
 @mixin range-color($name) {
   &.#{$nano}#{$name} {
-    $thumb: #{gvar("#{$name}-m10")};
-    $thumb-focus: #{gvar("#{$name}-m10")};
-    $track-focus: #{gvar("#{$name}")};
+    $thumb: #{nn-gvar("#{$name}-m10")};
+    $thumb-focus: #{nn-gvar("#{$name}-m10")};
+    $track-focus: #{nn-gvar("#{$name}")};
 
     &::-webkit-slider-thumb {
       background: $thumb;
@@ -139,7 +139,7 @@ $track-radius: 10px;
 
   &:focus,
   &:active {
-    @include outline();
+    @include nn-outline();
   }
 
   &:hover {
