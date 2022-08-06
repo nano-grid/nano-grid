@@ -10,6 +10,6 @@
   @return unquote("#{$prefix} #{$nano}#{$name}#{$suffix}, #{$prefix} .#{$nano}#{$name}#{$suffix}");
 }
 
-@function nn-nn-gvar($name) {
+@function nn-gvar($name) {
   @return map-get($gcolors, $name);
 }

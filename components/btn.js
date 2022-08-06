@@ -29,6 +29,22 @@ export default class Btn extends HTMLElement {
     }
   }
 
+  toggleAttrIcon() {
+    const icon = this.querySelector('nn-icon');
+    console.log(icon);
+    if (icon) {
+      [...arguments].forEach(attr => {
+        if (this.hasAttribute(attr) && this.getAttribute(attr) !== 'false') {
+          icon.classList.add(`${nano}${attr}`);
+          console.log(icon.classList);
+        } else {
+          icon.classList.remove(`${nano}${attr}`);
+          console.log(false);
+        }
+      })
+    }
+  }
+
   updateColor() {
     const btn = this.querySelector('button');
     if (btn) {
@@ -46,11 +62,12 @@ export default class Btn extends HTMLElement {
     const icon = this.querySelector('nn-icon');
     if (icon) {
       icon.removeNanoClass();
-      const glyphAttr = `${nano}${this.getAttribute('glyph')}`;
+      const glyphAttr = `${nano}icon-${this.getAttribute('glyph')}`;
       if (this.hasAttribute('glyph')) {
         icon.classList.add(glyphAttr);
       }
       this.updateDirection();
+      this.toggleAttrIcon('flip');
     }
   }
 
@@ -93,7 +110,7 @@ export default class Btn extends HTMLElement {
   updateTitle() {
     const btn = this.querySelector('button');
     if (btn) {
-      
+
       const titleAttr = this.getAttribute('title');
       const textAttr = `${this.getAttribute('text')}'s Button`;
       const glyphAttr = `${this.getAttribute('glyph')}'s Button`;
@@ -122,6 +139,7 @@ export default class Btn extends HTMLElement {
     `;
 
     this.toggleAttr('active', 'round');
+    this.toggleAttrIcon('flip');
     this.updateText();
     this.updateTitle();
     this.updateColor();
@@ -131,7 +149,7 @@ export default class Btn extends HTMLElement {
   }
 
   static get observedAttributes() {
-    return ['color', 'mode', 'direction', 'glyph', 'text', 'title', 'active', 'to', 'tag', 'round'];
+    return ['color', 'mode', 'direction', 'glyph', 'text', 'title', 'active', 'to', 'tag', 'round', 'flip'];
   }
 
   attributeChangedCallback(prop) {
@@ -159,6 +177,9 @@ export default class Btn extends HTMLElement {
         break;
       case 'round':
         this.toggleAttr('round');
+        break;
+      case 'flip':
+        this.toggleAttrIcon('flip');
         break;
     }
   }
