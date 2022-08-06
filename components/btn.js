@@ -31,15 +31,12 @@ export default class Btn extends HTMLElement {
 
   toggleAttrIcon() {
     const icon = this.querySelector('nn-icon');
-    console.log(icon);
     if (icon) {
       [...arguments].forEach(attr => {
         if (this.hasAttribute(attr) && this.getAttribute(attr) !== 'false') {
           icon.classList.add(`${nano}${attr}`);
-          console.log(icon.classList);
         } else {
           icon.classList.remove(`${nano}${attr}`);
-          console.log(false);
         }
       })
     }
