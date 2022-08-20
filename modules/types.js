@@ -61,10 +61,13 @@ export const colorsType = [
 ];
 
 export const directionsType = [
-  "nn-up",
-  "nn-down",
-  "nn-left",
-  "nn-right",
+  "nn-d45",
+  "nn-d90",
+  "nn-d135",
+  "nn-d180",
+  "nn-d225",
+  "nn-d270",
+  "nn-d315",
 ];
 
 export const containerSizesType = [

@@ -1,5 +1,6 @@
 import { nano } from "../modules/helpers";
 import { directionsType } from "../modules/types";
+import { directionsDictionary } from "../modules/dictionary";
 
 export default class Icon extends HTMLElement {
   constructor() {
@@ -35,10 +36,14 @@ export default class Icon extends HTMLElement {
   }
 
   updateDirection() {
+    const directionAttr = this.getAttribute('direction');
+
     this.classList.remove(...directionsType);
-    const directionAttr = `${nano}${this.getAttribute('direction')}`;
-    if (directionsType.includes(directionAttr)) {
-      this.classList.add(directionAttr);
+
+    if (Object.keys(directionsDictionary).includes(directionAttr)) {
+      this.classList.add(`${nano}d${directionsDictionary[directionAttr]}`);
+    } else if (directionsType.includes(`${nano}d${directionAttr}`)) {
+      this.classList.add(`${nano}d${directionAttr}`);
     } else {
       this.classList.add(`${nano}down`);
     }

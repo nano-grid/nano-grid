@@ -16,32 +16,26 @@
     display: inline-block;
   }
 
-  &.#{$nano}left:before {
-    transform: rotate(90deg);
-  }
+  $sizes: (45, 90, 135, 180, 225, 270, 315);
 
-  &.#{$nano}up:before {
-    transform: rotate(180deg);
-  }
+  @each $degree in $sizes {
+    $selector: ".#{$nano}d#{$degree}";
 
-  &.#{$nano}right:before {
-    transform: rotate(270deg);
+    &#{$selector} {
+      &:before {
+        transform: rotate(#{$degree}deg);
+      }
+      &.#{$nano}flip {
+        &:before {
+          transform: scaleX(-1) rotate(#{$degree}deg);
+        }
+      }
+    }
   }
 
   &.#{$nano}flip {
     &:before {
       transform: scaleX(-1);
-    }
-    &.#{$nano}left:before {
-      transform: scaleX(-1) rotate(90deg);
-    }
-
-    &.#{$nano}up:before {
-      transform: scaleX(-1) rotate(180deg);
-    }
-
-    &.#{$nano}right:before {
-      transform: scaleX(-1) rotate(270deg);
     }
   }
 }

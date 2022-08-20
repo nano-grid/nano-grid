@@ -55,7 +55,6 @@ $max-size: math.div(300, 5);
   @for $counter from 1 through $max-size {
     $class-w: "#{$nano}w-p#{$counter * 5}";
     $size: "#{$counter * 5}px";
-    $debug: debug("#{$class-w} :: #{$size}");
 
     &.#{$class-w} {
       flex-basis: unquote($size);

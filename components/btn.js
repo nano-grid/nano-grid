@@ -1,6 +1,7 @@
 import { nano } from "../modules/helpers";
 import { colorsType } from "../modules/types";
 import { directionsType, modeType } from "../modules/types";
+import { directionsDictionary } from "../modules/dictionary";
 
 export default class Btn extends HTMLElement {
   constructor() {
@@ -72,9 +73,13 @@ export default class Btn extends HTMLElement {
     const icon = this.querySelector('nn-icon');
     if (icon) {
       icon.classList.remove(...directionsType);
-      const directionAttr = `${nano}${this.getAttribute('direction')}`;
-      if (directionsType.includes(directionAttr)) {
-        icon.classList.add(directionAttr);
+      const directionAttr = this.getAttribute('direction');
+      if (Object.keys(directionsDictionary).includes(directionAttr)) {
+        icon.classList.add(`${nano}d${directionsDictionary[directionAttr]}`);
+      } else if (directionsType.includes(directionAttr)) {
+        icon.classList.add(`${nano}d${directionAttr}`);
+      } else {
+        icon.classList.add(`${nano}down`);
       }
     }
   }
