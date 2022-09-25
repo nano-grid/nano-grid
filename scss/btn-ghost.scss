@@ -2,11 +2,11 @@
 @import "src/functions";
 
 .#{$nano}btn {
-  &.#{$nano}ghost {
+  &[#{$nano}mode="ghost"] {
     color: hsla(0, 0%, 100%, 0.4);
 
     @each $name in $colors {
-      &.#{$nano}#{$name} {
+      &[#{$nano}color="#{$name}"] {
         color: #{nn-gvar("#{$name}")};
         &:active,
         &.#{$nano}active {

@@ -2,9 +2,9 @@
 @import "src/functions";
 
 .#{$nano}btn {
-  &.#{$nano}outline {
+  &[#{$nano}mode="outline"] {
     @each $name in $colors {
-      &.#{$nano}#{$name} {
+      &[#{$nano}color="#{$name}"] {
         color: #{nn-gvar("#{$name}-p10")};
         border: 1px #{nn-gvar("#{$name}")} solid;
 

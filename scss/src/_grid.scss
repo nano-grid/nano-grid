@@ -12,18 +12,10 @@
 
   @extend %nn-spacing;
 
-  &.#{$nano}grid {
+  &[#{$nano}grid] {
     align-items: stretch;
     justify-content: center;
-
-    #{nn-wc("column", ">")} {
-      flex: 1 1 30%;
-      padding: 5px;
-
-      &:only-child {
-        flex-grow: 0;
-      }
-    }
+    gap: 0.5rem;
   }
 
   @import "grid-group";

@@ -1,9 +1,9 @@
 @import "src/variables";
 @import "src/functions";
 
-#{nn-wc("crayon")}{
+#{nn-wc("crayon")} {
   @each $name in $colors {
-    &.#{$nano}#{$name} {
+    &[#{$nano}color="#{$name}"] {
       color: #{nn-gvar("#{$name}")};
     }
   }

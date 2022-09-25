@@ -2,7 +2,7 @@
 $max-size: math.div(300, 5);
 
 @mixin nn-responsive-grid($tag, $size) {
-  &.#{$nano}break-#{$tag} {
+  &[#{$nano}breakpoint="#{$tag}"] {
     @media only screen and (max-width: $size) {
       display: block;
       margin-inline: 0 !important;
@@ -10,18 +10,16 @@ $max-size: math.div(300, 5);
         display: block;
         width: 100% !important;
         max-width: 100% !important;
-        padding-inline: 0 !important;
       }
     }
   }
 }
 
 @mixin nn-set-spacing($space) {
-  &.#{$nano}sp#{$space * 100} {
-    margin-inline: -#{$space}rem;
-
-    #{nn-wc("column", ">")} {
-      padding-inline: #{$space}rem;
+  &[#{$nano}spacing="#{$space}"] {
+    margin: -#{$space}rem;
+    > * {
+      padding: #{$space}rem;
     }
   }
 }
@@ -99,17 +97,17 @@ $max-size: math.div(300, 5);
 @mixin nn-org-layers($layers) {
   $index: 10;
   @each $layer in $layers {
-      $index: $index + 1;
-      #{$layer} {
-          z-index: $index;
-      }
+    $index: $index + 1;
+    #{$layer} {
+      z-index: $index;
+    }
   }
 }
 
 @mixin nn-create-icons($list) {
   @each $name, $value in $list {
-      &.#{$nano}icon-#{$name}:before {
-          content: $value;
-      }
+    &[#{$nano}glyph="#{$name}"]:before {
+      content: $value;
+    }
   }
 }

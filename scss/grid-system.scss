@@ -8,5 +8,16 @@
 		@include nn-width-abs;
 		@include nn-width-percents;
 		@include nn-width-percents-calc;
+		flex-grow: 0;
+		flex-shrink: 0;
+
+		&[#{$nano}grow] {
+      flex-grow: 1;
+			max-width: 100%;
+    }
+
+		&[#{$nano}shrink] {
+			flex-shrink: 1;
+    }
 	}
 }

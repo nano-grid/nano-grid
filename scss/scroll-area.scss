@@ -50,11 +50,11 @@
   width: 100%;
   display: block;
 
-  &.#{$nano}no-horizontal {
+  &[#{$nano}no-horizontal] {
     overflow-x: hidden;
   }
 
-  &.#{$nano}no-vertical {
+  &[#{$nano}no-vertical] {
     overflow-y: hidden;
   }
 
@@ -62,7 +62,7 @@
   @include scrollbar();
 
   @each $name in $colors {
-    &.#{$nano}#{$name} {
+    &[#{$nano}color="#{$name}"] {
       @include scrollbar($name);
     }
   }

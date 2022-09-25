@@ -1,20 +1,8 @@
 import { nano } from "../modules/helpers";
-import { colorsType } from "../modules/types";
-import { directionsType, modeType } from "../modules/types";
-import { directionsDictionary } from "../modules/dictionary";
 
 export default class Btn extends HTMLElement {
   constructor() {
     super();
-  }
-
-  removeNanoClass() {
-    [...this.classList].forEach(klass => {
-      const followsPatttern = /^nn-/g.test(klass);
-      if (followsPatttern) {
-        this.classList.remove(klass);
-      }
-    });
   }
 
   toggleAttr() {
@@ -26,82 +14,29 @@ export default class Btn extends HTMLElement {
         } else {
           btn.classList.remove(`${nano}${attr}`);
         }
-      })
+      });
     }
   }
 
-  toggleAttrIcon() {
+  updateIconAttr() {
     const icon = this.querySelector('nn-icon');
     if (icon) {
       [...arguments].forEach(attr => {
-        if (this.hasAttribute(attr) && this.getAttribute(attr) !== 'false') {
-          icon.classList.add(`${nano}${attr}`);
+        const htmlAttr = this.getAttribute(`${nano}${attr}`);
+        if (this.hasAttribute(`${nano}${attr}`)) {
+          icon.setAttribute(`${nano}${attr}`, htmlAttr);
         } else {
-          icon.classList.remove(`${nano}${attr}`);
+          icon.removeAttribute(`${nano}${attr}`);
         }
-      })
-    }
-  }
-
-  updateColor() {
-    const btn = this.querySelector('button');
-    if (btn) {
-      btn.classList.remove(...colorsType);
-      const colorAttr = `${nano}${this.getAttribute('color')}`;
-      if (colorsType.includes(colorAttr)) {
-        btn.classList.add(colorAttr);
-      } else {
-        btn.classList.add(`${nano}silver`);
-      }
-    }
-  }
-
-  updateGlyph() {
-    const icon = this.querySelector('nn-icon');
-    if (icon) {
-      icon.removeNanoClass();
-      const glyphAttr = `${nano}icon-${this.getAttribute('glyph')}`;
-      if (this.hasAttribute('glyph')) {
-        icon.classList.add(glyphAttr);
-      }
-      this.updateDirection();
-      this.toggleAttrIcon('flip');
-    }
-  }
-
-  updateDirection() {
-    const icon = this.querySelector('nn-icon');
-    if (icon) {
-      icon.classList.remove(...directionsType);
-      const directionAttr = this.getAttribute('direction');
-      if (Object.keys(directionsDictionary).includes(directionAttr)) {
-        icon.classList.add(`${nano}d${directionsDictionary[directionAttr]}`);
-      } else if (directionsType.includes(directionAttr)) {
-        icon.classList.add(`${nano}d${directionAttr}`);
-      } else {
-        icon.classList.add(`${nano}down`);
-      }
-    }
-  }
-
-  updateMode() {
-    const btn = this.querySelector('button');
-    if (btn) {
-      btn.classList.remove(...modeType);
-      const modeAttr = `${nano}${this.getAttribute('mode')}`;
-      if (modeType.includes(modeAttr)) {
-        btn.classList.add(modeAttr);
-      } else {
-        btn.classList.add(`${nano}flat`);
-      }
+      });
     }
   }
 
   updateText() {
     const caption = this.querySelector('.caption');
     if (caption) {
-      const textAttr = this.getAttribute('text');
-      if (this.hasAttribute('text')) {
+      const textAttr = this.getAttribute(`${nano}text`);
+      if (this.hasAttribute(`${nano}text`)) {
         caption.innerHTML = textAttr;
       } else {
         caption.innerHTML = "";
@@ -111,11 +46,11 @@ export default class Btn extends HTMLElement {
 
   updateTitle() {
     const btn = this.querySelector('button');
-    if (btn) {
 
-      const titleAttr = this.getAttribute('title');
-      const textAttr = `${this.getAttribute('text')}'s Button`;
-      const glyphAttr = `${this.getAttribute('glyph')}'s Button`;
+    if (btn) {
+      const titleAttr = this.getAttribute(`title`);
+      const textAttr = `${this.getAttribute(`${nano}text`)}'s Button`;
+      const glyphAttr = `${this.getAttribute(`${nano}glyph`)}'s Button`;
 
       if (this.hasAttribute('title')) {
         btn.setAttribute("title", titleAttr);
@@ -140,48 +75,44 @@ export default class Btn extends HTMLElement {
       </button>
     `;
 
-    this.toggleAttr('active', 'round');
-    this.toggleAttrIcon('flip');
+    this.toggleAttr(`${nano}active`);
     this.updateText();
     this.updateTitle();
-    this.updateColor();
-    this.updateMode();
-    this.updateDirection();
-    this.updateGlyph();
+    this.updateIconAttr('direction', 'glyph', 'flip');
   }
 
   static get observedAttributes() {
-    return ['color', 'mode', 'direction', 'glyph', 'text', 'title', 'active', 'to', 'tag', 'round', 'flip'];
+    return [
+      `title`,
+      `${nano}direction`,
+      `${nano}glyph`,
+      `${nano}flip`,
+      `${nano}text`,
+      `${nano}active`,
+      `${nano}to`,
+      `${nano}tag`,
+    ];
   }
 
   attributeChangedCallback(prop) {
     switch (prop) {
-      case 'color':
-        this.updateColor();
-        break;
-      case 'mode':
-        this.updateMode();
-        break;
-      case 'direction':
-        this.updateDirection();
-        break;
-      case 'glyph':
-        this.updateGlyph();
-        break;
-      case 'text':
-        this.updateText();
-        break;
-      case 'title':
+      case `title`:
         this.updateTitle();
         break;
-      case 'active':
-        this.toggleAttr('active');
+      case `${nano}direction`:
+        this.updateIconAttr('direction');
         break;
-      case 'round':
-        this.toggleAttr('round');
+      case `${nano}glyph`:
+        this.updateIconAttr('glyph');
         break;
-      case 'flip':
-        this.toggleAttrIcon('flip');
+      case `${nano}text`:
+        this.updateText();
+        break;
+      case `${nano}active`:
+        this.toggleAttr(`${nano}active`);
+        break;
+      case `${nano}flip`:
+        this.updateIconAttr('flip');
         break;
     }
   }

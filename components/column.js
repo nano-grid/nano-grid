@@ -1,3 +1,4 @@
+import { nano } from "../modules/helpers";
 import { getVals } from "../modules/columns-manager";
 
 export default class Column extends HTMLElement {
@@ -15,7 +16,8 @@ export default class Column extends HTMLElement {
   }
 
   updateRole() {
-    if (this.hasAttribute('table-element') && this.getAttribute('table-element') !== 'false') {
+    if (this.hasAttribute(`${nano}table-element`)
+      && this.getAttribute(`${nano}table-element`) !== 'false') {
       this.setAttribute('role', 'cell');
     } else {
       this.removeAttribute('role');
@@ -25,7 +27,7 @@ export default class Column extends HTMLElement {
   updateSize() {
     this.removeSizeClass();
 
-    const size = this.getAttribute('size');
+    const size = this.getAttribute(`${nano}size`);
     let gVals, wCalc, hCalc, sizeAttr;
     if (size) {
       gVals = getVals(size);
@@ -58,15 +60,15 @@ export default class Column extends HTMLElement {
   }
 
   static get observedAttributes() {
-    return ['size', 'table-element'];
+    return [`${nano}size`, `${nano}table-element`];
   }
 
   attributeChangedCallback(prop) {
     switch (prop) {
-      case 'table-element':
+      case `${nano}table-element`:
         this.updateRole();
         break;
-      case 'size':
+      case `${nano}size`:
         this.updateSize();
         break;
     }

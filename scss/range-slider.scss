@@ -8,38 +8,22 @@
     $thumb-focus: #{nn-gvar("#{$name}-m10")};
     $track-focus: #{nn-gvar("#{$name}")};
 
-    &::-webkit-slider-thumb {
-      background: $thumb;
-    }
-    &::-moz-range-thumb {
-      background: $thumb;
-    }
+    &::-webkit-slider-thumb ,
+    &::-moz-range-thumb,
     &::-ms-thumb {
       background: $thumb;
     }
-    &::-webkit-slider-runnable-track {
-      background: var(--nn-track-color);
-    }
-    &::-moz-range-track {
-      background: var(--nn-track-color);
-    }
-    &::-ms-fill-lower {
-      background: var(--nn-track-color);
-    }
+    &::-webkit-slider-runnable-track,
+    &::-moz-range-track,
+    &::-ms-fill-lower,
     &::-ms-fill-upper {
       background: var(--nn-track-color);
     }
 
     &:hover {
-      &::-webkit-slider-runnable-track {
-        background: $track-focus;
-      }
-      &::-moz-range-track {
-        background: $track-focus;
-      }
-      &::-ms-fill-lower {
-        background: $track-focus;
-      }
+      &::-webkit-slider-runnable-track,
+      &::-moz-range-track,
+      &::-ms-fill-lower,
       &::-ms-fill-upper {
         background: $track-focus;
       }
