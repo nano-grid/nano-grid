@@ -1,21 +1,16 @@
 import { nano } from "../modules/helpers";
 
+const def = {
+  mode: 'flat',
+  round: false,
+  active: false,
+  color: 'gravel',
+
+}
+
 export default class Btn extends HTMLElement {
   constructor() {
     super();
-  }
-
-  toggleAttr() {
-    const btn = this.querySelector('button');
-    if (btn) {
-      [...arguments].forEach(attr => {
-        if (this.hasAttribute(attr) && this.getAttribute(attr) !== 'false') {
-          btn.classList.add(`${nano}${attr}`);
-        } else {
-          btn.classList.remove(`${nano}${attr}`);
-        }
-      });
-    }
   }
 
   updateIconAttr() {
@@ -27,6 +22,22 @@ export default class Btn extends HTMLElement {
           icon.setAttribute(`${nano}${attr}`, htmlAttr);
         } else {
           icon.removeAttribute(`${nano}${attr}`);
+        }
+      });
+    }
+  }
+
+  updateBtnAttr() {
+    const btn = this.querySelector('.nn-btn');
+    if (btn) {
+      [...arguments].forEach(attr => {
+        const htmlAttr = this.getAttribute(`${nano}${attr}`);
+        if (this.hasAttribute(`${nano}${attr}`)) {
+          btn.setAttribute(`${nano}${attr}`, htmlAttr);
+        } else if (def[attr]) {
+          btn.setAttribute(`${nano}${attr}`, def[attr]);
+        } else {
+          btn.removeAttribute(`${nano}${attr}`);
         }
       });
     }
@@ -75,9 +86,9 @@ export default class Btn extends HTMLElement {
       </button>
     `;
 
-    this.toggleAttr(`${nano}active`);
     this.updateText();
     this.updateTitle();
+    this.updateBtnAttr(`active`, `mode`, `color`, `round`);
     this.updateIconAttr('direction', 'glyph', 'flip');
   }
 
@@ -89,8 +100,11 @@ export default class Btn extends HTMLElement {
       `${nano}flip`,
       `${nano}text`,
       `${nano}active`,
+      `${nano}mode`,
+      `${nano}color`,
       `${nano}to`,
       `${nano}tag`,
+      `${nano}round`,
     ];
   }
 
@@ -109,7 +123,16 @@ export default class Btn extends HTMLElement {
         this.updateText();
         break;
       case `${nano}active`:
-        this.toggleAttr(`${nano}active`);
+        this.updateBtnAttr('active');
+        break;
+      case `${nano}mode`:
+        this.updateBtnAttr('mode');
+        break;
+      case `${nano}round`:
+        this.updateBtnAttr('round');
+        break;
+      case `${nano}color`:
+        this.updateBtnAttr('color');
         break;
       case `${nano}flip`:
         this.updateIconAttr('flip');
