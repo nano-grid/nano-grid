@@ -17,9 +17,9 @@ $max-size: math.div(300, 5);
 
 @mixin nn-set-spacing($space) {
   &[#{$nano}spacing="#{$space}"] {
-    margin: -#{$space}rem;
+    margin: -#{math.div($space, 2)}rem;
     > * {
-      padding: #{$space}rem;
+      padding: #{math.div($space, 2)}rem;
     }
   }
 }
