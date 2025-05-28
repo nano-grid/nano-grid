@@ -1,0 +1,50 @@
+nn-desplazador {
+  --nn-desplazador-track-color: hsl(0deg 0% 15%);
+  --nn-desplazador-thumb-color: hsl(150deg 60% 70%);
+
+  scroll-behavior: smooth;
+
+  overflow: auto;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  max-height: 100%;
+  width: 100%;
+  display: block;
+
+  scrollbar-color: var(--nn-desplazador-thumb-color)
+    var(--nn-desplazador-track-color);
+  scrollbar-base-color: var(--nn-desplazador-track-color);
+  scrollbar-highlight-color: var(--nn-desplazador-track-color);
+  scrollbar-track-color: var(--nn-desplazador-track-color);
+  scrollbar-face-color: var(--nn-desplazador-thumb-color);
+  scrollbar-arrow-color: var(--nn-desplazador-thumb-color);
+  scrollbar-shadow-color: var(--nn-desplazador-thumb-color);
+
+  &::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--nn-desplazador-thumb-color);
+    border-radius: 25px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: var(--nn-desplazador-track-color);
+    border-radius: 25px;
+  }
+
+  &:hover,
+  &.keep {
+    scrollbar-face-color: var(--nn-desplazador-thumb-color);
+    scrollbar-arrow-color: var(--nn-desplazador-thumb-color);
+    scrollbar-shadow-color: var(--nn-desplazador-thumb-color);
+
+    &::-webkit-scrollbar-thumb {
+      background: var(--nn-desplazador-thumb-color);
+    }
+  }
+}

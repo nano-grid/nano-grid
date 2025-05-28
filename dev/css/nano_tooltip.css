@@ -1,0 +1,32 @@
+[data-tooltip] {
+  --nn-tooltip-foreground-color: hsl(0deg 0% 95%);
+  --nn-tooltip-background-color: hsl(240deg 10% 15%);
+
+  position: relative;
+
+  &:hover {
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &::after {
+    color: var(--nn-tooltip-foreground-color);
+    background-color: var(--nn-tooltip-background-color);
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    translate: -50% 0;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 4px;
+    white-space: nowrap;
+    z-index: 10;
+    transition: opacity 0.2s ease;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    position: absolute;
+  }
+}

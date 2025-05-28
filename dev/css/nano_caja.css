@@ -1,0 +1,10 @@
+nn-caja {
+  --nn-caja-padding: 0;
+  --nn-caja-max-width: 100%;
+
+  padding: var(--nn-caja-padding);
+  display: block;
+  width: 100%;
+  max-width: var(--nn-caja-max-width);
+  margin-inline: auto;
+}

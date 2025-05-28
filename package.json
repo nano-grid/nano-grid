@@ -3,7 +3,6 @@
   "version": "4.0.2",
   "keywords": [
     "css",
-    "sass",
     "front-end",
     "framework",
     "web",
@@ -21,7 +20,7 @@
     "type": "patreon",
     "url": "https://www.patreon.com/nanogrid"
   },
-  "author": "Miguel Rivas (https://miguel-rivas.github.io)",
+  "author": "Miguel Rivas (https://jmiguelrivas.github.io)",
   "license": "MIT",
   "homepage": "https://nano-grid.github.io"
 }
