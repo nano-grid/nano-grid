@@ -1,0 +1,56 @@
+nn-dropdown {
+  --nn-dropdown-bgcolor: #252740;
+  --nn-dropdown-btn-bgcolor: #202028;
+  --nn-dropdown-btn-color: #64719b;
+
+  position: relative;
+  display: inline-block;
+
+  &.open {
+    .dropdown-trigger {
+      background: var(--nn-dropdown-btn-color);
+      color: var(--nn-dropdown-btn-bgcolor);
+    }
+
+    .dropdown-content {
+      display: block;
+    }
+  }
+
+  .dropdown-trigger {
+    cursor: pointer;
+    background-color: transparent;
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    color: var(--nn-dropdown-btn-color);
+    font-size: 1rem;
+
+    &:hover {
+      background: var(--nn-dropdown-btn-color);
+      color: var(--nn-dropdown-btn-bgcolor);
+    }
+  }
+
+  .dropdown-content {
+    display: none;
+    border-radius: 10px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--nn-dropdown-bgcolor);
+    padding: 0.5em;
+    z-index: 1000;
+
+    a,
+    button {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+  .dropdown-content ::slotted(*) {
+    display: block;
+    padding: 0.25em 0;
+  }
+}

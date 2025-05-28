@@ -31,7 +31,7 @@ class nnFila extends HTMLElement {
   }
 }
 
-const tag = getPrefix('caja')
+const tag = getPrefix('fila')
 if (!customElements.get(tag)) {
   customElements.define(tag, nnFila)
 }
