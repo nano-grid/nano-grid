@@ -1,6 +1,5 @@
 import { nnCode } from '../src/nano-grid.js'
 import '../src/nano-grid.css'
-import { allColors } from './assets/db_wiki-colors.js'
 
 export default {
   parameters: {
