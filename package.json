@@ -9,9 +9,16 @@
     "toolkit",
     "web-components"
   ],
+  "files": [
+    "dist/nano-grid.js",
+    "dist/nano-grid.css"
+  ],
   "description": "Frontend Toolkit",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/nano-grid/nano-grid"
@@ -22,5 +29,19 @@
   },
   "author": "Miguel Rivas (https://jmiguelrivas.github.io)",
   "license": "MIT",
-  "homepage": "https://nano-grid.github.io"
+  "homepage": "https://nano-grid.github.io",
+  "devDependencies": {
+    "@chromatic-com/storybook": "^4.0.0",
+    "@storybook/addon-a11y": "^9.0.0",
+    "@storybook/addon-docs": "^9.0.0",
+    "@storybook/addon-vitest": "^9.0.0",
+    "@storybook/web-components-vite": "^9.0.0",
+    "@vitest/browser": "^3.1.4",
+    "@vitest/coverage-v8": "^3.1.4",
+    "lit": "^3.3.0",
+    "playwright": "^1.52.0",
+    "storybook": "^9.0.0",
+    "vite": "^6.3.5",
+    "vitest": "^3.1.4"
+  }
 }

@@ -58,6 +58,12 @@ Test the following structure in your project:
 
 > For full documentation, visit [nano-grid.github.io](https://nano-grid.github.io).
 
+
+## Building project
+```sh
+npx vite build
+```
+
 ## Creator
 
 **Miguel Rivas**
