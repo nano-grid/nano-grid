@@ -27,6 +27,10 @@ nn-pilar {
 
 const colors = Object.values(allColors)
   .sort((a, b) => {
+    if (a.saturation !== b.saturation) {
+      return b.saturation - a.saturation
+    }
+
     if (a.lightness !== b.lightness) {
       return b.lightness - a.lightness
     }
@@ -35,9 +39,6 @@ const colors = Object.values(allColors)
       return b.hue - a.hue
     }
 
-    if (a.saturation !== b.saturation) {
-      return b.saturation - a.saturation
-    }
     return 0
   })
   .map(
