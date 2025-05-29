@@ -1,8 +1,9 @@
 nn-code {
+  --nn-code-padding: 1rem;
   display: block;
   background-color: var(--nn-code-background-color, #171922);
   color: var(--nn-code-text-color, #a38ce5);
-  padding: 0.5rem;
+  padding: var(--nn-code-padding);
   text-align: left;
   font-family: 'Lucida Console', Courier, monospace;
   line-height: 1.5;

@@ -1,4 +1,4 @@
-import { getPrefix } from './nano_helpers.js'
+import { getPrefix, textColorFromBackground } from './nano_helpers.js'
 
 class nnBtn extends HTMLElement {
   static attrs = ['color', 'link']
@@ -46,6 +46,8 @@ class nnBtn extends HTMLElement {
     }
 
     if (color) {
+      const textColor = textColorFromBackground(color)
+      this.style.setProperty('--nn-btn-text-color', textColor)
       this.style.setProperty('--nn-btn-color', color)
     }
 
