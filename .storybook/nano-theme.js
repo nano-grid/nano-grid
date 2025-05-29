@@ -3,9 +3,9 @@ import { create } from 'storybook/theming';
 export default create({
   base: 'dark',
   brandTitle: 'Nano Grid',
-  brandUrl: 'https://nano-grid.github.io',
+  // brandUrl: 'https://nano-grid.github.io',
   brandImage: 'img/nano-ext.svg',
-  brandTarget: '_self',
+  // brandTarget: '_self',
 
    // Typography
   fontBase: 'Montserrat, Helvetica, Arial, sans-serif',
