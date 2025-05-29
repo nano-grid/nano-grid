@@ -1,4 +1,4 @@
-import { gColor } from "./class_gcolor.js";
+import { gColor } from "./js/class_gcolor.js";
 
 export const wikiColors = {
 	/*0 - 50 */
@@ -1030,6 +1030,6 @@ export const wikiColors = {
 // 	'café-noir': new gColor('café-noir', '#4B3621'),
 // };
 
-export const allColors = {
+export const gColors = {
 	...wikiColors,
 };

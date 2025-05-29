@@ -1,5 +1,5 @@
 import '../../src/nano-grid.css'
-import { allColors } from '../assets/db_wiki-colors.js'
+import { gColors } from '../../src/gcolors.js'
 import { code } from '../assets/utils.js'
 
 export default {
@@ -17,7 +17,7 @@ const nanoDesplazador = `
 
   <blockquote>
     The <nn-pill color="${
-      allColors['mindaro'].hex
+      gColors['mindaro'].hex
     }">nn-desplazador</nn-pill> is a Web Component designed to provide a stylized scrollable container with custom scrollbars. It has no attributes or methods. Its behavior and appearance are fully controlled by CSS.
   </blockquote>
 
@@ -47,7 +47,7 @@ const nanoDesplazador = `
 
     <nn-fila gap=".25rem" break="sm">
       <nn-pilar size="200px">
-        <nn-pill color="${allColors['mindaro'].hex}">
+        <nn-pill color="${gColors['mindaro'].hex}">
           --nn-desplazador-track-color
         </nn-pill>
       </nn-pilar>
@@ -58,7 +58,7 @@ const nanoDesplazador = `
 
     <nn-fila gap=".25rem" break="sm">
       <nn-pilar size="200px">
-        <nn-pill color="${allColors['mindaro'].hex}">
+        <nn-pill color="${gColors['mindaro'].hex}">
           --nn-desplazador-thumb-color
         </nn-pill>
       </nn-pilar>

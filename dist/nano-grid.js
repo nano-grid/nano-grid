@@ -10,7 +10,6 @@ import nnIcono from './js/nano_icono.js'
 import nnPilar from './js/nano_pilar.js'
 import nnPill from './js/nano_pill.js'
 import nnVideo from './js/nano_video.js'
-
 ;[
   nnBtn,
   nnCaja,

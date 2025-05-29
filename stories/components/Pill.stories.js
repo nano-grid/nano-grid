@@ -1,5 +1,5 @@
 import '../../src/nano-grid.css'
-import { allColors } from '../assets/db_wiki-colors.js'
+import { gColors } from '../../src/gcolors.js'
 import { code } from '../assets/utils.js'
 
 export default {
@@ -17,7 +17,7 @@ const nanoPill = `
 
     <blockquote>
       The <nn-pill color="${
-        allColors['mindaro'].hex
+        gColors['mindaro'].hex
       }">nn-pill</nn-pill> component is a compact, colored label used for inline badges, tags, or indicators. It automatically adapts its text color based on the background for accessibility, or you can override it.
     </blockquote>
 
@@ -42,7 +42,7 @@ const nanoPill = `
 
       <nn-fila gap=".25rem" break="sm">
         <nn-pilar size="200px">
-          <nn-pill color="${allColors['mindaro'].hex}">
+          <nn-pill color="${gColors['mindaro'].hex}">
             color
           </nn-pill>
         </nn-pilar>
@@ -53,7 +53,7 @@ const nanoPill = `
 
       <nn-fila gap=".25rem" break="sm">
         <nn-pilar size="200px">
-          <nn-pill color="${allColors['mindaro'].hex}">
+          <nn-pill color="${gColors['mindaro'].hex}">
             text-color
           </nn-pill>
         </nn-pilar>

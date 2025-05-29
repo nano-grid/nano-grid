@@ -1,6 +1,6 @@
 import '../src/nano-grid.css'
 import '../src/nano-grid.js'
-import { allColors } from './assets/db_wiki-colors.js'
+import { gColors } from '../src/gcolors.js'
 
 export default {
   parameters: {
@@ -74,7 +74,7 @@ export const Intro = args => {
 
       <nn-fila gap=".25rem" break="sm">
         <nn-pilar size="200px">
-          <nn-pill color="${allColors['mindaro'].hex}">
+          <nn-pill color="${gColors['mindaro'].hex}">
             Framework-agnostic
           </nn-pill>
         </nn-pilar>
@@ -85,7 +85,7 @@ export const Intro = args => {
 
       <nn-fila gap=".25rem" break="sm">
         <nn-pilar size="200px">
-          <nn-pill color="${allColors['mindaro'].hex}">
+          <nn-pill color="${gColors['mindaro'].hex}">
             Theme-ready
           </nn-pill>
         </nn-pilar>
@@ -96,7 +96,7 @@ export const Intro = args => {
 
       <nn-fila gap=".25rem" break="sm">
         <nn-pilar size="200px">
-          <nn-pill color="${allColors['mindaro'].hex}">
+          <nn-pill color="${gColors['mindaro'].hex}">
             Zero runtime dependencies
           </nn-pill>
         </nn-pilar>
@@ -107,7 +107,7 @@ export const Intro = args => {
 
       <nn-fila gap=".25rem" break="sm">
         <nn-pilar size="200px">
-          <nn-pill color="${allColors['mindaro'].hex}">
+          <nn-pill color="${gColors['mindaro'].hex}">
             Composable primitives
           </nn-pill>
         </nn-pilar>

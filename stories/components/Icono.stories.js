@@ -1,5 +1,5 @@
 import '../../src/nano-grid.css'
-import { allColors } from '../assets/db_wiki-colors.js'
+import { gColors } from '../../src/gcolors.js'
 import { code } from '../assets/utils.js'
 
 export default {
@@ -17,9 +17,9 @@ const nanoIcono = `
 
     <blockquote>
       The <nn-pill color="${
-        allColors['mindaro'].hex
+        gColors['mindaro'].hex
       }">nn-icono</nn-pill> component displays symbolic icons using a custom icon font (like IcoMoon) and the <nn-pill color="${
-  allColors['mindaro'].hex
+  gColors['mindaro'].hex
 }">--nn-icono</nn-pill> CSS variable. All icons must be provided via CSS classes mapped to characters from your font.
     </blockquote>
 
@@ -50,30 +50,30 @@ const nanoIcono = `
 
     <nn-fila gap=".25rem"  break="sm">
       <nn-pilar size="200px">
-        <nn-pill color="${allColors['mindaro'].hex}">
+        <nn-pill color="${gColors['mindaro'].hex}">
           rotate
         </nn-pill>
       </nn-pilar>
       <nn-pilar size="100% - 200px - .25rem">
         Rotates the icon using a CSS degree value. Accepts any valid rotation like 
-         <nn-pill color="${allColors['mindaro'].hex}">90deg</nn-pill>, 
-         <nn-pill color="${allColors['mindaro'].hex}">180deg</nn-pill>, or 
-         <nn-pill color="${allColors['mindaro'].hex}">-45deg</nn-pill>
+         <nn-pill color="${gColors['mindaro'].hex}">90deg</nn-pill>, 
+         <nn-pill color="${gColors['mindaro'].hex}">180deg</nn-pill>, or 
+         <nn-pill color="${gColors['mindaro'].hex}">-45deg</nn-pill>
       </nn-pilar>
     </nn-fila>
 
     <nn-fila gap=".25rem" break="sm">
       <nn-pilar size="200px">
-        <nn-pill color="${allColors['mindaro'].hex}">
+        <nn-pill color="${gColors['mindaro'].hex}">
           direction
         </nn-pill>
       </nn-pilar>
       <nn-pilar size="100% - 200px - .25rem">
         Human-readable directions like 
-        <nn-pill color="${allColors['mindaro'].hex}">up</nn-pill>, 
-        <nn-pill color="${allColors['mindaro'].hex}">down</nn-pill>, 
-        <nn-pill color="${allColors['mindaro'].hex}">left</nn-pill>, or 
-        <nn-pill color="${allColors['mindaro'].hex}">right</nn-pill>, 
+        <nn-pill color="${gColors['mindaro'].hex}">up</nn-pill>, 
+        <nn-pill color="${gColors['mindaro'].hex}">down</nn-pill>, 
+        <nn-pill color="${gColors['mindaro'].hex}">left</nn-pill>, or 
+        <nn-pill color="${gColors['mindaro'].hex}">right</nn-pill>, 
         mapped to the corresponding rotation values.
       </nn-pilar>
     </nn-fila>
@@ -83,11 +83,11 @@ const nanoIcono = `
 
     <p>
       You must define your icon font via <nn-pill color="${
-        allColors['mindaro'].hex
+        gColors['mindaro'].hex
       }">font-family</nn-pill> and link character codes to CSS classes. These classes set the <nn-pill color="${
-  allColors['mindaro'].hex
+  gColors['mindaro'].hex
 }">--nn-icono</nn-pill> variable using <nn-pill color="${
-  allColors['mindaro'].hex
+  gColors['mindaro'].hex
 }">content</nn-pill> values from the font.
     </p>
 
@@ -106,11 +106,11 @@ nn-icono.arrow-angle-double {
 
     <p>
       For consistency, use <nn-pill color="${
-        allColors['mindaro'].hex
+        gColors['mindaro'].hex
       }">:before</nn-pill> to render the icon, controlled by the <nn-pill color="${
-  allColors['mindaro'].hex
+  gColors['mindaro'].hex
 }">--nn-icono</nn-pill> variable and optionally rotated using <nn-pill color="${
-  allColors['mindaro'].hex
+  gColors['mindaro'].hex
 }">--nn-icono-direction</nn-pill>.
     </p>
   </section>

@@ -1,5 +1,5 @@
 import '../../src/nano-grid.css'
-import { allColors } from '../assets/db_wiki-colors.js'
+import { gColors } from '../../src/gcolors.js'
 import { code } from '../assets/utils.js'
 
 export default {
@@ -17,11 +17,11 @@ const nanoDropdown = `
 
   <blockquote>
     The <nn-pill color="${
-      allColors['mindaro'].hex
+      gColors['mindaro'].hex
     }">nn-dropdown</nn-pill> is a Web Component for creating toggleable dropdown panels. It renders a button trigger using a <nn-pill color="${
-  allColors['mindaro'].hex
+  gColors['mindaro'].hex
 }">label</nn-pill> or an <nn-pill color="${
-  allColors['mindaro'].hex
+  gColors['mindaro'].hex
 }">icon</nn-pill> and displays its inner content as the dropdown menu. It automatically closes when clicking outside.
   </blockquote>
 
@@ -59,7 +59,7 @@ const nanoDropdown = `
 
     <nn-fila gap=".25rem" break="sm">
       <nn-pilar size="200px">
-        <nn-pill color="${allColors['mindaro'].hex}">
+        <nn-pill color="${gColors['mindaro'].hex}">
           label
         </nn-pill>
       </nn-pilar>
@@ -70,13 +70,13 @@ const nanoDropdown = `
 
     <nn-fila gap=".25rem" break="sm">
       <nn-pilar size="200px">
-        <nn-pill color="${allColors['mindaro'].hex}">
+        <nn-pill color="${gColors['mindaro'].hex}">
           icon
         </nn-pill>
       </nn-pilar>
       <nn-pilar size="100% - 200px - .25rem">
         Adds an <nn-pill color="${
-          allColors['mindaro'].hex
+          gColors['mindaro'].hex
         }">&lt;nn-icono&gt;</nn-pill> inside the button trigger using the given class.
       </nn-pilar>
     </nn-fila>

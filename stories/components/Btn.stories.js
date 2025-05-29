@@ -1,5 +1,5 @@
 import '../../src/nano-grid.css'
-import { allColors } from '../assets/db_wiki-colors.js'
+import { gColors } from '../../src/gcolors.js'
 import { code } from '../assets/utils.js'
 
 export default {
@@ -25,7 +25,7 @@ nn-pilar {
 }
 `
 
-const colors = Object.values(allColors)
+const colors = Object.values(gColors)
   .sort((a, b) => {
     if (a.saturation !== b.saturation) {
       return b.saturation - a.saturation
@@ -62,7 +62,7 @@ const nanoBtn = `
 
   <blockquote>
     The <nn-pill color="${
-      allColors['mindaro'].hex
+      gColors['mindaro'].hex
     }">nn-btn</nn-pill> is a Web Component for rendering styled buttons or links with customizable background colors. It uses a dynamic text color based on the background for contrast and accessibility.
   </blockquote>
 
@@ -105,7 +105,7 @@ const nanoBtn = `
 
     <nn-fila gap=".25rem"  break="sm">
       <nn-pilar size="200px">
-        <nn-pill color="${allColors['mindaro'].hex}">
+        <nn-pill color="${gColors['mindaro'].hex}">
           color
         </nn-pill>
       </nn-pilar>
@@ -116,15 +116,15 @@ const nanoBtn = `
 
     <nn-fila gap=".25rem" break="sm">
       <nn-pilar size="200px">
-        <nn-pill color="${allColors['mindaro'].hex}">
+        <nn-pill color="${gColors['mindaro'].hex}">
           link
         </nn-pill>
       </nn-pilar>
       <nn-pilar size="100% - 200px - .25rem">
         If present, renders an <nn-pill color="${
-          allColors['mindaro'].hex
+          gColors['mindaro'].hex
         }">a</nn-pill> element instead of <nn-pill color="${
-  allColors['mindaro'].hex
+  gColors['mindaro'].hex
 }">button</nn-pill>
       </nn-pilar>
     </nn-fila>
@@ -144,7 +144,7 @@ const nanoBtn = `
 
     <nn-fila gap=".25rem"  break="sm">
       <nn-pilar size="200px">
-        <nn-pill color="${allColors['mindaro'].hex}">
+        <nn-pill color="${gColors['mindaro'].hex}">
           --nn-btn-color
         </nn-pill>
       </nn-pilar>
@@ -155,7 +155,7 @@ const nanoBtn = `
 
     <nn-fila gap=".25rem" break="sm">
       <nn-pilar size="200px">
-        <nn-pill color="${allColors['mindaro'].hex}">
+        <nn-pill color="${gColors['mindaro'].hex}">
           --nn-btn-text-color
         </nn-pill>
       </nn-pilar>

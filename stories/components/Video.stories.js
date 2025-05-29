@@ -1,5 +1,5 @@
 import '../../src/nano-grid.css'
-import { allColors } from '../assets/db_wiki-colors.js'
+import { gColors } from '../../src/gcolors.js'
 import { code } from '../assets/utils.js'
 
 export default {
@@ -17,9 +17,9 @@ const nanoVideo = `
 
     <blockquote>
       The <nn-pill color="${
-        allColors['mindaro'].hex
+        gColors['mindaro'].hex
       }">nn-video</nn-pill> component wraps a native <nn-pill color="${
-  allColors['mindaro'].hex
+  gColors['mindaro'].hex
 }">&lt;video&gt;</nn-pill> element and allows you to declaratively set the video source, format, and width via attributes.
     </blockquote>
 
@@ -47,7 +47,7 @@ const nanoVideo = `
 
       <nn-fila gap=".25rem" break="sm">
         <nn-pilar size="200px">
-          <nn-pill color="${allColors['mindaro'].hex}">
+          <nn-pill color="${gColors['mindaro'].hex}">
             url
           </nn-pill>
         </nn-pilar>
@@ -58,22 +58,22 @@ const nanoVideo = `
 
       <nn-fila gap=".25rem" break="sm">
         <nn-pilar size="200px">
-          <nn-pill color="${allColors['mindaro'].hex}">
+          <nn-pill color="${gColors['mindaro'].hex}">
             format
           </nn-pill>
         </nn-pilar>
         <nn-pilar size="100% - 200px - .25rem">
           The MIME type of the video (e.g., <nn-pill color="${
-            allColors['mindaro'].hex
+            gColors['mindaro'].hex
           }">video/mp4</nn-pill>). Defaults to <nn-pill color="${
-  allColors['mindaro'].hex
+  gColors['mindaro'].hex
 }">video/mp4</nn-pill> if omitted.
         </nn-pilar>
       </nn-fila>
 
       <nn-fila gap=".25rem" break="sm">
         <nn-pilar size="200px">
-          <nn-pill color="${allColors['mindaro'].hex}">
+          <nn-pill color="${gColors['mindaro'].hex}">
             width
           </nn-pill>
         </nn-pilar>

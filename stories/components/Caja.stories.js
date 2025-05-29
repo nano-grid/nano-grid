@@ -1,5 +1,5 @@
 import '../../src/nano-grid.css'
-import { allColors } from '../assets/db_wiki-colors.js'
+import { gColors } from '../../src/gcolors.js'
 import { code } from '../assets/utils.js'
 
 export default {
@@ -17,7 +17,7 @@ const nanoCaja = `
 
   <blockquote>
     The <nn-pill color="${
-      allColors['mindaro'].hex
+      gColors['mindaro'].hex
     }">nn-caja</nn-pill> is a Web Component that acts as a styled container. It supports dynamic layout adjustments using custom padding and max-width values via attributes.
   </blockquote>
 
@@ -48,22 +48,22 @@ const nanoCaja = `
 
     <nn-fila gap=".25rem" break="sm">
       <nn-pilar size="200px">
-        <nn-pill color="${allColors['mindaro'].hex}">
+        <nn-pill color="${gColors['mindaro'].hex}">
           padding
         </nn-pill>
       </nn-pilar>
       <nn-pilar size="100% - 200px - .25rem">
         Sets the padding around the content inside the caja. Accepts any valid CSS length unit (e.g., <nn-pill color="${
-          allColors['mindaro'].hex
+          gColors['mindaro'].hex
         }">1rem</nn-pill>, <nn-pill color="${
-  allColors['mindaro'].hex
+  gColors['mindaro'].hex
 }">16px</nn-pill>).
       </nn-pilar>
     </nn-fila>
 
     <nn-fila gap=".25rem" break="sm">
       <nn-pilar size="200px">
-        <nn-pill color="${allColors['mindaro'].hex}">
+        <nn-pill color="${gColors['mindaro'].hex}">
           max-width
         </nn-pill>
       </nn-pilar>
@@ -87,26 +87,26 @@ const nanoCaja = `
 
     <nn-fila gap=".25rem" break="sm">
       <nn-pilar size="200px">
-        <nn-pill color="${allColors['mindaro'].hex}">
+        <nn-pill color="${gColors['mindaro'].hex}">
           --nn-caja-padding
         </nn-pill>
       </nn-pilar>
       <nn-pilar size="100% - 200px - .25rem">
         Internal variable set based on the <nn-pill color="${
-          allColors['mindaro'].hex
+          gColors['mindaro'].hex
         }">padding</nn-pill> attribute. Can be used in custom styles.
       </nn-pilar>
     </nn-fila>
 
     <nn-fila gap=".25rem" break="sm">
       <nn-pilar size="200px">
-        <nn-pill color="${allColors['mindaro'].hex}">
+        <nn-pill color="${gColors['mindaro'].hex}">
           --nn-caja-max-width
         </nn-pill>
       </nn-pilar>
       <nn-pilar size="100% - 200px - .25rem">
         Internal variable set based on the <nn-pill color="${
-          allColors['mindaro'].hex
+          gColors['mindaro'].hex
         }">max-width</nn-pill> attribute. Useful for layout styling.
       </nn-pilar>
     </nn-fila>

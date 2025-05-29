@@ -1,5 +1,5 @@
 import '../../src/nano-grid.css'
-import { allColors } from '../assets/db_wiki-colors.js'
+import { gColors } from '../../src/gcolors.js'
 import { code } from '../assets/utils.js'
 
 export default {
@@ -17,7 +17,7 @@ const nanoCode = `
 
   <blockquote>
     The <nn-pill color="${
-      allColors['mindaro'].hex
+      gColors['mindaro'].hex
     }">nn-code</nn-pill> is a Web Component for displaying syntax-highlighted JavaScript, HTML, CSS code. It safely escapes characters and highlights reserved words, strings, comments, numbers, booleans, and brackets.
   </blockquote>
 
@@ -49,18 +49,18 @@ const nanoCode = `
     ${[
       [
         'nn-reserved',
-        `Reserved keywords like <nn-pill color="${allColors['mindaro'].hex}">import</nn-pill>, <nn-pill color="${allColors['mindaro'].hex}">new</nn-pill>`,
+        `Reserved keywords like <nn-pill color="${gColors['mindaro'].hex}">import</nn-pill>, <nn-pill color="${gColors['mindaro'].hex}">new</nn-pill>`,
       ],
       [
         'nn-boolean',
-        `Boolean values like <nn-pill color="${allColors['mindaro'].hex}">true</nn-pill>, <nn-pill color="${allColors['mindaro'].hex}">false</nn-pill>`,
+        `Boolean values like <nn-pill color="${gColors['mindaro'].hex}">true</nn-pill>, <nn-pill color="${gColors['mindaro'].hex}">false</nn-pill>`,
       ],
       ['nn-string', 'Quoted strings'],
       ['nn-comment', 'Single- and multi-line comments'],
       ['nn-number', 'Numeric literals'],
       [
         'nn-type',
-        `HTML-like tags such as <nn-pill color="${allColors['mindaro'].hex}">&lt;div&gt;</nn-pill>`,
+        `HTML-like tags such as <nn-pill color="${gColors['mindaro'].hex}">&lt;div&gt;</nn-pill>`,
       ],
       ['nn-parenthesis', 'Brackets, braces, and parentheses'],
       ['nn-n-line', 'Line breaks'],
@@ -71,7 +71,7 @@ const nanoCode = `
         ([cls, desc]) => `
       <nn-fila gap=".25rem" break="sm">
         <nn-pilar size="200px">
-          <nn-pill color="${allColors['mindaro'].hex}">${cls}</nn-pill>
+          <nn-pill color="${gColors['mindaro'].hex}">${cls}</nn-pill>
         </nn-pilar>
         <nn-pilar size="100% - 200px - .25rem">
           ${desc}
