@@ -1,6 +1,6 @@
 {
   "name": "nano-grid",
-  "version": "5.2.0",
+  "version": "5.2.1",
   "keywords": [
     "css",
     "front-end",
@@ -8,10 +8,6 @@
     "web",
     "toolkit",
     "web-components"
-  ],
-  "files": [
-    "dist/nano-grid.js",
-    "dist/nano-grid.css"
   ],
   "type": "module",
   "description": "Frontend Toolkit",
