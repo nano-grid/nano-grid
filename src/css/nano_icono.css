@@ -9,31 +9,6 @@ nn-icono {
     rotate: var(--nn-icono-direction);
   }
 
-  &[rotate='0'] {
-    --nn-icono-direction: 0deg;
-  }
-  &[rotate='45'] {
-    --nn-icono-direction: 45deg;
-  }
-  &[rotate='90'] {
-    --nn-icono-direction: 90deg;
-  }
-  &[rotate='135'] {
-    --nn-icono-direction: 135deg;
-  }
-  &[rotate='180'] {
-    --nn-icono-direction: 180deg;
-  }
-  &[rotate='225'] {
-    --nn-icono-direction: 225deg;
-  }
-  &[rotate='270'] {
-    --nn-icono-direction: 270deg;
-  }
-  &[rotate='315'] {
-    --nn-icono-direction: 315deg;
-  }
-
   &[direction='down'] {
     --nn-icono-direction: 0deg;
   }

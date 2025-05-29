@@ -13,6 +13,7 @@
     "dist/nano-grid.js",
     "dist/nano-grid.css"
   ],
+  "type": "module",
   "description": "Frontend Toolkit",
   "main": "index.js",
   "scripts": {

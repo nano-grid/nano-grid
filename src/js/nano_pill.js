@@ -31,7 +31,10 @@ class nnPill extends HTMLElement {
     if (tcolor !== null) {
       this.style.setProperty(`--nn-pill-text-color`, tcolor)
     } else {
-      this.style.setProperty(`--nn-pill-text-color`, textColorFromBackground(color))
+      this.style.setProperty(
+        `--nn-pill-text-color`,
+        textColorFromBackground(color || '#333333')
+      )
     }
   }
 }
