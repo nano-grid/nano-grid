@@ -1,10 +1,4 @@
-import { getPrefix } from './nano_helpers.js'
-
-class nnVideo extends HTMLElement {
-  static get observedAttributes() {
-    return ['url', 'format', 'width']
-  }
-
+export default class nnVideo extends HTMLElement {
   constructor() {
     super()
 
@@ -28,6 +22,12 @@ class nnVideo extends HTMLElement {
     this.$source = this.querySelector('source')
   }
 
+  static tag = 'video'
+
+  static get observedAttributes() {
+    return ['url', 'format', 'width']
+  }
+
   connectedCallback() {
     this.#update()
   }
@@ -45,9 +45,4 @@ class nnVideo extends HTMLElement {
     this.$source.type = format
     if (width) this.$video.width = width
   }
-}
-
-const tag = getPrefix('video')
-if (!customElements.get(tag)) {
-  customElements.define(tag, nnVideo)
 }

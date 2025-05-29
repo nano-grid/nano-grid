@@ -1,9 +1,9 @@
-import { getPrefix } from './nano_helpers.js'
-
-class nnFila extends HTMLElement {
+export default class nnFila extends HTMLElement {
   constructor() {
     super()
   }
+
+  static tag = 'fila'
 
   static attrs = ['gap', 'padding-inline']
 
@@ -29,9 +29,4 @@ class nnFila extends HTMLElement {
       this.#updateAttrs()
     }
   }
-}
-
-const tag = getPrefix('fila')
-if (!customElements.get(tag)) {
-  customElements.define(tag, nnFila)
 }

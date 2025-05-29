@@ -1,11 +1,13 @@
-import { getPrefix, textColorFromBackground } from './nano_helpers.js'
+import { textColorFromBackground } from './nano_helpers.js'
 
-class nnBtn extends HTMLElement {
+export default class nnBtn extends HTMLElement {
   static attrs = ['color', 'link']
 
   static get observedAttributes() {
     return this.attrs
   }
+
+  static tag = 'btn'
 
   #initialContent = null
   #rendered = false
@@ -63,9 +65,4 @@ class nnBtn extends HTMLElement {
     el.appendChild(this.#initialContent.cloneNode(true))
     this.appendChild(el)
   }
-}
-
-const tag = getPrefix('btn')
-if (!customElements.get(tag)) {
-  customElements.define(tag, nnBtn)
 }

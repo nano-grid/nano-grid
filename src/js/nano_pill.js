@@ -1,15 +1,17 @@
-import { getPrefix, textColorFromBackground } from './nano_helpers.js'
+import { textColorFromBackground } from './nano_helpers.js'
 
-class nnPill extends HTMLElement {
+export default class nnPill extends HTMLElement {
+  constructor() {
+    super()
+  }
+
   static attrs = ['color', 'text-color']
 
   static get observedAttributes() {
     return this.attrs
   }
 
-  constructor() {
-    super()
-  }
+  static tag = 'pill'
 
   connectedCallback() {
     this.#render()
@@ -37,9 +39,4 @@ class nnPill extends HTMLElement {
       )
     }
   }
-}
-
-const tag = getPrefix('pill')
-if (!customElements.get(tag)) {
-  customElements.define(tag, nnPill)
 }

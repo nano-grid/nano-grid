@@ -1,9 +1,9 @@
-import { getPrefix } from './nano_helpers.js'
-
-class nnCaja extends HTMLElement {
+export default class nnCaja extends HTMLElement {
   constructor() {
     super()
   }
+
+  static tag = 'caja'
 
   static attrs = ['padding', 'max-width']
 
@@ -29,9 +29,4 @@ class nnCaja extends HTMLElement {
       this.#updateAttrs()
     }
   }
-}
-
-const tag = getPrefix('caja')
-if (!customElements.get(tag)) {
-  customElements.define(tag, nnCaja)
 }

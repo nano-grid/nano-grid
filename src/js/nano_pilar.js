@@ -1,9 +1,9 @@
-import { getPrefix } from './nano_helpers.js'
-
-class nnPilar extends HTMLElement {
+export default class nnPilar extends HTMLElement {
   constructor() {
     super()
   }
+
+  static tag = 'pilar'
 
   static get observedAttributes() {
     return ['size']
@@ -26,9 +26,4 @@ class nnPilar extends HTMLElement {
       this.#updateSize()
     }
   }
-}
-
-const tag = getPrefix('pilar')
-if (!customElements.get(tag)) {
-  customElements.define(tag, nnPilar)
 }

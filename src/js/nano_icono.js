@@ -1,9 +1,9 @@
-import { getPrefix } from './nano_helpers.js'
-
-class nnIcono extends HTMLElement {
+export default class nnIcono extends HTMLElement {
   constructor() {
     super()
   }
+
+  static tag = 'icono'
 
   static get observedAttributes() {
     return ['rotate']
@@ -25,9 +25,4 @@ class nnIcono extends HTMLElement {
       this.#updateRotation()
     }
   }
-}
-
-const tag = getPrefix('icono')
-if (!customElements.get(tag)) {
-  customElements.define(tag, nnIcono)
 }

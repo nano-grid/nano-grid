@@ -1,9 +1,9 @@
-import { getPrefix } from './nano_helpers.js'
-
-class nnCode extends HTMLElement {
+export default class nnCode extends HTMLElement {
   constructor() {
     super()
   }
+
+  static tag = 'code'
 
   static spirit(word, klaso) {
     return `<span class='nn-${klaso}'>${word}</span>`
@@ -108,10 +108,3 @@ class nnCode extends HTMLElement {
     this.innerHTML = nnCode.formatJs(this.innerHTML)
   }
 }
-
-const tag = getPrefix('code')
-if (!customElements.get(tag)) {
-  customElements.define(tag, nnCode)
-}
-
-export default nnCode

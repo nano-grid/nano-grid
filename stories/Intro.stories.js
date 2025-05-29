@@ -1,4 +1,5 @@
 import '../src/nano-grid.css'
+import '../src/nano-grid.js'
 import { allColors } from './assets/db_wiki-colors.js'
 
 export default {

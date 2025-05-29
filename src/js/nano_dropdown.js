@@ -1,12 +1,12 @@
-import { getPrefix } from './nano_helpers.js'
-
-class nnDropdown extends HTMLElement {
+export default class nnDropdown extends HTMLElement {
   constructor() {
     super()
     this.open = false
     this.toggle = this.toggle.bind(this)
     this.handleOutsideClick = this.handleOutsideClick.bind(this)
   }
+
+  static tag = 'dropdown'
 
   connectedCallback() {
     this.slot = this.innerHTML
@@ -56,9 +56,4 @@ class nnDropdown extends HTMLElement {
       btnTrigger.innerHTML = `<nn-icono class="${icon}"><nn-icono> ▼`
     }
   }
-}
-
-const tag = getPrefix('dropdown')
-if (!customElements.get(tag)) {
-  customElements.define(tag, nnDropdown)
 }
