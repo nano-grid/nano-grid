@@ -1,6 +1,6 @@
-import { nnCode } from '../src/nano-grid.js'
-import '../src/nano-grid.css'
-import { allColors } from './assets/db_wiki-colors.js'
+import { nnCode } from '../../src/nano-grid.js'
+import '../../src/nano-grid.css'
+import { allColors } from '../assets/db_wiki-colors.js'
 
 export default {
   parameters: {
@@ -90,7 +90,7 @@ const sizes = [
   )
   .join('\n    ')
 
-const html = `<section class="html">${sizes}</section>`
+const html = `${sizes}`
 
 export const Grid = args => {
   const container = document.createElement('section')
@@ -102,7 +102,7 @@ export const Grid = args => {
     <nn-caja padding="1rem">
       <h1>NN-Fila & NN-Pilar</h1>
 
-      <div>
+      <section>
         <p>HTML:</p>
         <nn-code>
           ${nnCode.compressText(
@@ -115,7 +115,9 @@ export const Grid = args => {
 `
           )}
         </nn-code>
+      </section>
         
+      <section>
         <p>Or:</p>
         <nn-code>
           ${nnCode.compressText(
@@ -128,26 +130,30 @@ export const Grid = args => {
 `
           )}
         </nn-code>
-      </div>
+      </section>
     
-      <div>
+      <section>
         <p>Example:</p>
         ${html}
+      </section>
 
+      <section>
         <p>Search Bar Layout:</p>
         <nn-fila>
           <nn-pilar size="35px">
-            <nn-btn color="${allColors['spanish-blue'].hex}">S</nn-btn>
+            <nn-btn color="${allColors['alice-blue'].hex}">🔎</nn-btn>
           </nn-pilar>
           <nn-pilar size="100% - 35px * 2">
             <nn-btn color="${allColors['white'].hex}">100% - 35px * 2</nn-btn>
           </nn-pilar>
           <nn-pilar size="35px">
-            <nn-btn color="${allColors['sizzling-red'].hex}">X</nn-btn>
+            <nn-btn color="${allColors['lavender-blush'].hex}">✖️</nn-btn>
           </nn-pilar>
         </nn-fila>
+      </section>
 
-        <p>Dominican Flag Layout:</p>
+      <section>
+       <p>Dominican Flag Layout:</p>
         <nn-fila>
           <nn-pilar size="50% - 35px / 2">
             <nn-btn color="${allColors['spanish-blue'].hex}"></nn-btn>
@@ -171,7 +177,7 @@ export const Grid = args => {
             <nn-btn color="${allColors['spanish-blue'].hex}"></nn-btn>
           </nn-pilar>
         </nn-fila>
-      </div>
+      </section>
     </nn-caja>
 
 `

@@ -107,10 +107,6 @@ class nnCode extends HTMLElement {
   connectedCallback() {
     this.innerHTML = nnCode.formatJs(this.innerHTML)
   }
-
-  static get observedAttributes() {
-    return ['text']
-  }
 }
 
 const tag = getPrefix('code')

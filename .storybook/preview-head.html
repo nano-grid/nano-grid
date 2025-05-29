@@ -2,6 +2,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@1,100..900');
   :root {
     color-scheme: dark;
+
     * {
       font-family: 'Montserrat', sans-serif;
       font-optical-sizing: auto;
@@ -24,14 +25,48 @@
     h2,
     h3,
     h4,
-    h5 {
+    h5,
+    p,
+    blockquote {
       margin: 0;
     }
 
-        nn-caja {
+    nn-caja {
       display: flex;
       gap: 2rem;
       flex-direction: column;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    blockquote {
+      padding: 0;
+    }
+
+    .table {
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
+
+      nn-fila {
+        &.heading {
+          nn-pilar {
+            background-color: #333340;
+            font-weight: bold;
+          }
+        }
+        
+        nn-pilar {
+          padding: 1rem;
+          text-align: center;
+          background-color: #27272e;
+        }
+      }
+
     }
   }
 </style>

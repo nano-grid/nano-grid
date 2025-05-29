@@ -71,16 +71,4 @@ nn-code {
     color: var(--nn-code-whitespace-color, rgba(255, 255, 255, 0.1)) !important;
     padding-inline: 0.1rem;
   }
-
-  .nn-string:hover,
-  .nn-boolean:hover,
-  .nn-number:hover,
-  .nn-type:hover {
-    background: var(--nn-code-hover-background, rgba(237, 199, 0, 0.13));
-  }
-
-  .nn-string:hover * {
-    background: transparent;
-    color: inherit;
-  }
 }

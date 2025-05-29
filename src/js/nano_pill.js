@@ -1,4 +1,4 @@
-import { getPrefix } from './nano_helpers.js'
+import { getPrefix, textColorFromBackground } from './nano_helpers.js'
 
 class nnPill extends HTMLElement {
   static attrs = ['color', 'text-color']
@@ -30,6 +30,8 @@ class nnPill extends HTMLElement {
     }
     if (tcolor !== null) {
       this.style.setProperty(`--nn-pill-text-color`, tcolor)
+    } else {
+      this.style.setProperty(`--nn-pill-text-color`, textColorFromBackground(color))
     }
   }
 }

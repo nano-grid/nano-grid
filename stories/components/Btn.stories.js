@@ -1,6 +1,6 @@
-import { nnCode } from '../src/nano-grid.js'
-import '../src/nano-grid.css'
-import { allColors } from './assets/db_wiki-colors.js'
+import { nnCode } from '../../src/nano-grid.js'
+import '../../src/nano-grid.css'
+import { allColors } from '../assets/db_wiki-colors.js'
 
 export default {
   parameters: {
@@ -66,17 +66,19 @@ export const Btn = args => {
     <nn-caja padding="1rem">
       <h1>NN-BTN</h1>
 
-      <div>
+      <section>
         <p>HTML:</p>
         <nn-code>
-          ${nnCode.compressText(`<nn-btn color="hex-color">label-color</nn-btn>`)}
+          ${nnCode.compressText(
+            `<nn-btn color="hex-color">label-color</nn-btn>`
+          )}
         </nn-code>
-      </div>
+      </section>
     
-      <div>
+      <section>
         <p>Example:</p>
         ${html}
-      </div>
+      </section>
     </nn-caja>
 
 `
