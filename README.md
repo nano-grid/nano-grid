@@ -1,72 +1,64 @@
 # Nano grid
 
 [![Nano Grid Logo](https://nano-grid.github.io/img/preview.png)](https://nano-grid.github.io)
-> Frontend toolkit powered by CSS and Javascript.
+> Frontend toolkit powered by CSS and Web Components.
 
 ## Getting Starter
 
-- Install with [yarn](https://yarnpkg.com/):
-
-  ```sh
-  yarn add nano-grid
-  ```
-
-- Install with [npm](https://www.npmjs.com/):
-
-  ```sh
-  npm install nano-grid
-  ```
-
-- Clone the repo:
-
-  ```sh
-  git clone https://github.com/nano-grid/nano-grid.git
-  ```
-
-## Registering Components
+### CDN
 
 In your Javascript:
 
 ```js
-import "nano-grid/components";
+import "https://cdn.jsdelivr.net/gh/nano-grid/nano-grid@5.1.0/nano-grid.js"
 ```
 
-In your Sass:
+In your CSS:
 
 ```css
-@import "nano-grid/scss/nano-grid";
+@import url('https://cdn.jsdelivr.net/gh/nano-grid/nano-grid@5.1.0/nano-grid.css');
+```
+
+Or in your SCSS:
+
+```css
+@import 'https://cdn.jsdelivr.net/gh/nano-grid/nano-grid@5.1.0/nano-grid.css';
 ```
 
 Test the following structure in your project:
 
 ```html
-<nn-row breakpoint="lg">
-  <nn-column size="75">
-    <span class="nn-label nn-burn-orange">75px</span>
-  </nn-column>
-  <nn-column size="50%">
-    <span class="nn-label">50%</span>
-  </nn-column>
-  <nn-column size="1/2 - 80 * 2">
-    <span class="nn-label nn-burn-orange">calc(50% - 160px)</span>
-  </nn-column>
-  <nn-column size="85">
-    <span class="nn-label">85px</span>
-  </nn-column>
-</nn-row>
+<nn-fila break="lg">
+  <nn-pilar size="75px">
+    75px
+  </nn-pilar>
+  <nn-pilar size="50%">
+    50%
+  </nn-pilar>
+  <nn-pilar size="50% - 80px * 2">
+    calc(50% - 80px * 2)
+  </nn-pilar>
+  <nn-pilar size="85px">
+    85px
+  </nn-pilar>
+</nn-fila>
 ```
-
-> For full documentation, visit [nano-grid.github.io](https://nano-grid.github.io).
-
 
 ## Building project
 ```sh
 npx vite build
 ```
 
+## Running Storybook
+```sh
+npm run storybook
+```
+
+> For full documentation, visit [nano-grid.github.io](https://nano-grid.github.io).
+
 ## Creator
 
 **Miguel Rivas**
 
-- [Portfolio](https://miguel-rivas.github.io)
+- [Portfolio](https://jmiguelrivas.github.io)
 - [Github](https://github.com/jmiguelrivas)

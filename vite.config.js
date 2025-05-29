@@ -8,8 +8,8 @@ export default defineConfig({
         css: 'src/nano-grid.css',
       },
       output: {
-        entryFileNames: '[name].js',
-        assetFileNames: '[name].css',
+        entryFileNames: 'nano-grid.js',
+        assetFileNames: 'nano-grid.css',
       }
     },
     outDir: 'dist',
