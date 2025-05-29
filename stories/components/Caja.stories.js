@@ -11,83 +11,26 @@ export default {
   },
 }
 
-const style = `
-nn-fila {
-  justify-content: center;
-}
-
-nn-pilar {
-  flex-grow: 1;
-  flex-basis: 350px;
-  nn-btn {
-    width: 100%;
-  }
-}
-`
-
-const colors = Object.values(allColors)
-  .sort((a, b) => {
-    if (a.saturation !== b.saturation) {
-      return b.saturation - a.saturation
-    }
-
-    if (a.lightness !== b.lightness) {
-      return b.lightness - a.lightness
-    }
-
-    if (a.hue !== b.hue) {
-      return b.hue - a.hue
-    }
-
-    return 0
-  })
-  .map(
-    ({ hex, label }) => `
-      <nn-pilar>
-        <nn-btn color="${hex}">${label}</nn-btn>
-      </nn-pilar>
-    `
-  )
-  .join('\n    ')
-
-const html = `
-  <nn-fila gap="1rem">
-    ${colors}
-  </nn-fila>
-`
-
-const nanoBtn = `
+const nanoCaja = `
 <section>
-  <h1>nn-btn</h1>
+  <h1>nn-caja</h1>
 
   <blockquote>
     The <nn-pill color="${
       allColors['mindaro'].hex
-    }">nn-btn</nn-pill> is a Web Component for rendering styled buttons or links with customizable background colors. It uses a dynamic text color based on the background for contrast and accessibility.
+    }">nn-caja</nn-pill> is a Web Component that acts as a styled container. It supports dynamic layout adjustments using custom padding and max-width values via attributes.
   </blockquote>
 
   <h3>Usage</h3>
 
   ${code(
     `
-<nn-btn
-  color="#4caf50"
+<nn-caja
+  padding="2rem"
+  max-width="800px"
 >
-  Open Modal
-</nn-btn>
-`
-  )}
-
-  ${code(
-    `
-<nn-btn
-  color="#222222"
-  link
-  download
-  href="..."
->
-  Download Link
-</nn-btn>
+  <p>This content is inside a padded box.</p>
+</nn-caja>
 `
   )}
 
@@ -103,29 +46,29 @@ const nanoBtn = `
       </nn-pilar>
     </nn-fila>
 
-    <nn-fila gap=".25rem"  break="sm">
+    <nn-fila gap=".25rem" break="sm">
       <nn-pilar size="200px">
         <nn-pill color="${allColors['mindaro'].hex}">
-          color
+          padding
         </nn-pill>
       </nn-pilar>
       <nn-pilar size="100% - 200px - .25rem">
-        Background color of the button or link
+        Sets the padding around the content inside the caja. Accepts any valid CSS length unit (e.g., <nn-pill color="${
+          allColors['mindaro'].hex
+        }">1rem</nn-pill>, <nn-pill color="${
+  allColors['mindaro'].hex
+}">16px</nn-pill>).
       </nn-pilar>
     </nn-fila>
 
     <nn-fila gap=".25rem" break="sm">
       <nn-pilar size="200px">
         <nn-pill color="${allColors['mindaro'].hex}">
-          link
+          max-width
         </nn-pill>
       </nn-pilar>
       <nn-pilar size="100% - 200px - .25rem">
-        If present, renders an <nn-pill color="${
-          allColors['mindaro'].hex
-        }">a</nn-pill> element instead of <nn-pill color="${
-  allColors['mindaro'].hex
-}">button</nn-pill>
+        Limits the maximum width of the component. Accepts any valid CSS length unit.
       </nn-pilar>
     </nn-fila>
   </div>
@@ -142,49 +85,43 @@ const nanoBtn = `
       </nn-pilar>
     </nn-fila>
 
-    <nn-fila gap=".25rem"  break="sm">
+    <nn-fila gap=".25rem" break="sm">
       <nn-pilar size="200px">
         <nn-pill color="${allColors['mindaro'].hex}">
-          --nn-btn-color
+          --nn-caja-padding
         </nn-pill>
       </nn-pilar>
       <nn-pilar size="100% - 200px - .25rem">
-        Background color
+        Internal variable set based on the <nn-pill color="${
+          allColors['mindaro'].hex
+        }">padding</nn-pill> attribute. Can be used in custom styles.
       </nn-pilar>
     </nn-fila>
 
     <nn-fila gap=".25rem" break="sm">
       <nn-pilar size="200px">
         <nn-pill color="${allColors['mindaro'].hex}">
-          --nn-btn-text-color
+          --nn-caja-max-width
         </nn-pill>
       </nn-pilar>
       <nn-pilar size="100% - 200px - .25rem">
-        Text color
-      </nn-pill>
+        Internal variable set based on the <nn-pill color="${
+          allColors['mindaro'].hex
+        }">max-width</nn-pill> attribute. Useful for layout styling.
       </nn-pilar>
     </nn-fila>
   </div>
 </section>
 `
 
-export const Btn = args => {
+export const Caja = args => {
   const container = document.createElement('section')
   container.classList.add('workarea')
 
   container.innerHTML += `
-    <style>${style}</style>
-    
     <nn-caja padding="1rem" max-width="1200px">
-
-      ${nanoBtn}
-    
-      <section>
-        <p>Example:</p>
-        ${html}
-      </section>
+      ${nanoCaja}
     </nn-caja>
-
 `
   return container
 }

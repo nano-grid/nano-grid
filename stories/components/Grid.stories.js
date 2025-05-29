@@ -1,6 +1,6 @@
-import { nnCode } from '../../src/nano-grid.js'
 import '../../src/nano-grid.css'
 import { allColors } from '../assets/db_wiki-colors.js'
+import { code } from '../assets/utils.js'
 
 export default {
   parameters: {
@@ -92,6 +92,126 @@ const sizes = [
 
 const html = `${sizes}`
 
+const nanoFila = `
+<section>
+  <h2>nn-fila</h2>
+
+  <blockquote>
+    The <nn-pill color="${
+      allColors['mindaro'].hex
+    }">nn-fila</nn-pill> is a flexible row container Web Component. It’s designed to lay out children in a horizontal flow with customizable gaps and inline padding, using CSS variables to control spacing dynamically.
+  </blockquote>
+
+  <h3>Usage</h3>
+
+  ${code(`
+<nn-fila gap="1rem" padding-inline="1.5rem">
+<div>Column A</div>
+<div>Column B</div>
+<div>Column C</div>
+</nn-fila>
+  `)}
+
+  <h3>Attributes</h3>
+
+  <div class="table">
+    <nn-fila class="heading" gap=".25rem" break="sm">
+      <nn-pilar size="200px">
+        Attribute
+      </nn-pilar>
+      <nn-pilar size="100% - 200px - .25rem">
+        Description
+      </nn-pilar>
+    </nn-fila>
+
+    <nn-fila gap=".25rem" break="sm">
+      <nn-pilar size="200px">
+        <nn-pill color="${allColors['mindaro'].hex}">
+          gap
+        </nn-pill>
+      </nn-pilar>
+      <nn-pilar size="100% - 200px - .25rem">
+        Sets the horizontal spacing between children (via <nn-pill color="${
+          allColors['mindaro'].hex
+        }">--nn-fila-gap</nn-pill>).
+      </nn-pilar>
+    </nn-fila>
+
+    <nn-fila gap=".25rem" break="sm">
+      <nn-pilar size="200px">
+        <nn-pill color="${allColors['mindaro'].hex}">
+          padding-inline
+        </nn-pill>
+      </nn-pilar>
+      <nn-pilar size="100% - 200px - .25rem">
+        Controls the left and right padding of the row (via <nn-pill color="${
+          allColors['mindaro'].hex
+        }">--nn-fila-padding-inline</nn-pill>).
+      </nn-pilar>
+    </nn-fila>
+  </div>
+</section>
+`
+
+const nanoPilar = `
+  <section>
+    <h2>nn-pilar</h2>
+
+    <blockquote>
+      The <nn-pill color="${
+        allColors['mindaro'].hex
+      }">nn-pilar</nn-pill> component defines a column inside an <nn-pill color="${
+  allColors['mindaro'].hex
+}">&lt;nn-fila&gt;</nn-pill> row. Its width is set via a <nn-pill color="${
+  allColors['mindaro'].hex
+}">size</nn-pill> attribute, allowing fixed values, percentages, or even dynamic <nn-pill color="${
+  allColors['mindaro'].hex
+}">calc()</nn-pill> expressions.
+    </blockquote>
+
+    <h3>Usage</h3>
+
+    ${code(`
+<nn-fila gap=".5rem">
+  <nn-pilar size="150px">Fixed</nn-pilar>
+  <nn-pilar size="100% - 150px - .5rem">Flexible</nn-pilar>
+</nn-fila>
+    `)}
+
+    <h3>Attributes</h3>
+
+    <div class="table">
+      <nn-fila class="heading" gap=".25rem" break="sm">
+        <nn-pilar size="200px">
+          Attribute
+        </nn-pilar>
+        <nn-pilar size="100% - 200px - .25rem">
+          Description
+        </nn-pilar>
+      </nn-fila>
+
+      <nn-fila gap=".25rem" break="sm">
+        <nn-pilar size="200px">
+          <nn-pill color="${allColors['mindaro'].hex}">
+            size
+          </nn-pill>
+        </nn-pilar>
+        <nn-pilar size="100% - 200px - .25rem">
+          Controls the width of the column. Supports fixed units (e.g., <nn-pill color="${
+            allColors['mindaro'].hex
+          }">200px</nn-pill>), relative units (e.g., <nn-pill color="${
+  allColors['mindaro'].hex
+}">20%</nn-pill>), or expressions like <nn-pill color="${
+  allColors['mindaro'].hex
+}">100% - 1rem</nn-pill>. If it includes math operators, it’s wrapped in <nn-pill color="${
+  allColors['mindaro'].hex
+}">calc(...)</nn-pill>.
+        </nn-pilar>
+      </nn-fila>
+    </div>
+  </section>
+`
+
 export const Grid = args => {
   const container = document.createElement('section')
   container.classList.add('workarea')
@@ -99,38 +219,12 @@ export const Grid = args => {
   container.innerHTML += `
     <style>${style}</style>
     
-    <nn-caja padding="1rem">
-      <h1>NN-Fila & NN-Pilar</h1>
+    <nn-caja padding="1rem" max-width="1200px">
+      <h1>Nano Grid</h1>
 
-      <section>
-        <p>HTML:</p>
-        <nn-code>
-          ${nnCode.compressText(
-            `
-<nn-fila>
-  <nn-pilar size="1/5 * 100% - 100px">
-    20% - 100px
-  </nn-pilar>
-</nn-fila>
-`
-          )}
-        </nn-code>
-      </section>
-        
-      <section>
-        <p>Or:</p>
-        <nn-code>
-          ${nnCode.compressText(
-            `
-<nn-fila>
-  <nn-pilar size="20%  - 100px">
-    20% - 100px
-  </nn-pilar>
-</nn-fila>
-`
-          )}
-        </nn-code>
-      </section>
+      ${nanoFila}
+
+      ${nanoPilar}
     
       <section>
         <p>Example:</p>
