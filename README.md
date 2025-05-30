@@ -10,19 +10,19 @@
 In your Javascript:
 
 ```js
-import "https://cdn.jsdelivr.net/gh/nano-grid/nano-grid@5.1.0/nano-grid.js"
+import "https://cdn.jsdelivr.net/gh/nano-grid/nano-grid@5.3.0/nanogrid.js"
 ```
 
 In your CSS:
 
 ```css
-@import url('https://cdn.jsdelivr.net/gh/nano-grid/nano-grid@5.1.0/nano-grid.css');
+@import url('https://cdn.jsdelivr.net/gh/nano-grid/nano-grid@5.3.0/nanogrid_styles.css');
 ```
 
 Or in your SCSS:
 
 ```css
-@import 'https://cdn.jsdelivr.net/gh/nano-grid/nano-grid@5.1.0/nano-grid.css';
+@import 'https://cdn.jsdelivr.net/gh/nano-grid/nano-grid@5.3.0/nanogrid_styles.css';
 ```
 
 Test the following structure in your project:

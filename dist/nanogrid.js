@@ -1,371 +1,340 @@
-var __defProp = Object.defineProperty;
-var __typeError = (msg) => {
-  throw TypeError(msg);
-};
-var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
-var __publicField = (obj, key, value) => __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
-var __accessCheck = (obj, member, msg) => member.has(obj) || __typeError("Cannot " + msg);
-var __privateGet = (obj, member, getter) => (__accessCheck(obj, member, "read from private field"), getter ? getter.call(obj) : member.get(obj));
-var __privateAdd = (obj, member, value) => member.has(obj) ? __typeError("Cannot add the same private member more than once") : member instanceof WeakSet ? member.add(obj) : member.set(obj, value);
-var __privateSet = (obj, member, value, setter) => (__accessCheck(obj, member, "write to private field"), setter ? setter.call(obj, value) : member.set(obj, value), value);
-var __privateMethod = (obj, member, method) => (__accessCheck(obj, member, "access private method"), method);
-var _t, _e, _nnBtn_instances, n_fn, _nnCaja_instances, s_fn, _i, _r, _nnCode_static, o_fn, _nnDropdown_instances, a_fn, c_fn, _nnFila_instances, s_fn2, _nnIcono_instances, l_fn, _nnPilar_instances, d_fn, _nnPill_instances, n_fn2, _nnVideo_instances, u_fn;
-const t = "nn-";
-function getPrefix(e2) {
-  return [t, e2].join("");
+const k = "nn-";
+function y(r) {
+  return [k, r].join("");
 }
-function hexToRgb(t2) {
-  let e2 = t2.replace("#", "");
-  if (e2.length === 3) e2 = e2.split("").map((t3) => t3 + t3).join("");
-  const [n, s, i] = [0, 2, 4].map((t3) => parseInt(e2.slice(t3, t3 + 2), 16));
-  return { r: n, g: s, b: i };
+function A(r) {
+  let t = r.replace("#", "");
+  t.length === 3 && (t = t.split("").map((c) => c + c).join(""));
+  const [e, s, n] = [0, 2, 4].map((c) => parseInt(t.slice(c, c + 2), 16));
+  return { r: e, g: s, b: n };
 }
-function textColorFromBackground(t2, e2 = 0.5) {
-  const { r: n, g: s, b: i } = hexToRgb(t2);
-  const r = (0.2126 * n + 0.7152 * s + 0.0722 * i) / 255;
-  return r > e2 ? "#222" : "#eee";
+function o(r, t = 0.5) {
+  const { r: e, g: s, b: n } = A(r);
+  return (0.2126 * e + 0.7152 * s + 0.0722 * n) / 255 > t ? "#222" : "#eee";
 }
-class nnBtn extends HTMLElement {
-  constructor() {
-    super(...arguments);
-    __privateAdd(this, _nnBtn_instances);
-    __privateAdd(this, _t, null);
-    __privateAdd(this, _e, false);
-  }
+class l extends HTMLElement {
+  static attrs = ["color", "link"];
   static get observedAttributes() {
     return this.attrs;
   }
+  static tag = "btn";
+  #t = null;
+  #e = !1;
   connectedCallback() {
-    if (!__privateGet(this, _e)) {
-      queueMicrotask(() => {
-        if (!__privateGet(this, _t)) {
-          __privateSet(this, _t, document.createDocumentFragment());
-          while (this.firstChild) {
-            __privateGet(this, _t).appendChild(this.firstChild);
-          }
-        }
-        __privateMethod(this, _nnBtn_instances, n_fn).call(this);
-        __privateSet(this, _e, true);
-      });
-    }
-  }
-  attributeChangedCallback(t2) {
-    if (this.constructor.attrs.includes(t2)) {
-      __privateMethod(this, _nnBtn_instances, n_fn).call(this);
-    }
-  }
-}
-_t = new WeakMap();
-_e = new WeakMap();
-_nnBtn_instances = new WeakSet();
-n_fn = function() {
-  if (!__privateGet(this, _t)) return;
-  const t2 = this.getAttribute("color");
-  const e2 = this.hasAttribute("link");
-  this.innerHTML = "";
-  const n = document.createElement(e2 ? "a" : "button");
-  if (!e2) {
-    n.type = "button";
-  }
-  if (t2) {
-    const e3 = textColorFromBackground(t2);
-    this.style.setProperty("--nn-btn-text-color", e3);
-    this.style.setProperty("--nn-btn-color", t2);
-  }
-  const s = [...this.constructor.attrs, "class", "style", "id"];
-  const i = [...this.attributes].filter((t3) => !s.includes(t3.name));
-  i.forEach((t3) => {
-    n.setAttribute(t3.name, t3.value);
-  });
-  n.appendChild(__privateGet(this, _t).cloneNode(true));
-  this.appendChild(n);
-};
-__publicField(nnBtn, "attrs", ["color", "link"]);
-__publicField(nnBtn, "tag", "btn");
-class nnCaja extends HTMLElement {
-  constructor() {
-    super();
-    __privateAdd(this, _nnCaja_instances);
-  }
-  static get observedAttributes() {
-    return this.attrs;
-  }
-  connectedCallback() {
-    __privateMethod(this, _nnCaja_instances, s_fn).call(this);
-  }
-  attributeChangedCallback(t2) {
-    if (this.constructor.attrs.includes(t2)) {
-      __privateMethod(this, _nnCaja_instances, s_fn).call(this);
-    }
-  }
-}
-_nnCaja_instances = new WeakSet();
-s_fn = function() {
-  for (const t2 of this.constructor.attrs) {
-    const e2 = this.getAttribute(t2);
-    if (e2 !== null) {
-      this.style.setProperty(`--nn-caja-${t2}`, e2);
-    }
-  }
-};
-__publicField(nnCaja, "tag", "caja");
-__publicField(nnCaja, "attrs", ["padding", "max-width"]);
-const _nnCode = class _nnCode extends HTMLElement {
-  constructor() {
-    super();
-  }
-  static spirit(t2, e2) {
-    return `<span class='nn-${e2}'>${t2}</span>`;
-  }
-  static compressText(t2) {
-    return t2.trim().replace(/[\n\t <>&/*'"`(){}\[\]]/g, (t3) => {
-      var _a;
-      return __privateMethod(_a = _nnCode, _nnCode_static, o_fn).call(_a, t3);
+    this.#e || queueMicrotask(() => {
+      if (!this.#t)
+        for (this.#t = document.createDocumentFragment(); this.firstChild; )
+          this.#t.appendChild(this.firstChild);
+      this.#s(), this.#e = !0;
     });
   }
-  static decompressText(t2) {
-    for (const [e2, n] of Object.entries(__privateGet(_nnCode, _r))) {
-      const s = e2.includes("n-line") ? `${_nnCode.spirit("", "n-line")}<br>` : e2.includes("tab") ? _nnCode.spirit("", "tab") : e2.includes("space") ? _nnCode.spirit("", "space") : `&#${n.charCodeAt(0)};`;
-      t2 = t2.replaceAll(e2, s);
+  attributeChangedCallback(t) {
+    this.constructor.attrs.includes(t) && this.#s();
+  }
+  #s() {
+    if (!this.#t) return;
+    const t = this.getAttribute("color"), e = this.hasAttribute("link");
+    this.innerHTML = "";
+    const s = document.createElement(e ? "a" : "button");
+    if (e || (s.type = "button"), t) {
+      const a = o(t);
+      this.style.setProperty("--nn-btn-text-color", a), this.style.setProperty("--nn-btn-color", t);
     }
-    return t2;
-  }
-  static formatJs(t2) {
-    let e2 = _nnCode.compressText(t2);
-    e2 = e2.replace(/(♥♥(?:s-quote|d-quote|acute)♥♥).*?(♥♥(?:s-quote|d-quote|acute)♥♥)/g, (t3) => _nnCode.spirit(t3, "string"));
-    e2 = e2.replace(/(♥♥slash♥♥){2}.*?(♥♥n-line♥♥)/g, (t3) => _nnCode.spirit(t3, "comment"));
-    e2 = e2.replace(/(♥♥slash♥♥)(♥♥asterik♥♥).*?(♥♥asterik♥♥)(♥♥slash♥♥)/g, (t3) => _nnCode.spirit(t3, "comment"));
-    e2 = e2.replace(/\b(new|import|from|get|set)\b/g, (t3) => _nnCode.spirit(t3, "reserved"));
-    e2 = e2.replace(/\b(true|false|null|undefined)\b/g, (t3) => _nnCode.spirit(t3, "boolean"));
-    e2 = e2.replace(/[+-]?(\d+)?\.?\d+/g, (t3) => _nnCode.spirit(t3, "number"));
-    e2 = e2.replace(/(♥♥lt♥♥).*?(♥♥gt♥♥)/g, (t3) => _nnCode.spirit(t3, "type"));
-    e2 = e2.replace(/♥♥(parenthesis-[oc]|bracket-[oc]|brace-[oc])♥♥/g, (t3) => _nnCode.spirit(t3, "parenthesis"));
-    return _nnCode.decompressText(e2);
-  }
-  connectedCallback() {
-    this.innerHTML = _nnCode.formatJs(this.innerHTML);
-  }
-};
-_i = new WeakMap();
-_r = new WeakMap();
-_nnCode_static = new WeakSet();
-o_fn = function(t2) {
-  return `♥♥${__privateGet(_nnCode, _i)[t2]}♥♥`;
-};
-__privateAdd(_nnCode, _nnCode_static);
-__publicField(_nnCode, "tag", "code");
-__privateAdd(_nnCode, _i, { "\n": "n-line", "	": "tab", " ": "space", "<": "lt", ">": "gt", "&": "amp", "/": "slash", "*": "asterik", "'": "s-quote", '"': "d-quote", "`": "acute", "(": "parenthesis-o", "[": "bracket-o", "{": "brace-o", ")": "parenthesis-c", "]": "bracket-c", "}": "brace-c" });
-__privateAdd(_nnCode, _r, Object.fromEntries(Object.entries(__privateGet(_nnCode, _i)).map(([t2, e2]) => [`♥♥${e2}♥♥`, t2])));
-let nnCode = _nnCode;
-class nnDesplazador extends HTMLElement {
-  constructor() {
-    super();
+    const n = [...this.constructor.attrs, "class", "style", "id"];
+    [...this.attributes].filter(
+      (a) => !n.includes(a.name)
+    ).forEach((a) => {
+      s.setAttribute(a.name, a.value);
+    }), s.appendChild(this.#t.cloneNode(!0)), this.appendChild(s);
   }
 }
-__publicField(nnDesplazador, "tag", "desplazador");
-class nnDropdown extends HTMLElement {
+class u extends HTMLElement {
   constructor() {
     super();
-    __privateAdd(this, _nnDropdown_instances);
-    this.open = false;
-    this.toggle = this.toggle.bind(this);
-    this.handleOutsideClick = this.handleOutsideClick.bind(this);
+  }
+  static tag = "caja";
+  static attrs = ["padding", "max-width"];
+  static get observedAttributes() {
+    return this.attrs;
+  }
+  #t() {
+    for (const t of this.constructor.attrs) {
+      const e = this.getAttribute(t);
+      e !== null && this.style.setProperty(`--nn-caja-${t}`, e);
+    }
   }
   connectedCallback() {
-    var _a;
-    this.slot = this.innerHTML;
-    this.innerHTML = `
+    this.#t();
+  }
+  attributeChangedCallback(t) {
+    this.constructor.attrs.includes(t) && this.#t();
+  }
+}
+class i extends HTMLElement {
+  constructor() {
+    super();
+  }
+  static tag = "code";
+  static spirit(t, e) {
+    return `<span class='nn-${e}'>${t}</span>`;
+  }
+  static #t = {
+    "\n": "n-line",
+    "	": "tab",
+    " ": "space",
+    "<": "lt",
+    ">": "gt",
+    "&": "amp",
+    "/": "slash",
+    "*": "asterik",
+    "'": "s-quote",
+    '"': "d-quote",
+    "`": "acute",
+    "(": "parenthesis-o",
+    "[": "bracket-o",
+    "{": "brace-o",
+    ")": "parenthesis-c",
+    "]": "bracket-c",
+    "}": "brace-c"
+  };
+  static #e = Object.fromEntries(
+    Object.entries(i.#t).map(([t, e]) => [
+      `♥♥${e}♥♥`,
+      t
+    ])
+  );
+  static #s(t) {
+    return `♥♥${i.#t[t]}♥♥`;
+  }
+  static compressText(t) {
+    return t.trim().replace(/[\n\t <>&/*'"`(){}\[\]]/g, (e) => i.#s(e));
+  }
+  static decompressText(t) {
+    for (const [e, s] of Object.entries(
+      i.#e
+    )) {
+      const n = e.includes("n-line") ? `${i.spirit("", "n-line")}<br>` : e.includes("tab") ? i.spirit("", "tab") : e.includes("space") ? i.spirit("", "space") : `&#${s.charCodeAt(0)};`;
+      t = t.replaceAll(e, n);
+    }
+    return t;
+  }
+  static formatJs(t) {
+    let e = i.compressText(t);
+    return e = e.replace(
+      /(♥♥(?:s-quote|d-quote|acute)♥♥).*?(♥♥(?:s-quote|d-quote|acute)♥♥)/g,
+      (s) => i.spirit(s, "string")
+    ), e = e.replace(
+      /(♥♥slash♥♥){2}.*?(♥♥n-line♥♥)/g,
+      (s) => i.spirit(s, "comment")
+    ), e = e.replace(
+      /(♥♥slash♥♥)(♥♥asterik♥♥).*?(♥♥asterik♥♥)(♥♥slash♥♥)/g,
+      (s) => i.spirit(s, "comment")
+    ), e = e.replace(
+      /\b(new|import|from|get|set)\b/g,
+      (s) => i.spirit(s, "reserved")
+    ), e = e.replace(
+      /\b(true|false|null|undefined)\b/g,
+      (s) => i.spirit(s, "boolean")
+    ), e = e.replace(
+      /[+-]?(\d+)?\.?\d+/g,
+      (s) => i.spirit(s, "number")
+    ), e = e.replace(
+      /(♥♥lt♥♥).*?(♥♥gt♥♥)/g,
+      (s) => i.spirit(s, "type")
+    ), e = e.replace(
+      /♥♥(parenthesis-[oc]|bracket-[oc]|brace-[oc])♥♥/g,
+      (s) => i.spirit(s, "parenthesis")
+    ), i.decompressText(e);
+  }
+  connectedCallback() {
+    this.innerHTML = i.formatJs(this.innerHTML);
+  }
+}
+class h extends HTMLElement {
+  constructor() {
+    super();
+  }
+  static tag = "desplazador";
+}
+class d extends HTMLElement {
+  constructor() {
+    super(), this.open = !1, this.toggle = this.toggle.bind(this), this.handleOutsideClick = this.handleOutsideClick.bind(this);
+  }
+  static tag = "dropdown";
+  connectedCallback() {
+    this.slot = this.innerHTML, this.innerHTML = `
       <button type="button" class="dropdown-trigger"></button>
       <div class="dropdown-content">${this.slot}</div>
-    `;
-    (_a = this.querySelector(".dropdown-trigger")) == null ? void 0 : _a.addEventListener("click", this.toggle);
-    document.addEventListener("click", this.handleOutsideClick);
-    __privateMethod(this, _nnDropdown_instances, a_fn).call(this);
-    __privateMethod(this, _nnDropdown_instances, c_fn).call(this);
+    `, this.querySelector(".dropdown-trigger")?.addEventListener(
+      "click",
+      this.toggle
+    ), document.addEventListener("click", this.handleOutsideClick), this.#t(), this.#e();
   }
   disconnectedCallback() {
     document.removeEventListener("click", this.handleOutsideClick);
   }
-  toggle(t2) {
-    t2.stopPropagation();
-    this.open = !this.open;
-    this.classList.toggle("open", this.open);
+  toggle(t) {
+    t.stopPropagation(), this.open = !this.open, this.classList.toggle("open", this.open);
   }
-  handleOutsideClick(t2) {
-    if (!this.contains(t2.target)) {
-      this.open = false;
-      this.classList.remove("open");
+  handleOutsideClick(t) {
+    this.contains(t.target) || (this.open = !1, this.classList.remove("open"));
+  }
+  #t() {
+    const t = this.getAttribute("label");
+    if (t) {
+      const e = this.querySelector(".dropdown-trigger");
+      e.innerHTML = `${t} ▼`;
+    }
+  }
+  #e() {
+    const t = this.getAttribute("icon");
+    if (t) {
+      const e = this.querySelector(".dropdown-trigger");
+      e.innerHTML = `<nn-icono class="${t}"><nn-icono> ▼`;
     }
   }
 }
-_nnDropdown_instances = new WeakSet();
-a_fn = function() {
-  const t2 = this.getAttribute("label");
-  if (t2) {
-    const e2 = this.querySelector(".dropdown-trigger");
-    e2.innerHTML = `${t2} ▼`;
-  }
-};
-c_fn = function() {
-  const t2 = this.getAttribute("icon");
-  if (t2) {
-    const e2 = this.querySelector(".dropdown-trigger");
-    e2.innerHTML = `<nn-icono class="${t2}"><nn-icono> ▼`;
-  }
-};
-__publicField(nnDropdown, "tag", "dropdown");
-class nnFila extends HTMLElement {
+class p extends HTMLElement {
   constructor() {
     super();
-    __privateAdd(this, _nnFila_instances);
   }
+  static tag = "fila";
+  static attrs = ["gap", "padding-inline"];
   static get observedAttributes() {
     return this.attrs;
   }
-  connectedCallback() {
-    __privateMethod(this, _nnFila_instances, s_fn2).call(this);
-  }
-  attributeChangedCallback(t2) {
-    if (this.constructor.attrs.includes(t2)) {
-      __privateMethod(this, _nnFila_instances, s_fn2).call(this);
+  #t() {
+    for (const t of this.constructor.attrs) {
+      const e = this.getAttribute(t);
+      e !== null && this.style.setProperty(`--nn-fila-${t}`, e);
     }
+  }
+  connectedCallback() {
+    this.#t();
+  }
+  attributeChangedCallback(t) {
+    this.constructor.attrs.includes(t) && this.#t();
   }
 }
-_nnFila_instances = new WeakSet();
-s_fn2 = function() {
-  for (const t2 of this.constructor.attrs) {
-    const e2 = this.getAttribute(t2);
-    if (e2 !== null) {
-      this.style.setProperty(`--nn-fila-${t2}`, e2);
-    }
-  }
-};
-__publicField(nnFila, "tag", "fila");
-__publicField(nnFila, "attrs", ["gap", "padding-inline"]);
-class nnIcono extends HTMLElement {
+class b extends HTMLElement {
   constructor() {
     super();
-    __privateAdd(this, _nnIcono_instances);
   }
+  static tag = "icono";
   static get observedAttributes() {
     return ["rotate"];
   }
-  connectedCallback() {
-    __privateMethod(this, _nnIcono_instances, l_fn).call(this);
+  #t() {
+    const t = this.getAttribute("rotate");
+    t && this.style.setProperty("--nn-icono-direction", t);
   }
-  attributeChangedCallback(t2) {
-    if (t2 === "rotate") {
-      __privateMethod(this, _nnIcono_instances, l_fn).call(this);
-    }
+  connectedCallback() {
+    this.#t();
+  }
+  attributeChangedCallback(t) {
+    t === "rotate" && this.#t();
   }
 }
-_nnIcono_instances = new WeakSet();
-l_fn = function() {
-  const t2 = this.getAttribute("rotate");
-  if (t2) {
-    this.style.setProperty("--nn-icono-direction", t2);
-  }
-};
-__publicField(nnIcono, "tag", "icono");
-class nnPilar extends HTMLElement {
+class g extends HTMLElement {
   constructor() {
     super();
-    __privateAdd(this, _nnPilar_instances);
   }
+  static tag = "pilar";
   static get observedAttributes() {
     return ["size"];
   }
-  connectedCallback() {
-    __privateMethod(this, _nnPilar_instances, d_fn).call(this);
-  }
-  attributeChangedCallback(t2) {
-    if (t2 === "size") {
-      __privateMethod(this, _nnPilar_instances, d_fn).call(this);
+  #t() {
+    const t = this.getAttribute("size");
+    if (t) {
+      const e = /[-+*/]/.test(t);
+      this.style.setProperty("--nn-pilar-size", e ? `calc(${t})` : t);
     }
   }
-}
-_nnPilar_instances = new WeakSet();
-d_fn = function() {
-  const t2 = this.getAttribute("size");
-  if (t2) {
-    const e2 = /[-+*/]/.test(t2);
-    this.style.setProperty("--nn-pilar-size", e2 ? `calc(${t2})` : t2);
+  connectedCallback() {
+    this.#t();
   }
-};
-__publicField(nnPilar, "tag", "pilar");
-class nnPill extends HTMLElement {
+  attributeChangedCallback(t) {
+    t === "size" && this.#t();
+  }
+}
+class m extends HTMLElement {
   constructor() {
     super();
-    __privateAdd(this, _nnPill_instances);
   }
+  static attrs = ["color", "text-color"];
   static get observedAttributes() {
     return this.attrs;
   }
+  static tag = "pill";
   connectedCallback() {
-    __privateMethod(this, _nnPill_instances, n_fn2).call(this);
+    this.#t();
   }
-  attributeChangedCallback(t2) {
-    if (this.constructor.attrs.includes(t2)) {
-      __privateMethod(this, _nnPill_instances, n_fn2).call(this);
-    }
+  attributeChangedCallback(t) {
+    this.constructor.attrs.includes(t) && this.#t();
+  }
+  #t() {
+    const t = this.getAttribute("color"), e = this.getAttribute("text-color");
+    t !== null && this.style.setProperty("--nn-pill-color", t), e !== null ? this.style.setProperty("--nn-pill-text-color", e) : this.style.setProperty(
+      "--nn-pill-text-color",
+      o(t || "#333333")
+    );
   }
 }
-_nnPill_instances = new WeakSet();
-n_fn2 = function() {
-  const t2 = this.getAttribute("color");
-  const e2 = this.getAttribute("text-color");
-  if (t2 !== null) {
-    this.style.setProperty(`--nn-pill-color`, t2);
-  }
-  if (e2 !== null) {
-    this.style.setProperty(`--nn-pill-text-color`, e2);
-  } else {
-    this.style.setProperty(`--nn-pill-text-color`, textColorFromBackground(t2 || "#333333"));
-  }
-};
-__publicField(nnPill, "attrs", ["color", "text-color"]);
-__publicField(nnPill, "tag", "pill");
-class nnVideo extends HTMLElement {
+class f extends HTMLElement {
   constructor() {
-    super();
-    __privateAdd(this, _nnVideo_instances);
-    if (!this.querySelector("video")) {
-      const t2 = document.createElement("video");
-      t2.controls = true;
-      t2.preload = "metadata";
-      t2.loading = "lazy";
-      const e2 = document.createElement("source");
-      t2.appendChild(e2);
-      t2.appendChild(document.createTextNode("Your browser does not support the video tag."));
-      this.appendChild(t2);
+    if (super(), !this.querySelector("video")) {
+      const t = document.createElement("video");
+      t.controls = !0, t.preload = "metadata", t.loading = "lazy";
+      const e = document.createElement("source");
+      t.appendChild(e), t.appendChild(
+        document.createTextNode("Your browser does not support the video tag.")
+      ), this.appendChild(t);
     }
-    this.$video = this.querySelector("video");
-    this.$source = this.querySelector("source");
+    this.$video = this.querySelector("video"), this.$source = this.querySelector("source");
   }
+  static tag = "video";
   static get observedAttributes() {
     return ["url", "format", "width"];
   }
   connectedCallback() {
-    __privateMethod(this, _nnVideo_instances, u_fn).call(this);
+    this.#t();
   }
   attributeChangedCallback() {
-    __privateMethod(this, _nnVideo_instances, u_fn).call(this);
+    this.#t();
+  }
+  #t() {
+    const t = this.getAttribute("url"), e = this.getAttribute("format") || "video/mp4", s = this.getAttribute("width");
+    t && (this.$source.src = t), this.$source.type = e, s && (this.$video.width = s);
   }
 }
-_nnVideo_instances = new WeakSet();
-u_fn = function() {
-  const t2 = this.getAttribute("url");
-  const e2 = this.getAttribute("format") || "video/mp4";
-  const n = this.getAttribute("width");
-  if (t2) this.$source.src = t2;
-  this.$source.type = e2;
-  if (n) this.$video.width = n;
-};
-__publicField(nnVideo, "tag", "video");
-[nnBtn, nnCaja, nnCode, nnDesplazador, nnDropdown, nnFila, nnIcono, nnPilar, nnPill, nnVideo].forEach((t2) => {
-  const e2 = getPrefix(t2.tag);
-  if (!customElements.get(e2)) {
-    customElements.define(e2, t2);
-  }
+[
+  l,
+  u,
+  i,
+  h,
+  d,
+  p,
+  b,
+  g,
+  m,
+  f
+].forEach((r) => {
+  const t = y(r.tag);
+  customElements.get(t) || customElements.define(t, r);
 });
-export { nnBtn, nnCaja, nnCode, nnDesplazador, nnDropdown, nnFila, nnIcono, nnPilar, nnPill, nnVideo };
+const C = {
+  nnBtn: l,
+  nnCaja: u,
+  nnCode: i,
+  nnDesplazador: h,
+  nnDropdown: d,
+  nnFila: p,
+  nnIcono: b,
+  nnPilar: g,
+  nnPill: m,
+  nnVideo: f
+};
+export {
+  C as default
+};
+//# sourceMappingURL=nanogrid.js.map

@@ -1,6 +1,4 @@
-import '../../src/nano-grid.css'
-import { gColors } from '../../src/gcolors.js'
-import { code } from '../assets/utils.js'
+import { code, gColors } from '../assets/head.js'
 
 export default {
   parameters: {
