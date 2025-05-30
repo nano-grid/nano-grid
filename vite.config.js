@@ -1,15 +1,30 @@
 import { defineConfig } from 'vite'
+import { resolve } from 'path'
+import terser from '@rollup/plugin-terser'
 
 export default defineConfig({
   build: {
+    minify: false,
+
     rollupOptions: {
+      treeshake: false,
+      plugins: [
+        terser({
+          mangle: true,
+          compress: false,
+          keep_classnames: true,
+          keep_fnames: true,
+        })
+      ],
+
       input: {
-        // js: 'src/nano-grid.js',
-        css: 'src/nano-grid.css',
+        nanogrid: resolve(__dirname, 'src/nanogrid.js'),
+        gcolors: resolve(__dirname, 'src/gcolors.js'),
+        nanogrid_styles: resolve(__dirname, 'src/nanogrid_styles.css'),
       },
       output: {
-        // entryFileNames: 'nano-grid.js',
-        assetFileNames: 'nano-grid.css',
+        entryFileNames: '[name].js',
+        assetFileNames: '[name].css',
       },
     },
     outDir: 'dist',

@@ -1,6 +1,6 @@
 import { gColor } from "./js/class_gcolor.js";
 
-export const wikiColors = {
+const wikiColors = {
 	/*0 - 50 */
 	'black': new gColor('black', '#000000'),
 	'auburn': new gColor('auburn', '#A52A2A'),
@@ -975,61 +975,62 @@ export const wikiColors = {
 	'caribbean-green': new gColor('caribbean-green', '#00CC99'),
 };
 
-// export const paletteColors = {
-// 	'snow': new gColor('snow', '#FFFAFA'),
-// 	'sonic-silver': new gColor('sonic-silver', '#757575'),
-// 	'raisin-black': new gColor('raisin-black', '#242124'),
-// 	'eerie-black': new gColor('eerie-black', '#1B1B1B'),
+const paletteColors = {
+	'snow': new gColor('snow', '#FFFAFA'),
+	'sonic-silver': new gColor('sonic-silver', '#757575'),
+	'raisin-black': new gColor('raisin-black', '#242124'),
+	'eerie-black': new gColor('eerie-black', '#1B1B1B'),
 
-// 	'maximum-blue-purple': new gColor('maximum-blue-purple', '#ACACE6'),
-// 	'blue-violet-crayola': new gColor('blue-violet-crayola', '#7366BD'),
-// 	'midnight': new gColor('midnight', '#702670'),
-// 	'spanish-violet': new gColor('spanish-violet', '#4C2882'),
-// 	'dark-purple': new gColor('dark-purple', '#301934'),
+	'maximum-blue-purple': new gColor('maximum-blue-purple', '#ACACE6'),
+	'blue-violet-crayola': new gColor('blue-violet-crayola', '#7366BD'),
+	'midnight': new gColor('midnight', '#702670'),
+	'spanish-violet': new gColor('spanish-violet', '#4C2882'),
+	'dark-purple': new gColor('dark-purple', '#301934'),
 
-// 	'pale-purple-pantone': new gColor('pale-purple-pantone', '#FAE6FA'),
-// 	'blush': new gColor('blush', '#DE5D83'),
-// 	'mauve-taupe': new gColor('mauve-taupe', '#915F6D'),
-// 	'amaranth-purple': new gColor('amaranth-purple', '#AB274F'),
-// 	'claret': new gColor('claret', '#7F1734'),
+	'pale-purple-pantone': new gColor('pale-purple-pantone', '#FAE6FA'),
+	'blush': new gColor('blush', '#DE5D83'),
+	'mauve-taupe': new gColor('mauve-taupe', '#915F6D'),
+	'amaranth-purple': new gColor('amaranth-purple', '#AB274F'),
+	'claret': new gColor('claret', '#7F1734'),
 
-// 	'baby-pink': new gColor('baby-pink', '#F4C2C2'),
-// 	'old-rose': new gColor('old-rose', '#C08081'),
-// 	'medium-carmine': new gColor('medium-carmine', '#AF4035'),
-// 	'antique-ruby': new gColor('antique-ruby', '#841B2D'),
-// 	'black-bean': new gColor('black-bean', '#3D0C02'),
+	'baby-pink': new gColor('baby-pink', '#F4C2C2'),
+	'old-rose': new gColor('old-rose', '#C08081'),
+	'medium-carmine': new gColor('medium-carmine', '#AF4035'),
+	'antique-ruby': new gColor('antique-ruby', '#841B2D'),
+	'black-bean': new gColor('black-bean', '#3D0C02'),
 
-// 	'tea-green': new gColor('tea-green', '#D0F0C0'),
-// 	'dark-sea-green': new gColor('dark-sea-green', '#8FBC8F'),
-// 	'xanadu': new gColor('xanadu', '#738678'),
-// 	'sap-green': new gColor('sap-green', '#507D2A'),
-// 	'phthalo-green': new gColor('phthalo-green', '#123524'),
+	'tea-green': new gColor('tea-green', '#D0F0C0'),
+	'dark-sea-green': new gColor('dark-sea-green', '#8FBC8F'),
+	'xanadu': new gColor('xanadu', '#738678'),
+	'sap-green': new gColor('sap-green', '#507D2A'),
+	'phthalo-green': new gColor('phthalo-green', '#123524'),
 
-// 	'aquamarine': new gColor('aquamarine', '#7FFFD4'),
-// 	'ocean-green': new gColor('ocean-green', '#48BF91'),
-// 	'pine-green': new gColor('pine-green', '#01796F'),
-// 	'tropical-rainforest': new gColor('tropical-rainforest', '#00755E'),
-// 	'msu-green': new gColor('msu-green', '#18453B'),
+	'aquamarine': new gColor('aquamarine', '#7FFFD4'),
+	'ocean-green': new gColor('ocean-green', '#48BF91'),
+	'pine-green': new gColor('pine-green', '#01796F'),
+	'tropical-rainforest': new gColor('tropical-rainforest', '#00755E'),
+	'msu-green': new gColor('msu-green', '#18453B'),
 
-// 	'light-steel-blue': new gColor('light-steel-blue', '#B0C4DE'),
-// 	'shadow-blue': new gColor('shadow-blue', '#778BA5'),
-// 	'cornflower-blue': new gColor('cornflower-blue', '#6495ED'),
-// 	'han-blue': new gColor('han-blue', '#446CCF'),
-// 	'usafa-blue': new gColor('usafa-blue', '#004F98'),
+	'light-steel-blue': new gColor('light-steel-blue', '#B0C4DE'),
+	'shadow-blue': new gColor('shadow-blue', '#778BA5'),
+	'cornflower-blue': new gColor('cornflower-blue', '#6495ED'),
+	'han-blue': new gColor('han-blue', '#446CCF'),
+	'usafa-blue': new gColor('usafa-blue', '#004F98'),
 
-// 	'eggshell': new gColor('eggshell', '#F0EAD6'),
-// 	'yellow-crayola': new gColor('yellow-crayola', '#FCE883'),
-// 	'maize': new gColor('maize', '#FBEC5D'),
-// 	'lemon-yellow': new gColor('lemon-yellow', '#FFF44F'),
-// 	'field-drab': new gColor('field-drab', '#6C541E'),
+	'eggshell': new gColor('eggshell', '#F0EAD6'),
+	'yellow-crayola': new gColor('yellow-crayola', '#FCE883'),
+	'maize': new gColor('maize', '#FBEC5D'),
+	'lemon-yellow': new gColor('lemon-yellow', '#FFF44F'),
+	'field-drab': new gColor('field-drab', '#6C541E'),
 
-// 	'lemon-meringue': new gColor('lemon-meringue', '#F6EABE'),
-// 	'maximum-yellow-red': new gColor('maximum-yellow-red', '#F2BA49'),
-// 	'rajah': new gColor('rajah', '#FBAB60'),
-// 	'copper': new gColor('copper', '#B87333'),
-// 	'café-noir': new gColor('café-noir', '#4B3621'),
-// };
+	'lemon-meringue': new gColor('lemon-meringue', '#F6EABE'),
+	'maximum-yellow-red': new gColor('maximum-yellow-red', '#F2BA49'),
+	'rajah': new gColor('rajah', '#FBAB60'),
+	'copper': new gColor('copper', '#B87333'),
+	'café-noir': new gColor('café-noir', '#4B3621'),
+};
 
-export const gColors = {
+export default {
 	...wikiColors,
+  ...paletteColors,
 };

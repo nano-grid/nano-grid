@@ -29,7 +29,7 @@ import nnVideo from './js/nano_video.js'
   }
 })
 
-export {
+export default {
   nnBtn,
   nnCaja,
   nnCode,

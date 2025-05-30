@@ -1,0 +1,1 @@
+export default {angel: 1, cana: 3, fikret: 5}
