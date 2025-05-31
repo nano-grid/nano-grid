@@ -10,20 +10,17 @@ export default {
 }
 
 const style = `
-nn-fila {
-  background-color: #333340;
-}
 
 nn-pilar {
   nn-btn {
     width: 100%;
   }
 }
-
-.html {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+    
+.preview-box {
+  nn-fila {
+    background-color: #333340;
+  }
 }
 `
 
@@ -224,13 +221,13 @@ export const Grid = args => {
 
       ${nanoPilar}
     
-      <section>
-        <p>Example:</p>
+      <section class="preview-box">
+        <h3>Example:</h3>
         ${html}
       </section>
 
       <section>
-        <p>Search Bar Layout:</p>
+        <h3>Search Bar Layout:</h3>
         <nn-fila>
           <nn-pilar size="35px">
             <nn-btn color="${gColors['alice-blue'].hex}">🔎</nn-btn>
@@ -245,7 +242,7 @@ export const Grid = args => {
       </section>
 
       <section>
-       <p>Dominican Flag Layout:</p>
+       <h3>Dominican Flag Layout:</h3>
         <nn-fila>
           <nn-pilar size="50% - 35px / 2">
             <nn-btn color="${gColors['spanish-blue'].hex}"></nn-btn>

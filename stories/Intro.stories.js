@@ -12,6 +12,8 @@ export default {
 const style = `
 svg {
   margin: auto;
+  width: min(70vmin, 600px);
+  height: min(70vmin, 600px);
 
   circle {
     transition: fill 200ms ease;

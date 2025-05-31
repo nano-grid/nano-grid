@@ -12,6 +12,8 @@
   "files": [
     "dist/nanogrid.js",
     "dist/gcolors.js",
+    "dist/nanogrid.js.map",
+    "dist/gcolors.js.map",
     "dist/nanogrid_styles.css"
   ],
   "type": "module",

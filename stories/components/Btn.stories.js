@@ -14,11 +14,13 @@ nn-fila {
   justify-content: center;
 }
 
-nn-pilar {
-  flex-grow: 1;
-  flex-basis: 350px;
-  nn-btn {
-    width: 100%;
+.preview-box {
+  nn-pilar {
+    flex-grow: 1;
+    flex-basis: 350px;
+    nn-btn {
+      width: 100%;
+    }
   }
 }
 `
@@ -177,8 +179,8 @@ export const Btn = args => {
 
       ${nanoBtn}
     
-      <section>
-        <p>Example:</p>
+      <section class="preview-box">
+        <h3>Example:</h3>
         ${html}
       </section>
     </nn-caja>
