@@ -179,8 +179,9 @@ export const Btn = args => {
 
       ${nanoBtn}
     
+      
       <section class="preview-box">
-        <h3>Example:</h3>
+      <h3>Preview</h3>
         ${html}
       </section>
     </nn-caja>

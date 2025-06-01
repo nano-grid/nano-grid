@@ -15,9 +15,6 @@
     background-color: var(--nn-tooltip-background-color);
     content: attr(data-tooltip);
     position: absolute;
-    bottom: 125%;
-    left: 50%;
-    translate: -50% 0;
     padding: 4px 8px;
     font-size: 12px;
     border-radius: 4px;
@@ -28,5 +25,18 @@
     opacity: 0;
     transition: opacity 0.2s ease;
     position: absolute;
+
+    /* inset: 0 0 125% 50%;
+    translate: -50% 0; */
+  }
+
+  &[tooltip-position='top']::after {
+    inset: 0 0 125% 50%;
+    translate: -50% 0;
+  }
+
+  &[tooltip-position='bottom']::after {
+    inset: 125% 0 0 50%;
+    translate: -50% 0;
   }
 }

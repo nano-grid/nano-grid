@@ -1,6 +1,6 @@
 nn-dropdown {
   --nn-dropdown-bgcolor: #252740;
-  --nn-dropdown-btn-bgcolor: #202028;
+  --nn-dropdown-btn-bgcolor: #313144;
   --nn-dropdown-btn-color: #64719b;
 
   position: relative;
@@ -8,7 +8,7 @@ nn-dropdown {
 
   &.open {
     .dropdown-trigger {
-      background: var(--nn-dropdown-btn-color);
+      background-color: var(--nn-dropdown-btn-color);
       color: var(--nn-dropdown-btn-bgcolor);
     }
 
@@ -19,15 +19,26 @@ nn-dropdown {
 
   .dropdown-trigger {
     cursor: pointer;
-    background-color: transparent;
+    background-color: var(--nn-dropdown-btn-bgcolor);
+    color: var(--nn-dropdown-btn-color);
+  }
+
+  .dropdown-content a,
+  .dropdown-content button,
+  .dropdown-trigger {
+    display: inline-block;
     padding: 1rem;
     border-radius: 10px;
     border: none;
-    color: var(--nn-dropdown-btn-color);
     font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--nn-dropdown-bgcolor);
+    color: var(--nn-dropdown-btn-color);
 
     &:hover {
-      background: var(--nn-dropdown-btn-color);
+      background-color: var(--nn-dropdown-btn-color);
       color: var(--nn-dropdown-btn-bgcolor);
     }
   }
@@ -36,21 +47,23 @@ nn-dropdown {
     display: none;
     border-radius: 10px;
     position: absolute;
-    top: 100%;
-    right: 0;
-    background: var(--nn-dropdown-bgcolor);
+    inset: 100% 0 auto auto;
+    background-color: var(--nn-dropdown-bgcolor);
     padding: 0.5em;
     z-index: 1000;
 
-    a,
-    button {
-      width: 100%;
-      text-align: center;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
     }
   }
 
-  .dropdown-content ::slotted(*) {
-    display: block;
-    padding: 0.25em 0;
+  &[position='left'] {
+    .dropdown-content {
+      top: 100%;
+      left: 0;
+      inset: 100% auto auto 0;
+    }
   }
 }

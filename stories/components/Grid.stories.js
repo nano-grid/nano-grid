@@ -19,7 +19,7 @@ nn-pilar {
     
 .preview-box {
   nn-fila {
-    background-color: #333340;
+    background-color: #23233a;
   }
 }
 `
@@ -222,11 +222,11 @@ export const Grid = args => {
       ${nanoPilar}
     
       <section class="preview-box">
-        <h3>Example:</h3>
+        <h3>Preview</h3>
         ${html}
       </section>
 
-      <section>
+      <section class="preview-box">
         <h3>Search Bar Layout:</h3>
         <nn-fila>
           <nn-pilar size="35px">
@@ -241,7 +241,7 @@ export const Grid = args => {
         </nn-fila>
       </section>
 
-      <section>
+      <section class="preview-box">
        <h3>Dominican Flag Layout:</h3>
         <nn-fila>
           <nn-pilar size="50% - 35px / 2">

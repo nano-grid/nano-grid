@@ -27,10 +27,10 @@ const nanoDropdown = `
 
   ${code(`
 <nn-dropdown label="Options">
-<ul>
-  <li>Item 1</li>
-  <li>Item 2</li>
-</ul>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+  </ul>
 </nn-dropdown>
   `)}
 
@@ -79,6 +79,23 @@ const nanoDropdown = `
       </nn-pilar>
     </nn-fila>
   </div>
+
+  <section class="preview-box">
+    <h3>Preview</h3>
+    <nn-dropdown label="Open Right">
+      <ul>
+        <li><a href="#">Item 1</a></li>
+        <li><button>Item 2</button></li>
+      </ul>
+    </nn-dropdown>
+    <nn-dropdown label="Open Left" position="left">
+      <ul>
+        <li><a href="#">Item 1</a></li>
+        <li><button>Item 2</button></li>
+      </ul>
+    </nn-dropdown>
+  </section>
+
 </section>
 `
 
