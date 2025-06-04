@@ -1,6 +1,6 @@
-const C = "nn-";
-function v(r) {
-  return [C, r].join("");
+const k = "nn-";
+function C(r) {
+  return [k, r].join("");
 }
 function E(r) {
   let t = r.replace("#", "");
@@ -48,7 +48,7 @@ class l extends HTMLElement {
     }), s.appendChild(this.#t.cloneNode(!0)), this.appendChild(s);
   }
 }
-class d extends HTMLElement {
+class h extends HTMLElement {
   constructor() {
     super();
   }
@@ -150,15 +150,15 @@ class i extends HTMLElement {
     this.innerHTML = i.formatJs(this.innerHTML);
   }
 }
-class h extends HTMLElement {
+class d extends HTMLElement {
   constructor() {
-    super(), this.isOpen = !1, this.toggleDropdown = this.toggleDropdown.bind(this), this.handleOutsideClick = this.handleOutsideClick.bind(this);
+    super(), this.isOpen = !1, this._value = "", this.toggleDropdown = this.toggleDropdown.bind(this), this.handleOutsideClick = this.handleOutsideClick.bind(this);
   }
   static tag = "combobox";
   connectedCallback() {
     if (this.classList.add("nn-combobox"), !this.querySelector(".combobox-trigger")) {
       const t = document.createElement("button");
-      t.classList.add("combobox-trigger"), t.textContent = this.getAttribute("label") || "Select", this.insertBefore(t, this.firstChild);
+      t.setAttribute("type", "button"), t.classList.add("combobox-trigger"), t.textContent = this.getAttribute("label") || "Select", this.insertBefore(t, this.firstChild);
     }
     if (this.button = this.querySelector(".combobox-trigger"), this.dropdown = this.querySelector(".combobox-content"), !this.dropdown) {
       const t = document.createElement("div");
@@ -170,13 +170,13 @@ class h extends HTMLElement {
       const e = t.target.closest("[data-value]");
       if (e) {
         const s = e.getAttribute("data-value");
-        this.button.textContent = e.textContent, this.dispatchEvent(
+        this.button.textContent = e.textContent, this.value = s, this.dispatchEvent(
           new CustomEvent("select", {
             detail: { value: s },
             bubbles: !0,
             composed: !0
           })
-        ), this.value = s, this.close();
+        ), this.dispatchEvent(new Event("change", { bubbles: !0 })), this.close();
       }
     }), document.addEventListener("click", this.handleOutsideClick);
   }
@@ -184,13 +184,19 @@ class h extends HTMLElement {
     document.removeEventListener("click", this.handleOutsideClick);
   }
   toggleDropdown(t) {
-    t.stopPropagation(), this.isOpen = !this.isOpen, this.isOpen ? this.classList.add("open") : this.classList.remove("open");
+    t.stopPropagation(), this.isOpen = !this.isOpen, this.classList.toggle("open", this.isOpen);
   }
   close() {
     this.isOpen = !1, this.classList.remove("open");
   }
   handleOutsideClick(t) {
     this.contains(t.target) || this.close();
+  }
+  get value() {
+    return this._value;
+  }
+  set value(t) {
+    this._value = t, this.setAttribute("value", t);
   }
 }
 class u extends HTMLElement {
@@ -323,7 +329,7 @@ class f extends HTMLElement {
     );
   }
 }
-class k extends HTMLElement {
+class v extends HTMLElement {
   constructor() {
     if (super(), !this.querySelector("video")) {
       const t = document.createElement("video");
@@ -352,7 +358,7 @@ class k extends HTMLElement {
 }
 [
   l,
-  d,
+  h,
   i,
   u,
   p,
@@ -360,15 +366,15 @@ class k extends HTMLElement {
   g,
   m,
   f,
-  k,
-  h
+  v,
+  d
 ].forEach((r) => {
-  const t = v(r.tag);
+  const t = C(r.tag);
   customElements.get(t) || customElements.define(t, r);
 });
 const x = {
   nnBtn: l,
-  nnCaja: d,
+  nnCaja: h,
   nnCode: i,
   nnDesplazador: u,
   nnDropdown: p,
@@ -376,8 +382,8 @@ const x = {
   nnIcono: g,
   nnPilar: m,
   nnPill: f,
-  nnVideo: k,
-  nnCombobox: h
+  nnVideo: v,
+  nnCombobox: d
 };
 export {
   x as default
