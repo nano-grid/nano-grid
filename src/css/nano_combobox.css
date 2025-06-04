@@ -1,0 +1,95 @@
+nn-combobox {
+  --nn-combobox-bgcolor: #252740;
+  --nn-combobox-btn-bgcolor: #3d3d60;
+  --nn-combobox-btn-color: #eee;
+  --nn-combobox-btn-hover-background: #64719b;
+
+  position: relative;
+  display: inline-block;
+
+  &.open {
+    .combobox-trigger {
+      color: var(--nn-combobox-btn-bgcolor);
+      background-color: var(--nn-combobox-btn-hover-background);
+    }
+
+    .combobox-content {
+      display: block;
+    }
+  }
+
+  .combobox-content li,
+  .combobox-trigger {
+    display: inline-block;
+    border-radius: 0;
+    border: none;
+    font-size: 1rem;
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: var(--nn-combobox-btn-bgcolor);
+    color: var(--nn-combobox-btn-color);
+    min-height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      color: var(--nn-combobox-bgcolor);
+      background-color: var(--nn-combobox-btn-hover-background);
+    }
+  }
+
+  .combobox-trigger {
+    --nn-combobox-btn-bgcolor-active: color-mix(
+      in srgb,
+      black 15%,
+      var(--nn-combobox-btn-bgcolor)
+    );
+    --nn-combobox-btn-bgcolor-active-shadow: color-mix(
+      in srgb,
+      black 30%,
+      var(--nn-combobox-btn-bgcolor)
+    );
+
+    box-shadow: 0px 3px 0 var(--nn-combobox-btn-bgcolor-active);
+
+    &:hover {
+      --nn-combobox-btn-bgcolor-active-shadow: color-mix(
+        in srgb,
+        black 30%,
+        var(--nn-combobox-btn-hover-background)
+      );
+      box-shadow: 0px 3px 0 var(--nn-combobox-btn-bgcolor-active-shadow);
+    }
+  }
+
+  .combobox-content {
+    display: none;
+    border-radius: 0;
+    position: absolute;
+    inset: 100% 0 auto auto;
+    background-color: var(--nn-combobox-bgcolor);
+    padding: 0.5em;
+    z-index: 1000;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      min-width: 200px;
+
+      li {
+        padding: 1rem;
+      }
+    }
+  }
+
+  &[position='left'] {
+    .combobox-content {
+      top: 100%;
+      left: 0;
+      inset: 100% auto auto 0;
+    }
+  }
+}

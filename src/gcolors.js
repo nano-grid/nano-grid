@@ -25,7 +25,7 @@ const wikiColors = {
 	'arylide-yellow': new gColor('arylide-yellow', '#E9D66B'),
 	'fiji-green': new gColor('fiji-green', '#665D1E'), // antique-bronze
 	'acid-green': new gColor('acid-green', '#B0BF1A'),
-	'android-green': new gColor('android-green', '#A4C639'),
+	// 'android-green': new gColor('android-green', '#A4C639'),
 	'apple-green': new gColor('apple-green', '#8DB600'),
 	'arctic-lime': new gColor('arctic-lime', '#D0FF14'),
 	'army-green': new gColor('army-green', '#4B5320'),
@@ -79,7 +79,7 @@ const wikiColors = {
 
 	/*301 - 350 */
 	'amaranth': new gColor('amaranth', '#E52B50'),
-	'barbie-pink': new gColor('barbie-pink', '#DA1884'),
+	// 'barbie-pink': new gColor('barbie-pink', '#DA1884'),
 	'lipstick': new gColor('lipstick', '#9F2B68'), // amaranth-m-p
 	'illusion': new gColor('illusion', '#F19CBB'), // amaranth-pink
 
@@ -131,7 +131,7 @@ const wikiColors = {
 	'bright-yellow-crayola': new gColor('bright-yellow-crayola', '#FFAA1D'),
 	'brilliant-rose': new gColor('brilliant-rose', '#FF55A3'),
 	'brink-pink': new gColor('brink-pink', '#FB607F'),
-	'british-racing-green': new gColor('british-racing-green', '#004225'),
+	// 'british-racing-green': new gColor('british-racing-green', '#004225'),
 	'bronze': new gColor('bronze', '#CD7F32'),
 	'brown': new gColor('brown', '#88540B'),
 	'brown-sugar': new gColor('brown-sugar', '#AF6E4D'),
@@ -287,7 +287,7 @@ const wikiColors = {
 	'desert': new gColor('desert', '#C19A6B'),
 	'desert-sand': new gColor('desert-sand', '#EDC9AF'),
 	'dim-grey': new gColor('dim-grey', '#696969'),
-	'dodger-blue': new gColor('dodger-blue', '#1E90FF'),
+	// 'dodger-blue': new gColor('dodger-blue', '#1E90FF'),
 	'dogwood-rose': new gColor('dogwood-rose', '#D71868'),
 	'drab': new gColor('drab', '#967117'),
 	'duke-blue': new gColor('duke-blue', '#00009C'),
@@ -440,7 +440,7 @@ const wikiColors = {
 	'kobi': new gColor('kobi', '#E79FC4'),
 	'kobicha': new gColor('kobicha', '#6B4423'),
 	'kombu-green': new gColor('kombu-green', '#354230'),
-	'ksu-purple': new gColor('ksu-purple', '#512888'),
+	// 'ksu-purple': new gColor('ksu-purple', '#512888'),
 	'languid-lavender': new gColor('languid-lavender', '#D6CADD'),
 	'lapis-lazuli': new gColor('lapis-lazuli', '#26619C'),
 	'laser-lemon': new gColor('laser-lemon', '#FFFF66'),

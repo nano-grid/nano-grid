@@ -14,7 +14,17 @@ export default class nnBtn extends HTMLElement {
 
   connectedCallback() {
     if (!this.#rendered) {
-      queueMicrotask(() => {
+      // queueMicrotask(() => {
+      //   if (!this.#initialContent) {
+      //     this.#initialContent = document.createDocumentFragment()
+      //     while (this.firstChild) {
+      //       this.#initialContent.appendChild(this.firstChild)
+      //     }
+      //   }
+      //   this.#render()
+      //   this.#rendered = true
+      // })
+      requestAnimationFrame(() => {
         if (!this.#initialContent) {
           this.#initialContent = document.createDocumentFragment()
           while (this.firstChild) {

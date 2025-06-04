@@ -83,7 +83,7 @@ const g = {
   "fiji-green": new e("fiji-green", "#665D1E"),
   // antique-bronze
   "acid-green": new e("acid-green", "#B0BF1A"),
-  "android-green": new e("android-green", "#A4C639"),
+  // 'android-green': new gColor('android-green', '#A4C639'),
   "apple-green": new e("apple-green", "#8DB600"),
   "arctic-lime": new e("arctic-lime", "#D0FF14"),
   "army-green": new e("army-green", "#4B5320"),
@@ -130,7 +130,7 @@ const g = {
   "blue-violet-color-wheel": new e("blue-violet-color-wheel", "#4D1A7F"),
   /*301 - 350 */
   amaranth: new e("amaranth", "#E52B50"),
-  "barbie-pink": new e("barbie-pink", "#DA1884"),
+  // 'barbie-pink': new gColor('barbie-pink', '#DA1884'),
   lipstick: new e("lipstick", "#9F2B68"),
   // amaranth-m-p
   illusion: new e("illusion", "#F19CBB"),
@@ -179,7 +179,7 @@ const g = {
   "bright-yellow-crayola": new e("bright-yellow-crayola", "#FFAA1D"),
   "brilliant-rose": new e("brilliant-rose", "#FF55A3"),
   "brink-pink": new e("brink-pink", "#FB607F"),
-  "british-racing-green": new e("british-racing-green", "#004225"),
+  // 'british-racing-green': new gColor('british-racing-green', '#004225'),
   bronze: new e("bronze", "#CD7F32"),
   brown: new e("brown", "#88540B"),
   "brown-sugar": new e("brown-sugar", "#AF6E4D"),
@@ -331,7 +331,7 @@ const g = {
   desert: new e("desert", "#C19A6B"),
   "desert-sand": new e("desert-sand", "#EDC9AF"),
   "dim-grey": new e("dim-grey", "#696969"),
-  "dodger-blue": new e("dodger-blue", "#1E90FF"),
+  // 'dodger-blue': new gColor('dodger-blue', '#1E90FF'),
   "dogwood-rose": new e("dogwood-rose", "#D71868"),
   drab: new e("drab", "#967117"),
   "duke-blue": new e("duke-blue", "#00009C"),
@@ -479,7 +479,7 @@ const g = {
   kobi: new e("kobi", "#E79FC4"),
   kobicha: new e("kobicha", "#6B4423"),
   "kombu-green": new e("kombu-green", "#354230"),
-  "ksu-purple": new e("ksu-purple", "#512888"),
+  // 'ksu-purple': new gColor('ksu-purple', '#512888'),
   "languid-lavender": new e("languid-lavender", "#D6CADD"),
   "lapis-lazuli": new e("lapis-lazuli", "#26619C"),
   "laser-lemon": new e("laser-lemon", "#FFFF66"),
@@ -999,7 +999,7 @@ const g = {
   "french-mauve": new e("french-mauve", "#D473D4"),
   "persian-indigo": new e("persian-indigo", "#32127A"),
   "caribbean-green": new e("caribbean-green", "#00CC99")
-}, d = {
+}, F = {
   snow: new e("snow", "#FFFAFA"),
   "sonic-silver": new e("sonic-silver", "#757575"),
   "raisin-black": new e("raisin-black", "#242124"),
@@ -1044,11 +1044,11 @@ const g = {
   rajah: new e("rajah", "#FBAB60"),
   copper: new e("copper", "#B87333"),
   "café-noir": new e("café-noir", "#4B3621")
-}, F = {
+}, d = {
   ...g,
-  ...d
+  ...F
 };
 export {
-  F as default
+  d as default
 };
 //# sourceMappingURL=gcolors.js.map

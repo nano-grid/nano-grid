@@ -1,15 +1,15 @@
-const k = "nn-";
-function y(r) {
-  return [k, r].join("");
+const C = "nn-";
+function v(r) {
+  return [C, r].join("");
 }
-function A(r) {
+function E(r) {
   let t = r.replace("#", "");
-  t.length === 3 && (t = t.split("").map((c) => c + c).join(""));
-  const [e, s, n] = [0, 2, 4].map((c) => parseInt(t.slice(c, c + 2), 16));
+  t.length === 3 && (t = t.split("").map((o) => o + o).join(""));
+  const [e, s, n] = [0, 2, 4].map((o) => parseInt(t.slice(o, o + 2), 16));
   return { r: e, g: s, b: n };
 }
-function o(r, t = 0.5) {
-  const { r: e, g: s, b: n } = A(r);
+function a(r, t = 0.5) {
+  const { r: e, g: s, b: n } = E(r);
   return (0.2126 * e + 0.7152 * s + 0.0722 * n) / 255 > t ? "#222" : "#eee";
 }
 class l extends HTMLElement {
@@ -21,7 +21,7 @@ class l extends HTMLElement {
   #t = null;
   #e = !1;
   connectedCallback() {
-    this.#e || queueMicrotask(() => {
+    this.#e || requestAnimationFrame(() => {
       if (!this.#t)
         for (this.#t = document.createDocumentFragment(); this.firstChild; )
           this.#t.appendChild(this.firstChild);
@@ -37,18 +37,18 @@ class l extends HTMLElement {
     this.innerHTML = "";
     const s = document.createElement(e ? "a" : "button");
     if (e || (s.type = "button"), t) {
-      const a = o(t);
-      this.style.setProperty("--nn-btn-text-color", a), this.style.setProperty("--nn-btn-color", t);
+      const c = a(t);
+      this.style.setProperty("--nn-btn-text-color", c), this.style.setProperty("--nn-btn-color", t);
     }
     const n = [...this.constructor.attrs, "class", "style", "id"];
     [...this.attributes].filter(
-      (a) => !n.includes(a.name)
-    ).forEach((a) => {
-      s.setAttribute(a.name, a.value);
+      (c) => !n.includes(c.name)
+    ).forEach((c) => {
+      s.setAttribute(c.name, c.value);
     }), s.appendChild(this.#t.cloneNode(!0)), this.appendChild(s);
   }
 }
-class u extends HTMLElement {
+class d extends HTMLElement {
   constructor() {
     super();
   }
@@ -152,11 +152,54 @@ class i extends HTMLElement {
 }
 class h extends HTMLElement {
   constructor() {
+    super(), this.isOpen = !1, this.toggleDropdown = this.toggleDropdown.bind(this), this.handleOutsideClick = this.handleOutsideClick.bind(this);
+  }
+  static tag = "combobox";
+  connectedCallback() {
+    if (this.classList.add("nn-combobox"), !this.querySelector(".combobox-trigger")) {
+      const t = document.createElement("button");
+      t.classList.add("combobox-trigger"), t.textContent = this.getAttribute("label") || "Select", this.insertBefore(t, this.firstChild);
+    }
+    if (this.button = this.querySelector(".combobox-trigger"), this.dropdown = this.querySelector(".combobox-content"), !this.dropdown) {
+      const t = document.createElement("div");
+      for (t.classList.add("combobox-content"); this.children.length > 1; )
+        t.appendChild(this.children[1]);
+      this.appendChild(t), this.dropdown = t;
+    }
+    this.button.addEventListener("click", this.toggleDropdown), this.addEventListener("click", (t) => {
+      const e = t.target.closest("[data-value]");
+      if (e) {
+        const s = e.getAttribute("data-value");
+        this.button.textContent = e.textContent, this.dispatchEvent(
+          new CustomEvent("select", {
+            detail: { value: s },
+            bubbles: !0,
+            composed: !0
+          })
+        ), this.value = s, this.close();
+      }
+    }), document.addEventListener("click", this.handleOutsideClick);
+  }
+  disconnectedCallback() {
+    document.removeEventListener("click", this.handleOutsideClick);
+  }
+  toggleDropdown(t) {
+    t.stopPropagation(), this.isOpen = !this.isOpen, this.isOpen ? this.classList.add("open") : this.classList.remove("open");
+  }
+  close() {
+    this.isOpen = !1, this.classList.remove("open");
+  }
+  handleOutsideClick(t) {
+    this.contains(t.target) || this.close();
+  }
+}
+class u extends HTMLElement {
+  constructor() {
     super();
   }
   static tag = "desplazador";
 }
-class d extends HTMLElement {
+class p extends HTMLElement {
   constructor() {
     super(), this.open = !1, this.toggle = this.toggle.bind(this), this.handleOutsideClick = this.handleOutsideClick.bind(this);
   }
@@ -194,7 +237,7 @@ class d extends HTMLElement {
     }
   }
 }
-class p extends HTMLElement {
+class b extends HTMLElement {
   constructor() {
     super();
   }
@@ -216,7 +259,7 @@ class p extends HTMLElement {
     this.constructor.attrs.includes(t) && this.#t();
   }
 }
-class b extends HTMLElement {
+class g extends HTMLElement {
   constructor() {
     super();
   }
@@ -235,7 +278,7 @@ class b extends HTMLElement {
     t === "rotate" && this.#t();
   }
 }
-class g extends HTMLElement {
+class m extends HTMLElement {
   constructor() {
     super();
   }
@@ -257,7 +300,7 @@ class g extends HTMLElement {
     t === "size" && this.#t();
   }
 }
-class m extends HTMLElement {
+class f extends HTMLElement {
   constructor() {
     super();
   }
@@ -276,11 +319,11 @@ class m extends HTMLElement {
     const t = this.getAttribute("color"), e = this.getAttribute("text-color");
     t !== null && this.style.setProperty("--nn-pill-color", t), e !== null ? this.style.setProperty("--nn-pill-text-color", e) : this.style.setProperty(
       "--nn-pill-text-color",
-      o(t || "#333333")
+      a(t || "#333333")
     );
   }
 }
-class f extends HTMLElement {
+class k extends HTMLElement {
   constructor() {
     if (super(), !this.querySelector("video")) {
       const t = document.createElement("video");
@@ -309,32 +352,34 @@ class f extends HTMLElement {
 }
 [
   l,
-  u,
-  i,
-  h,
   d,
+  i,
+  u,
   p,
   b,
   g,
   m,
-  f
+  f,
+  k,
+  h
 ].forEach((r) => {
-  const t = y(r.tag);
+  const t = v(r.tag);
   customElements.get(t) || customElements.define(t, r);
 });
-const C = {
+const x = {
   nnBtn: l,
-  nnCaja: u,
+  nnCaja: d,
   nnCode: i,
-  nnDesplazador: h,
-  nnDropdown: d,
-  nnFila: p,
-  nnIcono: b,
-  nnPilar: g,
-  nnPill: m,
-  nnVideo: f
+  nnDesplazador: u,
+  nnDropdown: p,
+  nnFila: b,
+  nnIcono: g,
+  nnPilar: m,
+  nnPill: f,
+  nnVideo: k,
+  nnCombobox: h
 };
 export {
-  C as default
+  x as default
 };
 //# sourceMappingURL=nanogrid.js.map
