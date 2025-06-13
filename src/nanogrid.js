@@ -3,7 +3,6 @@ import { getPrefix } from './js/nano_helpers.js'
 import nnBtn from './js/nano_btn.js'
 import nnCaja from './js/nano_caja.js'
 import nnCode from './js/nano_code.js'
-import nnCombobox from './js/nano_combobox.js'
 import nnDesplazador from './js/nano_desplazador.js'
 import nnDropdown from './js/nano_dropdown.js'
 import nnFila from './js/nano_fila.js'
@@ -22,7 +21,6 @@ import nnVideo from './js/nano_video.js'
   nnPilar,
   nnPill,
   nnVideo,
-  nnCombobox,
 ].forEach(comp => {
   const tag = getPrefix(comp.tag)
   if (!customElements.get(tag)) {
@@ -41,5 +39,4 @@ export default {
   nnPilar,
   nnPill,
   nnVideo,
-  nnCombobox,
 }

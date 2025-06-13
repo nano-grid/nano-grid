@@ -1,16 +1,16 @@
 const k = "nn-";
-function C(r) {
+function A(r) {
   return [k, r].join("");
 }
-function E(r) {
+function C(r) {
   let t = r.replace("#", "");
   t.length === 3 && (t = t.split("").map((o) => o + o).join(""));
-  const [e, s, n] = [0, 2, 4].map((o) => parseInt(t.slice(o, o + 2), 16));
-  return { r: e, g: s, b: n };
+  const [e, s, c] = [0, 2, 4].map((o) => parseInt(t.slice(o, o + 2), 16));
+  return { r: e, g: s, b: c };
 }
 function a(r, t = 0.5) {
-  const { r: e, g: s, b: n } = E(r);
-  return (0.2126 * e + 0.7152 * s + 0.0722 * n) / 255 > t ? "#222" : "#eee";
+  const { r: e, g: s, b: c } = C(r);
+  return (0.2126 * e + 0.7152 * s + 0.0722 * c) / 255 > t ? "#222" : "#eee";
 }
 class l extends HTMLElement {
   static attrs = ["color", "link"];
@@ -33,22 +33,33 @@ class l extends HTMLElement {
   }
   #s() {
     if (!this.#t) return;
-    const t = this.getAttribute("color"), e = this.hasAttribute("link");
-    this.innerHTML = "";
-    const s = document.createElement(e ? "a" : "button");
-    if (e || (s.type = "button"), t) {
-      const c = a(t);
-      this.style.setProperty("--nn-btn-text-color", c), this.style.setProperty("--nn-btn-color", t);
+    if (Array.from(this.#t.childNodes).some(
+      (n) => n.nodeType === Node.ELEMENT_NODE && ["A", "BUTTON"].includes(n.tagName)
+    )) {
+      this.innerHTML = "", this.appendChild(this.#t.cloneNode(!0));
+      const n = this.getAttribute("color");
+      if (n) {
+        const y = a(n);
+        this.style.setProperty("--nn-btn-text-color", y), this.style.setProperty("--nn-btn-color", n);
+      }
+      return;
     }
-    const n = [...this.constructor.attrs, "class", "style", "id"];
+    const e = this.getAttribute("color"), s = this.hasAttribute("link");
+    this.innerHTML = "";
+    const c = document.createElement(s ? "a" : "button");
+    if (s || (c.type = "button"), e) {
+      const n = a(e);
+      this.style.setProperty("--nn-btn-text-color", n), this.style.setProperty("--nn-btn-color", e);
+    }
+    const o = [...this.constructor.attrs, "class", "style", "id"];
     [...this.attributes].filter(
-      (c) => !n.includes(c.name)
-    ).forEach((c) => {
-      s.setAttribute(c.name, c.value);
-    }), s.appendChild(this.#t.cloneNode(!0)), this.appendChild(s);
+      (n) => !o.includes(n.name)
+    ).forEach((n) => {
+      c.setAttribute(n.name, n.value);
+    }), c.appendChild(this.#t.cloneNode(!0)), this.appendChild(c);
   }
 }
-class h extends HTMLElement {
+class u extends HTMLElement {
   constructor() {
     super();
   }
@@ -113,8 +124,8 @@ class i extends HTMLElement {
     for (const [e, s] of Object.entries(
       i.#e
     )) {
-      const n = e.includes("n-line") ? `${i.spirit("", "n-line")}<br>` : e.includes("tab") ? i.spirit("", "tab") : e.includes("space") ? i.spirit("", "space") : `&#${s.charCodeAt(0)};`;
-      t = t.replaceAll(e, n);
+      const c = e.includes("n-line") ? `${i.spirit("", "n-line")}<br>` : e.includes("tab") ? i.spirit("", "tab") : e.includes("space") ? i.spirit("", "space") : `&#${s.charCodeAt(0)};`;
+      t = t.replaceAll(e, c);
     }
     return t;
   }
@@ -150,62 +161,13 @@ class i extends HTMLElement {
     this.innerHTML = i.formatJs(this.innerHTML);
   }
 }
-class d extends HTMLElement {
-  constructor() {
-    super(), this.isOpen = !1, this._value = "", this.toggleDropdown = this.toggleDropdown.bind(this), this.handleOutsideClick = this.handleOutsideClick.bind(this);
-  }
-  static tag = "combobox";
-  connectedCallback() {
-    if (this.classList.add("nn-combobox"), !this.querySelector(".combobox-trigger")) {
-      const t = document.createElement("button");
-      t.setAttribute("type", "button"), t.classList.add("combobox-trigger"), t.textContent = this.getAttribute("label") || "Select", this.insertBefore(t, this.firstChild);
-    }
-    if (this.button = this.querySelector(".combobox-trigger"), this.dropdown = this.querySelector(".combobox-content"), !this.dropdown) {
-      const t = document.createElement("div");
-      for (t.classList.add("combobox-content"); this.children.length > 1; )
-        t.appendChild(this.children[1]);
-      this.appendChild(t), this.dropdown = t;
-    }
-    this.button.addEventListener("click", this.toggleDropdown), this.addEventListener("click", (t) => {
-      const e = t.target.closest("[data-value]");
-      if (e) {
-        const s = e.getAttribute("data-value");
-        this.button.textContent = e.textContent, this.value = s, this.dispatchEvent(
-          new CustomEvent("select", {
-            detail: { value: s },
-            bubbles: !0,
-            composed: !0
-          })
-        ), this.dispatchEvent(new Event("change", { bubbles: !0 })), this.close();
-      }
-    }), document.addEventListener("click", this.handleOutsideClick);
-  }
-  disconnectedCallback() {
-    document.removeEventListener("click", this.handleOutsideClick);
-  }
-  toggleDropdown(t) {
-    t.stopPropagation(), this.isOpen = !this.isOpen, this.classList.toggle("open", this.isOpen);
-  }
-  close() {
-    this.isOpen = !1, this.classList.remove("open");
-  }
-  handleOutsideClick(t) {
-    this.contains(t.target) || this.close();
-  }
-  get value() {
-    return this._value;
-  }
-  set value(t) {
-    this._value = t, this.setAttribute("value", t);
-  }
-}
-class u extends HTMLElement {
+class h extends HTMLElement {
   constructor() {
     super();
   }
   static tag = "desplazador";
 }
-class p extends HTMLElement {
+class d extends HTMLElement {
   constructor() {
     super(), this.open = !1, this.toggle = this.toggle.bind(this), this.handleOutsideClick = this.handleOutsideClick.bind(this);
   }
@@ -243,7 +205,7 @@ class p extends HTMLElement {
     }
   }
 }
-class b extends HTMLElement {
+class p extends HTMLElement {
   constructor() {
     super();
   }
@@ -265,7 +227,7 @@ class b extends HTMLElement {
     this.constructor.attrs.includes(t) && this.#t();
   }
 }
-class g extends HTMLElement {
+class b extends HTMLElement {
   constructor() {
     super();
   }
@@ -284,7 +246,7 @@ class g extends HTMLElement {
     t === "rotate" && this.#t();
   }
 }
-class m extends HTMLElement {
+class g extends HTMLElement {
   constructor() {
     super();
   }
@@ -306,7 +268,7 @@ class m extends HTMLElement {
     t === "size" && this.#t();
   }
 }
-class f extends HTMLElement {
+class m extends HTMLElement {
   constructor() {
     super();
   }
@@ -329,7 +291,7 @@ class f extends HTMLElement {
     );
   }
 }
-class v extends HTMLElement {
+class f extends HTMLElement {
   constructor() {
     if (super(), !this.querySelector("video")) {
       const t = document.createElement("video");
@@ -358,34 +320,32 @@ class v extends HTMLElement {
 }
 [
   l,
-  h,
-  i,
   u,
+  i,
+  h,
+  d,
   p,
   b,
   g,
   m,
-  f,
-  v,
-  d
+  f
 ].forEach((r) => {
-  const t = C(r.tag);
+  const t = A(r.tag);
   customElements.get(t) || customElements.define(t, r);
 });
-const x = {
+const T = {
   nnBtn: l,
-  nnCaja: h,
+  nnCaja: u,
   nnCode: i,
-  nnDesplazador: u,
-  nnDropdown: p,
-  nnFila: b,
-  nnIcono: g,
-  nnPilar: m,
-  nnPill: f,
-  nnVideo: v,
-  nnCombobox: d
+  nnDesplazador: h,
+  nnDropdown: d,
+  nnFila: p,
+  nnIcono: b,
+  nnPilar: g,
+  nnPill: m,
+  nnVideo: f
 };
 export {
-  x as default
+  T as default
 };
 //# sourceMappingURL=nanogrid.js.map

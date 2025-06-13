@@ -52,6 +52,18 @@ const colors = Object.values(gColors)
 
 const html = `
   <nn-fila gap="1rem">
+    <nn-pilar>
+      <nn-btn color="#ffffff">
+        <a class="custom">
+          Custom Link
+        </a>
+      </nn-btn>
+    </nn-pilar>
+    <nn-pilar>
+      <nn-btn color="#ffffff" href="#" link>
+        Regular Link
+      </nn-btn>
+    </nn-pilar>
     ${colors}
   </nn-fila>
 `
