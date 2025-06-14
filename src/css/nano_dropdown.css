@@ -17,6 +17,13 @@ nn-dropdown {
     }
   }
 
+  &:has(.active) {
+    .dropdown-trigger {
+      background-color: var(--nn-dropdown-btn-color);
+      color: var(--nn-dropdown-btn-bgcolor);
+    }
+  }
+
   .dropdown-trigger {
     cursor: pointer;
     background-color: var(--nn-dropdown-btn-bgcolor);
