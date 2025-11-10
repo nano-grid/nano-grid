@@ -1,6 +1,6 @@
 # Nano grid
 
-[![Nano Grid Logo](https://nano-grid.github.io/img/preview.png)](https://nano-grid.github.io)
+[![Nano Grid Logo](https://rama-o.github.io/img/preview-nano-grid.webp)](https://rama-o.github.io)
 > Frontend toolkit powered by CSS and Web Components.
 
 ## Getting Starter
@@ -53,8 +53,6 @@ npx vite build
 ```sh
 npm run storybook
 ```
-
-> For full documentation, visit [nano-grid.github.io](https://nano-grid.github.io).
 
 ## Creator
 
